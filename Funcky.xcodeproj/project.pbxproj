@@ -10,12 +10,33 @@
 		BC56E4F414D68B800015D1A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC56E4F314D68B800015D1A7 /* Foundation.framework */; };
 		BC56E4FA14D68B800015D1A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC56E4F814D68B800015D1A7 /* InfoPlist.strings */; };
 		BC56E50314D68B800015D1A7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC56E50214D68B800015D1A7 /* SenTestingKit.framework */; };
-		BC56E50514D68B800015D1A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC56E50414D68B800015D1A7 /* UIKit.framework */; };
 		BC56E50614D68B800015D1A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC56E4F314D68B800015D1A7 /* Foundation.framework */; };
 		BC56E50B14D68B800015D1A7 /* Funcky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC56E4F014D68B800015D1A7 /* Funcky.framework */; };
-		BC56E50C14D68B800015D1A7 /* Funcky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC56E4F014D68B800015D1A7 /* Funcky.framework */; };
 		BC56E51214D68B800015D1A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC56E51014D68B800015D1A7 /* InfoPlist.strings */; };
-		BC56E51514D68B800015D1A7 /* FunckyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E51414D68B800015D1A7 /* FunckyTests.m */; };
+		BC56E51514D68B800015D1A7 /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E51414D68B800015D1A7 /* NSArrayTest.m */; };
+		BC56E52014D68C440015D1A7 /* NSArray+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC56E51E14D68C440015D1A7 /* NSArray+Funcky.h */; };
+		BC56E52114D68C440015D1A7 /* NSArray+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E51F14D68C440015D1A7 /* NSArray+Funcky.m */; };
+		BC56E52214D68C440015D1A7 /* NSArray+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E51F14D68C440015D1A7 /* NSArray+Funcky.m */; };
+		BC7DDBA614D8911F00D52B79 /* OptionFy.m in Sources */ = {isa = PBXBuildFile; };
+		BC7DDBAC14D8914F00D52B79 /* None.m in Sources */ = {isa = PBXBuildFile; };
+		BC7DDBAF14D8914F00D52B79 /* Some.m in Sources */ = {isa = PBXBuildFile; };
+		BC8426CF14D71ED70081C545 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8426CE14D71ED70081C545 /* OCHamcrestIOS.framework */; };
+		BC8426D214D71EEC0081C545 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8426D114D71EEC0081C545 /* libOCMock.a */; };
+		BC8426D214D71EEC0081C547 /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C546 /* NSDictionaryTest.m */; };
+		BC8426D214D71EEC0081C549 /* NSDictionary+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C548 /* NSDictionary+Funcky.m */; };
+		BC8426D214D71EEC0081C54A /* NSDictionary+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C548 /* NSDictionary+Funcky.m */; };
+		BC8426D214D71EEC0081C54C /* NSDictionary+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C54B /* NSDictionary+Funcky.h */; };
+		BC8426D214D71EEC0081C555 /* FyOption.m in Sources */ = {isa = PBXBuildFile; };
+		BC8426D214D71EEC0081C55A /* Some.m in Sources */ = {isa = PBXBuildFile; };
+		BC8426D214D71EEC0081C55F /* None.m in Sources */ = {isa = PBXBuildFile; };
+		BC8426D214D71EEC0081C561 /* Bobbins.m in Sources */ = {isa = PBXBuildFile; };
+		BC8426D214D71EEC0081C563 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C562 /* Option.m */; };
+		BC8426D214D71EEC0081C565 /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C564 /* Option.h */; };
+		BC8426D214D71EEC0081C567 /* Some.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C566 /* Some.m */; };
+		BC8426D214D71EEC0081C569 /* Some.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C568 /* Some.h */; };
+		BC8426D214D71EEC0081C56B /* None.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56A /* None.m */; };
+		BC8426D214D71EEC0081C56D /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56C /* None.h */; };
+		BC8426D214D71EEC0081C56F /* OptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56E /* OptionTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +59,29 @@
 /* Begin PBXFileReference section */
 		BC56E4F014D68B800015D1A7 /* Funcky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = Funcky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC56E4F314D68B800015D1A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BC56E4F714D68B800015D1A7 /* Funcky-Info.plist */ = {isa = PBXFileReference; path = "Funcky-Info.plist"; sourceTree = "<group>"; };
+		BC56E4F714D68B800015D1A7 /* Funcky-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Funcky-Info.plist"; sourceTree = "<group>"; };
 		BC56E4F914D68B800015D1A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BC56E4FB14D68B800015D1A7 /* Funcky-Prefix.pch */ = {isa = PBXFileReference; path = "Funcky-Prefix.pch"; sourceTree = "<group>"; };
+		BC56E4FB14D68B800015D1A7 /* Funcky-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Funcky-Prefix.pch"; sourceTree = "<group>"; };
 		BC56E50114D68B800015D1A7 /* FunckyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunckyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC56E50214D68B800015D1A7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BC56E50414D68B800015D1A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BC56E50F14D68B800015D1A7 /* FunckyTests-Info.plist */ = {isa = PBXFileReference; path = "FunckyTests-Info.plist"; sourceTree = "<group>"; };
+		BC56E50F14D68B800015D1A7 /* FunckyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunckyTests-Info.plist"; sourceTree = "<group>"; };
 		BC56E51114D68B800015D1A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BC56E51314D68B800015D1A7 /* FunckyTests.h */ = {isa = PBXFileReference; path = FunckyTests.h; sourceTree = "<group>"; };
-		BC56E51414D68B800015D1A7 /* FunckyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunckyTests.m; sourceTree = "<group>"; };
+		BC56E51414D68B800015D1A7 /* NSArrayTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
+		BC56E51E14D68C440015D1A7 /* NSArray+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Funcky.h"; sourceTree = "<group>"; };
+		BC56E51F14D68C440015D1A7 /* NSArray+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Funcky.m"; sourceTree = "<group>"; };
+		BC8426CE14D71ED70081C545 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = Vendor/Test/OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		BC8426D114D71EEC0081C545 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Vendor/Test/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C546 /* NSDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTest.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C548 /* NSDictionary+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Funcky.m"; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C54B /* NSDictionary+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Funcky.h"; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C553 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C562 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C564 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C566 /* Some.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Some.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C568 /* Some.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Some.h; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C56A /* None.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = None.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C56C /* None.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = None.h; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C56E /* OptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8426D214D71EEC0081C545 /* libOCMock.a in Frameworks */,
+				BC8426CF14D71ED70081C545 /* OCHamcrestIOS.framework in Frameworks */,
 				BC56E50314D68B800015D1A7 /* SenTestingKit.framework in Frameworks */,
-				BC56E50514D68B800015D1A7 /* UIKit.framework in Frameworks */,
 				BC56E50614D68B800015D1A7 /* Foundation.framework in Frameworks */,
 				BC56E50B14D68B800015D1A7 /* Funcky.framework in Frameworks */,
-				BC56E50C14D68B800015D1A7 /* Funcky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +111,12 @@
 		BC56E4E214D68B800015D1A7 = {
 			isa = PBXGroup;
 			children = (
+				BC8426D214D71EEC0081C553 /* build.sh */,
 				BC56E4F514D68B800015D1A7 /* Funcky */,
 				BC56E50D14D68B800015D1A7 /* FunckyTests */,
 				BC56E4F214D68B800015D1A7 /* Frameworks */,
 				BC56E4F114D68B800015D1A7 /* Products */,
+				BC56E52214D68C440015D1A8 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,9 +132,10 @@
 		BC56E4F214D68B800015D1A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC8426D114D71EEC0081C545 /* libOCMock.a */,
+				BC8426CE14D71ED70081C545 /* OCHamcrestIOS.framework */,
 				BC56E4F314D68B800015D1A7 /* Foundation.framework */,
 				BC56E50214D68B800015D1A7 /* SenTestingKit.framework */,
-				BC56E50414D68B800015D1A7 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,7 +143,17 @@
 		BC56E4F514D68B800015D1A7 /* Funcky */ = {
 			isa = PBXGroup;
 			children = (
+				BC8426D214D71EEC0081C56C /* None.h */,
+				BC8426D214D71EEC0081C56A /* None.m */,
+				BC8426D214D71EEC0081C568 /* Some.h */,
+				BC8426D214D71EEC0081C566 /* Some.m */,
+				BC8426D214D71EEC0081C564 /* Option.h */,
+				BC8426D214D71EEC0081C562 /* Option.m */,
+				BC8426D214D71EEC0081C54B /* NSDictionary+Funcky.h */,
+				BC8426D214D71EEC0081C548 /* NSDictionary+Funcky.m */,
 				BC56E4F614D68B800015D1A7 /* Supporting Files */,
+				BC56E51E14D68C440015D1A7 /* NSArray+Funcky.h */,
+				BC56E51F14D68C440015D1A7 /* NSArray+Funcky.m */,
 			);
 			path = Funcky;
 			sourceTree = "<group>";
@@ -124,8 +171,9 @@
 		BC56E50D14D68B800015D1A7 /* FunckyTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC56E51314D68B800015D1A7 /* FunckyTests.h */,
-				BC56E51414D68B800015D1A7 /* FunckyTests.m */,
+				BC8426D214D71EEC0081C56E /* OptionTest.m */,
+				BC8426D214D71EEC0081C546 /* NSDictionaryTest.m */,
+				BC56E51414D68B800015D1A7 /* NSArrayTest.m */,
 				BC56E50E14D68B800015D1A7 /* Supporting Files */,
 			);
 			path = FunckyTests;
@@ -140,6 +188,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BC56E52214D68C440015D1A8 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BC56E52214D68C440015D1A9 /* Test */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		BC56E52214D68C440015D1A9 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -147,6 +210,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC56E52014D68C440015D1A7 /* NSArray+Funcky.h in Headers */,
+				BC8426D214D71EEC0081C54C /* NSDictionary+Funcky.h in Headers */,
+				BC8426D214D71EEC0081C565 /* Option.h in Headers */,
+				BC8426D214D71EEC0081C569 /* Some.h in Headers */,
+				BC8426D214D71EEC0081C56D /* None.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +353,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC56E52114D68C440015D1A7 /* NSArray+Funcky.m in Sources */,
+				BC8426D214D71EEC0081C549 /* NSDictionary+Funcky.m in Sources */,
+				BC7DDBAC14D8914F00D52B79 /* None.m in Sources */,
+				BC7DDBAF14D8914F00D52B79 /* Some.m in Sources */,
+				BC8426D214D71EEC0081C555 /* FyOption.m in Sources */,
+				BC8426D214D71EEC0081C55A /* Some.m in Sources */,
+				BC8426D214D71EEC0081C55F /* None.m in Sources */,
+				BC8426D214D71EEC0081C561 /* Bobbins.m in Sources */,
+				BC8426D214D71EEC0081C563 /* Option.m in Sources */,
+				BC8426D214D71EEC0081C567 /* Some.m in Sources */,
+				BC8426D214D71EEC0081C56B /* None.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +371,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC56E51514D68B800015D1A7 /* FunckyTests.m in Sources */,
+				BC56E51514D68B800015D1A7 /* NSArrayTest.m in Sources */,
+				BC56E52214D68C440015D1A7 /* NSArray+Funcky.m in Sources */,
+				BC8426D214D71EEC0081C547 /* NSDictionaryTest.m in Sources */,
+				BC8426D214D71EEC0081C54A /* NSDictionary+Funcky.m in Sources */,
+				BC7DDBA614D8911F00D52B79 /* OptionFy.m in Sources */,
+				BC8426D214D71EEC0081C56F /* OptionTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +491,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Vendor/Test\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Funcky/Funcky-Prefix.pch";
 				INFOPLIST_FILE = "FunckyTests/FunckyTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Vendor/Test/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(PROJECT_DIR)/Vendor/Test/OCMock/libOCMock.a",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -422,10 +516,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Vendor/Test\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Funcky/Funcky-Prefix.pch";
 				INFOPLIST_FILE = "FunckyTests/FunckyTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Vendor/Test/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(PROJECT_DIR)/Vendor/Test/OCMock/libOCMock.a",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -450,6 +554,7 @@
 				BC56E51A14D68B800015D1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC56E51B14D68B800015D1A7 /* Build configuration list for PBXNativeTarget "FunckyTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +563,7 @@
 				BC56E51D14D68B800015D1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
