@@ -21,6 +21,16 @@ function runTests() {
     fi
 }
 
+function buildRelease() {
+    xcodebuild -target Funcky -sdk iphoneos -configuration Release build
+    OUT=$?
+    if [ $OUT -ne 0 ]
+    then
+        echo "Build FAILED : $OUT";
+        exit 1
+    fi
+}
+
 case "$1" in
   clean)
   cleanTargets;;
@@ -28,6 +38,8 @@ case "$1" in
   test)
   runTests;;
 
+  release)
+  buildRelease;;
   *)
   echo "Usage: build.sh (clean|test|release) e.g. ./build.sh test";
   exit 1;;

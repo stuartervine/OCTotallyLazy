@@ -51,7 +51,6 @@
 
 - (id)reduce:(id (^)(id, id))functorBlock {
     return [[self tail] fold:[self head] with:functorBlock];
-
 }
 
 - (NSArray *)tail {
