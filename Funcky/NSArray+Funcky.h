@@ -8,9 +8,11 @@
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock;
 - (id)head;
 - (Option *)headOption;
+- (NSArray *)join:(NSArray *)toJoin;
 - (id)map:(id (^)(id))functorBlock;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (NSArray *)tail;
 - (NSArray *)take:(int)n;
+- (NSArray *)takeWhile:(BOOL (^)(id))funcBlock;
 - (NSArray *)takeRight:(int)n;
 @end

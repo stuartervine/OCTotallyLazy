@@ -44,6 +44,12 @@
     assertThat([[NSArray array] headOption], equalTo([None none]));
 }
 
+- (void)testJoin {
+    NSArray *join = [[NSArray arrayWithObjects:@"one", nil] join:[NSArray arrayWithObjects:@"two", @"three", nil]];
+    assertThat(join, equalTo([NSArray arrayWithObjects:@"one", @"two", @"three", nil]) );
+
+}
+
 - (void)testMap {
     NSArray *items = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];
     assertThat([items map:[Callables toUpperCase]], equalTo([NSArray arrayWithObjects:@"ONE", @"TWO", @"THREE", nil]));
@@ -63,6 +69,14 @@
     NSArray *items = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];
     assertThat([items take:2], equalTo([NSArray arrayWithObjects:@"one", @"two", nil]));
     assertThat([items take:0], equalTo([NSArray array]));
+}
+
+- (void)testTakeWhile {
+    NSArray *items = [NSArray arrayWithObjects:[NSNumber numberWithInt:1], [NSNumber numberWithInt:2], [NSNumber numberWithInt:3], nil];
+    assertThat(
+        [items takeWhile:^(NSNumber *number) { return (BOOL)(number.intValue < 2); }],
+        equalTo([NSArray arrayWithObjects:[NSNumber numberWithInt:1], nil])
+    );
 }
 
 - (void)testTakeRight {

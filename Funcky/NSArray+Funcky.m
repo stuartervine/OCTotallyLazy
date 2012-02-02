@@ -41,6 +41,10 @@
     return ([self count] > 0) ? [Some some:[self head]] : [None none];
 }
 
+- (NSArray *)join:(NSArray *)toJoin {
+    return [[NSArray arrayWithObjects:self, toJoin, nil] flatMap:^(id item){return item;}];
+}
+
 - (id)map:(id (^)(id))funcBlock {
     NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
     for (id item in self) {
@@ -59,6 +63,18 @@
 
 - (NSArray *)take:(int)n {
     return [self subarrayWithRange:NSMakeRange(0, n)];
+}
+
+- (NSArray *)takeWhile:(BOOL (^)(id))funcBlock {
+    NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
+    for (id item in self) {
+        if (funcBlock(item)) {
+            [collectedArray addObject:item];
+        } else {
+            break;
+        }
+    }
+    return [[[NSArray alloc] initWithArray:collectedArray] autorelease];    
 }
 
 - (NSArray *)takeRight:(int)n {

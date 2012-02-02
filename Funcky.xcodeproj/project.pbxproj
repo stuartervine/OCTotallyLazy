@@ -240,9 +240,9 @@
 				BC56E4E914D68B800015D1A7 /* ShellScript */,
 				BC56E4EA14D68B800015D1A7 /* Sources */,
 				BC56E4EB14D68B800015D1A7 /* Frameworks */,
+				BC7DDBC814D93AF500D52B79 /* Headers */,
 				BC56E4ED14D68B800015D1A7 /* Resources */,
 				BC56E4EE14D68B800015D1A7 /* ShellScript */,
-				BC7DDBC814D93AF500D52B79 /* Headers */,
 			);
 			buildRules = (
 			);

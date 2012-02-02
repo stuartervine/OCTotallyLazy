@@ -7,6 +7,7 @@ CERTS_PATH=$CURRENT_PATH/configuration/provisioning
 function cleanTargets() {
     rm -rf ~/Library/Developer/Xcode/DerivedData
     rm -rf ~/Library/Application Support/iPhone Simulator
+    rm -rf build
     xcodebuild -target Funcky -sdk iphoneos -configuration Release clean;
     xcodebuild -target FunckyTests -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/ -configuration Debug clean;
 }
@@ -29,6 +30,8 @@ function buildRelease() {
         echo "Build FAILED : $OUT";
         exit 1
     fi
+    mkdir -p build/package/Funcky.framework
+    cp -R build/Release-iphoneos/Funcky.framework/Versions/Current/ build/package/Funcky.framework
 }
 
 case "$1" in
