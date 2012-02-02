@@ -2,6 +2,7 @@
 #import "NSArray+Funcky.h"
 #import "Some.h"
 #import "None.h"
+#import "Callables.h"
 
 #define HC_SHORTHAND
 
@@ -12,31 +13,24 @@
 
 @implementation NSArrayTest
 
-NSString *(^toUpperCase)(NSString *) = ^(NSString *item) {
-    return item.uppercaseString;
-};
-
-NSString *(^appendString)(NSString *, NSString *) = ^(NSString *left, NSString *right) {
-    return [left stringByAppendingString:right];
-};
-
 - (void)testFilter {
     NSArray *const items = [NSArray arrayWithObjects:@"a", @"ab", @"b", @"bc", nil];
-    assertThat([items filter:^(NSString *item){return [item hasPrefix:@"a"];}], equalTo([NSArray arrayWithObjects:@"a", @"ab", nil]));
+    assertThat([items filter:^(NSString *item) {
+        return [item hasPrefix:@"a"];
+    }], equalTo([NSArray arrayWithObjects:@"a", @"ab", nil]));
 }
 
 - (void)testFlatMap {
     NSArray *items = [NSArray arrayWithObjects:
             [NSArray arrayWithObjects:@"one", @"two", nil],
             [NSArray arrayWithObjects:@"three", @"four", nil],
-            nil
-    ];
-    assertThat([items flatMap:toUpperCase], equalTo([NSArray arrayWithObjects:@"ONE", @"TWO", @"THREE", @"FOUR", nil]));
+            nil];
+    assertThat([items flatMap:[Callables toUpperCase]], equalTo([NSArray arrayWithObjects:@"ONE", @"TWO", @"THREE", @"FOUR", nil]));
 }
 
 - (void)testFold {
     NSArray *items = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];
-    assertThat([items fold:@"" with:appendString], equalTo(@"onetwothree"));
+    assertThat([items fold:@"" with:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
 - (void)testHead {
@@ -52,12 +46,12 @@ NSString *(^appendString)(NSString *, NSString *) = ^(NSString *left, NSString *
 
 - (void)testMap {
     NSArray *items = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];
-    assertThat([items map:toUpperCase], equalTo([NSArray arrayWithObjects:@"ONE", @"TWO", @"THREE", nil]));
+    assertThat([items map:[Callables toUpperCase]], equalTo([NSArray arrayWithObjects:@"ONE", @"TWO", @"THREE", nil]));
 }
 
 - (void)testReduce {
     NSArray *items = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];
-    assertThat([items reduce:appendString], equalTo(@"onetwothree"));
+    assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
 - (void)testTail {

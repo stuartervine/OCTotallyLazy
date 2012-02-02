@@ -15,21 +15,25 @@
 		BC56E51214D68B800015D1A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC56E51014D68B800015D1A7 /* InfoPlist.strings */; };
 		BC56E51514D68B800015D1A7 /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E51414D68B800015D1A7 /* NSArrayTest.m */; };
 		BC56E52114D68C440015D1A7 /* NSArray+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E51F14D68C440015D1A7 /* NSArray+Funcky.m */; };
-		BC56E52214D68C440015D1A7 /* NSArray+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC56E51F14D68C440015D1A7 /* NSArray+Funcky.m */; };
 		BC7DDBC914D93B1B00D52B79 /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56C /* None.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7DDBCA14D93B1F00D52B79 /* Some.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C568 /* Some.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7DDBCB14D93B2900D52B79 /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C564 /* Option.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7DDBCC14D93B2F00D52B79 /* NSDictionary+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C54B /* NSDictionary+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7DDBCD14D93B3500D52B79 /* NSArray+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC56E51E14D68C440015D1A7 /* NSArray+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7DDBDF14DA03D300D52B79 /* Callables.m in Resources */ = {isa = PBXBuildFile; };
 		BC8426CF14D71ED70081C545 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8426CE14D71ED70081C545 /* OCHamcrestIOS.framework */; };
 		BC8426D214D71EEC0081C545 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8426D114D71EEC0081C545 /* libOCMock.a */; };
 		BC8426D214D71EEC0081C547 /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C546 /* NSDictionaryTest.m */; };
 		BC8426D214D71EEC0081C549 /* NSDictionary+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C548 /* NSDictionary+Funcky.m */; };
-		BC8426D214D71EEC0081C54A /* NSDictionary+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C548 /* NSDictionary+Funcky.m */; };
 		BC8426D214D71EEC0081C563 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C562 /* Option.m */; };
 		BC8426D214D71EEC0081C567 /* Some.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C566 /* Some.m */; };
 		BC8426D214D71EEC0081C56B /* None.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56A /* None.m */; };
 		BC8426D214D71EEC0081C56F /* OptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56E /* OptionTest.m */; };
+		BC8426D214D71EEC0081C571 /* NoSuchElementException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C570 /* NoSuchElementException.m */; };
+		BC8426D214D71EEC0081C573 /* NoSuchElementException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C572 /* NoSuchElementException.h */; };
+		BC8426D214D71EEC0081C579 /* Mappable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C578 /* Mappable.h */; };
+		BC8426D214D71EEC0081C57B /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C57A /* Callables.m */; };
+		BC8426D214D71EEC0081C57E /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C57D /* Foldable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,12 @@
 		BC8426D214D71EEC0081C56A /* None.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = None.m; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C56C /* None.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = None.h; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C56E /* OptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTest.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C570 /* NoSuchElementException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoSuchElementException.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C572 /* NoSuchElementException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoSuchElementException.h; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C578 /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C57A /* Callables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Callables.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C57C /* Callables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Callables.h; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C57D /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foldable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,10 @@
 		BC56E4F514D68B800015D1A7 /* Funcky */ = {
 			isa = PBXGroup;
 			children = (
+				BC8426D214D71EEC0081C57D /* Foldable.h */,
+				BC8426D214D71EEC0081C578 /* Mappable.h */,
+				BC8426D214D71EEC0081C572 /* NoSuchElementException.h */,
+				BC8426D214D71EEC0081C570 /* NoSuchElementException.m */,
 				BC8426D214D71EEC0081C56C /* None.h */,
 				BC8426D214D71EEC0081C56A /* None.m */,
 				BC8426D214D71EEC0081C568 /* Some.h */,
@@ -164,6 +178,8 @@
 		BC56E50D14D68B800015D1A7 /* FunckyTests */ = {
 			isa = PBXGroup;
 			children = (
+				BC8426D214D71EEC0081C57C /* Callables.h */,
+				BC8426D214D71EEC0081C57A /* Callables.m */,
 				BC8426D214D71EEC0081C56E /* OptionTest.m */,
 				BC8426D214D71EEC0081C546 /* NSDictionaryTest.m */,
 				BC56E51414D68B800015D1A7 /* NSArrayTest.m */,
@@ -208,6 +224,9 @@
 				BC7DDBCB14D93B2900D52B79 /* Option.h in Headers */,
 				BC7DDBCC14D93B2F00D52B79 /* NSDictionary+Funcky.h in Headers */,
 				BC7DDBCD14D93B3500D52B79 /* NSArray+Funcky.h in Headers */,
+				BC8426D214D71EEC0081C573 /* NoSuchElementException.h in Headers */,
+				BC8426D214D71EEC0081C579 /* Mappable.h in Headers */,
+				BC8426D214D71EEC0081C57E /* Foldable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC56E51214D68B800015D1A7 /* InfoPlist.strings in Resources */,
+				BC7DDBDF14DA03D300D52B79 /* Callables.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +371,7 @@
 				BC8426D214D71EEC0081C563 /* Option.m in Sources */,
 				BC8426D214D71EEC0081C567 /* Some.m in Sources */,
 				BC8426D214D71EEC0081C56B /* None.m in Sources */,
+				BC8426D214D71EEC0081C571 /* NoSuchElementException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,10 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC56E51514D68B800015D1A7 /* NSArrayTest.m in Sources */,
-				BC56E52214D68C440015D1A7 /* NSArray+Funcky.m in Sources */,
 				BC8426D214D71EEC0081C547 /* NSDictionaryTest.m in Sources */,
-				BC8426D214D71EEC0081C54A /* NSDictionary+Funcky.m in Sources */,
 				BC8426D214D71EEC0081C56F /* OptionTest.m in Sources */,
+				BC8426D214D71EEC0081C57B /* Callables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
