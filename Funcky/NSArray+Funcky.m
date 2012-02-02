@@ -41,7 +41,7 @@
     return ([self count] > 0) ? [Some some:[self head]] : [None none];
 }
 
-- (NSArray *)map:(id (^)(id))funcBlock {
+- (id)map:(id (^)(id))funcBlock {
     NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
     for (id item in self) {
         [collectedArray addObject:funcBlock(item)];

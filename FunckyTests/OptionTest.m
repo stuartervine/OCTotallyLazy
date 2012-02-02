@@ -40,4 +40,5 @@
     assertThat([[Option option:@"bob"] fold:@"fred" with:[Callables appendString]], equalTo([Some some:@"fredbob"]));
     assertThat([[None none] fold:@"fred" with:[Callables appendString]], equalTo([Some some:@"fred"]));
 }
+
 @end

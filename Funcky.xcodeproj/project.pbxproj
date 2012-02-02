@@ -20,7 +20,7 @@
 		BC7DDBCB14D93B2900D52B79 /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C564 /* Option.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7DDBCC14D93B2F00D52B79 /* NSDictionary+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C54B /* NSDictionary+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7DDBCD14D93B3500D52B79 /* NSArray+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC56E51E14D68C440015D1A7 /* NSArray+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7DDBDF14DA03D300D52B79 /* Callables.m in Resources */ = {isa = PBXBuildFile; };
+		BC7DDBDF14DA03D300D52B79 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		BC8426CF14D71ED70081C545 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8426CE14D71ED70081C545 /* OCHamcrestIOS.framework */; };
 		BC8426D214D71EEC0081C545 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8426D114D71EEC0081C545 /* libOCMock.a */; };
 		BC8426D214D71EEC0081C547 /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C546 /* NSDictionaryTest.m */; };
@@ -30,10 +30,10 @@
 		BC8426D214D71EEC0081C56B /* None.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56A /* None.m */; };
 		BC8426D214D71EEC0081C56F /* OptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C56E /* OptionTest.m */; };
 		BC8426D214D71EEC0081C571 /* NoSuchElementException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C570 /* NoSuchElementException.m */; };
-		BC8426D214D71EEC0081C573 /* NoSuchElementException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C572 /* NoSuchElementException.h */; };
-		BC8426D214D71EEC0081C579 /* Mappable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C578 /* Mappable.h */; };
+		BC8426D214D71EEC0081C573 /* NoSuchElementException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C572 /* NoSuchElementException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC8426D214D71EEC0081C579 /* Mappable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C578 /* Mappable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC8426D214D71EEC0081C57B /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C57A /* Callables.m */; };
-		BC8426D214D71EEC0081C57E /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C57D /* Foldable.h */; };
+		BC8426D214D71EEC0081C57E /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C57D /* Foldable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -313,7 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC56E51214D68B800015D1A7 /* InfoPlist.strings in Resources */,
-				BC7DDBDF14DA03D300D52B79 /* Callables.m in Resources */,
+				BC7DDBDF14DA03D300D52B79 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

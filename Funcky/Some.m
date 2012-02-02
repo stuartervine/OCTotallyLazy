@@ -25,6 +25,18 @@
     return value;
 }
 
+- (BOOL)isEmpty {
+    return FALSE;
+}
+
+- (id)map:(id (^)(id))funcBlock {
+    return [Some some:funcBlock(value)];
+}
+
+- (id)fold:(id)seed with:(id (^)(id, id))functorBlock {
+    return [Some some:functorBlock(seed, value)];
+}
+
 - (void)dealloc {
     [value release];
     [super dealloc];
