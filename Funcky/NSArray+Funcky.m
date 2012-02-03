@@ -1,25 +1,16 @@
 #import "NSArray+Funcky.h"
 #import "Some.h"
 #import "None.h"
+#import "Enumerations.h"
 
 @implementation NSArray (Functional)
 
 - (NSArray *)filter:(BOOL (^)(id))filterBlock {
-    NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
-    for (id item in self) {
-        if (filterBlock(item)) {
-            [collectedArray addObject:item];
-        }
-    }
-    return [[[NSArray alloc] initWithArray:collectedArray] autorelease];
+    return [[Enumerations with:self.objectEnumerator] filter:filterBlock];
 }
 
 - (NSArray *)flatMap:(id (^)(id))functorBlock {
-    NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
-    for (id item in self) {
-        [collectedArray addObjectsFromArray:[item map:functorBlock]];
-    }
-    return [[[NSArray alloc] initWithArray:collectedArray] autorelease];
+    return [[Enumerations with:[self objectEnumerator]] flatMap:functorBlock];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
@@ -46,11 +37,7 @@
 }
 
 - (id)map:(id (^)(id))funcBlock {
-    NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
-    for (id item in self) {
-        [collectedArray addObject:funcBlock(item)];
-    }
-    return [[[NSArray alloc] initWithArray:collectedArray] autorelease];
+    return [[Enumerations with:self.objectEnumerator] map:funcBlock];
 }
 
 - (id)reduce:(id (^)(id, id))functorBlock {
