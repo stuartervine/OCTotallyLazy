@@ -1,5 +1,6 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "NSArray+Funcky.h"
+#import "NSSet+Funcky.h"
 #import "Some.h"
 #import "None.h"
 #import "Callables.h"
@@ -80,6 +81,10 @@
     NSArray *items = arrayWith(@"one", @"two", @"three", nil);
     assertThat([items takeRight:2], equalTo(arrayWith(@"two", @"three", nil)));
     assertThat([items takeRight:0], equalTo(array()));
+}
+
+-(void)testAsSet {
+    assertThat([arrayWith(@"one", @"two", @"two", nil) asSet], equalTo(setWith(@"one", @"two", nil)));
 }
 
 @end

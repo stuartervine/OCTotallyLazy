@@ -31,4 +31,5 @@ static id arrayWith(id items, ...) {
 - (NSArray *)take:(int)n;
 - (NSArray *)takeWhile:(BOOL (^)(id))funcBlock;
 - (NSArray *)takeRight:(int)n;
+- (NSSet *)asSet;
 @end

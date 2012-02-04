@@ -1,7 +1,6 @@
 #import "NSArray+Funcky.h"
 #import "Some.h"
 #import "None.h"
-#import "Enumerations.h"
 
 @implementation NSArray (Functional)
 
@@ -66,6 +65,10 @@
 
 - (NSArray *)takeRight:(int)n {
     return [self subarrayWithRange:NSMakeRange([self count] - n, n)];
+}
+
+- (NSSet *)asSet {
+    return [NSSet setWithArray:self];
 }
 
 @end
