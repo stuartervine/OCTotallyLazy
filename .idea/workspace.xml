@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdbb2cf-d252-47b0-972f-b70a00675d7b" name="Default" comment="Added map and fold support to options/">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" afterPath="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/NSSetTest.m" afterPath="$PROJECT_DIR$/FunckyTests/NSSetTest.m" />
     </list>
     <ignored path="Funcky.iws" />
@@ -24,11 +25,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NSSet+Funcky.h" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="NSSet+Funcky.h" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Funcky/NSSet+Funcky.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="24" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6569343">
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,8 +39,10 @@
       <file leaf-file-name="NSSet+Funcky.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/NSSet+Funcky.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="16" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="9" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,18 +50,16 @@
       <file leaf-file-name="NSArray+Funcky.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/NSArray+Funcky.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="18" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state line="2" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSSetTest.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NSSetTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunckyTests/NSSetTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="117" selection-start="398" selection-end="398" vertical-scroll-proportion="0.37313432">
+            <state line="32" column="0" selection-start="928" selection-end="928" vertical-scroll-proportion="-8.054545">
               <folding>
                 <element signature="e#62#101#0" expanded="true" />
               </folding>
@@ -67,10 +70,8 @@
       <file leaf-file-name="NSArrayTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunckyTests/NSArrayTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="58" selection-start="2606" selection-end="2606" vertical-scroll-proportion="-5.8727274">
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state line="3" column="11" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +97,7 @@
       <file leaf-file-name="NSArray+Funcky.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/NSArray+Funcky.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+            <state line="33" column="0" selection-start="521" selection-end="900" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -141,13 +142,13 @@
         <option value="$PROJECT_DIR$/Funcky/Enumerations.m" />
         <option value="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m" />
         <option value="$PROJECT_DIR$/FunckyTests/NSSetTest.h" />
-        <option value="$PROJECT_DIR$/Funcky/NSSet+Funcky.m" />
         <option value="$PROJECT_DIR$/Funcky/Filters.h" />
         <option value="$PROJECT_DIR$/Funcky/NSArray+Funcky.h" />
-        <option value="$PROJECT_DIR$/Funcky/NSSet+Funcky.h" />
         <option value="$PROJECT_DIR$/Funcky/NSArray+Funcky.m" />
         <option value="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" />
         <option value="$PROJECT_DIR$/FunckyTests/NSSetTest.m" />
+        <option value="$PROJECT_DIR$/Funcky/NSSet+Funcky.m" />
+        <option value="$PROJECT_DIR$/Funcky/NSSet+Funcky.h" />
       </list>
     </option>
   </component>
@@ -502,52 +503,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/NSSet+Funcky.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/NSArray+Funcky.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/NSSet+Funcky.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/NSArray+Funcky.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+        <state line="33" column="0" selection-start="521" selection-end="900" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/NSArray+Funcky.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FunckyTests/NSArrayTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="58" selection-start="2606" selection-end="2606" vertical-scroll-proportion="-5.8727274">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state line="3" column="11" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FunckyTests/NSSetTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="117" selection-start="398" selection-end="398" vertical-scroll-proportion="0.37313432">
+        <state line="32" column="0" selection-start="928" selection-end="928" vertical-scroll-proportion="-8.054545">
           <folding>
             <element signature="e#62#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/NSSet+Funcky.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/NSSet+Funcky.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6569343">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>

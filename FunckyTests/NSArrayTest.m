@@ -1,8 +1,6 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "NSArray+Funcky.h"
 #import "NSSet+Funcky.h"
-#import "Some.h"
-#import "None.h"
 #import "Callables.h"
 
 #define HC_SHORTHAND
