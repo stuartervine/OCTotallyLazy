@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdbb2cf-d252-47b0-972f-b70a00675d7b" name="Default" comment="Added map and fold support to options/">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" afterPath="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/NSSetTest.m" afterPath="$PROJECT_DIR$/FunckyTests/NSSetTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSSetTest.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="NSSetTest.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FunckyTests/NSSetTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="26" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+            <state line="15" column="117" selection-start="398" selection-end="398" vertical-scroll-proportion="0.37313432">
               <folding>
                 <element signature="e#62#101#0" expanded="true" />
               </folding>
@@ -64,11 +64,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSArrayTest.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NSArrayTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunckyTests/NSArrayTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="90" selection-end="90" vertical-scroll-proportion="0.054744527">
-              <folding />
+            <state line="80" column="58" selection-start="2606" selection-end="2606" vertical-scroll-proportion="-5.8727274">
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,13 +141,13 @@
         <option value="$PROJECT_DIR$/Funcky/Enumerations.m" />
         <option value="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m" />
         <option value="$PROJECT_DIR$/FunckyTests/NSSetTest.h" />
-        <option value="$PROJECT_DIR$/FunckyTests/NSSetTest.m" />
         <option value="$PROJECT_DIR$/Funcky/NSSet+Funcky.m" />
         <option value="$PROJECT_DIR$/Funcky/Filters.h" />
         <option value="$PROJECT_DIR$/Funcky/NSArray+Funcky.h" />
         <option value="$PROJECT_DIR$/Funcky/NSSet+Funcky.h" />
         <option value="$PROJECT_DIR$/Funcky/NSArray+Funcky.m" />
         <option value="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" />
+        <option value="$PROJECT_DIR$/FunckyTests/NSSetTest.m" />
       </list>
     </option>
   </component>
@@ -259,14 +261,8 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
-  <component name="RunManager" selected="OCUnit.-[NSArrayTest testAsSet]">
+  <component name="RunManager" selected="OCUnit.NSSetTest">
     <configuration default="false" name="OptionTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="OptionTest">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NSSetTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSSetTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -290,6 +286,12 @@
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="NSSetTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSSetTest">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="OCUnitRunConfiguration" factoryName="OCUnit" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <method>
@@ -306,10 +308,10 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="OCUnit.OptionTest" />
-      <item index="1" class="java.lang.String" itemvalue="OCUnit.NSSetTest" />
-      <item index="2" class="java.lang.String" itemvalue="OCUnit.-[NSArrayTest testFlatMap]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.NSArrayTest" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[NSArrayTest testAsSet]" />
+      <item index="1" class="java.lang.String" itemvalue="OCUnit.-[NSArrayTest testFlatMap]" />
+      <item index="2" class="java.lang.String" itemvalue="OCUnit.NSArrayTest" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[NSArrayTest testAsSet]" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.NSSetTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -500,15 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FunckyTests/NSSetTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#62#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/NSSet+Funcky.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="13" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
@@ -543,8 +536,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FunckyTests/NSArrayTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="90" selection-end="90" vertical-scroll-proportion="0.054744527">
-          <folding />
+        <state line="80" column="58" selection-start="2606" selection-end="2606" vertical-scroll-proportion="-5.8727274">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunckyTests/NSSetTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="117" selection-start="398" selection-end="398" vertical-scroll-proportion="0.37313432">
+          <folding>
+            <element signature="e#62#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

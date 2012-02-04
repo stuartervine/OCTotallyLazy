@@ -10,8 +10,8 @@
 @implementation NSSetTest
 
 - (void)testFilter {
-    NSSet *items = [NSSet setWithObjects:@"a", @"ab", @"b", @"bc", nil];
-    assertThat([items filter:^(NSString *item) { return [item hasPrefix:@"a"]; }], equalTo([NSSet setWithObjects:@"a", @"ab", nil]));
+    NSSet *items = setWith(@"a", @"ab", @"b", @"bc", nil);
+    assertThat([items filter:^(NSString *item) { return [item hasPrefix:@"a"]; }], equalTo(setWith(@"a", @"ab", nil)));
 }
 
 @end
