@@ -36,14 +36,12 @@
 		BC8426D214D71EEC0081C57E /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C57D /* Foldable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC8426D214D71EEC0081C580 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C57F /* Filters.m */; };
 		BC8426D214D71EEC0081C582 /* Filters.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C581 /* Filters.h */; };
-		BC8426D214D71EEC0081C584 /* Enumerations.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C583 /* Enumerations.m */; };
-		BC8426D214D71EEC0081C586 /* Enumerations.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C585 /* Enumerations.h */; };
 		BC8426D214D71EEC0081C588 /* NSSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C587 /* NSSetTest.m */; };
 		BC8426D214D71EEC0081C58A /* NSSet+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C589 /* NSSet+Funcky.m */; };
 		BC8426D214D71EEC0081C58C /* NSSet+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C58B /* NSSet+Funcky.h */; };
 		BC8426D214D71EEC0081C58E /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C58D /* Sequence.m */; };
 		BC8426D214D71EEC0081C590 /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C58F /* Sequence.h */; };
-		BC8426D214D71EEC0081C592 /* VariableArgsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C591 /* VariableArgsTest.m */; };
+		BC8426D214D71EEC0081C592 /* SequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8426D214D71EEC0081C591 /* SequenceTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,14 +95,12 @@
 		BC8426D214D71EEC0081C57D /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foldable.h; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C57F /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filters.m; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C581 /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filters.h; sourceTree = "<group>"; };
-		BC8426D214D71EEC0081C583 /* Enumerations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enumerations.m; sourceTree = "<group>"; };
-		BC8426D214D71EEC0081C585 /* Enumerations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerations.h; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C587 /* NSSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTest.m; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C589 /* NSSet+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Funcky.m"; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C58B /* NSSet+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Funcky.h"; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C58D /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
 		BC8426D214D71EEC0081C58F /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
-		BC8426D214D71EEC0081C591 /* VariableArgsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariableArgsTest.m; sourceTree = "<group>"; };
+		BC8426D214D71EEC0081C591 /* SequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +166,6 @@
 				BC8426D214D71EEC0081C58D /* Sequence.m */,
 				BC8426D214D71EEC0081C58B /* NSSet+Funcky.h */,
 				BC8426D214D71EEC0081C589 /* NSSet+Funcky.m */,
-				BC8426D214D71EEC0081C585 /* Enumerations.h */,
-				BC8426D214D71EEC0081C583 /* Enumerations.m */,
 				BC8426D214D71EEC0081C581 /* Filters.h */,
 				BC8426D214D71EEC0081C57F /* Filters.m */,
 				BC8426D214D71EEC0081C57D /* Foldable.h */,
@@ -206,7 +200,7 @@
 		BC56E50D14D68B800015D1A7 /* FunckyTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC8426D214D71EEC0081C591 /* VariableArgsTest.m */,
+				BC8426D214D71EEC0081C591 /* SequenceTest.m */,
 				BC8426D214D71EEC0081C587 /* NSSetTest.m */,
 				BC8426D214D71EEC0081C57C /* Callables.h */,
 				BC8426D214D71EEC0081C57A /* Callables.m */,
@@ -258,7 +252,6 @@
 				BC8426D214D71EEC0081C579 /* Mappable.h in Headers */,
 				BC8426D214D71EEC0081C57E /* Foldable.h in Headers */,
 				BC8426D214D71EEC0081C582 /* Filters.h in Headers */,
-				BC8426D214D71EEC0081C586 /* Enumerations.h in Headers */,
 				BC8426D214D71EEC0081C58C /* NSSet+Funcky.h in Headers */,
 				BC8426D214D71EEC0081C590 /* Sequence.h in Headers */,
 			);
@@ -407,7 +400,6 @@
 				BC8426D214D71EEC0081C56B /* None.m in Sources */,
 				BC8426D214D71EEC0081C571 /* NoSuchElementException.m in Sources */,
 				BC8426D214D71EEC0081C580 /* Filters.m in Sources */,
-				BC8426D214D71EEC0081C584 /* Enumerations.m in Sources */,
 				BC8426D214D71EEC0081C58A /* NSSet+Funcky.m in Sources */,
 				BC8426D214D71EEC0081C58E /* Sequence.m in Sources */,
 			);
@@ -422,7 +414,7 @@
 				BC8426D214D71EEC0081C56F /* OptionTest.m in Sources */,
 				BC8426D214D71EEC0081C57B /* Callables.m in Sources */,
 				BC8426D214D71EEC0081C588 /* NSSetTest.m in Sources */,
-				BC8426D214D71EEC0081C592 /* VariableArgsTest.m in Sources */,
+				BC8426D214D71EEC0081C592 /* SequenceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

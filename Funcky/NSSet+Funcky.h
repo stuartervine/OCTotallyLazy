@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Some.h"
 #import "None.h"
+#import "Sequence.h"
 
 static NSSet * set() {
     return [NSSet set];
@@ -12,4 +13,6 @@ static NSSet * set() {
 - (id)head;
 - (Option *)headOption;
 
+- (Sequence *)asSequence;
+- (NSArray *)asArray;
 @end

@@ -1,10 +1,23 @@
 #import <Foundation/Foundation.h>
-#import "Enumerations.h"
+#import "Option.h"
 
-@interface Sequence : NSObject
+@interface Sequence : NSObject <NSFastEnumeration>
 - (id)initWith:(NSArray *)arguments;
 
-+ (id)with:(NSMutableArray *)array1;
++ (id)with:(NSArray *)arguments;
+
+- (Sequence *)filter:(BOOL (^)(id))filterBlock;
+- (Sequence *)flatMap:(id (^)(id))functorBlock;
+- (id)fold:(id)value with:(id (^)(id, id))functorBlock;
+- (id)head;
+- (Option *)headOption;
+- (Sequence *)join:(Sequence *)toJoin;
+- (id)map:(id (^)(id))functorBlock;
+- (id)reduce:(id (^)(id, id))functorBlock;
+- (Sequence *)tail;
+- (Sequence *)take:(int)n;
+- (Sequence *)takeWhile:(BOOL (^)(id))funcBlock;
+- (Sequence *)takeRight:(int)n;
 
 - (NSArray *)asArray;
 - (NSSet *)asSet;

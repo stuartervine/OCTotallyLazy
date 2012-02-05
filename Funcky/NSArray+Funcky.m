@@ -5,70 +5,64 @@
 @implementation NSArray (Functional)
 
 - (NSArray *)filter:(BOOL (^)(id))filterBlock {
-    return [[Enumerations with:self.objectEnumerator] filter:filterBlock];
+    return [[[self asSequence] filter:filterBlock] asArray];
 }
 
 - (NSArray *)flatMap:(id (^)(id))functorBlock {
-    return [[Enumerations with:[self objectEnumerator]] flatMap:functorBlock];
+    return [[[self asSequence] flatMap:functorBlock] asArray];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
-    id accumulator = value;
-    for (id item in self) {
-        accumulator = functorBlock(accumulator, item);
-    }
-    return accumulator;
+    return [[self asSequence] fold:value with:functorBlock];
 }
 
 - (id)head {
-    if ([self count] == 0) {
-        [NSException raise:@"ArrayBoundsException" format:@"Expected array with at least one element, but array was empty."];
-    }
-    return [self objectAtIndex:0];
+    return [[self asSequence] head];
 }
 
 - (Option *)headOption {
-    return ([self count] > 0) ? [Some some:[self head]] : [None none];
+    return [[self asSequence] headOption];
 }
 
 - (NSArray *)join:(NSArray *)toJoin {
-    return [[NSArray arrayWithObjects:self, toJoin, nil] flatMap:^(id item){return item;}];
+    return [[[self asSequence] join:[toJoin asSequence]] asArray];
 }
 
 - (id)map:(id (^)(id))funcBlock {
-    return [[Enumerations with:self.objectEnumerator] map:funcBlock];
+    return [[[self asSequence] map:funcBlock] asArray];
 }
 
 - (id)reduce:(id (^)(id, id))functorBlock {
-    return [[self tail] fold:[self head] with:functorBlock];
+    return [[self asSequence] reduce:functorBlock];
 }
 
 - (NSArray *)tail {
-    return [self takeRight:[self count] - 1];
+    return [[[self asSequence] tail] asArray];
 }
 
 - (NSArray *)take:(int)n {
-    return [self subarrayWithRange:NSMakeRange(0, n)];
+    return [[[self asSequence] take:n] asArray];
 }
 
 - (NSArray *)takeWhile:(BOOL (^)(id))funcBlock {
-    NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
-    for (id item in self) {
-        if (funcBlock(item)) {
-            [collectedArray addObject:item];
-        } else {
-            break;
-        }
-    }
-    return [[[NSArray alloc] initWithArray:collectedArray] autorelease];    
+    return [[[self asSequence] takeWhile:funcBlock] asArray];
 }
 
 - (NSArray *)takeRight:(int)n {
-    return [self subarrayWithRange:NSMakeRange([self count] - n, n)];
+    return [[[self asSequence] takeRight:n] asArray];
+}
+
+- (Sequence *)asSequence {
+    return [Sequence with:self];
 }
 
 - (NSSet *)asSet {
-    return [NSSet setWithArray:self];
+    return [[self asSequence] asSet];
 }
+
+- (NSArray *)asArray {
+    return self;
+}
+
 
 @end

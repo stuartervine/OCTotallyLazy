@@ -1,12 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
 #import "Mappable.h"
-#import "Enumerations.h"
 #import "Sequence.h"
-
-static NSArray * array() {
-    return [NSArray array];
-}
 
 @interface NSArray (Functional) <Mappable>
 - (NSArray *)filter:(BOOL (^)(id))filterBlock;
@@ -21,5 +16,11 @@ static NSArray * array() {
 - (NSArray *)take:(int)n;
 - (NSArray *)takeWhile:(BOOL (^)(id))funcBlock;
 - (NSArray *)takeRight:(int)n;
+- (Sequence *)asSequence;
 - (NSSet *)asSet;
+- (NSArray *)asArray;
 @end
+
+static NSArray * array() {
+    return [NSArray array];
+}
