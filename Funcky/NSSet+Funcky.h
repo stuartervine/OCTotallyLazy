@@ -12,6 +12,9 @@ static NSSet * set() {
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock;
 - (id)head;
 - (Option *)headOption;
+- (NSSet *)join:(NSSet *)toJoin;
+- (id)map:(id (^)(id))functorBlock;
+- (id)reduce:(id (^)(id, id))functorBlock;
 
 - (Sequence *)asSequence;
 - (NSArray *)asArray;

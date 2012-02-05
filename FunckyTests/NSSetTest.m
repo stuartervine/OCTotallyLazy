@@ -4,7 +4,6 @@
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import "NSSet+Funcky.h"
 #import "Callables.h"
-#import "Sequence.h"
 
 @interface NSSetTest : SenTestCase
 @end
@@ -30,6 +29,22 @@
     NSSet *items = [sequence(@"one", @"two", @"three", nil) asSet];
     assertThat([items headOption], equalTo([Some some:@"one"]));
     assertThat([set() headOption], equalTo([None none]));
+}
+
+- (void)testJoin {
+    NSSet *otherset = [sequence(@"two", @"three", nil) asSet];
+    NSSet *join = [[sequence(@"one", @"two", nil) asSet] join:otherset];
+    assertThat(join, equalTo([sequence(@"one", @"two", @"three", nil) asSet]));
+}
+
+- (void)testMap {
+    NSSet *items = [sequence(@"one", @"two", @"three", nil) asSet];
+    assertThat([items map:[Callables toUpperCase]], equalTo([sequence(@"ONE", @"TWO", @"THREE", nil) asSet]));
+}
+
+- (void)testReduce {
+    NSSet *items = [sequence(@"one", @"two", @"three", nil) asSet];
+    assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
 @end
