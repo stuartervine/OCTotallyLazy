@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acdbb2cf-d252-47b0-972f-b70a00675d7b" name="Default" comment="Added map and fold support to options/">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FunckyTests/VariableArgsTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" afterPath="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/NSSetTest.m" afterPath="$PROJECT_DIR$/FunckyTests/NSSetTest.m" />
-    </list>
+    <list default="true" id="acdbb2cf-d252-47b0-972f-b70a00675d7b" name="Default" comment="Added map and fold support to options/" />
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Sequence.h" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="12" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="9" column="12" selection-start="201" selection-end="201" vertical-scroll-proportion="0.16925247">
               <folding />
             </state>
           </provider>
@@ -102,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSSetTest.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NSSetTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunckyTests/NSSetTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="66" selection-start="867" selection-end="867" vertical-scroll-proportion="0.6135402">
+            <state line="31" column="106" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#62#101#0" expanded="true" />
               </folding>
@@ -442,13 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FunckyTests/NSArrayTest.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="0" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.0">
@@ -460,10 +447,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FunckyTests/NSSetTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="867" selection-end="867" vertical-scroll-proportion="0.6135402">
+        <state line="31" column="106" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#62#101#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="201" selection-end="201" vertical-scroll-proportion="0.16925247">
+          <folding />
         </state>
       </provider>
     </entry>
