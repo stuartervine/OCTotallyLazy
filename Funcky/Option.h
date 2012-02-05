@@ -9,3 +9,7 @@
 @interface Option : NSObject <Option>
 +(id)option:(id)value;
 @end
+
+static Option* option(id value) {
+    return [Option option:value];
+}

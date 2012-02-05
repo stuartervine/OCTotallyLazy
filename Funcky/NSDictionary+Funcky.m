@@ -21,4 +21,9 @@
     }];
 }
 
+- (Option *)optionForKey:(id)key {
+    return option([self objectForKey:key]);
+}
+
+
 @end
