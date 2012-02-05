@@ -23,12 +23,21 @@
     return [collectedArray asSequence];
 }
 
-- (Sequence *)flatMap:(id (^)(id))functorBlock {
-    NSMutableArray *collectedArray = [NSMutableArray array];
+-(Sequence *)flatten {
+    NSMutableArray *flatten = [NSMutableArray array];
     for(id object in self) {
-        [collectedArray addObjectsFromArray:[[object map:functorBlock] asArray]];
+        if([object respondsToSelector:@selector(asSequence)]) {
+            [flatten addObjectsFromArray:[[[object asSequence] flatten] asArray]];
+        } else {
+            [flatten addObject:object];
+        }
     }
-    return [collectedArray asSequence];
+    return [flatten asSequence];
+}
+
+- (Sequence *)flatMap:(id (^)(id))functorBlock {
+    Sequence *aSequence = [self flatten];
+    return [aSequence map: functorBlock];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
@@ -93,6 +102,10 @@
 
 - (NSArray *)asArray {
     return arguments;
+}
+
+- (Sequence *)asSequence {
+    return self;
 }
 
 - (NSSet *)asSet {

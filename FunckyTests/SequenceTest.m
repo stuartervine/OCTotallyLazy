@@ -31,6 +31,15 @@
     assertThat([items flatMap:[Callables toUpperCase]], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
 }
 
+-(void)testFlatMapSupportsNDepthSequences {
+    Sequence *items = sequence(
+            @"one",
+            sequence(@"two", @"three", nil),
+            sequence(sequence(@"four", nil), nil),
+            nil);
+    assertThat([items flatMap:[Callables toUpperCase]], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
+}
+
 - (void)testFold {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items fold:@"" with:[Callables appendString]], equalTo(@"onetwothree"));

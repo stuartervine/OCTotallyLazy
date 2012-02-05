@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
 
-@interface Sequence : NSObject <NSFastEnumeration>
+@interface Sequence : NSObject <NSFastEnumeration, Mappable>
 - (id)initWith:(NSArray *)arguments;
 
 + (id)with:(NSArray *)arguments;
@@ -12,7 +12,6 @@
 - (id)head;
 - (Option *)headOption;
 - (Sequence *)join:(Sequence *)toJoin;
-- (id)map:(id (^)(id))functorBlock;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (Sequence *)tail;
 - (Sequence *)take:(int)n;
@@ -20,6 +19,7 @@
 - (Sequence *)takeRight:(int)n;
 
 - (NSArray *)asArray;
+- (Sequence *)asSequence;
 - (NSSet *)asSet;
 @end
 
