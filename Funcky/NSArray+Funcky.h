@@ -3,14 +3,12 @@
 #import "Mappable.h"
 #import "Sequence.h"
 
-@interface NSArray (Functional) <Mappable>
+@interface NSArray (Functional) <Mappable, Foldable>
 - (NSArray *)filter:(BOOL (^)(id))filterBlock;
 - (NSArray *)flatMap:(id (^)(id))functorBlock;
-- (id)fold:(id)value with:(id (^)(id, id))functorBlock;
 - (id)head;
 - (Option *)headOption;
 - (NSArray *)join:(NSArray *)toJoin;
-- (id)map:(id (^)(id))functorBlock;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (NSArray *)tail;
 - (NSArray *)take:(int)n;

@@ -10,4 +10,9 @@
     return [[^(id item) { return (BOOL)[item isEqual:comparable]; } copy] autorelease];
 }
 
++ (BOOL (^)(id))isGreaterThan:(NSNumber *)comparable {
+    return [[^(NSNumber *item) { return item.doubleValue > comparable.doubleValue;} copy] autorelease];
+}
+
+
 @end

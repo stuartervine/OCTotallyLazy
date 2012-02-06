@@ -21,6 +21,10 @@
     }];
 }
 
+- (id)mapValues:(id (^)(id))funcBlock {
+    return dictionary([[self allKeys] asSequence], [[[self allValues] asSequence] map:funcBlock]);
+}
+
 - (Option *)optionForKey:(id)key {
     return option([self objectForKey:key]);
 }

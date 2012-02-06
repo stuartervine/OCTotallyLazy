@@ -3,9 +3,8 @@
 #import "None.h"
 #import "Sequence.h"
 
-@interface NSSet (Functional) <Mappable>
+@interface NSSet (Functional) <Mappable, Foldable>
 - (NSSet *)filter:(BOOL (^)(id))filterBlock;
-- (id)fold:(id)value with:(id (^)(id, id))functorBlock;
 - (id)head;
 - (Option *)headOption;
 - (NSSet *)join:(NSSet *)toJoin;

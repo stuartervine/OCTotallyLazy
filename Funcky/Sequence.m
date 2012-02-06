@@ -42,7 +42,7 @@
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
     id accumulator = value;
-    for (id item in arguments) {
+    for (id item in self) {
         accumulator = functorBlock(accumulator, item);
     }
     return accumulator;
