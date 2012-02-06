@@ -2,11 +2,8 @@
 #import "Mappable.h"
 #import "Foldable.h"
 
-@protocol Option <Mappable, Foldable>
+@interface Option : NSObject <Mappable, Foldable>
 -(id)get;
-@end
-
-@interface Option : NSObject <Option>
 +(id)option:(id)value;
 @end
 
