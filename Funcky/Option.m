@@ -18,6 +18,17 @@
     return nil;
 }
 
+- (id)getOrElse:(id)other {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
+- (id)getOrInvoke:(id (^)())funcBlock {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
+
 - (id)map:(id (^)(id))funcBlock {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
     return nil;

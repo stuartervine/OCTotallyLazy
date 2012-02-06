@@ -13,6 +13,14 @@
     return nil;
 }
 
+- (id)getOrElse:(id)other {
+    return other;
+}
+
+- (id)getOrInvoke:(id (^)())funcBlock {
+    return funcBlock();
+}
+
 - (BOOL)isEqual:(id)otherObject {
     return [otherObject isKindOfClass:[None class]];
 }

@@ -1,6 +1,5 @@
 #import <SenTestingKit/SenTestingKit.h>
-#import "NSArray+Funcky.h"
-#import "Filters.h"
+#import "Funcky.h"
 
 #define HC_SHORTHAND
 

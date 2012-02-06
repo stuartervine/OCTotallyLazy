@@ -26,8 +26,12 @@
     return value;
 }
 
-- (BOOL)isEmpty {
-    return FALSE;
+- (id)getOrElse:(id)other {
+    return value;
+}
+
+- (id)getOrInvoke:(id (^)())funcBlock {
+    return value;
 }
 
 - (id)map:(id (^)(id))funcBlock {

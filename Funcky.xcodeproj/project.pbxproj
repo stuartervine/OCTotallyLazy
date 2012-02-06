@@ -53,6 +53,7 @@
 		BC76518514E0715800559503 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518414E0715800559503 /* SenTestingKit.framework */; };
 		BC76518714E0717400559503 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518614E0717400559503 /* Foundation.framework */; };
 		BC76519814E0786600559503 /* Funcky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76519714E0786600559503 /* Funcky.framework */; };
+		BC76519814E0786600559505 /* Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559504 /* Funcky.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		BC76518414E0715800559503 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BC76518614E0717400559503 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BC76519714E0786600559503 /* Funcky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Funcky.framework; path = artifacts/Funcky.framework; sourceTree = "<group>"; };
+		BC76519814E0786600559504 /* Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Funcky.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		BC49C43514E05A8200BE88D2 /* Funcky */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559504 /* Funcky.h */,
 				BC76512914E0703D00559503 /* Filters.h */,
 				BC76512A14E0703D00559503 /* Filters.m */,
 				BC76512B14E0703D00559503 /* Foldable.h */,
@@ -250,6 +253,7 @@
 				BC76514B14E0703D00559503 /* Option.h in Headers */,
 				BC76514D14E0703D00559503 /* Sequence.h in Headers */,
 				BC76514F14E0703D00559503 /* Some.h in Headers */,
+				BC76519814E0786600559505 /* Funcky.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

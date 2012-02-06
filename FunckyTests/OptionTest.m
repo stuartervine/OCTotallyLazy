@@ -1,11 +1,8 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import "Some.h"
-#import "None.h"
-#import "NoSuchElementException.h"
+#import "Funcky.h"
 #import "Callables.h"
-#import "Sequence.h"
 
 @interface OptionTest : SenTestCase
 @end
@@ -30,6 +27,15 @@
 
 -(void)testCanGetValueOfSome {
     assertThat([[Some some:@"fred"] get], equalTo(@"fred"));
+}
+
+-(void)testGetOrElse {
+    assertThat([[Some some:@"fred"] getOrElse:@"bob"], equalTo(@"fred"));
+    assertThat([[None none] getOrElse:@"bob"], equalTo(@"bob"));
+}
+
+-(void)testGetOrInvoke {
+    assertThat([[None none] getOrInvoke:^{return @"bob";}], equalTo(@"bob"));
 }
 
 -(void)testCanMap {

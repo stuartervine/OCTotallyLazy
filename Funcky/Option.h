@@ -5,6 +5,8 @@
 
 @interface Option : NSObject <Mappable, Foldable>
 -(id)get;
+-(id)getOrElse:(id)other;
+-(id)getOrInvoke:(id (^)())funcBlock;
 -(Sequence *)asSequence;
 +(id)option:(id)value;
 @end
