@@ -9,15 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FunckyTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>PackageFuncky.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BC56E4EF14D68B800015D1A7</key>
+		<key>BC49C42F14E05A8200BE88D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC56E50014D68B800015D1A7</key>
+		<key>BC49C45114E05CC600BE88D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC76515514E0706800559503</key>
 		<dict>
 			<key>primary</key>
 			<true/>

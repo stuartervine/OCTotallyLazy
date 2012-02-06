@@ -13,6 +13,7 @@ function cleanTargets() {
 }
 
 function runTests() {
+    xcodebuild -target PackageFuncky -sdk iphoneos -configuration Release build
     xcodebuild -verbose -target FunckyTests -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/ -configuration Debug build
     OUT=$?
     if [ $OUT -ne 0 ]
@@ -23,15 +24,13 @@ function runTests() {
 }
 
 function buildRelease() {
-    xcodebuild -target Funcky -sdk iphoneos -configuration Release build
+    xcodebuild -target PackageFuncky -sdk iphoneos -configuration Release build
     OUT=$?
     if [ $OUT -ne 0 ]
     then
         echo "Build FAILED : $OUT";
         exit 1
     fi
-    mkdir -p build/package/Funcky.framework
-    cp -R build/Release-iphoneos/Funcky.framework/Versions/Current/ build/package/Funcky.framework
 }
 
 case "$1" in

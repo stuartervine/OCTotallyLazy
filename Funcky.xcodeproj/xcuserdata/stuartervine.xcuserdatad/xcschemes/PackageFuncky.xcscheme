@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BC49C42F14E05A8200BE88D2"
-               BuildableName = "Funcky.framework"
-               BlueprintName = "Funcky"
+               BlueprintIdentifier = "BC49C45114E05CC600BE88D2"
+               BuildableName = "PackageFuncky"
+               BlueprintName = "PackageFuncky"
                ReferencedContainer = "container:Funcky.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
