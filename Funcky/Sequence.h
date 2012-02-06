@@ -8,6 +8,7 @@
 
 - (Sequence *)filter:(BOOL (^)(id))filterBlock;
 - (Sequence *)flatMap:(id (^)(id))functorBlock;
+- (Sequence *)flatten;
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock;
 - (id)head;
 - (Option *)headOption;

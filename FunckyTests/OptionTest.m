@@ -5,6 +5,7 @@
 #import "None.h"
 #import "NoSuchElementException.h"
 #import "Callables.h"
+#import "Sequence.h"
 
 @interface OptionTest : SenTestCase
 @end
@@ -39,6 +40,11 @@
 -(void)testCanFold {
     assertThat([[Option option:@"bob"] fold:@"fred" with:[Callables appendString]], equalTo([Some some:@"fredbob"]));
     assertThat([[None none] fold:@"fred" with:[Callables appendString]], equalTo([Some some:@"fred"]));
+}
+
+-(void)testConversionToSequence {
+    assertThat([[None none] asSequence], equalTo(sequence(nil)));
+    assertThat([[Some some:@"bob"] asSequence], equalTo(sequence(@"bob", nil)));
 }
 
 @end

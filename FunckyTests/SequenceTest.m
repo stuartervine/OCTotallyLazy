@@ -40,6 +40,14 @@
     assertThat([items flatMap:[Callables toUpperCase]], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
 }
 
+-(void)testFlattenResolvesOptions {
+    Sequence *items = sequence(
+            option(@"one"),
+            sequence(option(nil), option(@"two"), nil),
+            nil);
+    assertThat([items flatten], equalTo(sequence(@"one", @"two", nil)));
+}
+
 - (void)testFold {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items fold:@"" with:[Callables appendString]], equalTo(@"onetwothree"));

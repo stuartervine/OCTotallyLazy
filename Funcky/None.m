@@ -1,6 +1,7 @@
 #import "None.h"
 #import "NoSuchElementException.h"
 #import "Some.h"
+#import "Sequence.h"
 
 @implementation None
 + (Option *)none {
@@ -9,6 +10,7 @@
 
 - (id)get {
     [NoSuchElementException raise:@"Cannot get value of None" format:@"Cannot get value of None"];
+    return nil;
 }
 
 - (BOOL)isEqual:(id)otherObject {
@@ -22,4 +24,9 @@
 - (id)fold:(id)seed with:(id (^)(id, id))functorBlock {
     return [Some some:seed];
 }
+
+- (Sequence *)asSequence {
+    return sequence(nil);
+}
+
 @end

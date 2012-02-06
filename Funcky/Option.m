@@ -4,6 +4,11 @@
 
 @implementation Option
 
+- (Sequence *)asSequence {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
 + (id)option:(id)value {
     return (value == nil) ? [None none] : [Some some:value];
 }

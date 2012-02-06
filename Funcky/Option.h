@@ -1,9 +1,11 @@
 #import <Foundation/Foundation.h>
 #import "Mappable.h"
 #import "Foldable.h"
+@class Sequence;
 
 @interface Option : NSObject <Mappable, Foldable>
 -(id)get;
+-(Sequence *)asSequence;
 +(id)option:(id)value;
 @end
 

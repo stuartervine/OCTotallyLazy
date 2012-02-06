@@ -1,4 +1,5 @@
 #import "Some.h"
+#import "Sequence.h"
 
 @implementation Some {
     id <NSObject> value;
@@ -35,6 +36,10 @@
 
 - (id)fold:(id)seed with:(id (^)(id, id))functorBlock {
     return [Some some:functorBlock(seed, value)];
+}
+
+- (Sequence *)asSequence {
+    return sequence(value, nil);
 }
 
 - (void)dealloc {
