@@ -4,6 +4,7 @@
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import "Sequence.h"
 #import "Callables.h"
+#import "Filters.h"
 #import "Some.h"
 #import "None.h"
 
@@ -12,11 +13,27 @@
 
 @implementation SequenceTest
 
+static NSNumber *number(int i) {
+    return [NSNumber numberWithInt:i];
+}
+
 -(void)testConversions {
     Sequence *args = sequence(@"one", @"one", @"two", nil);
     assertThat([args asArray], equalTo([NSArray arrayWithObjects:@"one", @"one", @"two", nil]));
     assertThat([args asSet], equalTo([NSSet setWithObjects:@"one", @"two", nil]));
 }
+
+-(void)testDrop {
+    Sequence *items = sequence(number(1), number(5), number(7), nil);
+    assertThat([items drop:2], equalTo(sequence(number(7), nil)));
+    assertThat([items drop:1], equalTo(sequence(number(5), number(7), nil)));
+    assertThat([sequence(nil) drop:1], equalTo(sequence(nil)));
+}
+
+//-(void)testDropWhile {
+//    Sequence *items = sequence(number(7), number(5), number(4), nil);
+//    assertThat([items dropWhile:[Filters isGreaterThan:number(4)]], equalTo(sequence(number(7), number(5), nil)));
+//}
 
 - (void)testFilter {
     Sequence *items = sequence(@"a", @"ab", @"b", @"bc", nil);

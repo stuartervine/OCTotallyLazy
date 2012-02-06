@@ -6,6 +6,7 @@
 
 + (id)with:(NSArray *)arguments;
 
+- (Sequence *)drop:(int)toDrop;
 - (Sequence *)filter:(BOOL (^)(id))filterBlock;
 - (Sequence *)flatMap:(id (^)(id))functorBlock;
 - (Sequence *)flatten;

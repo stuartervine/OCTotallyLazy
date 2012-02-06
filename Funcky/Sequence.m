@@ -13,6 +13,10 @@
     return self;
 }
 
+- (Sequence *)drop:(int)n {
+    return  (n >= [arguments count]) ? sequence(nil) : [[arguments subarrayWithRange:NSMakeRange((NSUInteger) n, [arguments count] - n)] asSequence];
+}
+
 - (Sequence *)filter:(BOOL (^)(id))filterBlock {
     NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
     for(id object in self) {
