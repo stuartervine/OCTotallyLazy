@@ -16,12 +16,12 @@
 
 - (void)testFilterKeys {
     NSDictionary *dict = dictionary(sequence(@"key1", @"key2", nil), sequence(@"value1", @"value2", nil));
-    assertThat([dict filterKeys:[Filters isEqual:@"key1"]], equalTo([NSDictionary dictionaryWithObject:@"value1" forKey:@"key1"]));
+    assertThat([dict filterKeys:FY_equalTo(@"key1")], equalTo([NSDictionary dictionaryWithObject:@"value1" forKey:@"key1"]));
 }
 
 - (void)testFilterValues {
     NSDictionary *dict = dictionary(sequence(@"key1", @"key2", nil), sequence(@"value1", @"value2", nil));
-    assertThat([dict filterValues:[Filters isEqual:@"value2"]], equalTo([NSDictionary dictionaryWithObject:@"value2" forKey:@"key2"]));
+    assertThat([dict filterValues:FY_equalTo(@"value2")], equalTo([NSDictionary dictionaryWithObject:@"value2" forKey:@"key2"]));
 }
 
 -(void)testMapValues {

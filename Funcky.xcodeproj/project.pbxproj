@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		BC76513D14E0703D00559503 /* Filters.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76512914E0703D00559503 /* Filters.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC76513E14E0703D00559503 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76512A14E0703D00559503 /* Filters.m */; };
 		BC76513F14E0703D00559503 /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76512B14E0703D00559503 /* Foldable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76514014E0703D00559503 /* Mappable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76512C14E0703D00559503 /* Mappable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76514114E0703D00559503 /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76512D14E0703D00559503 /* None.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,7 +79,6 @@
 		BC49C43914E05A8200BE88D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC49C43B14E05A8200BE88D2 /* Funcky-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Funcky-Prefix.pch"; sourceTree = "<group>"; };
 		BC76512914E0703D00559503 /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filters.h; sourceTree = "<group>"; };
-		BC76512A14E0703D00559503 /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filters.m; sourceTree = "<group>"; };
 		BC76512B14E0703D00559503 /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foldable.h; sourceTree = "<group>"; };
 		BC76512C14E0703D00559503 /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
 		BC76512D14E0703D00559503 /* None.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = None.h; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 			children = (
 				BC76519814E0786600559504 /* Funcky.h */,
 				BC76512914E0703D00559503 /* Filters.h */,
-				BC76512A14E0703D00559503 /* Filters.m */,
 				BC76512B14E0703D00559503 /* Foldable.h */,
 				BC76512C14E0703D00559503 /* Mappable.h */,
 				BC76512D14E0703D00559503 /* None.h */,
@@ -376,7 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC76513E14E0703D00559503 /* Filters.m in Sources */,
 				BC76514214E0703D00559503 /* None.m in Sources */,
 				BC76514414E0703D00559503 /* NoSuchElementException.m in Sources */,
 				BC76514614E0703D00559503 /* NSArray+Funcky.m in Sources */,
