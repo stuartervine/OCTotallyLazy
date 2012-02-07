@@ -52,7 +52,7 @@
 		BC76518514E0715800559503 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518414E0715800559503 /* SenTestingKit.framework */; };
 		BC76518714E0717400559503 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518614E0717400559503 /* Foundation.framework */; };
 		BC76519814E0786600559503 /* Funcky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76519714E0786600559503 /* Funcky.framework */; };
-		BC76519814E0786600559505 /* Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559504 /* Funcky.h */; };
+		BC76519814E0786600559505 /* Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559504 /* Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
