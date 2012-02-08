@@ -30,14 +30,21 @@ static NSNumber *number(int i) {
     assertThat([sequence(nil) drop:1], equalTo(sequence(nil)));
 }
 
-//-(void)testDropWhile {
-//    Sequence *items = sequence(number(7), number(5), number(4), nil);
-//    assertThat([items dropWhile:[Filters isGreaterThan:number(4)]], equalTo(sequence(number(7), number(5), nil)));
-//}
+-(void)testDropWhile {
+    Sequence *items = sequence(number(7), number(5), number(4), nil);
+    assertThat([items dropWhile:FY_greaterThan(number(4))], equalTo(sequence(number(4), nil)));
+    assertThat([items dropWhile:FY_greaterThan(number(5))], equalTo(sequence(number(5), number(4), nil)));
+}
 
 - (void)testFilter {
     Sequence *items = sequence(@"a", @"ab", @"b", @"bc", nil);
-    assertThat([items filter:^(NSString *item) { return [item hasPrefix:@"a"]; }], equalTo(sequence(@"a", @"ab", nil)));
+    assertThat([items filter:FY_startsWith(@"a")], equalTo(sequence(@"a", @"ab", nil)));
+}
+
+- (void)testFind {
+    Sequence *items = sequence(@"a", @"ab", @"b", @"bc", nil);
+    assertThat([items find:FY_startsWith(@"b")], equalTo(option(@"b")));
+    assertThat([items find:FY_startsWith(@"d")], equalTo([None none]));
 }
 
 - (void)testFlatMap {
@@ -96,6 +103,11 @@ static NSNumber *number(int i) {
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
+-(void)testReverse {
+    Sequence *items = sequence(@"one", @"two", @"three", nil);
+    assertThat([items reverse], equalTo(sequence(@"three", @"two", @"one", nil)));
+}
+
 - (void)testTail {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items tail], equalTo(sequence(@"two", @"three", nil)));
@@ -120,6 +132,5 @@ static NSNumber *number(int i) {
     assertThat([items takeRight:2], equalTo(sequence(@"two", @"three", nil)));
     assertThat([items takeRight:0], equalTo(sequence(nil)));
 }
-
 
 @end

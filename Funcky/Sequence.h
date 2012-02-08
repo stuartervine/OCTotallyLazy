@@ -7,7 +7,9 @@
 + (id)with:(NSArray *)arguments;
 
 - (Sequence *)drop:(int)toDrop;
+- (Sequence *)dropWhile:(BOOL (^)(id))funcBlock;
 - (Sequence *)filter:(BOOL (^)(id))filterBlock;
+- (Option *)find:(BOOL (^)(id))filterBlock;
 - (Sequence *)flatMap:(id (^)(id))functorBlock;
 - (Sequence *)flatten;
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock;
@@ -15,6 +17,7 @@
 - (Option *)headOption;
 - (Sequence *)join:(Sequence *)toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
+- (Sequence *)reverse;
 - (Sequence *)tail;
 - (Sequence *)take:(int)n;
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock;

@@ -17,6 +17,10 @@
     return  (n >= [arguments count]) ? sequence(nil) : [[arguments subarrayWithRange:NSMakeRange((NSUInteger) n, [arguments count] - n)] asSequence];
 }
 
+- (Sequence *)dropWhile:(BOOL (^)(id))funcBlock {
+    return [self drop:[[[self takeWhile:funcBlock] asArray] count]];
+}
+
 - (Sequence *)filter:(BOOL (^)(id))filterBlock {
     NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
     for(id object in self) {
@@ -37,6 +41,10 @@
         }
     }
     return [flatten asSequence];
+}
+
+- (Option *)find:(BOOL (^)(id))filterBlock {
+    return [[self filter:filterBlock] headOption];
 }
 
 - (Sequence *)flatMap:(id (^)(id))functorBlock {
@@ -77,6 +85,16 @@
 
 - (id)reduce:(id (^)(id, id))functorBlock {
     return [[self tail] fold:[self head] with:functorBlock];
+}
+
+- (Sequence *)reverse {
+    NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
+    NSEnumerator *reversed = [arguments reverseObjectEnumerator];
+    id object;
+    while((object = reversed.nextObject)) {
+        [collectedArray addObject:object];
+    }
+    return [collectedArray asSequence];
 }
 
 - (Sequence *)tail {
@@ -132,6 +150,10 @@
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id[])buffer count:(NSUInteger)len {
     return [arguments countByEnumeratingWithState:state objects:buffer count:len];
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Sequence [%@]", [arguments description]];
 }
 
 + (id)with:(NSArray *)someArguments {

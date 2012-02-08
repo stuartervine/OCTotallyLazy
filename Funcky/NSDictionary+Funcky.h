@@ -5,7 +5,6 @@
 -(NSDictionary *)filterKeys:(BOOL (^)(id))functorBlock;
 -(NSDictionary *)filterValues:(BOOL (^)(id))functorBlock;
 - (id)mapValues:(id (^)(id))funcBlock;
-
 -(Option *)optionForKey:(id)key;
 @end
 
