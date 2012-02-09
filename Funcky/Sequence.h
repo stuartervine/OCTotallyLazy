@@ -12,7 +12,7 @@
 - (Option *)find:(BOOL (^)(id))filterBlock;
 - (Sequence *)flatMap:(id (^)(id))functorBlock;
 - (Sequence *)flatten;
-- (id)fold:(id)value with:(id (^)(id, id))functorBlock;
+- (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
 - (id)head;
 - (Option *)headOption;
 - (Sequence *)join:(Sequence *)toJoin;
@@ -24,11 +24,12 @@
 - (Sequence *)takeRight:(int)n;
 
 - (NSArray *)asArray;
+- (NSDictionary *)asDictionary;
 - (Sequence *)asSequence;
 - (NSSet *)asSet;
 @end
 
-static Sequence *sequence(id items, ...) {
+static Sequence *sequence(id items , ...) {
     NSMutableArray *array = [NSMutableArray array];
     va_list args;
     va_start(args, items);

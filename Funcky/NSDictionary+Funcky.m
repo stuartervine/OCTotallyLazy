@@ -21,6 +21,10 @@
     }];
 }
 
+- (id)map:(Sequence * (^)(id key, id value))funcBlock {
+    return [[[[self allKeys] asSequence] map:^(id key){return funcBlock(key, [self objectForKey:key]);}] asDictionary];
+}
+
 - (id)mapValues:(id (^)(id))funcBlock {
     return dictionary([[self allKeys] asSequence], [[[self allValues] asSequence] map:funcBlock]);
 }

@@ -1,9 +1,10 @@
 #import <Foundation/Foundation.h>
-#import "Sequence.h"
+#import "Funcky.h"
 
 @interface NSDictionary (Functional)
 -(NSDictionary *)filterKeys:(BOOL (^)(id))functorBlock;
 -(NSDictionary *)filterValues:(BOOL (^)(id))functorBlock;
+- (id)map:(Sequence * (^)(id, id))funcBlock;
 - (id)mapValues:(id (^)(id))funcBlock;
 -(Option *)optionForKey:(id)key;
 @end

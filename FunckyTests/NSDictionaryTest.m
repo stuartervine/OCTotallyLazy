@@ -1,8 +1,5 @@
 #import <SenTestingKit/SenTestingKit.h>
-#import "NSDictionary+Funcky.h"
-#import "Filters.h"
-#import "Some.h"
-#import "None.h"
+#import "Funcky.h"
 #import "Callables.h"
 
 #define HC_SHORTHAND
@@ -22,6 +19,14 @@
 - (void)testFilterValues {
     NSDictionary *dict = dictionary(sequence(@"key1", @"key2", nil), sequence(@"value1", @"value2", nil));
     assertThat([dict filterValues:FY_equalTo(@"value2")], equalTo([NSDictionary dictionaryWithObject:@"value2" forKey:@"key2"]));
+}
+
+-(void)testMap {
+    NSDictionary *actual = dictionary(sequence(@"key1", @"key2", nil), sequence(@"value1", @"value2", nil));
+    NSDictionary *expected = dictionary(sequence(@"KEY1", @"KEY2", nil), sequence(@"VALUE1", @"VALUE2", nil));
+    assertThat([actual map:^(id key, id value) {
+        return sequence([key uppercaseString], [value uppercaseString], nil);
+    }], equalTo(expected));
 }
 
 -(void)testMapValues {

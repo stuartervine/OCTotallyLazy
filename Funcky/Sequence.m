@@ -52,7 +52,7 @@
     return [aSequence map: functorBlock];
 }
 
-- (id)fold:(id)value with:(id (^)(id, id))functorBlock {
+- (id)fold:(id)value with:(id (^)(id acc, id item))functorBlock {
     id accumulator = value;
     for (id item in self) {
         accumulator = functorBlock(accumulator, item);
@@ -124,6 +124,13 @@
 
 - (NSArray *)asArray {
     return arguments;
+}
+
+- (NSDictionary *)asDictionary {
+    return [self fold:[NSMutableDictionary dictionary]with:^(NSMutableDictionary *accumulator, Sequence *keyValues) {
+        [accumulator setObject:[[keyValues tail] head] forKey:[keyValues head]];
+        return accumulator;
+    }];
 }
 
 - (Sequence *)asSequence {
