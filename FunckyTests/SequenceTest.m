@@ -98,6 +98,13 @@ static NSNumber *number(int i) {
     assertThat([items map:[Callables toUpperCase]], equalTo(sequence(@"ONE", @"TWO", @"THREE", nil)));
 }
 
+-(void)testPartition {
+    Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
+    Pair *partitioned = [items partition:FY_alternate(TRUE)];
+    assertThat(partitioned.left, equalTo(sequence(@"one", @"three", nil)));
+    assertThat(partitioned.right, equalTo(sequence(@"two", @"four", nil)));
+}
+
 - (void)testReduce {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));

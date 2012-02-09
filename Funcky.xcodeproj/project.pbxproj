@@ -53,6 +53,16 @@
 		BC76518714E0717400559503 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518614E0717400559503 /* Foundation.framework */; };
 		BC76519814E0786600559503 /* Funcky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76519714E0786600559503 /* Funcky.framework */; };
 		BC76519814E0786600559505 /* Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559504 /* Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559507 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		BC76519814E0786600559509 /* Pair.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559508 /* Pair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E078660055950B /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055950A /* Pair.m */; };
+		BC76519814E078660055950D /* LazySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055950C /* LazySequence.m */; };
+		BC76519814E078660055950F /* LazySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055950E /* LazySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559511 /* LazySequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559510 /* LazySequenceTest.m */; };
+		BC76519814E0786600559514 /* Enumerators.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559513 /* Enumerators.m */; };
+		BC76519814E0786600559516 /* Enumerators.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559515 /* Enumerators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559518 /* MapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559517 /* MapEnumerator.m */; };
+		BC76519814E078660055951A /* MapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559519 /* MapEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +123,15 @@
 		BC76518614E0717400559503 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BC76519714E0786600559503 /* Funcky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Funcky.framework; path = artifacts/Funcky.framework; sourceTree = "<group>"; };
 		BC76519814E0786600559504 /* Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Funcky.h; sourceTree = "<group>"; };
+		BC76519814E0786600559508 /* Pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pair.h; sourceTree = "<group>"; };
+		BC76519814E078660055950A /* Pair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pair.m; sourceTree = "<group>"; };
+		BC76519814E078660055950C /* LazySequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazySequence.m; sourceTree = "<group>"; };
+		BC76519814E078660055950E /* LazySequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazySequence.h; sourceTree = "<group>"; };
+		BC76519814E0786600559510 /* LazySequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazySequenceTest.m; sourceTree = "<group>"; };
+		BC76519814E0786600559513 /* Enumerators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enumerators.m; sourceTree = "<group>"; };
+		BC76519814E0786600559515 /* Enumerators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerators.h; sourceTree = "<group>"; };
+		BC76519814E0786600559517 /* MapEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E0786600559519 /* MapEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEnumerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +192,10 @@
 		BC49C43514E05A8200BE88D2 /* Funcky */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E078660055950E /* LazySequence.h */,
+				BC76519814E078660055950C /* LazySequence.m */,
+				BC76519814E078660055950A /* Pair.m */,
+				BC76519814E0786600559508 /* Pair.h */,
 				BC76519814E0786600559504 /* Funcky.h */,
 				BC76512914E0703D00559503 /* Filters.h */,
 				BC76512B14E0703D00559503 /* Foldable.h */,
@@ -194,6 +217,7 @@
 				BC76513B14E0703D00559503 /* Some.h */,
 				BC76513C14E0703D00559503 /* Some.m */,
 				BC49C43614E05A8200BE88D2 /* Supporting Files */,
+				BC76519814E0786600559512 /* Lazy */,
 			);
 			path = Funcky;
 			sourceTree = "<group>";
@@ -211,6 +235,7 @@
 		BC76515D14E0706800559503 /* FunckyTests */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559510 /* LazySequenceTest.m */,
 				BC76517514E0713D00559503 /* Callables.h */,
 				BC76517614E0713D00559503 /* Callables.m */,
 				BC76517714E0713D00559503 /* FiltersTest.m */,
@@ -232,6 +257,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BC76519814E0786600559512 /* Lazy */ = {
+			isa = PBXGroup;
+			children = (
+				BC76519814E0786600559519 /* MapEnumerator.h */,
+				BC76519814E0786600559517 /* MapEnumerator.m */,
+				BC76519814E0786600559515 /* Enumerators.h */,
+				BC76519814E0786600559513 /* Enumerators.m */,
+			);
+			path = Lazy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -245,6 +281,10 @@
 				BC76514114E0703D00559503 /* None.h in Headers */,
 				BC76514314E0703D00559503 /* NoSuchElementException.h in Headers */,
 				BC76514514E0703D00559503 /* NSArray+Funcky.h in Headers */,
+				BC76519814E0786600559509 /* Pair.h in Headers */,
+				BC76519814E078660055950F /* LazySequence.h in Headers */,
+				BC76519814E0786600559516 /* Enumerators.h in Headers */,
+				BC76519814E078660055951A /* MapEnumerator.h in Headers */,
 				BC76514714E0703D00559503 /* NSDictionary+Funcky.h in Headers */,
 				BC76514914E0703D00559503 /* NSSet+Funcky.h in Headers */,
 				BC76514B14E0703D00559503 /* Option.h in Headers */,
@@ -381,6 +421,11 @@
 				BC76514C14E0703D00559503 /* Option.m in Sources */,
 				BC76514E14E0703D00559503 /* Sequence.m in Sources */,
 				BC76515014E0703D00559503 /* Some.m in Sources */,
+				BC76519814E0786600559507 /* (null) in Sources */,
+				BC76519814E078660055950B /* Pair.m in Sources */,
+				BC76519814E078660055950D /* LazySequence.m in Sources */,
+				BC76519814E0786600559514 /* Enumerators.m in Sources */,
+				BC76519814E0786600559518 /* MapEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +440,7 @@
 				BC76518114E0713D00559503 /* NSSetTest.m in Sources */,
 				BC76518214E0713D00559503 /* OptionTest.m in Sources */,
 				BC76518314E0713D00559503 /* SequenceTest.m in Sources */,
+				BC76519814E0786600559511 /* LazySequenceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

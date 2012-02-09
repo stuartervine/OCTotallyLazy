@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/Lazy/Enumerators.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/Lazy/Enumerators.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/LazySequence.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/LazySequence.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/Pair.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Funcky/Pair.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.h" afterPath="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m" afterPath="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/Filters.h" afterPath="$PROJECT_DIR$/Funcky/Filters.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/Funcky.h" afterPath="$PROJECT_DIR$/Funcky/Funcky.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/Sequence.h" afterPath="$PROJECT_DIR$/Funcky/Sequence.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/Sequence.m" afterPath="$PROJECT_DIR$/Funcky/Sequence.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/NSDictionaryTest.m" afterPath="$PROJECT_DIR$/FunckyTests/NSDictionaryTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/SequenceTest.m" afterPath="$PROJECT_DIR$/FunckyTests/SequenceTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,19 +39,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/Sequence.m">
+      <file leaf-file-name="MapEnumerator.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="27" selection-start="3758" selection-end="3758" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSDictionary.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="11" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
+            <state line="3" column="29" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,55 +51,87 @@
       <file leaf-file-name="Funcky.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/Funcky.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+            <state line="2" column="11" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSDictionaryTest.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FunckyTests/NSDictionaryTest.m">
+      <file leaf-file-name="MapEnumerator.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.6496815">
+            <state line="16" column="96" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSArray.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h">
+      <file leaf-file-name="Enumerators.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/Enumerators.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="0" selection-start="6875" selection-end="6875" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="18" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSDictionary+Funcky.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/NSDictionary+Funcky.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSDictionary+Funcky.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="1" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
+            <state line="8" column="19" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HCIsEqual.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsEqual.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="12" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HCIsDictionaryContainingEntries.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingEntries.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="24" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazySequenceTest.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="34" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#95#134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSEnumerator.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSEnumerator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="6" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="11" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazySequence.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="16" selection-start="88" selection-end="88" vertical-scroll-proportion="0.16703786">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,29 +146,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" />
-        <option value="$PROJECT_DIR$/Funcky/Filters.m" />
-        <option value="$PROJECT_DIR$/FunckyTests/FiltersTest.m" />
-        <option value="$PROJECT_DIR$/Funcky/Some.m" />
-        <option value="$PROJECT_DIR$/Funcky/Filters.h" />
-        <option value="$PROJECT_DIR$/FunckyTests/SequenceTest.m" />
-        <option value="$PROJECT_DIR$/Funcky/Entry.m" />
-        <option value="$PROJECT_DIR$/Funcky/Entry.h" />
-        <option value="$PROJECT_DIR$/Funcky/KeyValue.m" />
-        <option value="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.h" />
+        <option value="$PROJECT_DIR$/Funcky/NSArray+Funcky.h" />
+        <option value="$PROJECT_DIR$/Funcky/NSSet+Funcky.h" />
+        <option value="$PROJECT_DIR$/Funcky/NSArray+Funcky.m" />
         <option value="$PROJECT_DIR$/Funcky/Sequence.h" />
         <option value="$PROJECT_DIR$/Funcky/Sequence.m" />
-        <option value="$PROJECT_DIR$/FunckyTests/NSDictionaryTest.m" />
+        <option value="$PROJECT_DIR$/FunckyTests/SequenceTest.m" />
+        <option value="$PROJECT_DIR$/Funcky/Filters.h" />
+        <option value="$PROJECT_DIR$/FunckyTests/LazySequenceTest.h" />
+        <option value="$PROJECT_DIR$/Funcky/Lazy/Enumerators.h" />
+        <option value="$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.h" />
+        <option value="$PROJECT_DIR$/Funcky/Lazy/Enumerators.m" />
+        <option value="$PROJECT_DIR$/Funcky/LazySequence.m" />
+        <option value="$PROJECT_DIR$/Funcky/LazySequence.h" />
+        <option value="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
+        <option value="$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.m" />
         <option value="$PROJECT_DIR$/Funcky/Funcky.h" />
-        <option value="$PROJECT_DIR$/Funcky/KeyValue.h" />
-        <option value="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="83" />
-    <option name="y" value="40" />
-    <option name="width" value="1397" />
+    <option name="x" value="44" />
+    <option name="y" value="22" />
+    <option name="width" value="1396" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -152,7 +185,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="DirectoryView.Xcode" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -164,6 +197,66 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunckyTests" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lazy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="DirectoryView.Xcode">
         <subPane>
           <PATH>
@@ -230,20 +323,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,19 +335,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="OCUnit.NSDictionaryTest">
-    <configuration default="false" name="OptionTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="OptionTest">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="-[NSDictionaryTest testMap]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSDictionaryTest" TEST_METHOD="testMap">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="OCUnit.-[LazySequenceTest testMap]">
     <configuration default="false" name="-[SequenceTest testDropWhile]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testDropWhile">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -282,6 +349,18 @@
       <method />
     </configuration>
     <configuration default="false" name="NSDictionaryTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSDictionaryTest">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[SequenceTest testPartition]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testPartition">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[LazySequenceTest testMap]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testMap">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -302,11 +381,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="OCUnit.OptionTest" />
-      <item index="1" class="java.lang.String" itemvalue="OCUnit.-[NSDictionaryTest testMap]" />
-      <item index="2" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testDropWhile]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.SequenceTest" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.NSDictionaryTest" />
+      <item index="0" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testDropWhile]" />
+      <item index="1" class="java.lang.String" itemvalue="OCUnit.SequenceTest" />
+      <item index="2" class="java.lang.String" itemvalue="OCUnit.NSDictionaryTest" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testPartition]" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testMap]" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -337,23 +416,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="40" width="1397" height="878" extended-state="0" />
+    <frame x="44" y="22" width="1396" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32674572" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32674572" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30058223" sideWeight="0.6732543" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2993445" sideWeight="0.39130434" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6086956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37285903" sideWeight="0.98786247" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37285903" sideWeight="0.98786247" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -409,103 +488,137 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m</url>
+          <line>18</line>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FunckyTests/Callables.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FunckyTests/SequenceTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="27" selection-start="3484" selection-end="3484" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FunckyTests/Callables.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Filters.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="62" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/NSArray+Funcky.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/NSArray+Funcky.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="6875" selection-end="6875" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="18" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="33" column="0" selection-start="937" selection-end="1231" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/Sequence.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="27" selection-start="3758" selection-end="3758" vertical-scroll-proportion="0.0">
+        <state line="171" column="14" selection-start="4545" selection-end="4545" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunckyTests/SequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="1" selection-start="3683" selection-end="3683" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#62#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Mappable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/Enumerators.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="6" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="29" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSEnumerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="6" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsEqual.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="12" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingEntries.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="24" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="34" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#95#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/Enumerators.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="96" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/Funcky.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+        <state line="2" column="11" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h">
+    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="1" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
+        <state line="4" column="11" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/NSDictionary+Funcky.h">
+    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FunckyTests/NSDictionaryTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.6496815">
+        <state line="5" column="16" selection-start="88" selection-end="88" vertical-scroll-proportion="0.16703786">
           <folding />
         </state>
       </provider>

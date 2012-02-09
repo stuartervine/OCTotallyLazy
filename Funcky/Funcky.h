@@ -1,5 +1,6 @@
 #import "Filters.h"
 #import "Foldable.h"
+#import "LazySequence.h"
 #import "Mappable.h"
 #import "None.h"
 #import "NoSuchElementException.h"
@@ -7,5 +8,6 @@
 #import "NSDictionary+Funcky.h"
 #import "NSSet+Funcky.h"
 #import "Option.h"
+#import "Pair.h"
 #import "Sequence.h"
 #import "Some.h"

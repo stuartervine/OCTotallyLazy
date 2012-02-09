@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
+#import "Pair.h"
 
 @interface Sequence : NSObject <NSFastEnumeration, Mappable>
 - (id)initWith:(NSArray *)arguments;
@@ -16,6 +17,7 @@
 - (id)head;
 - (Option *)headOption;
 - (Sequence *)join:(Sequence *)toJoin;
+- (Pair *)partition:(BOOL (^)(id))toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (Sequence *)reverse;
 - (Sequence *)tail;

@@ -72,8 +72,22 @@
 }
 
 - (Sequence *)join:(Sequence *)toJoin {
-    return [sequence(self, toJoin, nil) flatMap:^(id item) { return item; }];
+    return [sequence(self, toJoin, nil) flatten];
 }
+
+- (Pair *)partition:(BOOL (^)(id))filterBlock {
+    NSMutableArray *left = [NSMutableArray array];
+    NSMutableArray *right = [NSMutableArray array];
+    for(id object in self) {
+        if(filterBlock(object)) {
+            [left addObject:object];
+        } else {
+            [right addObject:object];
+        }       
+    }
+    return [Pair left:[left asSequence] right:[right asSequence]];
+}
+
 
 - (id)map:(id (^)(id))funcBlock {
     NSMutableArray *collectedArray = [NSMutableArray array];
