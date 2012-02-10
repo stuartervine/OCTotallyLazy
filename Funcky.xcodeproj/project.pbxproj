@@ -63,6 +63,8 @@
 		BC76519814E0786600559516 /* Enumerators.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559515 /* Enumerators.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559518 /* MapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559517 /* MapEnumerator.m */; };
 		BC76519814E078660055951A /* MapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559519 /* MapEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E078660055951C /* FilterEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951B /* FilterEnumerator.m */; };
+		BC76519814E078660055951E /* FilterEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951D /* FilterEnumerator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		BC76519814E0786600559515 /* Enumerators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerators.h; sourceTree = "<group>"; };
 		BC76519814E0786600559517 /* MapEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapEnumerator.m; sourceTree = "<group>"; };
 		BC76519814E0786600559519 /* MapEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEnumerator.h; sourceTree = "<group>"; };
+		BC76519814E078660055951B /* FilterEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E078660055951D /* FilterEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterEnumerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +264,8 @@
 		BC76519814E0786600559512 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E078660055951D /* FilterEnumerator.h */,
+				BC76519814E078660055951B /* FilterEnumerator.m */,
 				BC76519814E0786600559519 /* MapEnumerator.h */,
 				BC76519814E0786600559517 /* MapEnumerator.m */,
 				BC76519814E0786600559515 /* Enumerators.h */,
@@ -291,6 +297,7 @@
 				BC76514D14E0703D00559503 /* Sequence.h in Headers */,
 				BC76514F14E0703D00559503 /* Some.h in Headers */,
 				BC76519814E0786600559505 /* Funcky.h in Headers */,
+				BC76519814E078660055951E /* FilterEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +433,7 @@
 				BC76519814E078660055950D /* LazySequence.m in Sources */,
 				BC76519814E0786600559514 /* Enumerators.m in Sources */,
 				BC76519814E0786600559518 /* MapEnumerator.m in Sources */,
+				BC76519814E078660055951C /* FilterEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,8 @@
 
 - (LazySequence *)initWith:(NSEnumerator *)enumerator;
 
+- (id)filter:(id (^)(id))filterBlock;
+
 - (Sequence *)asSequence;
 
 + (LazySequence *)with:(NSEnumerator *)enumerator;

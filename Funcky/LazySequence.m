@@ -22,6 +22,10 @@
     return [enumerator countByEnumeratingWithState:state objects:buffer count:len];
 }
 
+- (id)filter:(id (^)(id))filterBlock {
+    return [LazySequence with:[Enumerators filter:enumerator with:filterBlock]];
+}
+
 - (id)map:(id (^)(id))funcBlock {
     return [LazySequence with:[Enumerators map:enumerator with:funcBlock]];
 }

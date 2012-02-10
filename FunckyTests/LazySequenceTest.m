@@ -3,6 +3,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import "LazySequence.h"
+#import "Filters.h"
 
 @interface LazySequenceTest : SenTestCase
 @end
@@ -11,6 +12,11 @@
 
 static NSNumber *number(int i) {
     return [NSNumber numberWithInt:i];
+}
+
+- (void)testFilter {
+    LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
+    assertThat([[items filter:FY_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
 }
 
 -(void)testMap {
