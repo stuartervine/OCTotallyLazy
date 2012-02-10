@@ -6,4 +6,6 @@
 +(NSEnumerator *) map:(NSEnumerator *)enumerator with:(id (^)(id))func;
 
 + (NSEnumerator *)filter:(NSEnumerator *)enumerator with:(id (^)(id))filterBlock;
+
++ (NSEnumerator *)flatten:(NSEnumerator *)enumerator;
 @end

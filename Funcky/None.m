@@ -2,6 +2,7 @@
 #import "NoSuchElementException.h"
 #import "Some.h"
 #import "Sequence.h"
+#import "EmptyEnumerator.h"
 
 @implementation None
 + (Option *)none {
@@ -31,6 +32,10 @@
 
 - (id)fold:(id)seed with:(id (^)(id, id))functorBlock {
     return [Some some:seed];
+}
+
+- (NSEnumerator *)enumerator {
+    return [EmptyEnumerator emptyEnumerator];
 }
 
 - (Sequence *)asSequence {

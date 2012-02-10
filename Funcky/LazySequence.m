@@ -2,7 +2,6 @@
 #import "LazySequence.h"
 #import "Enumerators.h"
 
-
 @implementation LazySequence {
     NSEnumerator *enumerator;
 }
@@ -30,6 +29,11 @@
     return [LazySequence with:[Enumerators map:enumerator with:funcBlock]];
 }
 
+- (LazySequence *)flatten {
+    return [LazySequence with:[Enumerators flatten:enumerator]];
+
+}
+
 - (Sequence *)asSequence {
     NSMutableArray *collect = [NSMutableArray array];
     id object;
@@ -37,6 +41,10 @@
         [collect addObject:object];
     }
     return [Sequence with:collect];
+}
+
+- (NSEnumerator *)enumerator {
+    return enumerator;
 }
 
 + (LazySequence *)with:(NSEnumerator *)enumerator {

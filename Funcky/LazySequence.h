@@ -1,12 +1,15 @@
 #import <Foundation/Foundation.h>
 #import "Mappable.h"
 #import "Sequence.h"
+#import "Enumerable.h"
 
-@interface LazySequence : NSObject <NSFastEnumeration, Mappable>
+@interface LazySequence : NSObject <NSFastEnumeration, Mappable, Enumerable>
 
 - (LazySequence *)initWith:(NSEnumerator *)enumerator;
 
 - (id)filter:(id (^)(id))filterBlock;
+
+- (LazySequence *)flatten;
 
 - (Sequence *)asSequence;
 

@@ -19,6 +19,15 @@ static NSNumber *number(int i) {
     assertThat([[items filter:FY_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
 }
 
+-(void)testFlatten {
+    LazySequence *items = lazySequence(
+            @"one",
+            lazySequence(@"two", nil),
+            option(@"three"),
+            nil);
+    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", @"three", nil)));
+}
+
 -(void)testMap {
     LazySequence *lazy = lazySequence(number(1), number(2), number(3), nil);
     LazySequence *doubled = [lazy map:^(NSNumber *item){return number([item intValue]*2);}];

@@ -65,6 +65,13 @@
 		BC76519814E078660055951A /* MapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559519 /* MapEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055951C /* FilterEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951B /* FilterEnumerator.m */; };
 		BC76519814E078660055951E /* FilterEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951D /* FilterEnumerator.h */; };
+		BC76519814E0786600559520 /* FlattenEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951F /* FlattenEnumerator.m */; };
+		BC76519814E0786600559522 /* FlattenEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559521 /* FlattenEnumerator.h */; };
+		BC76519814E0786600559524 /* EmptyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559523 /* EmptyEnumerator.m */; };
+		BC76519814E0786600559526 /* EmptyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559525 /* EmptyEnumerator.h */; };
+		BC76519814E0786600559528 /* SingleValueEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559527 /* SingleValueEnumerator.m */; };
+		BC76519814E078660055952A /* SingleValueEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559529 /* SingleValueEnumerator.h */; };
+		BC76519814E078660055952C /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952B /* Enumerable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +143,13 @@
 		BC76519814E0786600559519 /* MapEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEnumerator.h; sourceTree = "<group>"; };
 		BC76519814E078660055951B /* FilterEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterEnumerator.m; sourceTree = "<group>"; };
 		BC76519814E078660055951D /* FilterEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterEnumerator.h; sourceTree = "<group>"; };
+		BC76519814E078660055951F /* FlattenEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlattenEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E0786600559521 /* FlattenEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlattenEnumerator.h; sourceTree = "<group>"; };
+		BC76519814E0786600559523 /* EmptyEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E0786600559525 /* EmptyEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyEnumerator.h; sourceTree = "<group>"; };
+		BC76519814E0786600559527 /* SingleValueEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleValueEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E0786600559529 /* SingleValueEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleValueEnumerator.h; sourceTree = "<group>"; };
+		BC76519814E078660055952B /* Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +210,7 @@
 		BC49C43514E05A8200BE88D2 /* Funcky */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E078660055952B /* Enumerable.h */,
 				BC76519814E078660055950E /* LazySequence.h */,
 				BC76519814E078660055950C /* LazySequence.m */,
 				BC76519814E078660055950A /* Pair.m */,
@@ -264,6 +279,12 @@
 		BC76519814E0786600559512 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559529 /* SingleValueEnumerator.h */,
+				BC76519814E0786600559527 /* SingleValueEnumerator.m */,
+				BC76519814E0786600559525 /* EmptyEnumerator.h */,
+				BC76519814E0786600559523 /* EmptyEnumerator.m */,
+				BC76519814E0786600559521 /* FlattenEnumerator.h */,
+				BC76519814E078660055951F /* FlattenEnumerator.m */,
 				BC76519814E078660055951D /* FilterEnumerator.h */,
 				BC76519814E078660055951B /* FilterEnumerator.m */,
 				BC76519814E0786600559519 /* MapEnumerator.h */,
@@ -298,6 +319,10 @@
 				BC76514F14E0703D00559503 /* Some.h in Headers */,
 				BC76519814E0786600559505 /* Funcky.h in Headers */,
 				BC76519814E078660055951E /* FilterEnumerator.h in Headers */,
+				BC76519814E0786600559522 /* FlattenEnumerator.h in Headers */,
+				BC76519814E0786600559526 /* EmptyEnumerator.h in Headers */,
+				BC76519814E078660055952A /* SingleValueEnumerator.h in Headers */,
+				BC76519814E078660055952C /* Enumerable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +459,9 @@
 				BC76519814E0786600559514 /* Enumerators.m in Sources */,
 				BC76519814E0786600559518 /* MapEnumerator.m in Sources */,
 				BC76519814E078660055951C /* FilterEnumerator.m in Sources */,
+				BC76519814E0786600559520 /* FlattenEnumerator.m in Sources */,
+				BC76519814E0786600559524 /* EmptyEnumerator.m in Sources */,
+				BC76519814E0786600559528 /* SingleValueEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

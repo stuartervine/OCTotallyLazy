@@ -39,5 +39,9 @@
     return nil;
 }
 
+- (NSEnumerator *)enumerator {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
 
 @end

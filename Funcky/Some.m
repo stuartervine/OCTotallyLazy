@@ -1,5 +1,6 @@
 #import "Some.h"
 #import "Sequence.h"
+#import "SingleValueEnumerator.h"
 
 @implementation Some {
     id <NSObject> value;
@@ -45,6 +46,11 @@
 - (Sequence *)asSequence {
     return sequence(value, nil);
 }
+
+- (NSEnumerator *)enumerator {
+    return [SingleValueEnumerator singleValue:value];
+}
+
 
 - (void)dealloc {
     [value release];
