@@ -48,6 +48,7 @@
 }
 
 - (NSEnumerator *)enumerator {
+    NSLog(@"flattening option with value %@", value);
     return [SingleValueEnumerator singleValue:value];
 }
 

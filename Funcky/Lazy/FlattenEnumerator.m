@@ -1,6 +1,5 @@
 #import "FlattenEnumerator.h"
 #import "EmptyEnumerator.h"
-#import "SingleValueEnumerator.h"
 #import "Enumerable.h"
 
 
@@ -21,21 +20,12 @@
     [super dealloc];
 }
 
-- (id)getCurrentIterator {
-    id item = [currentEnumerator nextObject];
-    if(item != nil) {
-        return [SingleValueEnumerator singleValue:item];
-    }
-    currentEnumerator = [enumerator nextObject];
-    return currentEnumerator;
-}
-
 - (id)nextObject {
     id item;
     while((item = [currentEnumerator nextObject]) == nil) {
         id nextItem = [enumerator nextObject];
         if ([nextItem respondsToSelector:@selector(enumerator)]) {
-            currentEnumerator = [nextItem enumerator];
+            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem enumerator]];
             continue;
         }
         return nextItem;

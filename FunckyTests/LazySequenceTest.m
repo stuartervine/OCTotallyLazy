@@ -22,10 +22,10 @@ static NSNumber *number(int i) {
 -(void)testFlatten {
     LazySequence *items = lazySequence(
             @"one",
-            lazySequence(@"two", nil),
-            option(@"three"),
+            lazySequence(@"two", option(@"three"), nil),
+            option(@"four"),
             nil);
-    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", @"three", nil)));
+    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", @"three", @"four", nil)));
 }
 
 -(void)testMap {
