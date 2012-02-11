@@ -14,6 +14,16 @@ static NSNumber *number(int i) {
     return [NSNumber numberWithInt:i];
 }
 
+-(void)testDrop {
+    LazySequence *items = lazySequence(number(1), number(5), number(7), nil);
+    assertThat([[items drop:2] asSequence], equalTo(sequence(number(7), nil)));
+}
+
+-(void)testDropWhile {
+    LazySequence *items = lazySequence(number(7), number(5), number(4), nil);
+    assertThat([[items dropWhile:FY_greaterThan(number(4))] asSequence], equalTo(sequence(number(4), nil)));
+}
+
 - (void)testFilter {
     LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
     assertThat([[items filter:FY_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));

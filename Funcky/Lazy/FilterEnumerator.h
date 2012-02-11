@@ -2,7 +2,7 @@
 
 
 @interface FilterEnumerator : NSEnumerator
-- (FilterEnumerator *)initWithEnumerator:(NSEnumerator *)anEnumerator andFilter:(id (^)(id))aFunc;
+- (FilterEnumerator *)initWithEnumerator:(NSEnumerator *)anEnumerator andFilter:(BOOL (^)(id))aFunc;
 
-+ (NSEnumerator *)withEnumerator:(NSEnumerator *)enumerator andFilter:(id (^)(id))func;
++ (NSEnumerator *)withEnumerator:(NSEnumerator *)enumerator andFilter:(BOOL (^)(id))func;
 @end

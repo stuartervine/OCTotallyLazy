@@ -7,7 +7,11 @@
 
 - (LazySequence *)initWith:(NSEnumerator *)enumerator;
 
-- (id)filter:(id (^)(id))filterBlock;
+- (LazySequence *)drop:(int)toDrop;
+
+- (LazySequence *)dropWhile:(BOOL (^)(id))funcBlock;
+
+- (id)filter:(BOOL (^)(id))filterBlock;
 
 - (LazySequence *)flatten;
 

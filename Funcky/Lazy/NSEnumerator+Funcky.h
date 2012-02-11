@@ -1,7 +1,9 @@
 #import <Foundation/Foundation.h>
 
 @interface NSEnumerator (Funcky)
+- (NSEnumerator *)drop:(int)toDrop;
+- (NSEnumerator *)dropWhile:(BOOL (^)(id))filterBlock;
 - (NSEnumerator *)flatten;
 - (NSEnumerator *)map:(id (^)(id))func;
-- (NSEnumerator *)filter:(id (^)(id))filterBlock;
+- (NSEnumerator *)filter:(BOOL (^)(id))filterBlock;
 @end

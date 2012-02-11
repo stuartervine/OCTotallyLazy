@@ -21,11 +21,19 @@
     return [enumerator countByEnumeratingWithState:state objects:buffer count:len];
 }
 
-- (id)filter:(id (^)(id))filterBlock {
+- (LazySequence *)drop:(int)toDrop {
+    return [LazySequence with:[enumerator drop:toDrop]];
+}
+
+- (LazySequence *)dropWhile:(BOOL (^)(id))funcBlock {
+    return [LazySequence with:[enumerator dropWhile:funcBlock]];
+}
+
+- (LazySequence *)filter:(BOOL (^)(id))filterBlock {
     return [LazySequence with:[enumerator filter:filterBlock]];
 }
 
-- (id)map:(id (^)(id))funcBlock {
+- (LazySequence *)map:(id (^)(id))funcBlock {
     return [LazySequence with:[enumerator map:funcBlock]];
 }
 
