@@ -34,7 +34,7 @@
     return [Some some:seed];
 }
 
-- (NSEnumerator *)enumerator {
+- (NSEnumerator *)objectEnumerator {
     return [EmptyEnumerator emptyEnumerator];
 }
 

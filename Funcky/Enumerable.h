@@ -1,5 +1,5 @@
 #import "Funcky-Prefix.pch"
 
 @protocol Enumerable
--(NSEnumerator *)enumerator;
+-(NSEnumerator *)objectEnumerator;
 @end

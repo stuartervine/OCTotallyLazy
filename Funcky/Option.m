@@ -39,7 +39,7 @@
     return nil;
 }
 
-- (NSEnumerator *)enumerator {
+- (NSEnumerator *)objectEnumerator {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
     return nil;
 }

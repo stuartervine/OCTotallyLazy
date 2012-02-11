@@ -2,7 +2,6 @@
 #import "EmptyEnumerator.h"
 #import "Enumerable.h"
 
-
 @implementation FlattenEnumerator {
     NSEnumerator *enumerator;
     NSEnumerator *currentEnumerator;
@@ -24,8 +23,8 @@
     id item;
     while((item = [currentEnumerator nextObject]) == nil) {
         id nextItem = [enumerator nextObject];
-        if ([nextItem respondsToSelector:@selector(enumerator)]) {
-            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem enumerator]];
+        if ([nextItem respondsToSelector:@selector(objectEnumerator)]) {
+            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem objectEnumerator]];
             continue;
         }
         return nextItem;

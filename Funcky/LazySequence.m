@@ -1,6 +1,6 @@
 #import <Sequence.h>
 #import "LazySequence.h"
-#import "Enumerators.h"
+#import "NSEnumerator+Funcky.h"
 
 @implementation LazySequence {
     NSEnumerator *enumerator;
@@ -22,16 +22,15 @@
 }
 
 - (id)filter:(id (^)(id))filterBlock {
-    return [LazySequence with:[Enumerators filter:enumerator with:filterBlock]];
+    return [LazySequence with:[enumerator filter:filterBlock]];
 }
 
 - (id)map:(id (^)(id))funcBlock {
-    return [LazySequence with:[Enumerators map:enumerator with:funcBlock]];
+    return [LazySequence with:[enumerator map:funcBlock]];
 }
 
 - (LazySequence *)flatten {
-    return [LazySequence with:[Enumerators flatten:enumerator]];
-
+    return [LazySequence with:[enumerator flatten]];
 }
 
 - (Sequence *)asSequence {
@@ -43,7 +42,7 @@
     return [Sequence with:collect];
 }
 
-- (NSEnumerator *)enumerator {
+- (NSEnumerator *)objectEnumerator {
     return enumerator;
 }
 

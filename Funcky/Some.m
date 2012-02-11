@@ -47,8 +47,7 @@
     return sequence(value, nil);
 }
 
-- (NSEnumerator *)enumerator {
-    NSLog(@"flattening option with value %@", value);
+- (NSEnumerator *)objectEnumerator {
     return [SingleValueEnumerator singleValue:value];
 }
 
