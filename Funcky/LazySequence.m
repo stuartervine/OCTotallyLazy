@@ -46,6 +46,10 @@
     return [LazySequence with:[enumerator flatten]];
 }
 
+- (id)fold:(id)value with:(id (^)(id, id))functorBlock {
+    return [[self asSequence] fold:value with:functorBlock];
+}
+
 - (LazySequence *)map:(id (^)(id))funcBlock {
     return [LazySequence with:[enumerator map:funcBlock]];
 }

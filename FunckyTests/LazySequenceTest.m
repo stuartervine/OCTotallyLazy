@@ -32,14 +32,6 @@ static NSNumber *number(int i) {
     assertThat([items find:FY_startsWith(@"d")], equalTo([None none]));
 }
 
-- (void)testFlatMap {
-    LazySequence *items = lazySequence(
-            lazySequence(@"one", @"two", nil),
-            lazySequence(lazySequence(@"three", nil), @"four", nil),
-            nil);
-    assertThat([[items flatMap:[Callables toUpperCase]] asSequence], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
-}
-
 - (void)testFilter {
     LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
     assertThat([[items filter:FY_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
@@ -52,6 +44,19 @@ static NSNumber *number(int i) {
             option(@"four"),
             nil);
     assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", @"three", @"four", nil)));
+}
+
+- (void)testFlatMap {
+    LazySequence *items = lazySequence(
+            lazySequence(@"one", @"two", nil),
+            lazySequence(lazySequence(@"three", nil), @"four", nil),
+            nil);
+    assertThat([[items flatMap:[Callables toUpperCase]] asSequence], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
+}
+
+- (void)testFold {
+    LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
+    assertThat([items fold:@"" with:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
 -(void)testMap {

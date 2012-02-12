@@ -19,6 +19,8 @@
 
 - (LazySequence *)flatten;
 
+- (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
+
 - (Sequence *)asSequence;
 
 + (LazySequence *)with:(NSEnumerator *)enumerator;

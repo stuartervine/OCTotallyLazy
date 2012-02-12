@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/LazySequence.h" afterPath="$PROJECT_DIR$/Funcky/LazySequence.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/LazySequence.m" afterPath="$PROJECT_DIR$/Funcky/LazySequence.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" afterPath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="236" selection-end="285" vertical-scroll-proportion="0.0">
+            <state line="15" column="11" selection-start="448" selection-end="521" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,7 +39,7 @@
       <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/Sequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+            <state line="55" column="4" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,7 +57,7 @@
       <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+            <state line="21" column="9" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,7 +66,7 @@
       <file leaf-file-name="LazySequenceTest.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="52" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.33259425">
+            <state line="47" column="0" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.8430657">
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
                 <element signature="e#95#134#0" expanded="true" />
@@ -86,7 +87,7 @@
       <file leaf-file-name="SequenceTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunckyTests/SequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1622" selection-end="1900" vertical-scroll-proportion="0.0">
+            <state line="74" column="0" selection-start="2477" selection-end="2649" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,9 +97,7 @@
         <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.h">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,10 +105,8 @@
       <file leaf-file-name="LazySequence.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="918" selection-end="918" vertical-scroll-proportion="-2.6727273">
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state line="53" column="58" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,16 +143,16 @@
         <option value="$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.m" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.h" />
+        <option value="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
         <option value="$PROJECT_DIR$/Funcky/LazySequence.h" />
         <option value="$PROJECT_DIR$/Funcky/LazySequence.m" />
-        <option value="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="42" />
     <option name="y" value="22" />
-    <option name="width" value="1398" />
+    <option name="width" value="1513" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -314,15 +311,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
-  <component name="RunManager" selected="OCUnit.-[LazySequenceTest testFlatMap]">
+  <component name="RunManager" selected="OCUnit.LazySequenceTest">
     <configuration default="false" name="-[LazySequenceTest testMap]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testMap">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -341,13 +338,13 @@
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="LazySequenceTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest">
+    <configuration default="false" name="-[LazySequenceTest testFlatMap]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testFlatMap">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="-[LazySequenceTest testFlatMap]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testFlatMap">
+    <configuration default="false" name="LazySequenceTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -371,8 +368,8 @@
       <item index="0" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testMap]" />
       <item index="1" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testFlatten]" />
       <item index="2" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testDrop]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.LazySequenceTest" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testFlatMap]" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testFlatMap]" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.LazySequenceTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -403,23 +400,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="22" width="1398" height="878" extended-state="0" />
+    <frame x="42" y="22" width="1513" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254282" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29930145" sideWeight="0.629776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.608156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37022397" sideWeight="0.98786247" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24242425" sideWeight="0.99798656" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -479,7 +476,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m</url>
-          <line>59</line>
+          <line>64</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m</url>
@@ -495,7 +492,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m</url>
-          <line>53</line>
+          <line>45</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -549,36 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSEnumerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="236" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Sequence.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="12" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
@@ -586,39 +553,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FunckyTests/SequenceTest.m">
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1622" selection-end="1900" vertical-scroll-proportion="0.0">
+        <state line="3" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSEnumerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="23" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/Mappable.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunckyTests/SequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2477" selection-end="2649" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Sequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="448" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="9" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Sequence.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="4" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="918" selection-end="918" vertical-scroll-proportion="-2.6727273">
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+        <state line="53" column="58" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="52" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.33259425">
+        <state line="47" column="0" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.8430657">
           <folding>
             <element signature="e#0#33#0" expanded="true" />
             <element signature="e#95#134#0" expanded="true" />
