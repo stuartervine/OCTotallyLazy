@@ -30,6 +30,10 @@
     return [LazySequence with:[enumerator dropWhile:funcBlock]];
 }
 
+- (LazySequence *)flatMap:(id (^)(id))funcBlock {
+    return [LazySequence with:[[enumerator flatten] map:funcBlock]];
+}
+
 - (LazySequence *)filter:(BOOL (^)(id))predicate {
     return [LazySequence with:[enumerator filter:predicate]];
 }

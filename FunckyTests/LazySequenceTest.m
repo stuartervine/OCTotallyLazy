@@ -4,6 +4,7 @@
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import "LazySequence.h"
 #import "Filters.h"
+#import "Callables.h"
 #import "None.h"
 
 @interface LazySequenceTest : SenTestCase
@@ -29,6 +30,14 @@ static NSNumber *number(int i) {
     LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
     assertThat([items find:FY_startsWith(@"b")], equalTo(option(@"b")));
     assertThat([items find:FY_startsWith(@"d")], equalTo([None none]));
+}
+
+- (void)testFlatMap {
+    LazySequence *items = lazySequence(
+            lazySequence(@"one", @"two", nil),
+            lazySequence(lazySequence(@"three", nil), @"four", nil),
+            nil);
+    assertThat([[items flatMap:[Callables toUpperCase]] asSequence], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
 }
 
 - (void)testFilter {

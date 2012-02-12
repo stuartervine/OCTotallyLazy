@@ -13,6 +13,8 @@
 
 - (Option *)find:(BOOL (^)(id))predicate;
 
+- (LazySequence *)flatMap:(id (^)(id))funcBlock;
+
 - (id)filter:(BOOL (^)(id))filterBlock;
 
 - (LazySequence *)flatten;
