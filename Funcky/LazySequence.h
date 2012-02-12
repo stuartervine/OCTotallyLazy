@@ -11,6 +11,8 @@
 
 - (LazySequence *)dropWhile:(BOOL (^)(id))funcBlock;
 
+- (Option *)find:(BOOL (^)(id))predicate;
+
 - (id)filter:(BOOL (^)(id))filterBlock;
 
 - (LazySequence *)flatten;

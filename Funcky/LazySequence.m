@@ -1,4 +1,5 @@
 #import <Sequence.h>
+#import <Filters.h>
 #import "LazySequence.h"
 #import "NSEnumerator+Funcky.h"
 
@@ -29,16 +30,20 @@
     return [LazySequence with:[enumerator dropWhile:funcBlock]];
 }
 
-- (LazySequence *)filter:(BOOL (^)(id))filterBlock {
-    return [LazySequence with:[enumerator filter:filterBlock]];
+- (LazySequence *)filter:(BOOL (^)(id))predicate {
+    return [LazySequence with:[enumerator filter:predicate]];
 }
 
-- (LazySequence *)map:(id (^)(id))funcBlock {
-    return [LazySequence with:[enumerator map:funcBlock]];
+- (Option *)find:(BOOL (^)(id))predicate {
+    return [enumerator find:predicate];
 }
 
 - (LazySequence *)flatten {
     return [LazySequence with:[enumerator flatten]];
+}
+
+- (LazySequence *)map:(id (^)(id))funcBlock {
+    return [LazySequence with:[enumerator map:funcBlock]];
 }
 
 - (Sequence *)asSequence {

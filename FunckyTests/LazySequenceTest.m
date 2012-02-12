@@ -4,6 +4,7 @@
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import "LazySequence.h"
 #import "Filters.h"
+#import "None.h"
 
 @interface LazySequenceTest : SenTestCase
 @end
@@ -22,6 +23,12 @@ static NSNumber *number(int i) {
 -(void)testDropWhile {
     LazySequence *items = lazySequence(number(7), number(5), number(4), nil);
     assertThat([[items dropWhile:FY_greaterThan(number(4))] asSequence], equalTo(sequence(number(4), nil)));
+}
+
+- (void)testFind {
+    LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
+    assertThat([items find:FY_startsWith(@"b")], equalTo(option(@"b")));
+    assertThat([items find:FY_startsWith(@"d")], equalTo([None none]));
 }
 
 - (void)testFilter {
