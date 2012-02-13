@@ -21,6 +21,18 @@
     return [[[Pair alloc] initWithLeft:aLeft right:aRight] autorelease];
 }
 
+- (BOOL)isEqual:(id)object {
+    if (![object isKindOfClass:[Pair class]] || object == nil) {
+        return FALSE;
+    }
+    Pair *otherObject = object;
+    return [otherObject.left isEqual: self.left] && [otherObject.right isEqual: self.right]; 
+}
+
+-(NSString *)description {
+    return [NSString stringWithFormat:@"[Pair left:(%@) right:(%@)]", [self.left description], [self.right description]];
+}
+
 - (void)dealloc {
     [_right release];
     [_left release];

@@ -177,6 +177,22 @@
     return [NSString stringWithFormat:@"Sequence [%@]", [arguments description]];
 }
 
+- (Sequence *)zip:(Sequence *)otherSequence {
+    NSEnumerator *enumerator1 = [self objectEnumerator];
+    NSEnumerator *enumerator2 = [otherSequence objectEnumerator];
+    id item1;
+    id item2;
+    NSMutableArray *pairs = [NSMutableArray array];
+    while(((item1 = [enumerator1 nextObject]) != nil) && ((item2 = [enumerator2 nextObject]) != nil)) {
+        [pairs addObject:[Pair left:item1 right:item2]];
+    }
+    return [pairs asSequence];
+}
+
+- (NSEnumerator *)objectEnumerator {
+    return [arguments objectEnumerator];
+}
+
 + (id)with:(NSArray *)someArguments {
     return [[[Sequence alloc] initWith:someArguments] autorelease];
 }

@@ -62,16 +62,16 @@
 		BC76519814E0786600559518 /* MapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559517 /* MapEnumerator.m */; };
 		BC76519814E078660055951A /* MapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559519 /* MapEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055951C /* FilterEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951B /* FilterEnumerator.m */; };
-		BC76519814E078660055951E /* FilterEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951D /* FilterEnumerator.h */; };
+		BC76519814E078660055951E /* FilterEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951D /* FilterEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559520 /* FlattenEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055951F /* FlattenEnumerator.m */; };
-		BC76519814E0786600559522 /* FlattenEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559521 /* FlattenEnumerator.h */; };
+		BC76519814E0786600559522 /* FlattenEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559521 /* FlattenEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559524 /* EmptyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559523 /* EmptyEnumerator.m */; };
-		BC76519814E0786600559526 /* EmptyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559525 /* EmptyEnumerator.h */; };
+		BC76519814E0786600559526 /* EmptyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559525 /* EmptyEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559528 /* SingleValueEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559527 /* SingleValueEnumerator.m */; };
-		BC76519814E078660055952A /* SingleValueEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559529 /* SingleValueEnumerator.h */; };
-		BC76519814E078660055952C /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952B /* Enumerable.h */; };
+		BC76519814E078660055952A /* SingleValueEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559529 /* SingleValueEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E078660055952C /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952B /* Enumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055952E /* NSEnumerator+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952D /* NSEnumerator+Funcky.m */; };
-		BC76519814E0786600559530 /* NSEnumerator+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952F /* NSEnumerator+Funcky.h */; };
+		BC76519814E0786600559530 /* NSEnumerator+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952F /* NSEnumerator+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -307,6 +307,12 @@
 				BC76514014E0703D00559503 /* Mappable.h in Headers */,
 				BC76514114E0703D00559503 /* None.h in Headers */,
 				BC76514314E0703D00559503 /* NoSuchElementException.h in Headers */,
+				BC76519814E078660055951E /* FilterEnumerator.h in Headers */,
+				BC76519814E0786600559522 /* FlattenEnumerator.h in Headers */,
+				BC76519814E0786600559526 /* EmptyEnumerator.h in Headers */,
+				BC76519814E078660055952A /* SingleValueEnumerator.h in Headers */,
+				BC76519814E078660055952C /* Enumerable.h in Headers */,
+				BC76519814E0786600559530 /* NSEnumerator+Funcky.h in Headers */,
 				BC76514514E0703D00559503 /* NSArray+Funcky.h in Headers */,
 				BC76519814E0786600559509 /* Pair.h in Headers */,
 				BC76519814E078660055950F /* LazySequence.h in Headers */,
@@ -317,12 +323,6 @@
 				BC76514D14E0703D00559503 /* Sequence.h in Headers */,
 				BC76514F14E0703D00559503 /* Some.h in Headers */,
 				BC76519814E0786600559505 /* Funcky.h in Headers */,
-				BC76519814E078660055951E /* FilterEnumerator.h in Headers */,
-				BC76519814E0786600559522 /* FlattenEnumerator.h in Headers */,
-				BC76519814E0786600559526 /* EmptyEnumerator.h in Headers */,
-				BC76519814E078660055952A /* SingleValueEnumerator.h in Headers */,
-				BC76519814E078660055952C /* Enumerable.h in Headers */,
-				BC76519814E0786600559530 /* NSEnumerator+Funcky.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

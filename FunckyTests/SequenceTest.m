@@ -140,4 +140,10 @@ static NSNumber *number(int i) {
     assertThat([items takeRight:0], equalTo(sequence(nil)));
 }
 
+-(void)testZip {
+    Sequence *items = sequence(@"one", @"two", nil);
+    Sequence *zip = [items zip:sequence(number(1), number(2), nil)];
+    assertThat(zip, equalTo(sequence([Pair left:@"one" right:number(1)], [Pair left:@"two" right:number(2)], nil)));
+}
+
 @end

@@ -2,7 +2,7 @@
 #import "Option.h"
 #import "Pair.h"
 
-@interface Sequence : NSObject <NSFastEnumeration, Mappable>
+@interface Sequence : NSObject <NSFastEnumeration, Mappable, Enumerable>
 - (id)initWith:(NSArray *)arguments;
 
 + (id)with:(NSArray *)arguments;
@@ -29,6 +29,8 @@
 - (NSDictionary *)asDictionary;
 - (Sequence *)asSequence;
 - (NSSet *)asSet;
+
+- (Sequence *)zip:(Sequence *)otherSequence;
 @end
 
 static Sequence *sequence(id items , ...) {
