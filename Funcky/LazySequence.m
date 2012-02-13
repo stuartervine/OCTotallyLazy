@@ -1,6 +1,7 @@
 #import <Sequence.h>
 #import "LazySequence.h"
 #import "NSEnumerator+Funcky.h"
+#import "PairEnumerator.h"
 
 @implementation LazySequence {
     NSEnumerator *enumerator;
@@ -84,6 +85,10 @@
 
 - (NSEnumerator *)objectEnumerator {
     return enumerator;
+}
+
+- (LazySequence *)zip:(LazySequence *)otherSequence {
+    return [LazySequence with:[PairEnumerator withLeft:enumerator right:[otherSequence objectEnumerator]]];
 }
 
 + (LazySequence *)with:(NSEnumerator *)enumerator {

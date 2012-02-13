@@ -19,6 +19,8 @@
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (Sequence *)asSequence;
 
+- (LazySequence *)zip:(LazySequence *)otherSequence;
+
 + (LazySequence *)with:(NSEnumerator *)enumerator;
 @end
 

@@ -72,6 +72,8 @@
 		BC76519814E078660055952C /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952B /* Enumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055952E /* NSEnumerator+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952D /* NSEnumerator+Funcky.m */; };
 		BC76519814E0786600559530 /* NSEnumerator+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952F /* NSEnumerator+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559532 /* PairEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559531 /* PairEnumerator.m */; };
+		BC76519814E0786600559534 /* PairEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559533 /* PairEnumerator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,8 @@
 		BC76519814E078660055952B /* Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerable.h; sourceTree = "<group>"; };
 		BC76519814E078660055952D /* NSEnumerator+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+Funcky.m"; sourceTree = "<group>"; };
 		BC76519814E078660055952F /* NSEnumerator+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Funcky.h"; sourceTree = "<group>"; };
+		BC76519814E0786600559531 /* PairEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E0786600559533 /* PairEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairEnumerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +283,8 @@
 		BC76519814E0786600559512 /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559533 /* PairEnumerator.h */,
+				BC76519814E0786600559531 /* PairEnumerator.m */,
 				BC76519814E078660055952F /* NSEnumerator+Funcky.h */,
 				BC76519814E078660055952D /* NSEnumerator+Funcky.m */,
 				BC76519814E0786600559529 /* SingleValueEnumerator.h */,
@@ -323,6 +329,7 @@
 				BC76514D14E0703D00559503 /* Sequence.h in Headers */,
 				BC76514F14E0703D00559503 /* Some.h in Headers */,
 				BC76519814E0786600559505 /* Funcky.h in Headers */,
+				BC76519814E0786600559534 /* PairEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +469,7 @@
 				BC76519814E0786600559524 /* EmptyEnumerator.m in Sources */,
 				BC76519814E0786600559528 /* SingleValueEnumerator.m in Sources */,
 				BC76519814E078660055952E /* NSEnumerator+Funcky.m in Sources */,
+				BC76519814E0786600559532 /* PairEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

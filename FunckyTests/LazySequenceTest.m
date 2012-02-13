@@ -87,4 +87,10 @@ static NSNumber *number(int i) {
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
+-(void)testZip {
+    LazySequence *items = lazySequence(@"one", @"two", nil);
+    LazySequence *zip = [items zip:lazySequence(number(1), number(2), nil)];
+    assertThat([zip asSequence], equalTo(sequence([Pair left:@"one" right:number(1)], [Pair left:@"two" right:number(2)], nil)));
+}
+
 @end
