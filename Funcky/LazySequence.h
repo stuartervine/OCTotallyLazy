@@ -6,21 +6,17 @@
 @interface LazySequence : NSObject <NSFastEnumeration, Mappable, Enumerable>
 
 - (LazySequence *)initWith:(NSEnumerator *)enumerator;
-
 - (LazySequence *)drop:(int)toDrop;
-
 - (LazySequence *)dropWhile:(BOOL (^)(id))funcBlock;
-
 - (Option *)find:(BOOL (^)(id))predicate;
-
 - (LazySequence *)flatMap:(id (^)(id))funcBlock;
-
 - (id)filter:(BOOL (^)(id))filterBlock;
-
 - (LazySequence *)flatten;
-
 - (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
-
+- (id)head;
+- (Option *)headOption;
+- (LazySequence *)join:(LazySequence *)toJoin;
+- (id)reduce:(id (^)(id, id))functorBlock;
 - (Sequence *)asSequence;
 
 + (LazySequence *)with:(NSEnumerator *)enumerator;

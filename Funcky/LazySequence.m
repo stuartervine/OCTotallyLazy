@@ -1,5 +1,4 @@
 #import <Sequence.h>
-#import <Filters.h>
 #import "LazySequence.h"
 #import "NSEnumerator+Funcky.h"
 
@@ -48,6 +47,26 @@
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
     return [[self asSequence] fold:value with:functorBlock];
+}
+
+- (id)head {
+    id item = enumerator.nextObject;
+    if (item == nil){
+        [NSException raise:@"NoSuchElementException" format:@"Expected sequence at least one element, but sequence was empty."];
+    }
+    return item;
+}
+
+- (Option *)headOption {
+    return option(enumerator.nextObject);
+}
+
+- (LazySequence *)join:(LazySequence *)toJoin {
+    return [lazySequence(self, toJoin, nil) flatten];
+}
+
+- (id)reduce:(id (^)(id, id))functorBlock {
+    return [self fold:enumerator.nextObject with:functorBlock];
 }
 
 - (LazySequence *)map:(id (^)(id))funcBlock {

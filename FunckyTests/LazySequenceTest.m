@@ -6,6 +6,7 @@
 #import "Filters.h"
 #import "Callables.h"
 #import "None.h"
+#import "Some.h"
 
 @interface LazySequenceTest : SenTestCase
 @end
@@ -37,19 +38,19 @@ static NSNumber *number(int i) {
     assertThat([[items filter:FY_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
 }
 
--(void)testFlatten {
+-(void)testFlattenOnlyFlattensOneLevel {
     LazySequence *items = lazySequence(
             @"one",
             lazySequence(@"two", option(@"three"), nil),
             option(@"four"),
             nil);
-    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", @"three", @"four", nil)));
+    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", option(@"three"), @"four", nil)));
 }
 
 - (void)testFlatMap {
     LazySequence *items = lazySequence(
             lazySequence(@"one", @"two", nil),
-            lazySequence(lazySequence(@"three", nil), @"four", nil),
+            lazySequence(@"three", @"four", nil),
             nil);
     assertThat([[items flatMap:[Callables toUpperCase]] asSequence], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
 }
@@ -59,10 +60,31 @@ static NSNumber *number(int i) {
     assertThat([items fold:@"" with:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
+- (void)testHead {
+    LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
+    assertThat([items head], equalTo(@"one"));
+}
+
+- (void)testHeadOption {
+    LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
+    assertThat([items headOption], equalTo([Some some:@"one"]));
+    assertThat([sequence(nil) headOption], equalTo([None none]));
+}
+
+- (void)testJoin {
+    LazySequence *joined = [lazySequence(@"one", nil) join:lazySequence(@"two", @"three", nil)];
+    assertThat([joined asSequence], equalTo(sequence(@"one", @"two", @"three", nil)));
+}
+
 -(void)testMap {
     LazySequence *lazy = lazySequence(number(1), number(2), number(3), nil);
     LazySequence *doubled = [lazy map:^(NSNumber *item){return number([item intValue]*2);}];
     assertThat([doubled asSequence], hasItems(number(2), number(4), number(6), nil));
+}
+
+- (void)testReduce {
+    LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
+    assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
 @end
