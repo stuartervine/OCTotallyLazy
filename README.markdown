@@ -4,6 +4,8 @@ Funcky is a framework that adds functional behaviour to Objective C collection o
 
 ### Examples
 
+The best place to look for examples is in the test classes for now. Here's a small sample of some of the available functional bits and bobs.
+
 These exclude any imports and use the Funcky base type of Sequence or LazySequence, eager methods are available on NSArray, NSSet and NSDictionary.
 
     [sequence(@"one", @"two", @"three", nil) head]; //outputs @"one".
