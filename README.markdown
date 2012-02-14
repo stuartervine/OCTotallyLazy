@@ -1,1 +1,1 @@
-# Funcky - Function extensions to Objective-C.
+# Funcky - Functional extensions to Objective-C.
