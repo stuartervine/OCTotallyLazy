@@ -73,16 +73,16 @@
 		BC76519814E078660055952E /* NSEnumerator+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952D /* NSEnumerator+Funcky.m */; };
 		BC76519814E0786600559530 /* NSEnumerator+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055952F /* NSEnumerator+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559532 /* PairEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559531 /* PairEnumerator.m */; };
-		BC76519814E0786600559534 /* PairEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559533 /* PairEnumerator.h */; };
+		BC76519814E0786600559534 /* PairEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559533 /* PairEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559536 /* MemoisedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559535 /* MemoisedEnumerator.m */; };
-		BC76519814E0786600559538 /* MemoisedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559537 /* MemoisedEnumerator.h */; };
+		BC76519814E0786600559538 /* MemoisedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559537 /* MemoisedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055953A /* MemoisedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559539 /* MemoisedEnumeratorTest.m */; };
 		BC76519814E078660055953C /* FunckyTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055953B /* FunckyTestCase.m */; };
 		BC76519814E078660055953F /* RepeatEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055953E /* RepeatEnumeratorTest.m */; };
 		BC76519814E0786600559541 /* RepeatEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559540 /* RepeatEnumerator.m */; };
-		BC76519814E0786600559543 /* RepeatEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559542 /* RepeatEnumerator.h */; };
+		BC76519814E0786600559543 /* RepeatEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559542 /* RepeatEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559545 /* TakeWhileEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559544 /* TakeWhileEnumerator.m */; };
-		BC76519814E0786600559547 /* TakeWhileEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559546 /* TakeWhileEnumerator.h */; };
+		BC76519814E0786600559547 /* TakeWhileEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559546 /* TakeWhileEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -350,6 +350,10 @@
 				BC76519814E0786600559530 /* NSEnumerator+Funcky.h in Headers */,
 				BC76514514E0703D00559503 /* NSArray+Funcky.h in Headers */,
 				BC76519814E0786600559509 /* Pair.h in Headers */,
+				BC76519814E0786600559534 /* PairEnumerator.h in Headers */,
+				BC76519814E0786600559538 /* MemoisedEnumerator.h in Headers */,
+				BC76519814E0786600559543 /* RepeatEnumerator.h in Headers */,
+				BC76519814E0786600559547 /* TakeWhileEnumerator.h in Headers */,
 				BC76519814E078660055950F /* LazySequence.h in Headers */,
 				BC76519814E078660055951A /* MapEnumerator.h in Headers */,
 				BC76514714E0703D00559503 /* NSDictionary+Funcky.h in Headers */,
@@ -358,10 +362,6 @@
 				BC76514D14E0703D00559503 /* Sequence.h in Headers */,
 				BC76514F14E0703D00559503 /* Some.h in Headers */,
 				BC76519814E0786600559505 /* Funcky.h in Headers */,
-				BC76519814E0786600559534 /* PairEnumerator.h in Headers */,
-				BC76519814E0786600559538 /* MemoisedEnumerator.h in Headers */,
-				BC76519814E0786600559543 /* RepeatEnumerator.h in Headers */,
-				BC76519814E0786600559547 /* TakeWhileEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
