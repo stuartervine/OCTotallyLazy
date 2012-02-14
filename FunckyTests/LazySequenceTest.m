@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-#import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import "LazySequence.h"
@@ -7,19 +6,17 @@
 #import "Callables.h"
 #import "None.h"
 #import "Some.h"
+#import "FunckyTestCase.h"
 
-@interface LazySequenceTest : SenTestCase
+@interface LazySequenceTest : FunckyTestCase
 @end
 
 @implementation LazySequenceTest
 
-static NSNumber *num(int i) {
-    return [NSNumber numberWithInt:i];
-}
-
 -(void)testCycle {
-//    LazySequence *cycle = [lazySequence(num(1), num(2), num(3), nil) cycle];
-//    assertThat([cycle take:])
+    LazySequence *cycle = [lazySequence(num(1), num(2), num(3), nil) cycle];
+    Sequence *const subsetSeq = [[cycle take:5] asSequence];
+    assertThat(subsetSeq, equalTo(sequence(num(1), num(2), num(3), num(1), num(2), nil)));
 }
 
 -(void)testDrop {

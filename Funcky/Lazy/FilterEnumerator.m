@@ -21,6 +21,7 @@
     id item;
     while((item = [enumerator nextObject])) {
         if(filterBlock(item)) {
+            NSLog(@"returing : %@", item);
             return item;
         }
     }

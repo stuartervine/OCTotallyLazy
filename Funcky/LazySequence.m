@@ -2,6 +2,8 @@
 #import "LazySequence.h"
 #import "NSEnumerator+Funcky.h"
 #import "PairEnumerator.h"
+#import "MemoisedEnumerator.h"
+#import "RepeatEnumerator.h"
 
 @implementation LazySequence {
     NSEnumerator *enumerator;
@@ -52,7 +54,7 @@
 
 - (id)head {
     id item = enumerator.nextObject;
-    if (item == nil){
+    if (item == nil) {
         [NSException raise:@"NoSuchElementException" format:@"Expected sequence at least one element, but sequence was empty."];
     }
     return item;
@@ -77,7 +79,7 @@
 - (Sequence *)asSequence {
     NSMutableArray *collect = [NSMutableArray array];
     id object;
-    while((object = [enumerator nextObject])) {
+    while ((object = [enumerator nextObject]) != nil) {
         [collect addObject:object];
     }
     return [Sequence with:collect];
@@ -99,8 +101,12 @@
     return [LazySequence with:[PairEnumerator withLeft:enumerator right:[otherSequence objectEnumerator]]];
 }
 
+- (LazySequence *)cycle {
+    return [LazySequence with:[RepeatEnumerator with:[MemoisedEnumerator with:enumerator]]];
+}
+
 + (LazySequence *)with:(NSEnumerator *)enumerator {
- return [[[LazySequence alloc] initWith:enumerator] autorelease];
+    return [[[LazySequence alloc] initWith:enumerator] autorelease];
 
 }
 @end

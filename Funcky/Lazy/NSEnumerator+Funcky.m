@@ -6,6 +6,7 @@
 #import "Option.h"
 #import "Some.h"
 #import "None.h"
+#import "TakeWhileEnumerator.h"
 
 @implementation NSEnumerator (Funcky)
 
@@ -43,7 +44,7 @@
 }
 
 - (NSEnumerator *)takeWhile:(BOOL (^)(id))predicate {
-    return [self filter:FY_whileTrue(predicate)];
+    return [TakeWhileEnumerator with:self predicate:FY_whileTrue(predicate)];
 }
 
 @end

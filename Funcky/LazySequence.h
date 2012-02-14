@@ -24,6 +24,8 @@
 - (Sequence *)asSequence;
 
 
+- (LazySequence *)cycle;
+
 + (LazySequence *)with:(NSEnumerator *)enumerator;
 @end
 
