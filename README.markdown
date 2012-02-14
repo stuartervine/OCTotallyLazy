@@ -25,8 +25,11 @@ These exclude any imports and use the Funcky base type of Sequence or LazySequen
 So I'm a bit fed up with using 'libraries' that say, just include our source code in your project, or attach our xcode project to your project. So to use this:
 
 - Clone the repo.
-- Run > <Funcky_ROOT>/build.sh release
-- Copy <Funcky_Root>/artifaces/Funcky.framework to your external libraries folder.
+- Run
+
+    <Funcky_ROOT>/build.sh release
+    
+- Copy <Funcky_Root>/artifacts/Funcky.framework to your external libraries folder.
 - Import the framework to your project.
 - Jobsa good 'un.
     
