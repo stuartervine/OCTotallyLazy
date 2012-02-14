@@ -17,9 +17,12 @@
 - (Option *)headOption;
 - (LazySequence *)join:(LazySequence *)toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
+- (LazySequence *)take:(int)n;
+- (LazySequence *)takeWhile:(BOOL (^)(id))funcBlock;
+- (LazySequence *)zip:(LazySequence *)otherSequence;
+
 - (Sequence *)asSequence;
 
-- (LazySequence *)zip:(LazySequence *)otherSequence;
 
 + (LazySequence *)with:(NSEnumerator *)enumerator;
 @end

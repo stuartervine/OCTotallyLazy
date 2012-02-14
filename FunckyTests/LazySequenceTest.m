@@ -13,18 +13,23 @@
 
 @implementation LazySequenceTest
 
-static NSNumber *number(int i) {
+static NSNumber *num(int i) {
     return [NSNumber numberWithInt:i];
 }
 
+-(void)testCycle {
+//    LazySequence *cycle = [lazySequence(num(1), num(2), num(3), nil) cycle];
+//    assertThat([cycle take:])
+}
+
 -(void)testDrop {
-    LazySequence *items = lazySequence(number(1), number(5), number(7), nil);
-    assertThat([[items drop:2] asSequence], equalTo(sequence(number(7), nil)));
+    LazySequence *items = lazySequence(num(1), num(5), num(7), nil);
+    assertThat([[items drop:2] asSequence], equalTo(sequence(num(7), nil)));
 }
 
 -(void)testDropWhile {
-    LazySequence *items = lazySequence(number(7), number(5), number(4), nil);
-    assertThat([[items dropWhile:FY_greaterThan(number(4))] asSequence], equalTo(sequence(number(4), nil)));
+    LazySequence *items = lazySequence(num(7), num(5), num(4), nil);
+    assertThat([[items dropWhile:FY_greaterThan(num(4))] asSequence], equalTo(sequence(num(4), nil)));
 }
 
 - (void)testFind {
@@ -77,9 +82,9 @@ static NSNumber *number(int i) {
 }
 
 -(void)testMap {
-    LazySequence *lazy = lazySequence(number(1), number(2), number(3), nil);
-    LazySequence *doubled = [lazy map:^(NSNumber *item){return number([item intValue]*2);}];
-    assertThat([doubled asSequence], hasItems(number(2), number(4), number(6), nil));
+    LazySequence *lazy = lazySequence(num(1), num(2), num(3), nil);
+    LazySequence *doubled = [lazy map:^(NSNumber *item){return num([item intValue]*2);}];
+    assertThat([doubled asSequence], hasItems(num(2), num(4), num(6), nil));
 }
 
 - (void)testReduce {
@@ -87,10 +92,20 @@ static NSNumber *number(int i) {
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
+- (void)testTake {
+    LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
+    assertThat([[items take:2] asSequence], equalTo(sequence(@"one", @"two", nil)));
+}
+
+- (void)testTakeWhile {
+    LazySequence *items = lazySequence(num(3), num(2), num(1), num(3), nil);
+    assertThat([[items takeWhile:FY_greaterThan(num(1))] asSequence], equalTo(sequence(num(3), num(2), nil)));
+}
+
 -(void)testZip {
     LazySequence *items = lazySequence(@"one", @"two", nil);
-    LazySequence *zip = [items zip:lazySequence(number(1), number(2), nil)];
-    assertThat([zip asSequence], equalTo(sequence([Pair left:@"one" right:number(1)], [Pair left:@"two" right:number(2)], nil)));
+    LazySequence *zip = [items zip:lazySequence(num(1), num(2), nil)];
+    assertThat([zip asSequence], equalTo(sequence([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil)));
 }
 
 @end

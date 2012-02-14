@@ -87,6 +87,14 @@
     return enumerator;
 }
 
+- (LazySequence *)take:(int)n {
+    return [LazySequence with:[enumerator take:n]];
+}
+
+- (LazySequence *)takeWhile:(BOOL (^)(id))funcBlock {
+    return [LazySequence with:[enumerator takeWhile:funcBlock]];
+}
+
 - (LazySequence *)zip:(LazySequence *)otherSequence {
     return [LazySequence with:[PairEnumerator withLeft:enumerator right:[otherSequence objectEnumerator]]];
 }

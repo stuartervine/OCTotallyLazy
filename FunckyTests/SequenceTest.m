@@ -13,7 +13,7 @@
 
 @implementation SequenceTest
 
-static NSNumber *number(int i) {
+static NSNumber *num(int i) {
     return [NSNumber numberWithInt:i];
 }
 
@@ -24,16 +24,16 @@ static NSNumber *number(int i) {
 }
 
 -(void)testDrop {
-    Sequence *items = sequence(number(1), number(5), number(7), nil);
-    assertThat([items drop:2], equalTo(sequence(number(7), nil)));
-    assertThat([items drop:1], equalTo(sequence(number(5), number(7), nil)));
+    Sequence *items = sequence(num(1), num(5), num(7), nil);
+    assertThat([items drop:2], equalTo(sequence(num(7), nil)));
+    assertThat([items drop:1], equalTo(sequence(num(5), num(7), nil)));
     assertThat([sequence(nil) drop:1], equalTo(sequence(nil)));
 }
 
 -(void)testDropWhile {
-    Sequence *items = sequence(number(7), number(5), number(4), nil);
-    assertThat([items dropWhile:FY_greaterThan(number(4))], equalTo(sequence(number(4), nil)));
-    assertThat([items dropWhile:FY_greaterThan(number(5))], equalTo(sequence(number(5), number(4), nil)));
+    Sequence *items = sequence(num(7), num(5), num(4), nil);
+    assertThat([items dropWhile:FY_greaterThan(num(4))], equalTo(sequence(num(4), nil)));
+    assertThat([items dropWhile:FY_greaterThan(num(5))], equalTo(sequence(num(5), num(4), nil)));
 }
 
 - (void)testFilter {
@@ -142,8 +142,8 @@ static NSNumber *number(int i) {
 
 -(void)testZip {
     Sequence *items = sequence(@"one", @"two", nil);
-    Sequence *zip = [items zip:sequence(number(1), number(2), nil)];
-    assertThat(zip, equalTo(sequence([Pair left:@"one" right:number(1)], [Pair left:@"two" right:number(2)], nil)));
+    Sequence *zip = [items zip:sequence(num(1), num(2), nil)];
+    assertThat(zip, equalTo(sequence([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil)));
 }
 
 @end

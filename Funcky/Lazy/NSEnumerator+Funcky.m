@@ -38,4 +38,12 @@
     return [MapEnumerator withEnumerator:self andFunction:func];
 }
 
+- (NSEnumerator *)take:(int)n {
+    return [self takeWhile:FY_countTo(n)];
+}
+
+- (NSEnumerator *)takeWhile:(BOOL (^)(id))predicate {
+    return [self filter:FY_whileTrue(predicate)];
+}
+
 @end
