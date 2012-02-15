@@ -24,6 +24,10 @@
     return [enumerator countByEnumeratingWithState:state objects:buffer count:len];
 }
 
+- (LazySequence *)add:(id)value {
+    return [self join:lazySequence(value, nil)];
+}
+
 - (LazySequence *)cons:(id)value {
     return [lazySequence(value,nil) join:self];
 }

@@ -84,6 +84,16 @@
 		BC76519814E0786600559547 /* TakeWhileEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559546 /* TakeWhileEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BC60928014EBC00F00A59CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC49C42514E05A5800BE88D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC49C45114E05CC600BE88D2;
+			remoteInfo = PackageFuncky;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		BC49C43014E05A8200BE88D2 /* Funcky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Funcky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC49C43314E05A8200BE88D2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -380,6 +390,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BC60928114EBC00F00A59CDD /* PBXTargetDependency */,
 			);
 			name = FunckyTests;
 			productName = FunckyTests;
@@ -506,6 +517,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC60928114EBC00F00A59CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC49C45114E05CC600BE88D2 /* PackageFuncky */;
+			targetProxy = BC60928014EBC00F00A59CDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC49C43814E05A8200BE88D2 /* InfoPlist.strings */ = {

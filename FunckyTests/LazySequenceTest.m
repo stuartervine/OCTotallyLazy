@@ -1,17 +1,24 @@
 #import <Foundation/Foundation.h>
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
+#import <Funcky/Funcky.h>
 #import "LazySequence.h"
 #import "Filters.h"
 #import "Callables.h"
 #import "None.h"
 #import "Some.h"
 #import "FunckyTestCase.h"
+#import "Funcky.h"
 
 @interface LazySequenceTest : FunckyTestCase
 @end
 
 @implementation LazySequenceTest
+
+-(void)testAdd {
+    LazySequence *items = lazySequence(@"one", @"two", nil);
+    assertThat([[items add:@"three"] asSequence], equalTo(sequence(@"one", @"two", @"three", nil)));
+}
 
 -(void)testCons {
     LazySequence *items = lazySequence(@"one", @"two", nil);

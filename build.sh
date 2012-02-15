@@ -13,7 +13,7 @@ function cleanTargets() {
 }
 
 function runTests() {
-    xcodebuild -target PackageFuncky -sdk iphoneos -configuration Release build
+    #xcodebuild -target PackageFuncky -sdk iphoneos -configuration Release build
     xcodebuild -verbose -target FunckyTests -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/ -configuration Debug build
     OUT=$?
     if [ $OUT -ne 0 ]
