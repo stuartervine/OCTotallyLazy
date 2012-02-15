@@ -13,6 +13,11 @@
 
 @implementation LazySequenceTest
 
+-(void)testCons {
+    LazySequence *items = lazySequence(@"one", @"two", nil);
+    assertThat([[items cons:@"three"] asSequence], equalTo(sequence(@"three", @"one", @"two", nil)));
+}
+
 -(void)testCycle {
     LazySequence *cycle = [lazySequence(num(1), num(2), num(3), nil) cycle];
     Sequence *const subsetSeq = [[cycle take:5] asSequence];

@@ -53,7 +53,6 @@
 		BC76518714E0717400559503 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518614E0717400559503 /* Foundation.framework */; };
 		BC76519814E0786600559503 /* Funcky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76519714E0786600559503 /* Funcky.framework */; };
 		BC76519814E0786600559505 /* Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559504 /* Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC76519814E0786600559507 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		BC76519814E0786600559509 /* Pair.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559508 /* Pair.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055950B /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055950A /* Pair.m */; };
 		BC76519814E078660055950D /* LazySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055950C /* LazySequence.m */; };
@@ -84,23 +83,6 @@
 		BC76519814E0786600559545 /* TakeWhileEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559544 /* TakeWhileEnumerator.m */; };
 		BC76519814E0786600559547 /* TakeWhileEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559546 /* TakeWhileEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BC76516D14E070BD00559503 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BC49C42514E05A5800BE88D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC49C42F14E05A8200BE88D2;
-			remoteInfo = Funcky;
-		};
-		BC76516F14E070BD00559503 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BC49C42514E05A5800BE88D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC49C45114E05CC600BE88D2;
-			remoteInfo = PackageFuncky;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BC49C43014E05A8200BE88D2 /* Funcky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Funcky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,8 +380,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BC76516E14E070BD00559503 /* PBXTargetDependency */,
-				BC76517014E070BD00559503 /* PBXTargetDependency */,
 			);
 			name = FunckyTests;
 			productName = FunckyTests;
@@ -492,7 +472,6 @@
 				BC76514C14E0703D00559503 /* Option.m in Sources */,
 				BC76514E14E0703D00559503 /* Sequence.m in Sources */,
 				BC76515014E0703D00559503 /* Some.m in Sources */,
-				BC76519814E0786600559507 /* (null) in Sources */,
 				BC76519814E078660055950B /* Pair.m in Sources */,
 				BC76519814E078660055950D /* LazySequence.m in Sources */,
 				BC76519814E0786600559518 /* MapEnumerator.m in Sources */,
@@ -527,19 +506,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BC76516E14E070BD00559503 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BC49C42F14E05A8200BE88D2 /* Funcky */;
-			targetProxy = BC76516D14E070BD00559503 /* PBXContainerItemProxy */;
-		};
-		BC76517014E070BD00559503 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BC49C45114E05CC600BE88D2 /* PackageFuncky */;
-			targetProxy = BC76516F14E070BD00559503 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC49C43814E05A8200BE88D2 /* InfoPlist.strings */ = {
