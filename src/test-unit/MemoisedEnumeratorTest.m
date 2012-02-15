@@ -1,9 +1,9 @@
 #import <SenTestingKit/SenTestingKit.h>
-#import <Funcky/Funcky.h>
-#import "FunckyTestCase.h"
-#import "../Funcky/Lazy/MemoisedEnumerator.h"
+#import <OCTotallyLazy/OCTotallyLazy.h>
+#import "OCTotallyLazyTestCase.h"
+#import "MemoisedEnumerator.h"
 
-@interface MemoisedEnumeratorTest : FunckyTestCase
+@interface MemoisedEnumeratorTest : OCTotallyLazyTestCase
 @end
 
 @implementation MemoisedEnumeratorTest

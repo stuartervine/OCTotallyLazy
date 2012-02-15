@@ -2,12 +2,139 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test-unit/ExamplesTest.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test-unit/OCTotallyLazyTestCase.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test-unit/OCTotallyLazyTestCase.m" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FunckyTests/FunckyTestCase.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FunckyTests/FunckyTestCase.m" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/Funcky.xcscheme" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/Funcky.xcscheme" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/FunckyTests.xcscheme" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/FunckyTests.xcscheme" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/PackageFuncky.xcscheme" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/PackageFuncky.xcscheme" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/xcuserdata/stuartervine.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Enumerable.h" afterPath="$PROJECT_DIR$/src/main/Enumerable.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Filters.h" afterPath="$PROJECT_DIR$/src/main/Filters.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Foldable.h" afterPath="$PROJECT_DIR$/src/main/Foldable.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Funcky-Info.plist" afterPath="$PROJECT_DIR$/src/main/Funcky-Info.plist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Funcky-Prefix.pch" afterPath="$PROJECT_DIR$/src/main/Funcky-Prefix.pch" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Funcky.h" afterPath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/EmptyEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/EmptyEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/EmptyEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/EmptyEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/FlattenEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/FlattenEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/MapEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/MapEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/MapEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/MemoisedEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/MemoisedEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/MemoisedEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/MemoisedEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.h" afterPath="$PROJECT_DIR$/src/main/enumerators/NSEnumerator+Funcky.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m" afterPath="$PROJECT_DIR$/src/main/enumerators/NSEnumerator+Funcky.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/PairEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/PairEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/PairEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/PairEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/RepeatEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/RepeatEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/RepeatEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/RepeatEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/SingleValueEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/SingleValueEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/SingleValueEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/SingleValueEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/TakeWhileEnumerator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/TakeWhileEnumerator.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/LazySequence.h" afterPath="$PROJECT_DIR$/src/main/LazySequence.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/LazySequence.m" afterPath="$PROJECT_DIR$/src/main/LazySequence.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Mappable.h" afterPath="$PROJECT_DIR$/src/main/Mappable.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NSArray+Funcky.h" afterPath="$PROJECT_DIR$/src/main/NSArray+Funcky.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NSArray+Funcky.m" afterPath="$PROJECT_DIR$/src/main/NSArray+Funcky.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.h" afterPath="$PROJECT_DIR$/src/main/NSDictionary+Funcky.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NSDictionary+Funcky.m" afterPath="$PROJECT_DIR$/src/main/NSDictionary+Funcky.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NSSet+Funcky.h" afterPath="$PROJECT_DIR$/src/main/NSSet+Funcky.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NSSet+Funcky.m" afterPath="$PROJECT_DIR$/src/main/NSSet+Funcky.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NoSuchElementException.h" afterPath="$PROJECT_DIR$/src/main/NoSuchElementException.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/NoSuchElementException.m" afterPath="$PROJECT_DIR$/src/main/NoSuchElementException.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/None.h" afterPath="$PROJECT_DIR$/src/main/None.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/None.m" afterPath="$PROJECT_DIR$/src/main/None.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Option.h" afterPath="$PROJECT_DIR$/src/main/Option.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Option.m" afterPath="$PROJECT_DIR$/src/main/Option.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Pair.h" afterPath="$PROJECT_DIR$/src/main/Pair.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Pair.m" afterPath="$PROJECT_DIR$/src/main/Pair.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Sequence.h" afterPath="$PROJECT_DIR$/src/main/Sequence.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Sequence.m" afterPath="$PROJECT_DIR$/src/main/Sequence.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Some.h" afterPath="$PROJECT_DIR$/src/main/Some.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/Some.m" afterPath="$PROJECT_DIR$/src/main/Some.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Funcky/en.lproj/InfoPlist.strings" afterPath="$PROJECT_DIR$/src/main/en.lproj/InfoPlist.strings" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/Callables.h" afterPath="$PROJECT_DIR$/src/test-unit/Callables.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/Callables.m" afterPath="$PROJECT_DIR$/src/test-unit/Callables.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/FiltersTest.m" afterPath="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/MemoisedEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/NSArrayTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSArrayTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/NSDictionaryTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/NSSetTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSSetTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/OptionTest.m" afterPath="$PROJECT_DIR$/src/test-unit/OptionTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/RepeatEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/SequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunckyTests/en.lproj/InfoPlist.strings" afterPath="$PROJECT_DIR$/src/test-unit/en.lproj/InfoPlist.strings" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCAllOf.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCAllOf.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCAnyOf.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCAnyOf.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCAssertThat.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCAssertThat.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCBaseDescription.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCBaseDescription.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCBaseMatcher.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCBaseMatcher.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCBoxNumber.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCBoxNumber.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCCollectMatchers.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCCollectMatchers.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCDescribedAs.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCDescribedAs.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCDescription.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCDescription.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCHasCount.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCHasCount.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCHasDescription.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCHasDescription.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCHasProperty.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCHasProperty.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCInvocationMatcher.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCInvocationMatcher.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIs.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIs.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsAnything.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsAnything.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsCloseTo.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsCloseTo.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionContaining.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionContaining.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionContainingInAnyOrder.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionContainingInAnyOrder.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionContainingInOrder.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionContainingInOrder.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionOnlyContaining.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsCollectionOnlyContaining.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContaining.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContaining.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingEntries.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingEntries.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingKey.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingKey.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingValue.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsDictionaryContainingValue.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsEmptyCollection.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsEmptyCollection.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsEqual.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsEqual.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsEqualIgnoringCase.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsEqualIgnoringCase.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsEqualIgnoringWhiteSpace.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsEqualIgnoringWhiteSpace.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsEqualToNumber.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsEqualToNumber.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsIn.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsIn.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsInstanceOf.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsInstanceOf.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsNil.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsNil.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsNot.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsNot.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCIsSame.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCIsSame.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCMatcher.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCMatcher.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCNumberAssert.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCNumberAssert.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCOrderingComparison.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCOrderingComparison.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCRequireNonNilObject.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCRequireNonNilObject.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCRequireNonNilString.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCRequireNonNilString.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCSelfDescribing.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCSelfDescribing.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCStringContains.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCStringContains.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCStringContainsInOrder.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCStringContainsInOrder.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCStringDescription.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCStringDescription.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCStringEndsWith.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCStringEndsWith.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCStringStartsWith.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCStringStartsWith.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCSubstringMatcher.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCSubstringMatcher.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/HCWrapInMatcher.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCWrapInMatcher.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/NSObject+HCSelfDescribingValue.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/NSObject+HCSelfDescribingValue.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Headers/OCHamcrestIOS.h" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/OCHamcrestIOS.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/OCHamcrestIOS" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/OCHamcrestIOS" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCHamcrestIOS.framework/Resources/Info.plist" afterPath="$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Resources/Info.plist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCMock/Headers/OCMock/NSNotificationCenter+OCMAdditions.h" afterPath="$PROJECT_DIR$/external/Test/OCMock/Headers/OCMock/NSNotificationCenter+OCMAdditions.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCMock/Headers/OCMock/OCMArg.h" afterPath="$PROJECT_DIR$/external/Test/OCMock/Headers/OCMock/OCMArg.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCMock/Headers/OCMock/OCMConstraint.h" afterPath="$PROJECT_DIR$/external/Test/OCMock/Headers/OCMock/OCMConstraint.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCMock/Headers/OCMock/OCMock.h" afterPath="$PROJECT_DIR$/external/Test/OCMock/Headers/OCMock/OCMock.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCMock/Headers/OCMock/OCMockObject.h" afterPath="$PROJECT_DIR$/external/Test/OCMock/Headers/OCMock/OCMockObject.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCMock/Headers/OCMock/OCMockRecorder.h" afterPath="$PROJECT_DIR$/external/Test/OCMock/Headers/OCMock/OCMockRecorder.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Vendor/Test/OCMock/libOCMock.a" afterPath="$PROJECT_DIR$/external/Test/OCMock/libOCMock.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Funcky.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/LazySequence.h" afterPath="$PROJECT_DIR$/Funcky/LazySequence.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/LazySequence.m" afterPath="$PROJECT_DIR$/Funcky/LazySequence.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" afterPath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sh" afterPath="$PROJECT_DIR$/build.sh" />
     </list>
     <ignored path="Funcky.iws" />
@@ -30,69 +157,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Filters.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/Funcky.framework/Headers/Filters.h">
+      <file leaf-file-name="OCTotallyLazy.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/OCTotallyLazy.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="17" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterEnumerator.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.m">
+      <file leaf-file-name="RepeatEnumeratorTest.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="15" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlattenEnumerator.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m">
+      <file leaf-file-name="OCTotallyLazy.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/OCTotallyLazy.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="21" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LazySequence.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="164" selection-end="164" vertical-scroll-proportion="0.1552795">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/Funcky.framework/Headers/LazySequence.h">
+      <file leaf-file-name="MemoisedEnumeratorTest.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="6" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+            <state line="1" column="29" selection-start="69" selection-end="69" vertical-scroll-proportion="0.020491803">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TakeWhileEnumerator.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/enumerators/TakeWhileEnumerator.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LazySequenceTest.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/LazySequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="0" selection-start="4231" selection-end="4231" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#55#94#0" expanded="true" />
-              </folding>
+            <state line="3" column="38" selection-start="104" selection-end="133" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="36" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExamplesTest.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/ExamplesTest.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="4" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.pbxproj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="50" selection-start="8130" selection-end="8130" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,22 +250,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Funcky/Lazy/MemoisedEnumerator.m" />
-        <option value="$PROJECT_DIR$/Funcky/Lazy/RepeatEnumerator.m" />
-        <option value="$PROJECT_DIR$/Funcky/Lazy/RepeatEnumerator.h" />
-        <option value="$PROJECT_DIR$/FunckyTests/RepeatEnumeratorTest.m" />
-        <option value="$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.m" />
-        <option value="$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.h" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.m" />
         <option value="$PROJECT_DIR$/README.markdown" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m" />
-        <option value="$PROJECT_DIR$/build.sh" />
         <option value="$PROJECT_DIR$/Funcky/LazySequence.h" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/FoldEnumerator.h" />
         <option value="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
         <option value="$PROJECT_DIR$/Funcky/LazySequence.m" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/FoldEnumerator.m" />
+        <option value="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
+        <option value="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" />
+        <option value="$PROJECT_DIR$/build/OCTotallyLazy.build/Debug-iphonesimulator/test-unit.build/build-state.dat" />
+        <option value="$PROJECT_DIR$/src/main/enumerators/TakeWhileEnumerator.m" />
+        <option value="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
+        <option value="$PROJECT_DIR$/build.sh" />
+        <option value="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" />
       </list>
     </option>
   </component>
@@ -162,78 +305,32 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
+              <option name="myItemId" value="OCTotallyLazy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
+              <option name="myItemId" value="OCTotallyLazy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
+              <option name="myItemId" value="OCTotallyLazy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
+              <option name="myItemId" value="OCTotallyLazy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
+              <option name="myItemId" value="OCTotallyLazy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FunckyTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky.xcodeproj" />
+              <option name="myItemId" value="OCTotallyLazy.xcodeproj" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePackagePsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lazy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -246,7 +343,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Funcky" />
+              <option name="myItemId" value="OCTotallyLazy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,46 +353,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="fileTemplates" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="OCUnit.LazySequenceTest">
-    <configuration default="false" name="-[LazySequenceTest testCycle]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testCycle">
+  <component name="RunManager" selected="OCUnit.ExamplesTest">
+    <configuration default="false" name="ExamplesTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphoneos_UNIVERSAL" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="ExamplesTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="-[LazySequenceTest testCons]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testCons">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="-[LazySequenceTest testAdd]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testAdd">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="-[LazySequenceTest testExamples]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest" TEST_METHOD="testExamples">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="LazySequenceTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="LazySequenceTest">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="true" type="OCUnitRunConfiguration" factoryName="OCUnit" PROJECT_NAME="Funcky" TARGET_NAME="FunckyTests" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="OCUnit" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphoneos_UNIVERSAL" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <method>
         <option name="com.jetbrains.cidr.execution.BuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -309,12 +382,8 @@
         <option name="com.jetbrains.cidr.execution.StopCurrentSessionBeforeRunTaskProvider$StopCurrentSessionBeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testCycle]" />
-      <item index="1" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testCons]" />
-      <item index="2" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testAdd]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[LazySequenceTest testExamples]" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.LazySequenceTest" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="OCUnit.ExamplesTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -355,14 +424,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="22" width="1397" height="878" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254282" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29839882" sideWeight="0.39262187" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29475984" sideWeight="0.67193675" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6073781" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -371,6 +438,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254282" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -461,101 +530,80 @@
           <url>file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m</url>
           <line>30</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m</url>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky.xcodeproj/project.pbxproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.02086231" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="4" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/Funcky.framework/Headers/LazySequence.h">
+    <entry file="file://$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+        <state line="68" column="50" selection-start="8130" selection-end="8130" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
+    <entry file="file://$PROJECT_DIR$/src/test-unit/ExamplesTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+        <state line="15" column="4" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m">
+    <entry file="file://$PROJECT_DIR$/src/test-unit/LazySequenceTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="21" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
+        <state line="3" column="38" selection-start="104" selection-end="133" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.m">
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/TakeWhileEnumerator.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="15" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
+        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/Funcky.framework/Headers/Filters.h">
+    <entry file="file://$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
+    <entry file="file://$PROJECT_DIR$/src/main/OCTotallyLazy.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="0" selection-start="4231" selection-end="4231" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/OCTotallyLazy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#55#94#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
+    <entry file="file://$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="164" selection-end="164" vertical-scroll-proportion="0.1552795">
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state line="1" column="29" selection-start="69" selection-end="69" vertical-scroll-proportion="0.020491803">
+          <folding />
         </state>
       </provider>
     </entry>

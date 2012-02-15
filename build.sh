@@ -8,13 +8,13 @@ function cleanTargets() {
     rm -rf ~/Library/Developer/Xcode/DerivedData
     rm -rf ~/Library/Application Support/iPhone Simulator
     rm -rf build
-    xcodebuild -target Funcky -sdk iphoneos -configuration Release clean;
-    xcodebuild -target FunckyTests -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/ -configuration Debug clean;
+    xcodebuild -target OCTotallyLazy -sdk iphoneos -configuration Release clean;
+    xcodebuild -target test-unit -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/ -configuration Debug clean;
 }
 
 function runTests() {
-    #xcodebuild -target PackageFuncky -sdk iphoneos -configuration Release build
-    xcodebuild -verbose -target FunckyTests -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/ -configuration Debug build
+    #xcodebuild -target package -sdk iphoneos -configuration Release build
+    xcodebuild -verbose -target test-unit -sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/ -configuration Debug build
     OUT=$?
     if [ $OUT -ne 0 ]
     then
@@ -24,7 +24,7 @@ function runTests() {
 }
 
 function buildRelease() {
-    xcodebuild -target PackageFuncky -sdk iphoneos -configuration Release build
+    xcodebuild -target package -sdk iphoneos -configuration Release build
     OUT=$?
     if [ $OUT -ne 0 ]
     then

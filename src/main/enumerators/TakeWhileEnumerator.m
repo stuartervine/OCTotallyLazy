@@ -1,4 +1,4 @@
-#import <Funcky/Funcky.h>
+#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "TakeWhileEnumerator.h"
 
 

@@ -1,5 +1,5 @@
 #import <SenTestingKit/SenTestingKit.h>
-#import "Funcky.h"
+#import "../main/OCTotallyLazy.h"
 
 #define HC_SHORTHAND
 

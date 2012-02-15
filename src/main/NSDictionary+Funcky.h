@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "Funcky.h"
+#import "OCTotallyLazy.h"
 
 @interface NSDictionary (Functional)
 -(NSDictionary *)filterKeys:(BOOL (^)(id))functorBlock;

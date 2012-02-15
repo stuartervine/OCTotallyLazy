@@ -1,10 +1,9 @@
-#import <Funcky/Funcky.h>
-#import "FunckyTestCase.h"
-#import "Enumerable.h"
+#import <OCTotallyLazy/OCTotallyLazy.h>
+#import "OCTotallyLazyTestCase.h"
 #import "MemoisedEnumerator.h"
 #import "RepeatEnumerator.h"
 
-@interface RepeatEnumeratorTest : FunckyTestCase
+@interface RepeatEnumeratorTest : OCTotallyLazyTestCase
 @end
 
 @implementation RepeatEnumeratorTest

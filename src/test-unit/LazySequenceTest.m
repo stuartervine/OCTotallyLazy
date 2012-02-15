@@ -1,16 +1,12 @@
 #import <Foundation/Foundation.h>
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import <Funcky/Funcky.h>
+#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "LazySequence.h"
-#import "Filters.h"
 #import "Callables.h"
-#import "None.h"
-#import "Some.h"
-#import "FunckyTestCase.h"
-#import "Funcky.h"
+#import "OCTotallyLazyTestCase.h"
 
-@interface LazySequenceTest : FunckyTestCase
+@interface LazySequenceTest : OCTotallyLazyTestCase
 @end
 
 @implementation LazySequenceTest

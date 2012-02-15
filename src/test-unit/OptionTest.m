@@ -1,7 +1,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import "Funcky.h"
+#import "../main/OCTotallyLazy.h"
 #import "Callables.h"
 
 @interface OptionTest : SenTestCase
