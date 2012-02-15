@@ -40,13 +40,13 @@
     assertThat([[items filter:FY_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
 }
 
--(void)testFlattenOnlyFlattensOneLevel {
+-(void)testFlatten {
     LazySequence *items = lazySequence(
             @"one",
             lazySequence(@"two", option(@"three"), nil),
             option(@"four"),
             nil);
-    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", option(@"three"), @"four", nil)));
+    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", @"three", @"four", nil)));
 }
 
 - (void)testFlatMap {

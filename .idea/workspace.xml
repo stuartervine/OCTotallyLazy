@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m" afterPath="$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" afterPath="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,22 +62,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="307" selection-end="307" vertical-scroll-proportion="0.16689847">
+            <state line="8" column="4" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TakeWhileEnumerator.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.m">
+      <file leaf-file-name="FlattenEnumerator.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="11" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state line="27" column="21" selection-start="802" selection-end="802" vertical-scroll-proportion="0.51229507">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlattenEnumerator.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="11" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,7 +92,7 @@
       <file leaf-file-name="NSEnumerator+Funcky.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="24" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0">
+            <state line="34" column="21" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,16 +101,7 @@
       <file leaf-file-name="LazySequence.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="44" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="14" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+            <state line="47" column="43" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +110,7 @@
       <file leaf-file-name="LazySequenceTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="52" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
+            <state line="48" column="28" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Funcky/Lazy/MemorisedEnumerator.m" />
         <option value="$PROJECT_DIR$/FunckyTests/MemorisedEnumeratorTest.m" />
         <option value="$PROJECT_DIR$/FunckyTests/MemoisedEnumeratorTest.m" />
         <option value="$PROJECT_DIR$/FunckyTests/RepeatEnumeratorTest.h" />
@@ -137,12 +135,13 @@
         <option value="$PROJECT_DIR$/Funcky/Lazy/RepeatEnumerator.h" />
         <option value="$PROJECT_DIR$/FunckyTests/RepeatEnumeratorTest.m" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/FilterEnumerator.m" />
-        <option value="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
         <option value="$PROJECT_DIR$/Funcky/LazySequence.m" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.h" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m" />
         <option value="$PROJECT_DIR$/Funcky/Lazy/TakeWhileEnumerator.m" />
         <option value="$PROJECT_DIR$/README.markdown" />
+        <option value="$PROJECT_DIR$/FunckyTests/LazySequenceTest.m" />
+        <option value="$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m" />
       </list>
     </option>
   </component>
@@ -207,6 +206,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Funcky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FunckyTests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,7 +319,11 @@
       <created>1329261312811</created>
       <updated>1329261312811</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding some basic docs.">
+      <created>1329261394009</created>
+      <updated>1329261394009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -395,11 +412,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m</url>
-          <line>30</line>
+          <line>29</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m</url>
-          <line>32</line>
+          <line>31</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m</url>
@@ -421,22 +438,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FunckyTests/MemoisedEnumeratorTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="176" selection-end="190" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/RepeatEnumerator.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/Lazy/RepeatEnumerator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="32" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
@@ -467,30 +468,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="14" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="44" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -534,7 +514,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="307" selection-end="307" vertical-scroll-proportion="0.16689847">
+        <state line="8" column="4" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FunckyTests/LazySequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="28" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/LazySequence.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="43" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/NSEnumerator+Funcky.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="21" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Funcky/Lazy/FlattenEnumerator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="21" selection-start="802" selection-end="802" vertical-scroll-proportion="0.51229507">
           <folding />
         </state>
       </provider>

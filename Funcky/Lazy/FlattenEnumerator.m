@@ -24,8 +24,7 @@
     while((item = [currentEnumerator nextObject]) == nil) {
         id nextItem = [enumerator nextObject];
         if ([nextItem respondsToSelector:@selector(objectEnumerator)]) {
-//            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem objectEnumerator]];
-            currentEnumerator = [nextItem objectEnumerator];
+            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem objectEnumerator]];
             continue;
         }
         return nextItem;
