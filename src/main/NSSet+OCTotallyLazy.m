@@ -1,4 +1,4 @@
-#import "NSSet+Funcky.h"
+#import "NSSet+OCTotallyLazy.h"
 
 @implementation NSSet (Functional)
 

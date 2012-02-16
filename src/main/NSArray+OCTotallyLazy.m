@@ -1,6 +1,4 @@
-#import "NSArray+Funcky.h"
-#import "Some.h"
-#import "None.h"
+#import "NSArray+OCTotallyLazy.h"
 
 @implementation NSArray (Functional)
 

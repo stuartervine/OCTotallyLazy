@@ -2,7 +2,7 @@
 #define HC_SHORTHAND
 
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import "NSSet+Funcky.h"
+#import "NSSet+OCTotallyLazy.h"
 #import "Callables.h"
 
 @interface NSSetTest : SenTestCase

@@ -1,6 +1,6 @@
 #import <Sequence.h>
 #import "LazySequence.h"
-#import "NSEnumerator+Funcky.h"
+#import "NSEnumerator+OCTotallyLazy.h"
 #import "PairEnumerator.h"
 #import "MemoisedEnumerator.h"
 #import "RepeatEnumerator.h"

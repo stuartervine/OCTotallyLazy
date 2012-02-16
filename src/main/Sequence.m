@@ -1,7 +1,7 @@
 #import "Sequence.h"
 #import "Some.h"
 #import "None.h"
-#import "NSArray+Funcky.h"
+#import "NSArray+OCTotallyLazy.h"
 
 @implementation Sequence {
     NSArray *arguments;

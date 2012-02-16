@@ -1,5 +1,4 @@
-#import "NSArray+Funcky.h"
-#import "NSDictionary+Funcky.h"
+#import "NSDictionary+OCTotallyLazy.h"
 
 @implementation NSDictionary (Functional)
 

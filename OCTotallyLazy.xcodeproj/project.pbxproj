@@ -32,8 +32,6 @@
 		BC6092C814EC2D8600A59CDD /* MapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC60929914EC2D8600A59CDD /* MapEnumerator.m */; };
 		BC6092C914EC2D8600A59CDD /* MemoisedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC60929A14EC2D8600A59CDD /* MemoisedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092CA14EC2D8600A59CDD /* MemoisedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC60929B14EC2D8600A59CDD /* MemoisedEnumerator.m */; };
-		BC6092CB14EC2D8600A59CDD /* NSEnumerator+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC60929C14EC2D8600A59CDD /* NSEnumerator+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6092CC14EC2D8600A59CDD /* NSEnumerator+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC60929D14EC2D8600A59CDD /* NSEnumerator+Funcky.m */; };
 		BC6092CD14EC2D8600A59CDD /* PairEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC60929E14EC2D8600A59CDD /* PairEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092CE14EC2D8600A59CDD /* PairEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC60929F14EC2D8600A59CDD /* PairEnumerator.m */; };
 		BC6092CF14EC2D8600A59CDD /* RepeatEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A014EC2D8600A59CDD /* RepeatEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,12 +52,6 @@
 		BC6092DE14EC2D8600A59CDD /* None.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092AF14EC2D8600A59CDD /* None.m */; };
 		BC6092DF14EC2D8600A59CDD /* NoSuchElementException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092B014EC2D8600A59CDD /* NoSuchElementException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092E014EC2D8600A59CDD /* NoSuchElementException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092B114EC2D8600A59CDD /* NoSuchElementException.m */; };
-		BC6092E114EC2D8600A59CDD /* NSArray+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092B214EC2D8600A59CDD /* NSArray+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6092E214EC2D8600A59CDD /* NSArray+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092B314EC2D8600A59CDD /* NSArray+Funcky.m */; };
-		BC6092E314EC2D8600A59CDD /* NSDictionary+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092B414EC2D8600A59CDD /* NSDictionary+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6092E414EC2D8600A59CDD /* NSDictionary+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092B514EC2D8600A59CDD /* NSDictionary+Funcky.m */; };
-		BC6092E514EC2D8600A59CDD /* NSSet+Funcky.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092B614EC2D8600A59CDD /* NSSet+Funcky.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6092E614EC2D8600A59CDD /* NSSet+Funcky.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092B714EC2D8600A59CDD /* NSSet+Funcky.m */; };
 		BC6092E714EC2D8600A59CDD /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092B814EC2D8600A59CDD /* Option.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092E814EC2D8600A59CDD /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092B914EC2D8600A59CDD /* Option.m */; };
 		BC6092E914EC2D8600A59CDD /* Pair.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092BA14EC2D8600A59CDD /* Pair.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,6 +77,14 @@
 		BC60931914EC6BCA00A59CDD /* OCTotallyLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60931814EC6BCA00A59CDD /* OCTotallyLazy.framework */; };
 		BC76518514E0715800559503 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518414E0715800559503 /* SenTestingKit.framework */; };
 		BC76518714E0717400559503 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518614E0717400559503 /* Foundation.framework */; };
+		BC76519814E078660055954C /* NSEnumerator+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055954B /* NSEnumerator+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E078660055954E /* NSEnumerator+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055954D /* NSEnumerator+OCTotallyLazy.m */; };
+		BC76519814E0786600559550 /* NSArray+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055954F /* NSArray+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559552 /* NSArray+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559551 /* NSArray+OCTotallyLazy.m */; };
+		BC76519814E0786600559554 /* NSDictionary+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559553 /* NSDictionary+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559556 /* NSDictionary+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559555 /* NSDictionary+OCTotallyLazy.m */; };
+		BC76519814E0786600559558 /* NSSet+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +111,6 @@
 		BC60929914EC2D8600A59CDD /* MapEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapEnumerator.m; sourceTree = "<group>"; };
 		BC60929A14EC2D8600A59CDD /* MemoisedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoisedEnumerator.h; sourceTree = "<group>"; };
 		BC60929B14EC2D8600A59CDD /* MemoisedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedEnumerator.m; sourceTree = "<group>"; };
-		BC60929C14EC2D8600A59CDD /* NSEnumerator+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Funcky.h"; sourceTree = "<group>"; };
-		BC60929D14EC2D8600A59CDD /* NSEnumerator+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+Funcky.m"; sourceTree = "<group>"; };
 		BC60929E14EC2D8600A59CDD /* PairEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairEnumerator.h; sourceTree = "<group>"; };
 		BC60929F14EC2D8600A59CDD /* PairEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairEnumerator.m; sourceTree = "<group>"; };
 		BC6092A014EC2D8600A59CDD /* RepeatEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatEnumerator.h; sourceTree = "<group>"; };
@@ -133,12 +131,6 @@
 		BC6092AF14EC2D8600A59CDD /* None.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = None.m; path = main/None.m; sourceTree = "<group>"; };
 		BC6092B014EC2D8600A59CDD /* NoSuchElementException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoSuchElementException.h; path = main/NoSuchElementException.h; sourceTree = "<group>"; };
 		BC6092B114EC2D8600A59CDD /* NoSuchElementException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoSuchElementException.m; path = main/NoSuchElementException.m; sourceTree = "<group>"; };
-		BC6092B214EC2D8600A59CDD /* NSArray+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Funcky.h"; path = "main/NSArray+Funcky.h"; sourceTree = "<group>"; };
-		BC6092B314EC2D8600A59CDD /* NSArray+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Funcky.m"; path = "main/NSArray+Funcky.m"; sourceTree = "<group>"; };
-		BC6092B414EC2D8600A59CDD /* NSDictionary+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Funcky.h"; path = "main/NSDictionary+Funcky.h"; sourceTree = "<group>"; };
-		BC6092B514EC2D8600A59CDD /* NSDictionary+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Funcky.m"; path = "main/NSDictionary+Funcky.m"; sourceTree = "<group>"; };
-		BC6092B614EC2D8600A59CDD /* NSSet+Funcky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+Funcky.h"; path = "main/NSSet+Funcky.h"; sourceTree = "<group>"; };
-		BC6092B714EC2D8600A59CDD /* NSSet+Funcky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Funcky.m"; path = "main/NSSet+Funcky.m"; sourceTree = "<group>"; };
 		BC6092B814EC2D8600A59CDD /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Option.h; path = main/Option.h; sourceTree = "<group>"; };
 		BC6092B914EC2D8600A59CDD /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Option.m; path = main/Option.m; sourceTree = "<group>"; };
 		BC6092BA14EC2D8600A59CDD /* Pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pair.h; path = main/Pair.h; sourceTree = "<group>"; };
@@ -167,6 +159,14 @@
 		BC76515614E0706800559503 /* test-unit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-unit.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC76518414E0715800559503 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BC76518614E0717400559503 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BC76519814E078660055954B /* NSEnumerator+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		BC76519814E078660055954D /* NSEnumerator+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		BC76519814E078660055954F /* NSArray+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+OCTotallyLazy.h"; path = "main/NSArray+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		BC76519814E0786600559551 /* NSArray+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+OCTotallyLazy.m"; path = "main/NSArray+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		BC76519814E0786600559553 /* NSDictionary+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+OCTotallyLazy.h"; path = "main/NSDictionary+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		BC76519814E0786600559555 /* NSDictionary+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+OCTotallyLazy.m"; path = "main/NSDictionary+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+OCTotallyLazy.h"; path = "main/NSSet+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+OCTotallyLazy.m"; path = "main/NSSet+OCTotallyLazy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +226,12 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */,
+				BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */,
+				BC76519814E0786600559555 /* NSDictionary+OCTotallyLazy.m */,
+				BC76519814E0786600559553 /* NSDictionary+OCTotallyLazy.h */,
+				BC76519814E0786600559551 /* NSArray+OCTotallyLazy.m */,
+				BC76519814E078660055954F /* NSArray+OCTotallyLazy.h */,
 				BC60929014EC2D8600A59CDD /* Enumerable.h */,
 				BC60929114EC2D8600A59CDD /* enumerators */,
 				BC6092A614EC2D8600A59CDD /* Filters.h */,
@@ -240,12 +246,6 @@
 				BC6092AF14EC2D8600A59CDD /* None.m */,
 				BC6092B014EC2D8600A59CDD /* NoSuchElementException.h */,
 				BC6092B114EC2D8600A59CDD /* NoSuchElementException.m */,
-				BC6092B214EC2D8600A59CDD /* NSArray+Funcky.h */,
-				BC6092B314EC2D8600A59CDD /* NSArray+Funcky.m */,
-				BC6092B414EC2D8600A59CDD /* NSDictionary+Funcky.h */,
-				BC6092B514EC2D8600A59CDD /* NSDictionary+Funcky.m */,
-				BC6092B614EC2D8600A59CDD /* NSSet+Funcky.h */,
-				BC6092B714EC2D8600A59CDD /* NSSet+Funcky.m */,
 				BC6092B814EC2D8600A59CDD /* Option.h */,
 				BC6092B914EC2D8600A59CDD /* Option.m */,
 				BC6092BA14EC2D8600A59CDD /* Pair.h */,
@@ -282,6 +282,8 @@
 		BC60929114EC2D8600A59CDD /* enumerators */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E078660055954D /* NSEnumerator+OCTotallyLazy.m */,
+				BC76519814E078660055954B /* NSEnumerator+OCTotallyLazy.h */,
 				BC60929214EC2D8600A59CDD /* EmptyEnumerator.h */,
 				BC60929314EC2D8600A59CDD /* EmptyEnumerator.m */,
 				BC60929414EC2D8600A59CDD /* FilterEnumerator.h */,
@@ -292,8 +294,6 @@
 				BC60929914EC2D8600A59CDD /* MapEnumerator.m */,
 				BC60929A14EC2D8600A59CDD /* MemoisedEnumerator.h */,
 				BC60929B14EC2D8600A59CDD /* MemoisedEnumerator.m */,
-				BC60929C14EC2D8600A59CDD /* NSEnumerator+Funcky.h */,
-				BC60929D14EC2D8600A59CDD /* NSEnumerator+Funcky.m */,
 				BC60929E14EC2D8600A59CDD /* PairEnumerator.h */,
 				BC60929F14EC2D8600A59CDD /* PairEnumerator.m */,
 				BC6092A014EC2D8600A59CDD /* RepeatEnumerator.h */,
@@ -329,8 +329,11 @@
 				BC6092C514EC2D8600A59CDD /* FlattenEnumerator.h in Headers */,
 				BC6092C714EC2D8600A59CDD /* MapEnumerator.h in Headers */,
 				BC6092C914EC2D8600A59CDD /* MemoisedEnumerator.h in Headers */,
-				BC6092CB14EC2D8600A59CDD /* NSEnumerator+Funcky.h in Headers */,
 				BC6092CD14EC2D8600A59CDD /* PairEnumerator.h in Headers */,
+				BC76519814E078660055954C /* NSEnumerator+OCTotallyLazy.h in Headers */,
+				BC76519814E0786600559550 /* NSArray+OCTotallyLazy.h in Headers */,
+				BC76519814E0786600559554 /* NSDictionary+OCTotallyLazy.h in Headers */,
+				BC76519814E0786600559558 /* NSSet+OCTotallyLazy.h in Headers */,
 				BC6092CF14EC2D8600A59CDD /* RepeatEnumerator.h in Headers */,
 				BC6092D114EC2D8600A59CDD /* SingleValueEnumerator.h in Headers */,
 				BC6092D314EC2D8600A59CDD /* TakeWhileEnumerator.h in Headers */,
@@ -342,9 +345,6 @@
 				BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */,
 				BC6092DD14EC2D8600A59CDD /* None.h in Headers */,
 				BC6092DF14EC2D8600A59CDD /* NoSuchElementException.h in Headers */,
-				BC6092E114EC2D8600A59CDD /* NSArray+Funcky.h in Headers */,
-				BC6092E314EC2D8600A59CDD /* NSDictionary+Funcky.h in Headers */,
-				BC6092E514EC2D8600A59CDD /* NSSet+Funcky.h in Headers */,
 				BC6092E714EC2D8600A59CDD /* Option.h in Headers */,
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092EB14EC2D8600A59CDD /* Sequence.h in Headers */,
@@ -476,7 +476,6 @@
 				BC6092C614EC2D8600A59CDD /* FlattenEnumerator.m in Sources */,
 				BC6092C814EC2D8600A59CDD /* MapEnumerator.m in Sources */,
 				BC6092CA14EC2D8600A59CDD /* MemoisedEnumerator.m in Sources */,
-				BC6092CC14EC2D8600A59CDD /* NSEnumerator+Funcky.m in Sources */,
 				BC6092CE14EC2D8600A59CDD /* PairEnumerator.m in Sources */,
 				BC6092D014EC2D8600A59CDD /* RepeatEnumerator.m in Sources */,
 				BC6092D214EC2D8600A59CDD /* SingleValueEnumerator.m in Sources */,
@@ -484,13 +483,14 @@
 				BC6092DB14EC2D8600A59CDD /* LazySequence.m in Sources */,
 				BC6092DE14EC2D8600A59CDD /* None.m in Sources */,
 				BC6092E014EC2D8600A59CDD /* NoSuchElementException.m in Sources */,
-				BC6092E214EC2D8600A59CDD /* NSArray+Funcky.m in Sources */,
-				BC6092E414EC2D8600A59CDD /* NSDictionary+Funcky.m in Sources */,
-				BC6092E614EC2D8600A59CDD /* NSSet+Funcky.m in Sources */,
 				BC6092E814EC2D8600A59CDD /* Option.m in Sources */,
 				BC6092EA14EC2D8600A59CDD /* Pair.m in Sources */,
 				BC6092EC14EC2D8600A59CDD /* Sequence.m in Sources */,
 				BC6092EE14EC2D8600A59CDD /* Some.m in Sources */,
+				BC76519814E078660055954E /* NSEnumerator+OCTotallyLazy.m in Sources */,
+				BC76519814E0786600559552 /* NSArray+OCTotallyLazy.m in Sources */,
+				BC76519814E0786600559556 /* NSDictionary+OCTotallyLazy.m in Sources */,
+				BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
