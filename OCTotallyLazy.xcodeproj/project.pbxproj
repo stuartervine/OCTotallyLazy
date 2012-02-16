@@ -42,8 +42,8 @@
 		BC6092D414EC2D8600A59CDD /* TakeWhileEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092A514EC2D8600A59CDD /* TakeWhileEnumerator.m */; };
 		BC6092D514EC2D8600A59CDD /* Filters.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A614EC2D8600A59CDD /* Filters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092D614EC2D8600A59CDD /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A714EC2D8600A59CDD /* Foldable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6092D714EC2D8600A59CDD /* Funcky-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC6092A814EC2D8600A59CDD /* Funcky-Info.plist */; };
-		BC6092D814EC2D8600A59CDD /* Funcky-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A914EC2D8600A59CDD /* Funcky-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC6092D714EC2D8600A59CDD /* OCTotallyLazy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */; };
+		BC6092D814EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092D914EC2D8600A59CDD /* OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092AA14EC2D8600A59CDD /* OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092DA14EC2D8600A59CDD /* LazySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092AB14EC2D8600A59CDD /* LazySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092DB14EC2D8600A59CDD /* LazySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092AC14EC2D8600A59CDD /* LazySequence.m */; };
@@ -121,8 +121,8 @@
 		BC6092A514EC2D8600A59CDD /* TakeWhileEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeWhileEnumerator.m; sourceTree = "<group>"; };
 		BC6092A614EC2D8600A59CDD /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filters.h; path = main/Filters.h; sourceTree = "<group>"; };
 		BC6092A714EC2D8600A59CDD /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Foldable.h; path = main/Foldable.h; sourceTree = "<group>"; };
-		BC6092A814EC2D8600A59CDD /* Funcky-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Funcky-Info.plist"; path = "main/Funcky-Info.plist"; sourceTree = "<group>"; };
-		BC6092A914EC2D8600A59CDD /* Funcky-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Funcky-Prefix.pch"; path = "main/Funcky-Prefix.pch"; sourceTree = "<group>"; };
+		BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "OCTotallyLazy-Info.plist"; path = "main/OCTotallyLazy-Info.plist"; sourceTree = "<group>"; };
+		BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OCTotallyLazy-Prefix.pch"; path = "main/OCTotallyLazy-Prefix.pch"; sourceTree = "<group>"; };
 		BC6092AA14EC2D8600A59CDD /* OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCTotallyLazy.h; path = main/OCTotallyLazy.h; sourceTree = "<group>"; };
 		BC6092AB14EC2D8600A59CDD /* LazySequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LazySequence.h; path = main/LazySequence.h; sourceTree = "<group>"; };
 		BC6092AC14EC2D8600A59CDD /* LazySequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LazySequence.m; path = main/LazySequence.m; sourceTree = "<group>"; };
@@ -236,8 +236,8 @@
 				BC60929114EC2D8600A59CDD /* enumerators */,
 				BC6092A614EC2D8600A59CDD /* Filters.h */,
 				BC6092A714EC2D8600A59CDD /* Foldable.h */,
-				BC6092A814EC2D8600A59CDD /* Funcky-Info.plist */,
-				BC6092A914EC2D8600A59CDD /* Funcky-Prefix.pch */,
+				BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */,
+				BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */,
 				BC6092AA14EC2D8600A59CDD /* OCTotallyLazy.h */,
 				BC6092AB14EC2D8600A59CDD /* LazySequence.h */,
 				BC6092AC14EC2D8600A59CDD /* LazySequence.m */,
@@ -339,7 +339,7 @@
 				BC6092D314EC2D8600A59CDD /* TakeWhileEnumerator.h in Headers */,
 				BC6092D514EC2D8600A59CDD /* Filters.h in Headers */,
 				BC6092D614EC2D8600A59CDD /* Foldable.h in Headers */,
-				BC6092D814EC2D8600A59CDD /* Funcky-Prefix.pch in Headers */,
+				BC6092D814EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch in Headers */,
 				BC6092D914EC2D8600A59CDD /* OCTotallyLazy.h in Headers */,
 				BC6092DA14EC2D8600A59CDD /* LazySequence.h in Headers */,
 				BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */,
@@ -424,7 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6092D714EC2D8600A59CDD /* Funcky-Info.plist in Resources */,
+				BC6092D714EC2D8600A59CDD /* OCTotallyLazy-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

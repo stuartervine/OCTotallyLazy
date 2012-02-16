@@ -2,7 +2,7 @@
 #import "Option.h"
 #import "Filters.h"
 
-@interface NSEnumerator (Funcky)
+@interface NSEnumerator (OCTotallyLazy)
 - (NSEnumerator *)drop:(int)toDrop;
 - (NSEnumerator *)dropWhile:(BOOL (^)(id))filterBlock;
 - (NSEnumerator *)filter:(BOOL (^)(id))filterBlock;

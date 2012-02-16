@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'Funcky' target in the 'Funcky' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif

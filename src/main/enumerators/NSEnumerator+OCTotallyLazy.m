@@ -6,7 +6,7 @@
 #import "None.h"
 #import "TakeWhileEnumerator.h"
 
-@implementation NSEnumerator (Funcky)
+@implementation NSEnumerator (OCTotallyLazy)
 
 - (NSEnumerator *)drop:(int)toDrop {
     return [self dropWhile:FY_countTo(toDrop)];

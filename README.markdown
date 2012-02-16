@@ -1,12 +1,12 @@
-## Funcky - Functional extensions to Objective-C.
+## OCTotallyLazy - Functional extensions to Objective-C.
 
-Funcky is a framework that adds functional behaviour to Objective C collection objects.
+OCTotallyLazy is a framework that adds functional behaviour to Objective C collection objects.
 
 ### Examples
 
 The best place to look for examples is in the test classes for now. Here's a small sample of some of the available functional bits and bobs.
 
-These exclude any imports and use the Funcky base type of Sequence or LazySequence, eager methods are available on NSArray, NSSet and NSDictionary.
+These exclude any imports and use the OCTotallyLazy base type of Sequence or LazySequence, eager methods are available on NSArray, NSSet and NSDictionary.
 
     Eager
     
@@ -27,9 +27,9 @@ So I'm a bit fed up with using 'libraries' that say, just include our source cod
 - Clone the repo.
 - Run
 
-    <Funcky_ROOT>/build.sh release
+    <OCTotallyLazy_ROOT>/build.sh release
     
-- Copy <Funcky_Root>/artifacts/Funcky.framework to your external libraries folder.
+- Copy <OCTotallyLazy_Root>/artifacts/OCTotallyLazy.framework to your external libraries folder.
 - Import the framework to your project.
 - Jobsa good 'un.
     
