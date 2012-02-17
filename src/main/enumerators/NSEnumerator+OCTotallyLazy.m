@@ -9,11 +9,11 @@
 @implementation NSEnumerator (OCTotallyLazy)
 
 - (NSEnumerator *)drop:(int)toDrop {
-    return [self dropWhile:FY_countTo(toDrop)];
+    return [self dropWhile:TL_countTo(toDrop)];
 }
 
 - (NSEnumerator *)dropWhile:(PREDICATE)predicate {
-    return [self filter:FY_not(FY_whileTrue(predicate))];
+    return [self filter:TL_not(TL_whileTrue(predicate))];
 }
 
 - (NSEnumerator *)filter:(PREDICATE)predicate {
@@ -38,11 +38,11 @@
 }
 
 - (NSEnumerator *)take:(int)n {
-    return [self takeWhile:FY_countTo(n)];
+    return [self takeWhile:TL_countTo(n)];
 }
 
 - (NSEnumerator *)takeWhile:(BOOL (^)(id))predicate {
-    return [TakeWhileEnumerator with:self predicate:FY_whileTrue(predicate)];
+    return [TakeWhileEnumerator with:self predicate:TL_whileTrue(predicate)];
 }
 
 @end

@@ -2,6 +2,7 @@
 #import "Some.h"
 #import "None.h"
 #import "NSArray+OCTotallyLazy.h"
+#import "Callables.h"
 
 @implementation Sequence {
     NSArray *arguments;
@@ -133,6 +134,18 @@
 
 - (Sequence *)takeRight:(int)n {
     return [[arguments subarrayWithRange:NSMakeRange([arguments count] - n, (NSUInteger) n)] asSequence];
+}
+
+
+- (NSString *)toString {
+    return [self toString:@""];
+}
+- (NSString *)toString:(NSString *)separator {
+    return [self reduce:TL_appendWithSeparator(separator)];
+}
+
+- (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end {
+    return [[start stringByAppendingString:[self toString:separator]] stringByAppendingString:end];
 }
 
 

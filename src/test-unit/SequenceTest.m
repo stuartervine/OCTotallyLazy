@@ -32,19 +32,19 @@ static NSNumber *num(int i) {
 
 -(void)testDropWhile {
     Sequence *items = sequence(num(7), num(5), num(4), nil);
-    assertThat([items dropWhile:FY_greaterThan(num(4))], equalTo(sequence(num(4), nil)));
-    assertThat([items dropWhile:FY_greaterThan(num(5))], equalTo(sequence(num(5), num(4), nil)));
+    assertThat([items dropWhile:TL_greaterThan(num(4))], equalTo(sequence(num(4), nil)));
+    assertThat([items dropWhile:TL_greaterThan(num(5))], equalTo(sequence(num(5), num(4), nil)));
 }
 
 - (void)testFilter {
     Sequence *items = sequence(@"a", @"ab", @"b", @"bc", nil);
-    assertThat([items filter:FY_startsWith(@"a")], equalTo(sequence(@"a", @"ab", nil)));
+    assertThat([items filter:TL_startsWith(@"a")], equalTo(sequence(@"a", @"ab", nil)));
 }
 
 - (void)testFind {
     Sequence *items = sequence(@"a", @"ab", @"b", @"bc", nil);
-    assertThat([items find:FY_startsWith(@"b")], equalTo(option(@"b")));
-    assertThat([items find:FY_startsWith(@"d")], equalTo([None none]));
+    assertThat([items find:TL_startsWith(@"b")], equalTo(option(@"b")));
+    assertThat([items find:TL_startsWith(@"d")], equalTo([None none]));
 }
 
 - (void)testFlatMap {
@@ -100,7 +100,7 @@ static NSNumber *num(int i) {
 
 -(void)testPartition {
     Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
-    Pair *partitioned = [items partition:FY_alternate(TRUE)];
+    Pair *partitioned = [items partition:TL_alternate(TRUE)];
     assertThat(partitioned.left, equalTo(sequence(@"one", @"three", nil)));
     assertThat(partitioned.right, equalTo(sequence(@"two", @"four", nil)));
 }
@@ -138,6 +138,13 @@ static NSNumber *num(int i) {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items takeRight:2], equalTo(sequence(@"two", @"three", nil)));
     assertThat([items takeRight:0], equalTo(sequence(nil)));
+}
+
+-(void)testToString {
+    Sequence *items = sequence(@"one", @"two", @"three", nil);
+    assertThat([items toString], equalTo(@"onetwothree"));
+    assertThat([items toString:@","], equalTo(@"one,two,three"));
+    assertThat([items toString:@"(" separator:@"," end:@")"], equalTo(@"(one,two,three)"));
 }
 
 -(void)testZip {

@@ -226,6 +226,8 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC6092F014EC2DA800A59CDD /* Callables.m */,
+				BC6092EF14EC2DA800A59CDD /* Callables.h */,
 				BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */,
 				BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */,
 				BC76519814E0786600559555 /* NSDictionary+OCTotallyLazy.m */,
@@ -261,8 +263,6 @@
 		BC60928814EC2CC000A59CDD /* test-unit */ = {
 			isa = PBXGroup;
 			children = (
-				BC6092EF14EC2DA800A59CDD /* Callables.h */,
-				BC6092F014EC2DA800A59CDD /* Callables.m */,
 				BC6092F114EC2DA800A59CDD /* ExamplesTest.m */,
 				BC6092F214EC2DA800A59CDD /* FiltersTest.m */,
 				BC6092F314EC2DA800A59CDD /* OCTotallyLazyTestCase.h */,

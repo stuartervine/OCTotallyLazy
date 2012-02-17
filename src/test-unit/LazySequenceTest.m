@@ -34,18 +34,18 @@
 
 -(void)testDropWhile {
     LazySequence *items = lazySequence(num(7), num(5), num(4), nil);
-    assertThat([[items dropWhile:FY_greaterThan(num(4))] asSequence], equalTo(sequence(num(4), nil)));
+    assertThat([[items dropWhile:TL_greaterThan(num(4))] asSequence], equalTo(sequence(num(4), nil)));
 }
 
 - (void)testFind {
     LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
-    assertThat([items find:FY_startsWith(@"b")], equalTo(option(@"b")));
-    assertThat([items find:FY_startsWith(@"d")], equalTo([None none]));
+    assertThat([items find:TL_startsWith(@"b")], equalTo(option(@"b")));
+    assertThat([items find:TL_startsWith(@"d")], equalTo([None none]));
 }
 
 - (void)testFilter {
     LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
-    assertThat([[items filter:FY_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
+    assertThat([[items filter:TL_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
 }
 
 -(void)testFlatten {
@@ -104,7 +104,7 @@
 
 - (void)testTakeWhile {
     LazySequence *items = lazySequence(num(3), num(2), num(1), num(3), nil);
-    assertThat([[items takeWhile:FY_greaterThan(num(1))] asSequence], equalTo(sequence(num(3), num(2), nil)));
+    assertThat([[items takeWhile:TL_greaterThan(num(1))] asSequence], equalTo(sequence(num(3), num(2), nil)));
 }
 
 -(void)testZip {
