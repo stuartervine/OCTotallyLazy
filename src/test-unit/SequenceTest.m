@@ -145,6 +145,9 @@ static NSNumber *num(int i) {
     assertThat([items toString], equalTo(@"onetwothree"));
     assertThat([items toString:@","], equalTo(@"one,two,three"));
     assertThat([items toString:@"(" separator:@"," end:@")"], equalTo(@"(one,two,three)"));
+    
+    Sequence *numbers = sequence(num(1), num(2), num(3), nil);
+    assertThat([numbers toString], equalTo(@"123"));
 }
 
 -(void)testZip {

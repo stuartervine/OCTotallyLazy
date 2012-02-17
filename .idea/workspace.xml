@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Adding some basic docs.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Filters.h" afterPath="$PROJECT_DIR$/src/main/Filters.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.h" afterPath="$PROJECT_DIR$/src/main/Sequence.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.m" afterPath="$PROJECT_DIR$/src/main/Sequence.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/NSEnumerator+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/enumerators/NSEnumerator+OCTotallyLazy.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/Callables.h" afterPath="$PROJECT_DIR$/src/test-unit/Callables.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/FiltersTest.m" afterPath="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
     </list>
     <ignored path="Funcky.iws" />
@@ -48,7 +37,7 @@
       <file leaf-file-name="Callables.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test-unit/Callables.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+            <state line="9" column="122" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +55,7 @@
       <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="0" selection-start="4116" selection-end="4116" vertical-scroll-proportion="0.0">
+            <state line="143" column="31" selection-start="3989" selection-end="3989" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -95,7 +84,7 @@
       <file leaf-file-name="SequenceTest.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="87" selection-start="5193" selection-end="5193" vertical-scroll-proportion="1.1601831">
+            <state line="149" column="26" selection-start="5292" selection-end="5292" vertical-scroll-proportion="0.6453089">
               <folding>
                 <element signature="e#62#101#0" expanded="true" />
               </folding>
@@ -154,10 +143,10 @@
         <option value="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/Filters.h" />
         <option value="$PROJECT_DIR$/README.markdown" />
-        <option value="$PROJECT_DIR$/src/test-unit/Callables.h" />
         <option value="$PROJECT_DIR$/src/main/Sequence.h" />
         <option value="$PROJECT_DIR$/src/main/Sequence.m" />
         <option value="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
+        <option value="$PROJECT_DIR$/src/test-unit/Callables.h" />
       </list>
     </option>
   </component>
@@ -375,7 +364,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6073781" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3886693" sideWeight="0.99798656" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3886693" sideWeight="0.99798656" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -549,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/Callables.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="16" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
@@ -565,16 +547,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="0" selection-start="4116" selection-end="4116" vertical-scroll-proportion="0.0">
+        <state line="143" column="31" selection-start="3989" selection-end="3989" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/Callables.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="122" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="87" selection-start="5193" selection-end="5193" vertical-scroll-proportion="1.1601831">
+        <state line="149" column="26" selection-start="5292" selection-end="5292" vertical-scroll-proportion="0.6453089">
           <folding>
             <element signature="e#62#101#0" expanded="true" />
           </folding>
