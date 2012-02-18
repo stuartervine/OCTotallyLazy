@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
 #import "Mappable.h"
-#import "Sequence.h"
+#import "LazySequence.h"
 #import "Flattenable.h"
 
 @interface NSArray (Functional) <Mappable, Foldable, Enumerable, Flattenable>
@@ -28,7 +28,7 @@
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
 - (NSArray *)zip:(id<Enumerable>)otherSequence;
 
-- (Sequence *)asSequence;
+- (LazySequence *)asSequence;
 - (NSSet *)asSet;
 - (NSArray *)asArray;
 @end

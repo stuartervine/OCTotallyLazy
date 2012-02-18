@@ -72,7 +72,7 @@
     return option(enumerator.nextObject);
 }
 
-- (LazySequence *)join:(LazySequence *)toJoin {
+- (LazySequence *)join:(id<Enumerable>)toJoin {
     return [lazySequence(self, toJoin, nil) flatten];
 }
 
@@ -82,28 +82,6 @@
 
 - (LazySequence *)map:(id (^)(id))funcBlock {
     return [LazySequence with:[enumerator map:funcBlock]];
-}
-
-- (Sequence *)asSequence {
-    NSMutableArray *collect = [NSMutableArray array];
-    id object;
-    while ((object = [enumerator nextObject]) != nil) {
-        [collect addObject:object];
-    }
-    return [Sequence with:collect];
-}
-
-- (NSArray *)asArray {
-    NSMutableArray *collect = [NSMutableArray array];
-    id object;
-    while ((object = [enumerator nextObject]) != nil) {
-        [collect addObject:object];
-    }
-    return collect;
-}
-
-- (NSEnumerator *)toEnumerator {
-    return enumerator;
 }
 
 - (LazySequence *)take:(int)n {
@@ -124,6 +102,39 @@
 
 + (LazySequence *)with:(NSEnumerator *)enumerator {
     return [[[LazySequence alloc] initWith:enumerator] autorelease];
-
 }
+
+- (NSDictionary *)asDictionary {
+    return [self fold:[NSMutableDictionary dictionary]with:^(NSMutableDictionary *accumulator, Sequence *keyValues) {
+        [accumulator setObject:[[keyValues tail] head] forKey:[keyValues head]];
+        return accumulator;
+    }];
+}
+
+- (Sequence *)asSequence {
+    NSMutableArray *collect = [NSMutableArray array];
+    id object;
+    while ((object = [enumerator nextObject]) != nil) {
+        [collect addObject:object];
+    }
+    return [Sequence with:collect];
+}
+
+- (NSArray *)asArray {
+    NSMutableArray *collect = [NSMutableArray array];
+    id object;
+    while ((object = [enumerator nextObject]) != nil) {
+        [collect addObject:object];
+    }
+    return collect;
+}
+
+- (NSSet *)asSet {
+    return [NSSet setWithArray: [self asArray]];
+}
+
+- (NSEnumerator *)toEnumerator {
+    return enumerator;
+}
+
 @end

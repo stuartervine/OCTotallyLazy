@@ -1,14 +1,17 @@
 #import "NSArray+OCTotallyLazy.h"
 #import "Callables.h"
+#import "None.h"
+#import "Some.h"
+#import "LazySequence.h"
 
 @implementation NSArray (Functional)
 
 -(NSArray *)drop:(int)n {
-   return  (n >= [self count]) ? array(nil) : [self subarrayWithRange:NSMakeRange((NSUInteger) n, [self count] - n)];
+   return [[[self asSequence] drop:n] asArray];
 }
 
 - (NSArray *)dropWhile:(BOOL (^)(id))funcBlock {
-   return [self drop:[[[self takeWhile:funcBlock] asArray] count]];
+   return [[[self asSequence] dropWhile:funcBlock] asArray];
 }
 
 - (NSArray *)filter:(BOOL (^)(id))filterBlock {
@@ -20,19 +23,11 @@
 }
 
 -(NSArray *)flatten {
-    NSMutableArray *flatten = [NSMutableArray array];
-    for(id object in self) {
-        if([object respondsToSelector:@selector(flatten)]) {
-            [flatten addObjectsFromArray:[[object flatten] asArray]];
-        } else {
-            [flatten addObject:object];
-        }
-    }
-    return flatten;
+    return [[[self asSequence] flatten] asArray];
 }
 
 - (Option *)find:(BOOL (^)(id))filterBlock {
-    return [[self filter:filterBlock] headOption];
+    return [[self asSequence] find:filterBlock];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
@@ -48,15 +43,11 @@
 }
 
 - (NSArray *)join:(id<Enumerable>)toJoin {
-    return [array(self, toJoin, nil) flatten];
+    return [[[self asSequence] join:toJoin] asArray];
 }
 
 - (id)map:(id (^)(id))funcBlock {
-    NSMutableArray *collectedArray = [NSMutableArray array];
-    for(id object in self) {
-        [collectedArray addObject:funcBlock(object)];
-    }
-    return collectedArray;
+    return [[[self asSequence] map:funcBlock] asArray];
 }
 
 - (Pair *)partition:(BOOL (^)(id))filterBlock {
@@ -72,9 +63,8 @@
     return [Pair left:left right:right];
 }
 
-
 - (id)reduce:(id (^)(id, id))functorBlock {
-    return [[self asSequence] reduce:functorBlock];
+    return [[self tail] fold:[self head] with:functorBlock];
 }
 
 - (NSArray *)reverse {
@@ -88,7 +78,7 @@
 }
 
 - (NSArray *)tail {
-    return [[[self asSequence] tail] asArray];
+    return [self takeRight:[self count] - 1];
 }
 
 - (NSArray *)take:(int)n {
@@ -100,7 +90,7 @@
 }
 
 - (NSArray *)takeRight:(int)n {
-    return [[[self asSequence] takeRight:n] asArray];
+    return [self subarrayWithRange:NSMakeRange([self count] - n, (NSUInteger) n)];
 }
 
 - (NSEnumerator *)toEnumerator {
@@ -130,8 +120,8 @@
     return pairs;
 }
 
-- (Sequence *)asSequence {
-    return [Sequence with:self];
+- (LazySequence *)asSequence {
+    return [LazySequence with:[self toEnumerator]];
 }
 
 - (NSSet *)asSet {

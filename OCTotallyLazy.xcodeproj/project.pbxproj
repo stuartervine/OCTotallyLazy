@@ -71,7 +71,6 @@
 		BC60930514EC2DA800A59CDD /* NSSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F914EC2DA800A59CDD /* NSSetTest.m */; };
 		BC60930614EC2DA800A59CDD /* OptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092FA14EC2DA800A59CDD /* OptionTest.m */; };
 		BC60930714EC2DA800A59CDD /* RepeatEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092FB14EC2DA800A59CDD /* RepeatEnumeratorTest.m */; };
-		BC60930814EC2DA800A59CDD /* SequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092FC14EC2DA800A59CDD /* SequenceTest.m */; };
 		BC60930E14EC2E9100A59CDD /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60930D14EC2E9100A59CDD /* OCHamcrestIOS.framework */; };
 		BC60931014EC2EA200A59CDD /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60930F14EC2EA200A59CDD /* libOCMock.a */; };
 		BC60931914EC6BCA00A59CDD /* OCTotallyLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60931814EC6BCA00A59CDD /* OCTotallyLazy.framework */; };
@@ -153,7 +152,6 @@
 		BC6092F914EC2DA800A59CDD /* NSSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSSetTest.m; path = "test-unit/NSSetTest.m"; sourceTree = "<group>"; };
 		BC6092FA14EC2DA800A59CDD /* OptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionTest.m; path = "test-unit/OptionTest.m"; sourceTree = "<group>"; };
 		BC6092FB14EC2DA800A59CDD /* RepeatEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RepeatEnumeratorTest.m; path = "test-unit/RepeatEnumeratorTest.m"; sourceTree = "<group>"; };
-		BC6092FC14EC2DA800A59CDD /* SequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SequenceTest.m; path = "test-unit/SequenceTest.m"; sourceTree = "<group>"; };
 		BC60930D14EC2E9100A59CDD /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = external/Test/OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		BC60930F14EC2EA200A59CDD /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = external/Test/OCMock/libOCMock.a; sourceTree = "<group>"; };
 		BC60931814EC6BCA00A59CDD /* OCTotallyLazy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCTotallyLazy.framework; path = artifacts/OCTotallyLazy.framework; sourceTree = "<group>"; };
@@ -277,7 +275,6 @@
 				BC6092F914EC2DA800A59CDD /* NSSetTest.m */,
 				BC6092FA14EC2DA800A59CDD /* OptionTest.m */,
 				BC6092FB14EC2DA800A59CDD /* RepeatEnumeratorTest.m */,
-				BC6092FC14EC2DA800A59CDD /* SequenceTest.m */,
 			);
 			name = "test-unit";
 			sourceTree = "<group>";
@@ -513,7 +510,6 @@
 				BC60930514EC2DA800A59CDD /* NSSetTest.m in Sources */,
 				BC60930614EC2DA800A59CDD /* OptionTest.m in Sources */,
 				BC60930714EC2DA800A59CDD /* RepeatEnumeratorTest.m in Sources */,
-				BC60930814EC2DA800A59CDD /* SequenceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
