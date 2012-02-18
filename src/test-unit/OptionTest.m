@@ -49,8 +49,8 @@
 }
 
 -(void)testConversionToSequence {
-    assertThat([[None none] asSequence], equalTo(sequence(nil)));
-    assertThat([[Some some:@"bob"] asSequence], equalTo(sequence(@"bob", nil)));
+    assertThat([[[None none] asSequence] asArray], empty());
+    assertThat([[Some some:@"bob"] asSequence], hasItems(@"bob", nil));
 }
 
 @end

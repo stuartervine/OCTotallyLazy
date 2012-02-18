@@ -1,5 +1,5 @@
 #import "Some.h"
-#import "Sequence.h"
+#import "LazySequence.h"
 #import "SingleValueEnumerator.h"
 
 @implementation Some {
@@ -47,8 +47,8 @@
     return [Some some:functorBlock(seed, value)];
 }
 
-- (Sequence *)asSequence {
-    return sequence(value, nil);
+- (LazySequence *)asSequence {
+    return lazySequence(value, nil);
 }
 
 - (NSEnumerator *)toEnumerator {

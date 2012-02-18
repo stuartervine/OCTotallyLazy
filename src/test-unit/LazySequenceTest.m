@@ -13,28 +13,27 @@
 
 -(void)testAdd {
     LazySequence *items = lazySequence(@"one", @"two", nil);
-    assertThat([[items add:@"three"] asSequence], equalTo(sequence(@"one", @"two", @"three", nil)));
+    assertThat([[items add:@"three"] asArray], hasItems(@"one", @"two", @"three", nil));
 }
 
 -(void)testCons {
     LazySequence *items = lazySequence(@"one", @"two", nil);
-    assertThat([[items cons:@"three"] asSequence], equalTo(sequence(@"three", @"one", @"two", nil)));
+    assertThat([[items cons:@"three"] asArray], hasItems(@"three", @"one", @"two", nil));
 }
 
 -(void)testCycle {
     LazySequence *cycle = [lazySequence(num(1), num(2), num(3), nil) cycle];
-    Sequence *const subsetSeq = [[cycle take:5] asSequence];
-    assertThat(subsetSeq, equalTo(sequence(num(1), num(2), num(3), num(1), num(2), nil)));
+    assertThat([[cycle take:5] asArray], hasItems(num(1), num(2), num(3), num(1), num(2), nil));
 }
 
 -(void)testDrop {
     LazySequence *items = lazySequence(num(1), num(5), num(7), nil);
-    assertThat([[items drop:2] asSequence], equalTo(sequence(num(7), nil)));
+    assertThat([[items drop:2] asArray], hasItems(num(7), nil));
 }
 
 -(void)testDropWhile {
     LazySequence *items = lazySequence(num(7), num(5), num(4), nil);
-    assertThat([[items dropWhile:TL_greaterThan(num(4))] asSequence], equalTo(sequence(num(4), nil)));
+    assertThat([[items dropWhile:TL_greaterThan(num(4))] asArray], hasItems(num(4), nil));
 }
 
 - (void)testFind {
@@ -45,7 +44,7 @@
 
 - (void)testFilter {
     LazySequence *items = lazySequence(@"a", @"ab", @"b", @"bc", nil);
-    assertThat([[items filter:TL_startsWith(@"a")] asSequence], equalTo(sequence(@"a", @"ab", nil)));
+    assertThat([[items filter:TL_startsWith(@"a")] asArray], hasItems(@"a", @"ab", nil));
 }
 
 -(void)testFlatten {
@@ -54,7 +53,7 @@
             lazySequence(@"two", option(@"three"), nil),
             option(@"four"),
             nil);
-    assertThat([[items flatten] asSequence], equalTo(sequence(@"one", @"two", @"three", @"four", nil)));
+    assertThat([[items flatten] asArray], hasItems(@"one", @"two", @"three", @"four", nil));
 }
 
 - (void)testFlatMap {
@@ -62,7 +61,7 @@
             lazySequence(@"one", @"two", nil),
             lazySequence(@"three", @"four", nil),
             nil);
-    assertThat([[items flatMap:[Callables toUpperCase]] asSequence], equalTo(sequence(@"ONE", @"TWO", @"THREE", @"FOUR", nil)));
+    assertThat([[items flatMap:[Callables toUpperCase]] asArray], hasItems(@"ONE", @"TWO", @"THREE", @"FOUR", nil));
 }
 
 - (void)testFold {
@@ -83,13 +82,13 @@
 
 - (void)testJoin {
     LazySequence *joined = [lazySequence(@"one", nil) join:lazySequence(@"two", @"three", nil)];
-    assertThat([joined asSequence], equalTo(sequence(@"one", @"two", @"three", nil)));
+    assertThat([joined asArray], hasItems(@"one", @"two", @"three", nil));
 }
 
 -(void)testMap {
     LazySequence *lazy = lazySequence(num(1), num(2), num(3), nil);
     LazySequence *doubled = [lazy map:^(NSNumber *item){return num([item intValue]*2);}];
-    assertThat([doubled asSequence], hasItems(num(2), num(4), num(6), nil));
+    assertThat([doubled asArray], hasItems(num(2), num(4), num(6), nil));
 }
 
 - (void)testReduce {
@@ -99,18 +98,18 @@
 
 - (void)testTake {
     LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
-    assertThat([[items take:2] asSequence], equalTo(sequence(@"one", @"two", nil)));
+    assertThat([[items take:2] asArray], hasItems(@"one", @"two", nil));
 }
 
 - (void)testTakeWhile {
     LazySequence *items = lazySequence(num(3), num(2), num(1), num(3), nil);
-    assertThat([[items takeWhile:TL_greaterThan(num(1))] asSequence], equalTo(sequence(num(3), num(2), nil)));
+    assertThat([[items takeWhile:TL_greaterThan(num(1))] asArray], hasItems(num(3), num(2), nil));
 }
 
 -(void)testZip {
     LazySequence *items = lazySequence(@"one", @"two", nil);
     LazySequence *zip = [items zip:lazySequence(num(1), num(2), nil)];
-    assertThat([zip asSequence], equalTo(sequence([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil)));
+    assertThat([zip asArray], hasItems([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil));
 }
 
 @end
