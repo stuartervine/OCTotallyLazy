@@ -23,8 +23,8 @@
     id item;
     while((item = [currentEnumerator nextObject]) == nil) {
         id nextItem = [enumerator nextObject];
-        if ([nextItem respondsToSelector:@selector(objectEnumerator)]) {
-            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem objectEnumerator]];
+        if ([nextItem respondsToSelector:@selector(toEnumerator)]) {
+            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem toEnumerator]];
             continue;
         }
         return nextItem;

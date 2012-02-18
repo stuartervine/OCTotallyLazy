@@ -191,8 +191,8 @@
 }
 
 - (Sequence *)zip:(Sequence *)otherSequence {
-    NSEnumerator *enumerator1 = [self objectEnumerator];
-    NSEnumerator *enumerator2 = [otherSequence objectEnumerator];
+    NSEnumerator *enumerator1 = [self toEnumerator];
+    NSEnumerator *enumerator2 = [otherSequence toEnumerator];
     id item1;
     id item2;
     NSMutableArray *pairs = [NSMutableArray array];
@@ -202,7 +202,7 @@
     return [pairs asSequence];
 }
 
-- (NSEnumerator *)objectEnumerator {
+- (NSEnumerator *)toEnumerator {
     return [arguments objectEnumerator];
 }
 

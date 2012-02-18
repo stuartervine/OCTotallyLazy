@@ -24,6 +24,7 @@
 - (LazySequence *)zip:(LazySequence *)otherSequence;
 
 - (Sequence *)asSequence;
+- (NSArray *)asArray;
 
 
 - (LazySequence *)cycle;

@@ -85,6 +85,7 @@
 		BC76519814E0786600559556 /* NSDictionary+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559555 /* NSDictionary+OCTotallyLazy.m */; };
 		BC76519814E0786600559558 /* NSSet+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */; };
+		BC76519814E078660055955C /* Flattenable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955B /* Flattenable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		BC76519814E0786600559555 /* NSDictionary+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+OCTotallyLazy.m"; path = "main/NSDictionary+OCTotallyLazy.m"; sourceTree = "<group>"; };
 		BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+OCTotallyLazy.h"; path = "main/NSSet+OCTotallyLazy.h"; sourceTree = "<group>"; };
 		BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+OCTotallyLazy.m"; path = "main/NSSet+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		BC76519814E078660055955B /* Flattenable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flattenable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E078660055955B /* Flattenable.h */,
 				BC6092F014EC2DA800A59CDD /* Callables.m */,
 				BC6092EF14EC2DA800A59CDD /* Callables.h */,
 				BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */,
@@ -349,6 +352,7 @@
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092EB14EC2D8600A59CDD /* Sequence.h in Headers */,
 				BC6092ED14EC2D8600A59CDD /* Some.h in Headers */,
+				BC76519814E078660055955C /* Flattenable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

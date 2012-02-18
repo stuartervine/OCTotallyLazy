@@ -23,6 +23,10 @@
     return [[otherObject get] isEqual:[self get]];
 }
 
+- (id <Enumerable>)flatten {
+    return [[self asSequence] flatten];
+}
+
 - (id)get {
     return value;
 }
@@ -47,10 +51,9 @@
     return sequence(value, nil);
 }
 
-- (NSEnumerator *)objectEnumerator {
+- (NSEnumerator *)toEnumerator {
     return [SingleValueEnumerator singleValue:value];
 }
-
 
 - (void)dealloc {
     [value release];

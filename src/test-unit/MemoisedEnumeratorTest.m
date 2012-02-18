@@ -10,7 +10,7 @@
 
 -(void)testRemembersEnumeratedObjects {
     Sequence *numbers = sequence(num(10), num(20), num(30), num(40), nil);
-    MemoisedEnumerator *memorisedEnumerator = [MemoisedEnumerator with:[numbers objectEnumerator]];
+    MemoisedEnumerator *memorisedEnumerator = [MemoisedEnumerator with:[numbers toEnumerator]];
 
     assertThatInt([memorisedEnumerator previousIndex], equalToInt(-1));
     assertThatInt([memorisedEnumerator nextIndex], equalToInt(0));

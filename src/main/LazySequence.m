@@ -93,7 +93,16 @@
     return [Sequence with:collect];
 }
 
-- (NSEnumerator *)objectEnumerator {
+- (NSArray *)asArray {
+    NSMutableArray *collect = [NSMutableArray array];
+    id object;
+    while ((object = [enumerator nextObject]) != nil) {
+        [collect addObject:object];
+    }
+    return collect;
+}
+
+- (NSEnumerator *)toEnumerator {
     return enumerator;
 }
 
@@ -106,7 +115,7 @@
 }
 
 - (LazySequence *)zip:(LazySequence *)otherSequence {
-    return [LazySequence with:[PairEnumerator withLeft:enumerator right:[otherSequence objectEnumerator]]];
+    return [LazySequence with:[PairEnumerator withLeft:enumerator right:[otherSequence toEnumerator]]];
 }
 
 - (LazySequence *)cycle {

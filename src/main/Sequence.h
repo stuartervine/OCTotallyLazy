@@ -27,13 +27,13 @@
 - (NSString *)toString;
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
+- (Sequence *)zip:(Sequence *)otherSequence;
 
 - (NSArray *)asArray;
 - (NSDictionary *)asDictionary;
 - (Sequence *)asSequence;
 - (NSSet *)asSet;
 
-- (Sequence *)zip:(Sequence *)otherSequence;
 @end
 
 static Sequence *sequence(id items , ...) {

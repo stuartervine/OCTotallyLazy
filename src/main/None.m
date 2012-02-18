@@ -9,6 +9,10 @@
    return [[[None alloc] init] autorelease];
 }
 
+- (id <Enumerable>)flatten {
+    return [[self asSequence] flatten];
+}
+
 - (id)get {
     [NoSuchElementException raise:@"Cannot get value of None" format:@"Cannot get value of None"];
     return nil;
@@ -34,7 +38,7 @@
     return [Some some:seed];
 }
 
-- (NSEnumerator *)objectEnumerator {
+- (NSEnumerator *)toEnumerator {
     return [EmptyEnumerator emptyEnumerator];
 }
 

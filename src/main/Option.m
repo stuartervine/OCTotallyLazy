@@ -1,6 +1,6 @@
 #import "Option.h"
-#import "Some.h"
 #import "None.h"
+#import "Some.h"
 
 @implementation Option
 
@@ -39,7 +39,12 @@
     return nil;
 }
 
-- (NSEnumerator *)objectEnumerator {
+- (NSEnumerator *)toEnumerator {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
+- (id <Enumerable>)flatten {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
     return nil;
 }

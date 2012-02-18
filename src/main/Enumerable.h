@@ -1,3 +1,5 @@
+#import <Foundation/Foundation.h>
+
 @protocol Enumerable
--(NSEnumerator *)objectEnumerator;
+-(NSEnumerator *)toEnumerator;
 @end
