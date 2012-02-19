@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "Mappable.h"
-#import "Sequence.h"
+#import "Option.h"
 #import "Enumerable.h"
 
 @interface LazySequence : NSObject <NSFastEnumeration, Mappable, Enumerable>
@@ -20,11 +20,11 @@
 - (Option *)headOption;
 - (LazySequence *)join:(id<Enumerable>)toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
+- (LazySequence *)tail;
 - (LazySequence *)take:(int)n;
 - (LazySequence *)takeWhile:(BOOL (^)(id))funcBlock;
 - (LazySequence *)zip:(LazySequence *)otherSequence;
 
-- (Sequence *)asSequence;
 - (NSArray *)asArray;
 - (NSSet *)asSet;
 - (NSDictionary *)asDictionary;

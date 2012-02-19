@@ -1,6 +1,7 @@
-#import <Sequence.h>
+#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "LazySequence.h"
 #import "NSEnumerator+OCTotallyLazy.h"
+#import "NSArray+OCTotallyLazy.h"
 #import "PairEnumerator.h"
 #import "MemoisedEnumerator.h"
 #import "RepeatEnumerator.h"
@@ -57,13 +58,13 @@
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
-    return [[self asSequence] fold:value with:functorBlock];
+    return [[self asArray] fold:value with:functorBlock];
 }
 
 - (id)head {
     id item = enumerator.nextObject;
     if (item == nil) {
-        [NSException raise:@"NoSuchElementException" format:@"Expected sequence at least one element, but sequence was empty."];
+        [NSException raise:@"NoSuchElementException" format:@"Expected a sequence with at least one element, but sequence was empty."];
     }
     return item;
 }
@@ -82,6 +83,11 @@
 
 - (LazySequence *)map:(id (^)(id))funcBlock {
     return [LazySequence with:[enumerator map:funcBlock]];
+}
+
+- (LazySequence *)tail {
+    [enumerator nextObject];
+    return [LazySequence with:enumerator];
 }
 
 - (LazySequence *)take:(int)n {
@@ -105,19 +111,7 @@
 }
 
 - (NSDictionary *)asDictionary {
-    return [self fold:[NSMutableDictionary dictionary]with:^(NSMutableDictionary *accumulator, Sequence *keyValues) {
-        [accumulator setObject:[[keyValues tail] head] forKey:[keyValues head]];
-        return accumulator;
-    }];
-}
-
-- (Sequence *)asSequence {
-    NSMutableArray *collect = [NSMutableArray array];
-    id object;
-    while ((object = [enumerator nextObject]) != nil) {
-        [collect addObject:object];
-    }
-    return [Sequence with:collect];
+    return [[self asArray] asDictionary];
 }
 
 - (NSArray *)asArray {

@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Adding some basic docs.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/None.m" afterPath="$PROJECT_DIR$/src/main/None.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Option.h" afterPath="$PROJECT_DIR$/src/main/Option.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Option.m" afterPath="$PROJECT_DIR$/src/main/Option.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Some.m" afterPath="$PROJECT_DIR$/src/main/Some.m" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Sequence.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Sequence.m" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/LazySequence.h" afterPath="$PROJECT_DIR$/src/main/LazySequence.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/LazySequence.m" afterPath="$PROJECT_DIR$/src/main/LazySequence.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/OptionTest.m" afterPath="$PROJECT_DIR$/src/test-unit/OptionTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/NSSetTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSSetTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,22 +43,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LazySequence.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/LazySequence.m">
+      <file leaf-file-name="Mappable.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Mappable.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="18" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
+            <state line="1" column="7" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
+      <file leaf-file-name="NSDictionary+OCTotallyLazy.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="0" selection-start="4536" selection-end="4536" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state line="22" column="18" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,27 +64,7 @@
       <file leaf-file-name="NSDictionary+OCTotallyLazy.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Some.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Some.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Option.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Option.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="11" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+            <state line="6" column="7" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -80,51 +72,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="None.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/None.h">
+      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/LazySequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="11" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="None.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/None.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
+            <state line="35" column="13" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OptionTest.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test-unit/OptionTest.m">
+      <file leaf-file-name="NSDictionaryTest.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="69" selection-start="1598" selection-end="1598" vertical-scroll-proportion="1.3630137">
+            <state line="26" column="24" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LazySequenceTest.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test-unit/LazySequenceTest.m">
+      <file leaf-file-name="FilterEnumerator.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="109" selection-start="3991" selection-end="3991" vertical-scroll-proportion="-9.618182">
+            <state line="23" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.42435426">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSArray+OCTotallyLazy.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="0" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#55#94#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
+      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/LazySequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="17" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
+            <state line="29" column="19" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSArray+OCTotallyLazy.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazySequence.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/LazySequence.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,30 +153,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h" />
-        <option value="$PROJECT_DIR$/src/main/None.h" />
-        <option value="$PROJECT_DIR$/src/main/Sequence.h" />
-        <option value="$PROJECT_DIR$/src/main/Sequence.m" />
-        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/LazySequence.h" />
-        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
-        <option value="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
-        <option value="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
-        <option value="$PROJECT_DIR$/src/main/LazySequence.m" />
-        <option value="$PROJECT_DIR$/src/main/LazySequence.h" />
-        <option value="$PROJECT_DIR$/src/main/None.m" />
-        <option value="$PROJECT_DIR$/src/main/Option.h" />
-        <option value="$PROJECT_DIR$/src/main/Some.m" />
         <option value="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" />
-        <option value="$PROJECT_DIR$/src/test-unit/OptionTest.m" />
+        <option value="$PROJECT_DIR$/src/test-unit/NSSetTest.m" />
+        <option value="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
+        <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
+        <option value="$PROJECT_DIR$/src/main/Sequence.h" />
+        <option value="$PROJECT_DIR$/src/main/LazySequence.h" />
+        <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/src/test-unit/ExamplesTest.m" />
+        <option value="$PROJECT_DIR$/src/main/LazySequence.m" />
+        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" />
+        <option value="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" />
+        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
+        <option value="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
-    <option name="y" value="22" />
-    <option name="width" value="1394" />
-    <option name="height" value="878" />
+    <option name="x" value="67" />
+    <option name="y" value="32" />
+    <option name="width" value="1420" />
+    <option name="height" value="1313" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -190,6 +204,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="DirectoryView.Xcode">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCTotallyLazy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,16 +286,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="DirectoryView.Xcode">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,20 +298,14 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="OCUnit.OptionTest">
-    <configuration default="false" name="-[FiltersTest testIsGreaterThan]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="FiltersTest" TEST_METHOD="testIsGreaterThan">
+  <component name="RunManager" selected="OCUnit.-[NSDictionaryTest testMap]">
+    <configuration default="false" name="NSSetTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSSetTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="-[NSDictionaryTest testFilterKeys]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSDictionaryTest" TEST_METHOD="testFilterKeys">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NSDictionaryTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSDictionaryTest">
+    <configuration default="false" name="-[RepeatEnumeratorTest testRewindsGivenEnumeratorWhenItReachsTheEnd]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="RepeatEnumeratorTest" TEST_METHOD="testRewindsGivenEnumeratorWhenItReachsTheEnd">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -309,7 +317,13 @@
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="OptionTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="OptionTest">
+    <configuration default="false" name="NSDictionaryTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSDictionaryTest">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[NSDictionaryTest testMap]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSDictionaryTest" TEST_METHOD="testMap">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -330,11 +344,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="OCUnit.-[FiltersTest testIsGreaterThan]" />
-      <item index="1" class="java.lang.String" itemvalue="OCUnit.-[NSDictionaryTest testFilterKeys]" />
-      <item index="2" class="java.lang.String" itemvalue="OCUnit.NSDictionaryTest" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.LazySequenceTest" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.OptionTest" />
+      <item index="0" class="java.lang.String" itemvalue="OCUnit.NSSetTest" />
+      <item index="1" class="java.lang.String" itemvalue="OCUnit.-[RepeatEnumeratorTest testRewindsGivenEnumeratorWhenItReachsTheEnd]" />
+      <item index="2" class="java.lang.String" itemvalue="OCUnit.LazySequenceTest" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.NSDictionaryTest" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[NSDictionaryTest testMap]" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -374,25 +388,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="22" width="1394" height="878" extended-state="0" />
+    <frame x="67" y="32" width="1420" height="1313" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3241107" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32674572" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32328308" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4677207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2964824" sideWeight="0.99856836" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33552152" sideWeight="0.61264825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33428776" sideWeight="0.7035176" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6070111" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38735178" sideWeight="0.99798656" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38693467" sideWeight="0.99798656" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.6767169" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -488,9 +502,51 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
+    <entry file="file://$PROJECT_DIR$/src/test-unit/NSSetTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="23" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/OCTotallyLazy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/LazySequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="23" selection-start="2302" selection-end="2302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="11" selection-start="5005" selection-end="5005" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/NSArray+OCTotallyLazy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="14" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/LazySequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="13" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -499,117 +555,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="16" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+        <state line="34" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/FiltersTest.m">
+    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/LazySequence.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="75" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
+        <state line="29" column="19" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="7" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="18" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="108" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/LazySequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="0" selection-start="4536" selection-end="4536" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Some.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Option.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/None.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/None.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
+        <state line="26" column="24" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/LazySequence.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="18" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/LazySequenceTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="109" selection-start="3991" selection-end="3991" vertical-scroll-proportion="-9.618182">
+        <state line="82" column="0" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#55#94#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/OptionTest.m">
+    <entry file="file://$PROJECT_DIR$/src/main/Mappable.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="69" selection-start="1598" selection-end="1598" vertical-scroll-proportion="1.3630137">
+        <state line="1" column="7" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="0" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.42435426">
           <folding />
         </state>
       </provider>

@@ -10,5 +10,4 @@
 #import "NSSet+OCTotallyLazy.h"
 #import "Option.h"
 #import "Pair.h"
-#import "Sequence.h"
 #import "Some.h"

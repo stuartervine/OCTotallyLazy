@@ -2,6 +2,7 @@
 #import "Option.h"
 #import "Mappable.h"
 #import "LazySequence.h"
+#import "Pair.h"
 #import "Flattenable.h"
 
 @interface NSArray (Functional) <Mappable, Foldable, Enumerable, Flattenable>
@@ -31,6 +32,8 @@
 - (LazySequence *)asSequence;
 - (NSSet *)asSet;
 - (NSArray *)asArray;
+- (NSDictionary *)asDictionary;
+
 @end
 
 static NSArray *array(id items , ...) {

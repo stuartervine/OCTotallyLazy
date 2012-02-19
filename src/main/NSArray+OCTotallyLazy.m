@@ -6,12 +6,12 @@
 
 @implementation NSArray (Functional)
 
--(NSArray *)drop:(int)n {
-   return [[[self asSequence] drop:n] asArray];
+- (NSArray *)drop:(int)n {
+    return [[[self asSequence] drop:n] asArray];
 }
 
 - (NSArray *)dropWhile:(BOOL (^)(id))funcBlock {
-   return [[[self asSequence] dropWhile:funcBlock] asArray];
+    return [[[self asSequence] dropWhile:funcBlock] asArray];
 }
 
 - (NSArray *)filter:(BOOL (^)(id))filterBlock {
@@ -22,7 +22,7 @@
     return [[[self asSequence] flatMap:functorBlock] asArray];
 }
 
--(NSArray *)flatten {
+- (NSArray *)flatten {
     return [[[self asSequence] flatten] asArray];
 }
 
@@ -31,7 +31,11 @@
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
-    return [[self asSequence] fold:value with:functorBlock];
+    id accumulator = value;
+    for (id item in self) {
+        accumulator = functorBlock(accumulator, item);
+    }
+    return accumulator;
 }
 
 - (id)head {
@@ -42,7 +46,7 @@
     return [[self asSequence] headOption];
 }
 
-- (NSArray *)join:(id<Enumerable>)toJoin {
+- (NSArray *)join:(id <Enumerable>)toJoin {
     return [[[self asSequence] join:toJoin] asArray];
 }
 
@@ -53,8 +57,8 @@
 - (Pair *)partition:(BOOL (^)(id))filterBlock {
     NSMutableArray *left = [NSMutableArray array];
     NSMutableArray *right = [NSMutableArray array];
-    for(id object in self) {
-        if(filterBlock(object)) {
+    for (id object in self) {
+        if (filterBlock(object)) {
             [left addObject:object];
         } else {
             [right addObject:object];
@@ -71,7 +75,7 @@
     NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
     NSEnumerator *reversed = [self reverseObjectEnumerator];
     id object;
-    while((object = reversed.nextObject)) {
+    while ((object = reversed.nextObject)) {
         [collectedArray addObject:object];
     }
     return collectedArray;
@@ -100,6 +104,7 @@
 - (NSString *)toString {
     return [self toString:@""];
 }
+
 - (NSString *)toString:(NSString *)separator {
     return [self reduce:TL_appendWithSeparator(separator)];
 }
@@ -114,7 +119,7 @@
     id item1;
     id item2;
     NSMutableArray *pairs = [NSMutableArray array];
-    while(((item1 = [enumerator1 nextObject]) != nil) && ((item2 = [enumerator2 nextObject]) != nil)) {
+    while (((item1 = [enumerator1 nextObject]) != nil) && ((item2 = [enumerator2 nextObject]) != nil)) {
         [pairs addObject:[Pair left:item1 right:item2]];
     }
     return pairs;
@@ -132,5 +137,10 @@
     return self;
 }
 
-
+- (NSDictionary *)asDictionary {
+    return [self fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, NSArray *keyValues) {
+        [accumulator setObject:[[keyValues tail] head] forKey:[keyValues head]];
+        return accumulator;
+    }];
+}
 @end

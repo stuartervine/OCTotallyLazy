@@ -77,7 +77,7 @@
 - (void)testHeadOption {
     LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
     assertThat([items headOption], equalTo([Some some:@"one"]));
-    assertThat([sequence(nil) headOption], equalTo([None none]));
+    assertThat([lazySequence(nil) headOption], equalTo([None none]));
 }
 
 - (void)testJoin {
@@ -94,6 +94,11 @@
 - (void)testReduce {
     LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
+}
+
+- (void)testTail {
+    LazySequence *items = lazySequence(@"one", @"two", @"three", nil);
+    assertThat([[items tail] asArray], hasItems(@"two", @"three", nil));
 }
 
 - (void)testTake {
