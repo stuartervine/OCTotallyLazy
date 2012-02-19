@@ -2,7 +2,7 @@
 #import "Callables.h"
 #import "None.h"
 #import "Some.h"
-#import "LazySequence.h"
+#import "Sequence.h"
 
 @implementation NSArray (Functional)
 
@@ -125,8 +125,8 @@
     return pairs;
 }
 
-- (LazySequence *)asSequence {
-    return [LazySequence with:[self toEnumerator]];
+- (Sequence *)asSequence {
+    return [Sequence with:[self toEnumerator]];
 }
 
 - (NSSet *)asSet {

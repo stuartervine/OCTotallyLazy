@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Adding some basic docs.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Sequence.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Sequence.m" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/LazySequence.h" afterPath="$PROJECT_DIR$/src/main/LazySequence.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/LazySequence.m" afterPath="$PROJECT_DIR$/src/main/LazySequence.m" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/LazySequence.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/LazySequence.m" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Sequence.h" afterPath="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Sequence.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/None.m" afterPath="$PROJECT_DIR$/src/main/None.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Option.h" afterPath="$PROJECT_DIR$/src/main/Option.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Option.m" afterPath="$PROJECT_DIR$/src/main/Option.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.h" afterPath="$PROJECT_DIR$/src/main/Sequence.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.m" afterPath="$PROJECT_DIR$/src/main/Sequence.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Some.m" afterPath="$PROJECT_DIR$/src/main/Some.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/NSSetTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSSetTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/LazySequence.h">
+      <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="13" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0">
+            <state line="35" column="9" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -86,16 +84,16 @@
       <file leaf-file-name="NSDictionaryTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="24" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
+            <state line="26" column="24" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterEnumerator.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FilterEnumerator.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.42435426">
+            <state line="18" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,7 +102,7 @@
       <file leaf-file-name="NSArray+OCTotallyLazy.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="0" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+            <state line="141" column="0" selection-start="3632" selection-end="3632" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -112,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LazySequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/LazySequence.h">
+      <file leaf-file-name="Sequence.h" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Sequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="19" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+            <state line="35" column="18" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.5904059">
               <folding />
             </state>
           </provider>
@@ -124,7 +122,7 @@
       <file leaf-file-name="NSArray+OCTotallyLazy.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -132,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LazySequence.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/LazySequence.m">
+      <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.0">
+            <state line="8" column="18" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -153,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/LazySequence.h" />
-        <option value="$PROJECT_DIR$/src/test-unit/LazySequenceTest.m" />
         <option value="$PROJECT_DIR$/src/test-unit/NSSetTest.m" />
         <option value="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
         <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
@@ -169,6 +165,8 @@
         <option value="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" />
+        <option value="$PROJECT_DIR$/src/main/Sequence.m" />
+        <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Sequence.h" />
       </list>
     </option>
   </component>
@@ -544,9 +542,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/LazySequence.h">
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0">
+        <state line="35" column="9" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -555,17 +553,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
+        <state line="34" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/LazySequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="19" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,17 +578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
+        <state line="26" column="24" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/LazySequence.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,7 +592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+        <state line="141" column="0" selection-start="3632" selection-end="3632" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -619,7 +601,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.42435426">
+        <state line="18" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Sequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="18" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.5904059">
           <folding />
         </state>
       </provider>

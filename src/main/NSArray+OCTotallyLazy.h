@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
 #import "Mappable.h"
-#import "LazySequence.h"
+#import "Sequence.h"
 #import "Pair.h"
 #import "Flattenable.h"
 
@@ -29,7 +29,7 @@
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
 - (NSArray *)zip:(id<Enumerable>)otherSequence;
 
-- (LazySequence *)asSequence;
+- (Sequence *)asSequence;
 - (NSSet *)asSet;
 - (NSArray *)asArray;
 - (NSDictionary *)asDictionary;

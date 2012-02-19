@@ -4,7 +4,7 @@
 
 @implementation Option
 
-- (LazySequence *)asSequence {
+- (Sequence *)asSequence {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
     return nil;
 }

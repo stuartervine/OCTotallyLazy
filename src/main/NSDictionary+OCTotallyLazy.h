@@ -9,6 +9,6 @@
 -(Option *)optionForKey:(id)key;
 @end
 
-static NSDictionary *dictionary(LazySequence* keys, LazySequence* values) {
+static NSDictionary *dictionary(Sequence * keys, Sequence * values) {
     return [NSDictionary dictionaryWithObjects:[values asArray] forKeys:[keys asArray]];
 }

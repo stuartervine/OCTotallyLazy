@@ -3,13 +3,13 @@
 #import "Foldable.h"
 #import "Enumerable.h"
 #import "Flattenable.h"
-@class LazySequence;
+@class Sequence;
 
 @interface Option : NSObject <Mappable, Foldable, Enumerable, Flattenable>
 -(id)get;
 -(id)getOrElse:(id)other;
 -(id)getOrInvoke:(id (^)())funcBlock;
--(LazySequence *)asSequence;
+-(Sequence *)asSequence;
 +(id)option:(id)value;
 @end
 

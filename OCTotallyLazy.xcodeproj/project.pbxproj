@@ -45,8 +45,8 @@
 		BC6092D714EC2D8600A59CDD /* OCTotallyLazy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */; };
 		BC6092D814EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092D914EC2D8600A59CDD /* OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092AA14EC2D8600A59CDD /* OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6092DA14EC2D8600A59CDD /* LazySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092AB14EC2D8600A59CDD /* LazySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6092DB14EC2D8600A59CDD /* LazySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092AC14EC2D8600A59CDD /* LazySequence.m */; };
+		BC6092DA14EC2D8600A59CDD /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092AB14EC2D8600A59CDD /* Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC6092DB14EC2D8600A59CDD /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092AC14EC2D8600A59CDD /* Sequence.m */; };
 		BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092AD14EC2D8600A59CDD /* Mappable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092DD14EC2D8600A59CDD /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092AE14EC2D8600A59CDD /* None.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092DE14EC2D8600A59CDD /* None.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092AF14EC2D8600A59CDD /* None.m */; };
@@ -121,8 +121,8 @@
 		BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "OCTotallyLazy-Info.plist"; path = "main/OCTotallyLazy-Info.plist"; sourceTree = "<group>"; };
 		BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OCTotallyLazy-Prefix.pch"; path = "main/OCTotallyLazy-Prefix.pch"; sourceTree = "<group>"; };
 		BC6092AA14EC2D8600A59CDD /* OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCTotallyLazy.h; path = main/OCTotallyLazy.h; sourceTree = "<group>"; };
-		BC6092AB14EC2D8600A59CDD /* LazySequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LazySequence.h; path = main/LazySequence.h; sourceTree = "<group>"; };
-		BC6092AC14EC2D8600A59CDD /* LazySequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LazySequence.m; path = main/LazySequence.m; sourceTree = "<group>"; };
+		BC6092AB14EC2D8600A59CDD /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sequence.h; path = main/Sequence.h; sourceTree = "<group>"; };
+		BC6092AC14EC2D8600A59CDD /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sequence.m; path = main/Sequence.m; sourceTree = "<group>"; };
 		BC6092AD14EC2D8600A59CDD /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mappable.h; path = main/Mappable.h; sourceTree = "<group>"; };
 		BC6092AE14EC2D8600A59CDD /* None.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = None.h; path = main/None.h; sourceTree = "<group>"; };
 		BC6092AF14EC2D8600A59CDD /* None.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = None.m; path = main/None.m; sourceTree = "<group>"; };
@@ -236,8 +236,8 @@
 				BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */,
 				BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */,
 				BC6092AA14EC2D8600A59CDD /* OCTotallyLazy.h */,
-				BC6092AB14EC2D8600A59CDD /* LazySequence.h */,
-				BC6092AC14EC2D8600A59CDD /* LazySequence.m */,
+				BC6092AB14EC2D8600A59CDD /* Sequence.h */,
+				BC6092AC14EC2D8600A59CDD /* Sequence.m */,
 				BC6092AD14EC2D8600A59CDD /* Mappable.h */,
 				BC6092AE14EC2D8600A59CDD /* None.h */,
 				BC6092AF14EC2D8600A59CDD /* None.m */,
@@ -333,7 +333,7 @@
 				BC6092D814EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch in Headers */,
 				BC6092D914EC2D8600A59CDD /* OCTotallyLazy.h in Headers */,
 				BC76519814E078660055955C /* Flattenable.h in Headers */,
-				BC6092DA14EC2D8600A59CDD /* LazySequence.h in Headers */,
+				BC6092DA14EC2D8600A59CDD /* Sequence.h in Headers */,
 				BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */,
 				BC6092DD14EC2D8600A59CDD /* None.h in Headers */,
 				BC6092DF14EC2D8600A59CDD /* NoSuchElementException.h in Headers */,
@@ -471,7 +471,7 @@
 				BC6092D014EC2D8600A59CDD /* RepeatEnumerator.m in Sources */,
 				BC6092D214EC2D8600A59CDD /* SingleValueEnumerator.m in Sources */,
 				BC6092D414EC2D8600A59CDD /* TakeWhileEnumerator.m in Sources */,
-				BC6092DB14EC2D8600A59CDD /* LazySequence.m in Sources */,
+				BC6092DB14EC2D8600A59CDD /* Sequence.m in Sources */,
 				BC6092DE14EC2D8600A59CDD /* None.m in Sources */,
 				BC6092E014EC2D8600A59CDD /* NoSuchElementException.m in Sources */,
 				BC6092E814EC2D8600A59CDD /* Option.m in Sources */,

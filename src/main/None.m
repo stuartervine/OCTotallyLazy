@@ -1,7 +1,7 @@
 #import "None.h"
 #import "NoSuchElementException.h"
 #import "Some.h"
-#import "LazySequence.h"
+#import "Sequence.h"
 #import "EmptyEnumerator.h"
 
 @implementation None
@@ -42,8 +42,8 @@
     return [EmptyEnumerator emptyEnumerator];
 }
 
-- (LazySequence *)asSequence {
-    return lazySequence(nil);
+- (Sequence *)asSequence {
+    return sequence(nil);
 }
 
 @end

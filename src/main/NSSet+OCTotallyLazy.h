@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Some.h"
 #import "None.h"
-#import "LazySequence.h"
+#import "Sequence.h"
 
 @interface NSSet (Functional) <Mappable, Foldable>
 - (NSSet *)filter:(BOOL (^)(id))filterBlock;
@@ -10,7 +10,7 @@
 - (NSSet *)join:(NSSet *)toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
 
-- (LazySequence *)asSequence;
+- (Sequence *)asSequence;
 - (NSArray *)asArray;
 @end
 

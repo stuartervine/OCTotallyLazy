@@ -1,5 +1,5 @@
 #import "NSSet+OCTotallyLazy.h"
-#import "LazySequence.h"
+#import "Sequence.h"
 
 @implementation NSSet (Functional)
 
@@ -31,8 +31,8 @@
     return [[self asSequence] reduce:functorBlock];
 }
 
-- (LazySequence *)asSequence {
-    return [LazySequence with:[self objectEnumerator]];
+- (Sequence *)asSequence {
+    return [Sequence with:[self objectEnumerator]];
 }
 
 - (NSArray *)asArray {
