@@ -38,27 +38,27 @@
 
 - (Sequence *)drop:(int)toDrop {
 
-    return [Sequence with:[EasyEnumerable with:^{return [enumerator drop:toDrop];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] drop:toDrop];}]];
 }
 
 - (Sequence *)dropWhile:(BOOL (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [enumerator dropWhile:funcBlock];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] dropWhile:funcBlock];}]];
 }
 
 - (Sequence *)flatMap:(id (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [[enumerator flatten] map:funcBlock];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[[self toEnumerator] flatten] map:funcBlock];}]];
 }
 
 - (Sequence *)filter:(BOOL (^)(id))predicate {
-    return [Sequence with:[EasyEnumerable with:^{return [enumerator filter:predicate];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] filter:predicate];}]];
 }
 
 - (Option *)find:(BOOL (^)(id))predicate {
-    return [enumerator find:predicate];
+    return [[self toEnumerator] find:predicate];
 }
 
 - (Sequence *)flatten {
-    return [Sequence with:[EasyEnumerable with:^{return [enumerator flatten];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] flatten];}]];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
@@ -82,35 +82,35 @@
 }
 
 - (id)reduce:(id (^)(id, id))functorBlock {
-    return [self fold:enumerator.nextObject with:functorBlock];
+    return [[self asArray] reduce:functorBlock];
 }
 
 - (Sequence *)map:(id (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [enumerator map:funcBlock];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] map:funcBlock];}]];
 }
 
 - (Sequence *)tail {
     return [Sequence with:[EasyEnumerable with:^{
-        NSEnumerator *const anEnumerator = [enumerable toEnumerator];
+        NSEnumerator *const anEnumerator = [self toEnumerator];
         [anEnumerator nextObject];
         return anEnumerator;
     }]];
 }
 
 - (Sequence *)take:(int)n {
-    return [Sequence with:[EasyEnumerable with:^{return [[enumerable toEnumerator] take:n];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] take:n];}]];
 }
 
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [enumerator takeWhile:funcBlock];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] takeWhile:funcBlock];}]];
 }
 
 - (Sequence *)zip:(Sequence *)otherSequence {
-    return [Sequence with:[EasyEnumerable with:^{return [PairEnumerator withLeft:enumerator right:[otherSequence toEnumerator]];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [PairEnumerator withLeft:[self toEnumerator] right:[otherSequence toEnumerator]];}]];
 }
 
 - (Sequence *)cycle {
-    return [Sequence with:[EasyEnumerable with:^{return [RepeatEnumerator with:[MemoisedEnumerator with:enumerator]];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [RepeatEnumerator with:[MemoisedEnumerator with:[self toEnumerator]]];}]];
 }
 
 + (Sequence *)with:(id <Enumerable>)enumerable {
@@ -122,9 +122,10 @@
 }
 
 - (NSArray *)asArray {
+    NSEnumerator *itemsEnumerator = [self toEnumerator];
     NSMutableArray *collect = [NSMutableArray array];
     id object;
-    while ((object = [enumerator nextObject]) != nil) {
+    while ((object = [itemsEnumerator nextObject]) != nil) {
         [collect addObject:object];
     }
     return collect;
@@ -132,6 +133,16 @@
 
 - (NSSet *)asSet {
     return [NSSet setWithArray: [self asArray]];
+}
+
+-(NSString *)description {
+    NSString *description = @"Sequence [";
+    int count = 3;
+    id item;
+    while((item = enumerator.nextObject) && count-- >0) {
+        description = [description stringByAppendingFormat:@"%@, ", item];
+    }
+    return [description stringByAppendingString:@"]"];
 }
 
 - (NSEnumerator *)toEnumerator {

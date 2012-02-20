@@ -117,6 +117,16 @@
 
 -(void)testNonForwardBehaviour {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
+    assertThat([items drop:2], hasItem(@"three"));
+    assertThat([items drop:2], hasItem(@"three"));
+    assertThat([items dropWhile:TL_equalTo(@"one")], hasItems(@"two", @"three", nil));
+    assertThat([items dropWhile:TL_equalTo(@"one")], hasItems(@"two", @"three", nil));
+
+    assertThat([items filter:TL_equalTo(@"one")], hasItem(@"one"));
+    assertThat([items filter:TL_equalTo(@"one")], hasItem(@"one"));
+    assertThat([items find:TL_equalTo(@"one")], equalTo([Some some:@"one"]));
+    assertThat([items find:TL_equalTo(@"one")], equalTo([Some some:@"one"]));
+
     assertThat([items head], equalTo(@"one"));
     assertThat([items head], equalTo(@"one"));
     assertThat([items headOption], equalTo([Some some:@"one"]));
@@ -125,6 +135,10 @@
     assertThat([items tail], hasItems(@"two", @"three", nil));
     assertThat([items take:1], hasItems(@"one", nil));
     assertThat([items take:1], hasItems(@"one", nil));
+
+    Sequence *flattenable = sequence(sequence(@"one", nil), @"two", nil);
+    assertThat([flattenable flatMap:^(NSString *item){return [item substringFromIndex:1];}], hasItems(@"ne", @"wo", nil));
+    assertThat([flattenable flatMap:^(NSString *item){return [item substringFromIndex:1];}], hasItems(@"ne", @"wo", nil));
 }
 
 @end
