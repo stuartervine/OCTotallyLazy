@@ -1,4 +1,5 @@
 #import "Callables.h"
+#import "Enumerable.h"
 #import "Filters.h"
 #import "Foldable.h"
 #import "Sequence.h"

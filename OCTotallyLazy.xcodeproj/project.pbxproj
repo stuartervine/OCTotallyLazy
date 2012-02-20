@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		BC20F82814F2E98200ED9B67 /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F014EC2DA800A59CDD /* Callables.m */; };
 		BC6092C014EC2D8600A59CDD /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC60929014EC2D8600A59CDD /* Enumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092C114EC2D8600A59CDD /* EmptyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC60929214EC2D8600A59CDD /* EmptyEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092C214EC2D8600A59CDD /* EmptyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC60929314EC2D8600A59CDD /* EmptyEnumerator.m */; };
@@ -58,7 +59,6 @@
 		BC6092EA14EC2D8600A59CDD /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092BB14EC2D8600A59CDD /* Pair.m */; };
 		BC6092ED14EC2D8600A59CDD /* Some.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092BE14EC2D8600A59CDD /* Some.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092EE14EC2D8600A59CDD /* Some.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092BF14EC2D8600A59CDD /* Some.m */; };
-		BC6092FD14EC2DA800A59CDD /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F014EC2DA800A59CDD /* Callables.m */; };
 		BC6092FF14EC2DA800A59CDD /* FiltersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F214EC2DA800A59CDD /* FiltersTest.m */; };
 		BC60930014EC2DA800A59CDD /* OCTotallyLazyTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */; };
 		BC60930114EC2DA800A59CDD /* SequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F514EC2DA800A59CDD /* SequenceTest.m */; };
@@ -83,7 +83,7 @@
 		BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */; };
 		BC76519814E078660055955C /* Flattenable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955B /* Flattenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055955E /* EasyEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955D /* EasyEnumerable.m */; };
-		BC76519814E0786600559560 /* EasyEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955F /* EasyEnumerable.h */; };
+		BC76519814E0786600559560 /* EasyEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955F /* EasyEnumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -341,12 +341,12 @@
 				BC76519814E078660055955C /* Flattenable.h in Headers */,
 				BC6092DA14EC2D8600A59CDD /* Sequence.h in Headers */,
 				BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */,
+				BC76519814E0786600559560 /* EasyEnumerable.h in Headers */,
 				BC6092DD14EC2D8600A59CDD /* None.h in Headers */,
 				BC6092DF14EC2D8600A59CDD /* NoSuchElementException.h in Headers */,
 				BC6092E714EC2D8600A59CDD /* Option.h in Headers */,
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092ED14EC2D8600A59CDD /* Some.h in Headers */,
-				BC76519814E0786600559560 /* EasyEnumerable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +489,7 @@
 				BC76519814E0786600559556 /* NSDictionary+OCTotallyLazy.m in Sources */,
 				BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */,
 				BC76519814E078660055955E /* EasyEnumerable.m in Sources */,
+				BC20F82814F2E98200ED9B67 /* Callables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +497,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6092FD14EC2DA800A59CDD /* Callables.m in Sources */,
 				BC6092FF14EC2DA800A59CDD /* FiltersTest.m in Sources */,
 				BC60930014EC2DA800A59CDD /* OCTotallyLazyTestCase.m in Sources */,
 				BC60930114EC2DA800A59CDD /* SequenceTest.m in Sources */,
