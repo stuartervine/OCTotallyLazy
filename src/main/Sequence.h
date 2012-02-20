@@ -17,6 +17,7 @@
 - (id)filter:(BOOL (^)(id))filterBlock;
 - (Sequence *)flatten;
 - (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
+- (void)foreach:(void (^)(id))funcBlock;
 - (id)head;
 - (Option *)headOption;
 - (Sequence *)join:(id<Enumerable>)toJoin;
@@ -24,6 +25,9 @@
 - (Sequence *)tail;
 - (Sequence *)take:(int)n;
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock;
+- (NSString *)toString;
+- (NSString *)toString:(NSString *)separator;
+- (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
 - (Sequence *)zip:(Sequence *)otherSequence;
 
 - (NSArray *)asArray;

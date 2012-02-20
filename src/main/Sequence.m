@@ -1,10 +1,10 @@
-#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "Sequence.h"
 #import "NSEnumerator+OCTotallyLazy.h"
 #import "PairEnumerator.h"
 #import "MemoisedEnumerator.h"
 #import "RepeatEnumerator.h"
 #import "EasyEnumerable.h"
+#import "Callables.h"
 
 @implementation Sequence {
     id <Enumerable> enumerable;
