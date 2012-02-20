@@ -65,6 +65,10 @@
     return [[self asArray] fold:value with:functorBlock];
 }
 
+- (void)foreach:(void (^)(id))funcBlock {
+    [[self asArray] foreach:funcBlock];
+}
+
 - (id)head {
     id item = [self toEnumerator].nextObject;
     if (item == nil) {

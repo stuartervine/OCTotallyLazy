@@ -1,10 +1,8 @@
 #import "NSArray+OCTotallyLazy.h"
 #import "Callables.h"
-#import "None.h"
-#import "Some.h"
 #import "Sequence.h"
 
-@implementation NSArray (Functional)
+@implementation NSArray (OCTotallyLazy)
 
 - (NSArray *)drop:(int)n {
     return [[[self asSequence] drop:n] asArray];
@@ -36,6 +34,12 @@
         accumulator = functorBlock(accumulator, item);
     }
     return accumulator;
+}
+
+- (void)foreach:(void (^)(id))funcBlock {
+    for (id item in self) {
+        funcBlock(item);
+    }
 }
 
 - (id)head {

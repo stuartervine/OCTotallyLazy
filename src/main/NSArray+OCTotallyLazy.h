@@ -1,11 +1,11 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
 #import "Mappable.h"
-#import "Sequence.h"
 #import "Pair.h"
 #import "Flattenable.h"
+@class Sequence;
 
-@interface NSArray (Functional) <Mappable, Foldable, Enumerable, Flattenable>
+@interface NSArray (OCTotallyLazy) <Mappable, Foldable, Enumerable, Flattenable>
 
 - (NSArray *)drop:(int)toDrop;
 - (NSArray *)dropWhile:(BOOL (^)(id))funcBlock;
@@ -14,6 +14,7 @@
 - (NSArray *)flatMap:(id (^)(id))functorBlock;
 - (NSArray *)flatten;
 - (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
+- (void)foreach:(void (^)(id))funcBlock;
 - (id)head;
 - (Option *)headOption;
 - (NSArray *)join:(id<Enumerable>)toJoin;

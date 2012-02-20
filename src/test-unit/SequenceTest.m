@@ -67,6 +67,13 @@
     assertThat([items fold:@"" with:[Callables appendString]], equalTo(@"onetwothree"));
 }
 
+- (void)testForEach {
+    Sequence *items = sequence(@"one", @"two", @"three", nil);
+    __block NSString *description = @"";
+    [items foreach:^(NSString *item){description = [description stringByAppendingString:item];}];
+    assertThat(description, equalTo(@"onetwothree"));
+}
+
 - (void)testHead {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items head], equalTo(@"one"));
