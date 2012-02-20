@@ -126,7 +126,7 @@
 }
 
 - (Sequence *)asSequence {
-    return [Sequence with:[self toEnumerator]];
+    return [Sequence with:self];
 }
 
 - (NSSet *)asSet {

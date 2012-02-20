@@ -2,6 +2,7 @@
 #import "Mappable.h"
 #import "Option.h"
 #import "Enumerable.h"
+#import "NSArray+OCTotallyLazy.h"
 
 @interface Sequence : NSObject <NSFastEnumeration, Mappable, Enumerable>
 
@@ -29,7 +30,7 @@
 - (NSSet *)asSet;
 - (NSDictionary *)asDictionary;
 
-+ (Sequence *)with:(NSEnumerator *)enumerator;
++ (Sequence *)with:(id <Enumerable>)enumerable;
 
 @end
 
@@ -41,5 +42,5 @@ static Sequence *sequence(id items , ...) {
         [array addObject:arg];
     }
     va_end(args);
-    return [Sequence with:[array objectEnumerator]];
+    return [Sequence with:array];
 }

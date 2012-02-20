@@ -1,10 +1,10 @@
 #import <OCTotallyLazy/OCTotallyLazy.h>
 #import "Sequence.h"
 #import "NSEnumerator+OCTotallyLazy.h"
-#import "NSArray+OCTotallyLazy.h"
 #import "PairEnumerator.h"
 #import "MemoisedEnumerator.h"
 #import "RepeatEnumerator.h"
+#import "EasyEnumerable.h"
 
 @implementation Sequence {
     NSEnumerator *enumerator;
@@ -34,19 +34,19 @@
 }
 
 - (Sequence *)drop:(int)toDrop {
-    return [Sequence with:[enumerator drop:toDrop]];
+    return [Sequence with:[EasyEnumerable with:^{return [enumerator drop:toDrop];}]];
 }
 
 - (Sequence *)dropWhile:(BOOL (^)(id))funcBlock {
-    return [Sequence with:[enumerator dropWhile:funcBlock]];
+    return [Sequence with:[EasyEnumerable with:^{return [enumerator dropWhile:funcBlock];}]];
 }
 
 - (Sequence *)flatMap:(id (^)(id))funcBlock {
-    return [Sequence with:[[enumerator flatten] map:funcBlock]];
+    return [Sequence with:[EasyEnumerable with:^{return [[enumerator flatten] map:funcBlock];}]];
 }
 
 - (Sequence *)filter:(BOOL (^)(id))predicate {
-    return [Sequence with:[enumerator filter:predicate]];
+    return [Sequence with:[EasyEnumerable with:^{return [enumerator filter:predicate];}]];
 }
 
 - (Option *)find:(BOOL (^)(id))predicate {
@@ -54,7 +54,7 @@
 }
 
 - (Sequence *)flatten {
-    return [Sequence with:[enumerator flatten]];
+    return [Sequence with:[EasyEnumerable with:^{return [enumerator flatten];}]];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
@@ -82,32 +82,34 @@
 }
 
 - (Sequence *)map:(id (^)(id))funcBlock {
-    return [Sequence with:[enumerator map:funcBlock]];
+    return [Sequence with:[EasyEnumerable with:^{return [enumerator map:funcBlock];}]];
 }
 
 - (Sequence *)tail {
-    [enumerator nextObject];
-    return [Sequence with:enumerator];
+    return [Sequence with:[EasyEnumerable with:^{
+        [enumerator nextObject];
+        return enumerator;
+    }]];
 }
 
 - (Sequence *)take:(int)n {
-    return [Sequence with:[enumerator take:n]];
+    return [Sequence with:[EasyEnumerable with:^{return [enumerator take:n];}]];
 }
 
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock {
-    return [Sequence with:[enumerator takeWhile:funcBlock]];
+    return [Sequence with:[EasyEnumerable with:^{return [enumerator takeWhile:funcBlock];}]];
 }
 
 - (Sequence *)zip:(Sequence *)otherSequence {
-    return [Sequence with:[PairEnumerator withLeft:enumerator right:[otherSequence toEnumerator]]];
+    return [Sequence with:[EasyEnumerable with:^{return [PairEnumerator withLeft:enumerator right:[otherSequence toEnumerator]];}]];
 }
 
 - (Sequence *)cycle {
-    return [Sequence with:[RepeatEnumerator with:[MemoisedEnumerator with:enumerator]]];
+    return [Sequence with:[EasyEnumerable with:^{return [RepeatEnumerator with:[MemoisedEnumerator with:enumerator]];}]];
 }
 
-+ (Sequence *)with:(NSEnumerator *)enumerator {
-    return [[[Sequence alloc] initWith:enumerator] autorelease];
++ (Sequence *)with:(id <Enumerable>)enumerable {
+    return [[[Sequence alloc] initWith:[enumerable toEnumerator]] autorelease];
 }
 
 - (NSDictionary *)asDictionary {

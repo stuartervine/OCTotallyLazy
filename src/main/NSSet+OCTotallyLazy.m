@@ -32,11 +32,16 @@
 }
 
 - (Sequence *)asSequence {
-    return [Sequence with:[self objectEnumerator]];
+    return [Sequence with:self];
 }
 
 - (NSArray *)asArray {
     return [[self asSequence] asArray];
 }
+
+- (NSEnumerator *)toEnumerator {
+    return [self objectEnumerator];
+}
+
 
 @end

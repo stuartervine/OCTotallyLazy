@@ -3,7 +3,7 @@
 #import "None.h"
 #import "Sequence.h"
 
-@interface NSSet (Functional) <Mappable, Foldable>
+@interface NSSet (Functional) <Mappable, Foldable, Enumerable>
 - (NSSet *)filter:(BOOL (^)(id))filterBlock;
 - (id)head;
 - (Option *)headOption;

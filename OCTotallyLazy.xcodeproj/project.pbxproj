@@ -82,6 +82,8 @@
 		BC76519814E0786600559558 /* NSSet+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */; };
 		BC76519814E078660055955C /* Flattenable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955B /* Flattenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E078660055955E /* EasyEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955D /* EasyEnumerable.m */; };
+		BC76519814E0786600559560 /* EasyEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955F /* EasyEnumerable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +163,8 @@
 		BC76519814E0786600559557 /* NSSet+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+OCTotallyLazy.h"; path = "main/NSSet+OCTotallyLazy.h"; sourceTree = "<group>"; };
 		BC76519814E0786600559559 /* NSSet+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+OCTotallyLazy.m"; path = "main/NSSet+OCTotallyLazy.m"; sourceTree = "<group>"; };
 		BC76519814E078660055955B /* Flattenable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flattenable.h; sourceTree = "<group>"; };
+		BC76519814E078660055955D /* EasyEnumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEnumerable.m; sourceTree = "<group>"; };
+		BC76519814E078660055955F /* EasyEnumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEnumerable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,8 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E078660055955F /* EasyEnumerable.h */,
+				BC76519814E078660055955D /* EasyEnumerable.m */,
 				BC76519814E078660055955B /* Flattenable.h */,
 				BC6092F014EC2DA800A59CDD /* Callables.m */,
 				BC6092EF14EC2DA800A59CDD /* Callables.h */,
@@ -340,6 +346,7 @@
 				BC6092E714EC2D8600A59CDD /* Option.h in Headers */,
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092ED14EC2D8600A59CDD /* Some.h in Headers */,
+				BC76519814E0786600559560 /* EasyEnumerable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +488,7 @@
 				BC76519814E0786600559552 /* NSArray+OCTotallyLazy.m in Sources */,
 				BC76519814E0786600559556 /* NSDictionary+OCTotallyLazy.m in Sources */,
 				BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */,
+				BC76519814E078660055955E /* EasyEnumerable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
