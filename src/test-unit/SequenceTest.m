@@ -116,6 +116,16 @@
     assertThat([[items takeWhile:TL_greaterThan(num(1))] asArray], hasItems(num(3), num(2), nil));
 }
 
+-(void)testToString {
+    Sequence *items = sequence(@"one", @"two", @"three", nil);
+    assertThat([items toString], equalTo(@"onetwothree"));
+    assertThat([items toString:@","], equalTo(@"one,two,three"));
+    assertThat([items toString:@"(" separator:@"," end:@")"], equalTo(@"(one,two,three)"));
+
+    Sequence *numbers = sequence(num(1), num(2), num(3), nil);
+    assertThat([numbers toString], equalTo(@"123"));
+}
+
 -(void)testZip {
     Sequence *items = sequence(@"one", @"two", nil);
     Sequence *zip = [items zip:sequence(num(1), num(2), nil)];

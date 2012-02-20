@@ -109,6 +109,18 @@
     return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] takeWhile:funcBlock];}]];
 }
 
+- (NSString *)toString {
+    return [self toString:@""];
+}
+
+- (NSString *)toString:(NSString *)separator {
+    return [self reduce:TL_appendWithSeparator(separator)];
+}
+
+- (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end {
+    return [[start stringByAppendingString:[self toString:separator]] stringByAppendingString:end];
+}
+
 - (Sequence *)zip:(Sequence *)otherSequence {
     return [Sequence with:[EasyEnumerable with:^{return [PairEnumerator withLeft:[self toEnumerator] right:[otherSequence toEnumerator]];}]];
 }
