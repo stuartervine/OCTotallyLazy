@@ -2,14 +2,12 @@
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 #import <OCTotallyLazy/OCTotallyLazy.h>
-#import "../main/Sequence.h"
-#import "Callables.h"
 #import "OCTotallyLazyTestCase.h"
 
-@interface LazySequenceTest : OCTotallyLazyTestCase
+@interface SequenceTest : OCTotallyLazyTestCase
 @end
 
-@implementation LazySequenceTest
+@implementation SequenceTest
 
 -(void)testAdd {
     Sequence *items = sequence(@"one", @"two", nil);

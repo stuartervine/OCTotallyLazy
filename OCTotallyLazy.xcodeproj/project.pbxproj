@@ -61,7 +61,7 @@
 		BC6092FD14EC2DA800A59CDD /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F014EC2DA800A59CDD /* Callables.m */; };
 		BC6092FF14EC2DA800A59CDD /* FiltersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F214EC2DA800A59CDD /* FiltersTest.m */; };
 		BC60930014EC2DA800A59CDD /* OCTotallyLazyTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */; };
-		BC60930114EC2DA800A59CDD /* LazySequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F514EC2DA800A59CDD /* LazySequenceTest.m */; };
+		BC60930114EC2DA800A59CDD /* SequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F514EC2DA800A59CDD /* SequenceTest.m */; };
 		BC60930214EC2DA800A59CDD /* MemoisedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F614EC2DA800A59CDD /* MemoisedEnumeratorTest.m */; };
 		BC60930314EC2DA800A59CDD /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F714EC2DA800A59CDD /* NSArrayTest.m */; };
 		BC60930414EC2DA800A59CDD /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F814EC2DA800A59CDD /* NSDictionaryTest.m */; };
@@ -141,7 +141,7 @@
 		BC6092F214EC2DA800A59CDD /* FiltersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FiltersTest.m; path = "test-unit/FiltersTest.m"; sourceTree = "<group>"; };
 		BC6092F314EC2DA800A59CDD /* OCTotallyLazyTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCTotallyLazyTestCase.h; path = "test-unit/OCTotallyLazyTestCase.h"; sourceTree = "<group>"; };
 		BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCTotallyLazyTestCase.m; path = "test-unit/OCTotallyLazyTestCase.m"; sourceTree = "<group>"; };
-		BC6092F514EC2DA800A59CDD /* LazySequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LazySequenceTest.m; path = "test-unit/LazySequenceTest.m"; sourceTree = "<group>"; };
+		BC6092F514EC2DA800A59CDD /* SequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SequenceTest.m; path = "test-unit/SequenceTest.m"; sourceTree = "<group>"; };
 		BC6092F614EC2DA800A59CDD /* MemoisedEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemoisedEnumeratorTest.m; path = "test-unit/MemoisedEnumeratorTest.m"; sourceTree = "<group>"; };
 		BC6092F714EC2DA800A59CDD /* NSArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArrayTest.m; path = "test-unit/NSArrayTest.m"; sourceTree = "<group>"; };
 		BC6092F814EC2DA800A59CDD /* NSDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionaryTest.m; path = "test-unit/NSDictionaryTest.m"; sourceTree = "<group>"; };
@@ -265,7 +265,7 @@
 				BC6092F214EC2DA800A59CDD /* FiltersTest.m */,
 				BC6092F314EC2DA800A59CDD /* OCTotallyLazyTestCase.h */,
 				BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */,
-				BC6092F514EC2DA800A59CDD /* LazySequenceTest.m */,
+				BC6092F514EC2DA800A59CDD /* SequenceTest.m */,
 				BC6092F614EC2DA800A59CDD /* MemoisedEnumeratorTest.m */,
 				BC6092F714EC2DA800A59CDD /* NSArrayTest.m */,
 				BC6092F814EC2DA800A59CDD /* NSDictionaryTest.m */,
@@ -499,7 +499,7 @@
 				BC6092FD14EC2DA800A59CDD /* Callables.m in Sources */,
 				BC6092FF14EC2DA800A59CDD /* FiltersTest.m in Sources */,
 				BC60930014EC2DA800A59CDD /* OCTotallyLazyTestCase.m in Sources */,
-				BC60930114EC2DA800A59CDD /* LazySequenceTest.m in Sources */,
+				BC60930114EC2DA800A59CDD /* SequenceTest.m in Sources */,
 				BC60930214EC2DA800A59CDD /* MemoisedEnumeratorTest.m in Sources */,
 				BC60930314EC2DA800A59CDD /* NSArrayTest.m in Sources */,
 				BC60930414EC2DA800A59CDD /* NSDictionaryTest.m in Sources */,

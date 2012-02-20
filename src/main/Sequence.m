@@ -7,16 +7,19 @@
 #import "EasyEnumerable.h"
 
 @implementation Sequence {
+    id <Enumerable> enumerable;
     NSEnumerator *enumerator;
 }
 
-- (Sequence *)initWith:(NSEnumerator *)anEnumerator {
+- (Sequence *)initWith:(id <Enumerable>)anEnumerable {
     self = [super init];
-    enumerator = [anEnumerator retain];
+    enumerable = [anEnumerable retain];
+    enumerator = [[enumerable toEnumerator] retain];
     return self;
 }
 
 - (void)dealloc {
+    [enumerable release];
     [enumerator release];
     [super dealloc];
 }
@@ -34,6 +37,7 @@
 }
 
 - (Sequence *)drop:(int)toDrop {
+
     return [Sequence with:[EasyEnumerable with:^{return [enumerator drop:toDrop];}]];
 }
 
@@ -109,7 +113,7 @@
 }
 
 + (Sequence *)with:(id <Enumerable>)enumerable {
-    return [[[Sequence alloc] initWith:[enumerable toEnumerator]] autorelease];
+    return [[[Sequence alloc] initWith:enumerable] autorelease];
 }
 
 - (NSDictionary *)asDictionary {
@@ -130,7 +134,7 @@
 }
 
 - (NSEnumerator *)toEnumerator {
-    return enumerator;
+    return [enumerable toEnumerator];
 }
 
 @end

@@ -6,7 +6,7 @@
 
 @interface Sequence : NSObject <NSFastEnumeration, Mappable, Enumerable>
 
-- (Sequence *)initWith:(NSEnumerator *)enumerator;
+- (Sequence *)initWith:(id <Enumerable>)enumerator;
 - (Sequence *)add:(id)value;
 - (Sequence *)cons:(id)value;
 - (Sequence *)cycle;
