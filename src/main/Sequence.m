@@ -152,10 +152,11 @@
 }
 
 -(NSString *)description {
+    NSEnumerator *itemsEnumerator = [self toEnumerator];
     NSString *description = @"Sequence [";
     int count = 3;
     id item;
-    while((item = enumerator.nextObject) && count-- >0) {
+    while((item = itemsEnumerator.nextObject) && count-- >0) {
         description = [description stringByAppendingFormat:@"%@, ", item];
     }
     return [description stringByAppendingString:@"]"];
