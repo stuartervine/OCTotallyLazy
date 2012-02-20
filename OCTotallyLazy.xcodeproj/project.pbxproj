@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		BC20F82814F2E98200ED9B67 /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F014EC2DA800A59CDD /* Callables.m */; };
+		BC20F82A14F2EA7C00ED9B67 /* Callables.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092EF14EC2DA800A59CDD /* Callables.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092C014EC2D8600A59CDD /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC60929014EC2D8600A59CDD /* Enumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092C114EC2D8600A59CDD /* EmptyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC60929214EC2D8600A59CDD /* EmptyEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092C214EC2D8600A59CDD /* EmptyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC60929314EC2D8600A59CDD /* EmptyEnumerator.m */; };
@@ -347,6 +348,7 @@
 				BC6092E714EC2D8600A59CDD /* Option.h in Headers */,
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092ED14EC2D8600A59CDD /* Some.h in Headers */,
+				BC20F82A14F2EA7C00ED9B67 /* Callables.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
