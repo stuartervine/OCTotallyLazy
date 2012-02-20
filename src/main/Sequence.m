@@ -66,7 +66,7 @@
 }
 
 - (id)head {
-    id item = enumerator.nextObject;
+    id item = [self toEnumerator].nextObject;
     if (item == nil) {
         [NSException raise:@"NoSuchElementException" format:@"Expected a sequence with at least one element, but sequence was empty."];
     }
@@ -74,7 +74,7 @@
 }
 
 - (Option *)headOption {
-    return option(enumerator.nextObject);
+    return option([self toEnumerator].nextObject);
 }
 
 - (Sequence *)join:(id<Enumerable>)toJoin {
@@ -91,13 +91,14 @@
 
 - (Sequence *)tail {
     return [Sequence with:[EasyEnumerable with:^{
-        [enumerator nextObject];
-        return enumerator;
+        NSEnumerator *const anEnumerator = [enumerable toEnumerator];
+        [anEnumerator nextObject];
+        return anEnumerator;
     }]];
 }
 
 - (Sequence *)take:(int)n {
-    return [Sequence with:[EasyEnumerable with:^{return [enumerator take:n];}]];
+    return [Sequence with:[EasyEnumerable with:^{return [[enumerable toEnumerator] take:n];}]];
 }
 
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock {

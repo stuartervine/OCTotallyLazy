@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
 
-@protocol Enumerable
+@protocol Enumerable <NSObject>
 -(NSEnumerator *)toEnumerator;
 @end

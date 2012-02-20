@@ -115,4 +115,16 @@
     assertThat([zip asArray], hasItems([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil));
 }
 
+-(void)testNonForwardBehaviour {
+    Sequence *items = sequence(@"one", @"two", @"three", nil);
+    assertThat([items head], equalTo(@"one"));
+    assertThat([items head], equalTo(@"one"));
+    assertThat([items headOption], equalTo([Some some:@"one"]));
+    assertThat([items headOption], equalTo([Some some:@"one"]));
+    assertThat([items tail], hasItems(@"two", @"three", nil));
+    assertThat([items tail], hasItems(@"two", @"three", nil));
+    assertThat([items take:1], hasItems(@"one", nil));
+    assertThat([items take:1], hasItems(@"one", nil));
+}
+
 @end
