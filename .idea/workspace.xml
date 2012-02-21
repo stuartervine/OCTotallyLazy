@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Adding some basic docs.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Predicates.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Filters.h" afterPath="$PROJECT_DIR$/src/main/Predicates.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test-unit/FiltersTest.m" afterPath="$PROJECT_DIR$/src/test-unit/PredicatesTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/NSEnumerator+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/enumerators/NSEnumerator+OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Predicates.h" afterPath="$PROJECT_DIR$/src/main/Predicates.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/PredicatesTest.m" afterPath="$PROJECT_DIR$/src/test-unit/PredicatesTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,11 +72,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceTest.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SequenceTest.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="11" column="16" selection-start="268" selection-end="268" vertical-scroll-proportion="-0.5191257">
+              <folding>
+                <element signature="e#137#162#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PredicatesTest.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PredicatesTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test-unit/PredicatesTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="34" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.59016395">
+            <state line="61" column="25" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#128#153#0" expanded="true" />
               </folding>
@@ -117,7 +115,7 @@
       <file leaf-file-name="Predicates.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Predicates.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+            <state line="59" column="6" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/src/main/Enumerable.h" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
@@ -151,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
         <option value="$PROJECT_DIR$/src/main/Filters.h" />
         <option value="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
+        <option value="$PROJECT_DIR$/src/main/Predicates.h" />
         <option value="$PROJECT_DIR$/src/test-unit/PredicatesTest.m" />
       </list>
     </option>
@@ -316,32 +314,32 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="OCUnit.-[PredicatesTest testWhileTrue]">
-    <configuration default="false" name="-[SequenceTest testFlatMap]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testFlatMap">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="-[PredicatesTest testLambdas]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest" TEST_METHOD="testLambdas">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="OCUnit.PredicatesTest">
     <configuration default="false" name="MemoisedEnumeratorTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="MemoisedEnumeratorTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="PredicatesTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest">
+    <configuration default="false" name="-[PredicatesTest testWhileTrue]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest" TEST_METHOD="testWhileTrue">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="-[PredicatesTest testWhileTrue]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest" TEST_METHOD="testWhileTrue">
+    <configuration default="false" name="-[PredicatesTest testCountTo]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest" TEST_METHOD="testCountTo">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[PredicatesTest testAlternate]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest" TEST_METHOD="testAlternate">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PredicatesTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -362,11 +360,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testFlatMap]" />
-      <item index="1" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testLambdas]" />
-      <item index="2" class="java.lang.String" itemvalue="OCUnit.MemoisedEnumeratorTest" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.PredicatesTest" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testWhileTrue]" />
+      <item index="0" class="java.lang.String" itemvalue="OCUnit.MemoisedEnumeratorTest" />
+      <item index="1" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testWhileTrue]" />
+      <item index="2" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testCountTo]" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testAlternate]" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.PredicatesTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -414,10 +412,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1604668" sideWeight="0.7608983" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6070111" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6063408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23910172" sideWeight="0.9993084" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23910172" sideWeight="0.9993084" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -582,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="40" selection-end="86" vertical-scroll-proportion="0.0">
@@ -614,16 +605,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Predicates.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+        <state line="59" column="6" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/PredicatesTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="34" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.59016395">
+        <state line="61" column="25" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#128#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="268" selection-end="268" vertical-scroll-proportion="-0.5191257">
+          <folding>
+            <element signature="e#137#162#0" expanded="true" />
           </folding>
         </state>
       </provider>

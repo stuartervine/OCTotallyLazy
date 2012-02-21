@@ -2,31 +2,11 @@
 
 typedef BOOL(^PREDICATE)(id);
 
-static PREDICATE TL_equalTo(id comparable) {
-    return [[^(id item) { return (BOOL)[item isEqual:comparable]; } copy] autorelease];
-}
-static PREDICATE TL_greaterThan(NSNumber *comparable) {
-    return [[^(NSNumber *item) { return item.doubleValue > comparable.doubleValue;} copy] autorelease];
-}
-static PREDICATE TL_lessThan(NSNumber *comparable) {
-    return [[^(NSNumber *item) { return item.doubleValue < comparable.doubleValue;} copy] autorelease];
-}
-static PREDICATE TL_containedIn(NSArray *existing) {
-    return [[^(NSNumber *item) { return [existing containsObject:item];} copy] autorelease];
-}
-static PREDICATE TL_startsWith(NSString *prefix) {
-    return [[^(NSString *item) { return [item hasPrefix:prefix];} copy] autorelease];
-}
-static PREDICATE TL_whileTrue(PREDICATE predicate) {
-    __block BOOL boolState = TRUE;
+static PREDICATE TL_alternate(BOOL startState) {
+    __block BOOL state = !startState;
     return [[^(id item) {
-        boolState = boolState && predicate(item);
-        return boolState;
-    } copy] autorelease];
-}
-static PREDICATE TL_not(PREDICATE predicate) {
-    return [[^(id item) {
-        return !predicate(item);
+        state = !state;
+        return state;
     } copy] autorelease];
 }
 static PREDICATE TL_countTo(int n) {
@@ -36,9 +16,15 @@ static PREDICATE TL_countTo(int n) {
     } copy] autorelease];
 
 }
+static PREDICATE TL_containedIn(NSArray *existing) {
+    return [[^(NSNumber *item) { return [existing containsObject:item];} copy] autorelease];
+}
+static PREDICATE TL_equalTo(id comparable) {
+    return [[^(id item) { return (BOOL)[item isEqual:comparable]; } copy] autorelease];
+}
 static PREDICATE TL_everyNth(int n) {
     __block int count = 0;
-    return [[^(id item) { 
+    return [[^(id item) {
         count++;
         if (count == n) {
             count = 0;
@@ -47,11 +33,25 @@ static PREDICATE TL_everyNth(int n) {
         return FALSE;
     } copy] autorelease];
 }
-static PREDICATE TL_alternate(BOOL startState) {
-    __block BOOL state = !startState;
+static PREDICATE TL_greaterThan(NSNumber *comparable) {
+    return [[^(NSNumber *item) { return item.doubleValue > comparable.doubleValue;} copy] autorelease];
+}
+static PREDICATE TL_lessThan(NSNumber *comparable) {
+    return [[^(NSNumber *item) { return item.doubleValue < comparable.doubleValue;} copy] autorelease];
+}
+static PREDICATE TL_not(PREDICATE predicate) {
     return [[^(id item) {
-        state = !state;
-        return state;
+        return !predicate(item);
+    } copy] autorelease];
+}
+static PREDICATE TL_startsWith(NSString *prefix) {
+    return [[^(NSString *item) { return [item hasPrefix:prefix];} copy] autorelease];
+}
+static PREDICATE TL_whileTrue(PREDICATE predicate) {
+    __block BOOL boolState = TRUE;
+    return [[^(id item) {
+        boolState = boolState && predicate(item);
+        return boolState;
     } copy] autorelease];
 }
 
@@ -65,11 +65,12 @@ static PREDICATE TL_alternate(BOOL startState) {
 
 #ifdef TL_SHORTHAND
     #define alternate(startState) TL_alternate(startState)
+    #define countTo(comparable) TL_countTo(comparable)
     #define eqTo(comparable) TL_equalTo(comparable)
     #define everyNth TL_everyNth
     #define gtThan(comparable) TL_greaterThan(comparable)
+    #define in(array) TL_containedIn(array)
     #define ltThan(comparable) TL_lessThan(comparable)
     #define not(predicate) TL_not(predicate)
-    #define in(array) TL_containedIn(array)
     #define startingWith(comparable) TL_startsWith(comparable)
 #endif
