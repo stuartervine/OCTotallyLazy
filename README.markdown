@@ -19,17 +19,19 @@ These exclude any imports and use the OCTotallyLazy base type of Sequence, eager
     [sequence(@"one", @"two", @"three", nil) tail]; //outputs sequence(@"two", @"three", nil)
     [sequence(num(3), num(2), num(1), nil) take:2]; //outputs sequence(num(3), num(2), nil)
     [sequence(num(3), num(2), num(1), nil) takeWhile:TL_greaterThan(2)]; //outputs sequence(num(3), nil)
-    [sequence(num(1), num(2), nil) cycle]; //outputs sequence(num(1), num(2), num(1), num(2)....infinity);
 
-    Lambda craziness
+# Lambda craziness
 
-    Verbose:
+Verbose:
+
     [sequence(@"bob", @"fred", @"wilma", nil) map:^(NSString *item){return [item uppercaseString];}] //outputs sequence(@"BOB", @"FRED", @"WILMA", nil)
 
-    A bit more sane:
+A bit more sane:
+
     [sequence(@"bob", @"fred", @"wilma", nil) map:lambda(s, [s uppercaseString])] //outputs sequence(@"BOB", @"FRED", @"WILMA", nil)
 
-    A bit mental (but a bit like scala):
+A bit mental (but a bit like scala):
+
     [sequence(@"bob", @"fred", @"wilma", nil) map:_([_ uppercaseString])] //outputs sequence(@"BOB", @"FRED", @"WILMA", nil)
 
 

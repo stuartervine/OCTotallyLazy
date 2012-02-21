@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
     </list>
     <ignored path="Funcky.iws" />
@@ -95,7 +94,7 @@
       <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.60820895">
+            <state line="34" column="0" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.8880597">
               <folding />
             </state>
           </provider>
@@ -629,7 +628,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.60820895">
+        <state line="34" column="0" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.8880597">
           <folding />
         </state>
       </provider>
