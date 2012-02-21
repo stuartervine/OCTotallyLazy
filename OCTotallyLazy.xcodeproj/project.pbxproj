@@ -85,7 +85,7 @@
 		BC76519814E078660055955C /* Flattenable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955B /* Flattenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E078660055955E /* EasyEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955D /* EasyEnumerable.m */; };
 		BC76519814E0786600559560 /* EasyEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955F /* EasyEnumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC76519814E0786600559562 /* Coercions.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559561 /* Coercions.h */; };
+		BC76519814E0786600559562 /* Coercions.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559561 /* Coercions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +227,7 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559561 /* Coercions.h */,
 				BC76519814E078660055955F /* EasyEnumerable.h */,
 				BC76519814E078660055955D /* EasyEnumerable.m */,
 				BC76519814E078660055955B /* Flattenable.h */,
@@ -310,7 +311,6 @@
 		BC76519814E078660055954A /* src */ = {
 			isa = PBXGroup;
 			children = (
-				BC76519814E0786600559561 /* Coercions.h */,
 				BC60928714EC2CB700A59CDD /* main */,
 				BC60928814EC2CC000A59CDD /* test-unit */,
 			);
@@ -343,6 +343,7 @@
 				BC6092D814EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch in Headers */,
 				BC6092D914EC2D8600A59CDD /* OCTotallyLazy.h in Headers */,
 				BC76519814E078660055955C /* Flattenable.h in Headers */,
+				BC76519814E0786600559562 /* Coercions.h in Headers */,
 				BC6092DA14EC2D8600A59CDD /* Sequence.h in Headers */,
 				BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */,
 				BC76519814E0786600559560 /* EasyEnumerable.h in Headers */,
@@ -352,7 +353,6 @@
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092ED14EC2D8600A59CDD /* Some.h in Headers */,
 				BC20F82A14F2EA7C00ED9B67 /* Callables.h in Headers */,
-				BC76519814E0786600559562 /* Coercions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
