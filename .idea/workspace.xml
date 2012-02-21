@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Adding some basic docs.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Coercions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Filters.h" afterPath="$PROJECT_DIR$/src/main/Filters.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/FiltersTest.m" afterPath="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/OCTotallyLazyTestCase.h" afterPath="$PROJECT_DIR$/src/test-unit/OCTotallyLazyTestCase.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" afterPath="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepeatEnumeratorTest.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RepeatEnumeratorTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.05464481">
+            <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FiltersTest.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FiltersTest.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test-unit/FiltersTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
+            <state line="38" column="0" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.9471767">
               <folding>
                 <element signature="e#128#153#0" expanded="true" />
               </folding>
@@ -122,7 +113,7 @@
       <file leaf-file-name="Filters.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Filters.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="38" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.0">
+            <state line="13" column="17" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,11 +143,11 @@
         <option value="$PROJECT_DIR$/src/main/Coercions.h" />
         <option value="$PROJECT_DIR$/src/test-unit/OCTotallyLazyTestCase.h" />
         <option value="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
-        <option value="$PROJECT_DIR$/src/main/Filters.h" />
-        <option value="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
         <option value="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
         <option value="$PROJECT_DIR$/src/test-unit/MemoisedEnumeratorTest.m" />
         <option value="$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m" />
+        <option value="$PROJECT_DIR$/src/main/Filters.h" />
+        <option value="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
       </list>
     </option>
   </component>
@@ -321,7 +312,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="OCUnit.MemoisedEnumeratorTest">
+  <component name="RunManager" selected="OCUnit.FiltersTest">
     <configuration default="false" name="-[FiltersTest testIsGreaterThan]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="FiltersTest" TEST_METHOD="testIsGreaterThan">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -340,13 +331,13 @@
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="FiltersTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="FiltersTest">
+    <configuration default="false" name="MemoisedEnumeratorTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="MemoisedEnumeratorTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="MemoisedEnumeratorTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="MemoisedEnumeratorTest">
+    <configuration default="false" name="FiltersTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="FiltersTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -370,8 +361,8 @@
       <item index="0" class="java.lang.String" itemvalue="OCUnit.-[FiltersTest testIsGreaterThan]" />
       <item index="1" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testFlatMap]" />
       <item index="2" class="java.lang.String" itemvalue="OCUnit.-[FiltersTest testLambdas]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.FiltersTest" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.MemoisedEnumeratorTest" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.MemoisedEnumeratorTest" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.FiltersTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -594,22 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Filters.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="38" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/FiltersTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#128#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
@@ -628,8 +603,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/RepeatEnumeratorTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.05464481">
+        <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Filters.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/FiltersTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.9471767">
+          <folding>
+            <element signature="e#128#153#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

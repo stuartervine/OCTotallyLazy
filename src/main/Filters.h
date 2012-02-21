@@ -11,6 +11,9 @@ static PREDICATE TL_greaterThan(NSNumber *comparable) {
 static PREDICATE TL_lessThan(NSNumber *comparable) {
     return [[^(NSNumber *item) { return item.doubleValue < comparable.doubleValue;} copy] autorelease];
 }
+static PREDICATE TL_containedIn(NSArray *existing) {
+    return [[^(NSNumber *item) { return [existing containsObject:item];} copy] autorelease];
+}
 static PREDICATE TL_startsWith(NSString *prefix) {
     return [[^(NSString *item) { return [item hasPrefix:prefix];} copy] autorelease];
 }
@@ -66,5 +69,7 @@ static PREDICATE TL_alternate(BOOL startState) {
     #define everyNth TL_everyNth
     #define gtThan(comparable) TL_greaterThan(comparable)
     #define ltThan(comparable) TL_lessThan(comparable)
+    #define not(predicate) TL_not(predicate)
+    #define in(array) TL_containedIn(array)
     #define startingWith(comparable) TL_startsWith(comparable)
 #endif

@@ -30,6 +30,13 @@
     assertThat([aSequence filter:ltThan(num(3))], hasItems(num(1), num(2), nil));
 }
 
+-(void)testContainedIn {
+    NSArray *aSequence = array(num(1), num(2), num(3), nil);
+    NSArray *existing = array(num(1), num(2), nil);
+    assertThat([aSequence filter:TL_containedIn(existing)], hasItems(num(1), num(2), nil));
+    assertThat([aSequence filter:not(in(existing))], hasItems(num(3), nil));
+}
+
 -(void)testLambdas {
     Sequence *items = sequence(@"bob", @"fred", nil);
     assertThat([items map:^(id s){return [s uppercaseString];}], hasItems(@"BOB", @"FRED", nil));
