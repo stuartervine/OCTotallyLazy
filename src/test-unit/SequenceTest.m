@@ -1,7 +1,9 @@
 #import <Foundation/Foundation.h>
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import <OCTotallyLazy/OCTotallyLazy.h>
+#define TL_SHORTHAND
+#define TL_COERCIONS
+#import "OCTotallyLazy.h"
 #import "OCTotallyLazyTestCase.h"
 
 @interface SequenceTest : OCTotallyLazyTestCase

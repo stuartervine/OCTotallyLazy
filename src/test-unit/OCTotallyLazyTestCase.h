@@ -4,7 +4,3 @@
 
 @interface OCTotallyLazyTestCase : SenTestCase
 @end
-
-static NSNumber *num(long i) {
-    return [NSNumber numberWithLong:i];
-}

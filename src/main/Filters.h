@@ -8,6 +8,9 @@ static PREDICATE TL_equalTo(id comparable) {
 static PREDICATE TL_greaterThan(NSNumber *comparable) {
     return [[^(NSNumber *item) { return item.doubleValue > comparable.doubleValue;} copy] autorelease];
 }
+static PREDICATE TL_lessThan(NSNumber *comparable) {
+    return [[^(NSNumber *item) { return item.doubleValue < comparable.doubleValue;} copy] autorelease];
+}
 static PREDICATE TL_startsWith(NSString *prefix) {
     return [[^(NSString *item) { return [item hasPrefix:prefix];} copy] autorelease];
 }
@@ -48,3 +51,20 @@ static PREDICATE TL_alternate(BOOL startState) {
         return state;
     } copy] autorelease];
 }
+
+#ifdef TL_LAMBDA
+    #define lambda(s, statement) ^(id s){return statement;}
+#endif
+
+#ifdef TL_LAMBDA_SHORTHAND
+    #define _(statement) ^(id _){return statement;}
+#endif
+
+#ifdef TL_SHORTHAND
+    #define alternate(startState) TL_alternate(startState)
+    #define eqTo(comparable) TL_equalTo(comparable)
+    #define everyNth TL_everyNth
+    #define gtThan(comparable) TL_greaterThan(comparable)
+    #define ltThan(comparable) TL_lessThan(comparable)
+    #define startingWith(comparable) TL_startsWith(comparable)
+#endif

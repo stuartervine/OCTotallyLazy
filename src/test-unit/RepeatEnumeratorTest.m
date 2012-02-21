@@ -1,4 +1,5 @@
-#import <OCTotallyLazy/OCTotallyLazy.h>
+#define TL_COERCIONS
+#import "OCTotallyLazy.h"
 #import "OCTotallyLazyTestCase.h"
 #import "MemoisedEnumerator.h"
 #import "RepeatEnumerator.h"
