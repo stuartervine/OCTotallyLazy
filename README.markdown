@@ -20,7 +20,7 @@ These exclude any imports and use the OCTotallyLazy base type of Sequence, eager
     [sequence(num(3), num(2), num(1), nil) take:2]; //outputs sequence(num(3), num(2), nil)
     [sequence(num(3), num(2), num(1), nil) takeWhile:TL_greaterThan(2)]; //outputs sequence(num(3), nil)
 
-# Lambda craziness
+### Lambda craziness
 
 Verbose:
 
