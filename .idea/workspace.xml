@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Adding some basic docs.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Predicates.h" afterPath="$PROJECT_DIR$/src/main/Predicates.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/PredicatesTest.m" afterPath="$PROJECT_DIR$/src/test-unit/PredicatesTest.m" />
+    <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,15 +29,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HCOrderingComparison.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/external/Test/OCHamcrestIOS.framework/Headers/HCOrderingComparison.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="12" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceTest.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SequenceTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="268" selection-end="268" vertical-scroll-proportion="-0.5191257">
+            <state line="131" column="52" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#137#162#0" expanded="true" />
               </folding>
@@ -101,10 +92,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.60820895">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PredicatesTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test-unit/PredicatesTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="25" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.0">
+            <state line="69" column="29" selection-start="2857" selection-end="2857" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#128#153#0" expanded="true" />
               </folding>
@@ -115,7 +115,7 @@
       <file leaf-file-name="Predicates.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Predicates.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="6" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0">
+            <state line="62" column="39" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Enumerable.h" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Sequence.h" />
@@ -150,6 +149,7 @@
         <option value="$PROJECT_DIR$/src/test-unit/FiltersTest.m" />
         <option value="$PROJECT_DIR$/src/main/Predicates.h" />
         <option value="$PROJECT_DIR$/src/test-unit/PredicatesTest.m" />
+        <option value="$PROJECT_DIR$/README.markdown" />
       </list>
     </option>
   </component>
@@ -400,7 +400,11 @@
       <created>1329261394009</created>
       <updated>1329261394009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding some basic docs.">
+      <created>1329865112968</created>
+      <updated>1329865112968</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -411,7 +415,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1604668" sideWeight="0.7608983" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23121808" sideWeight="0.7608983" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6063408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -431,8 +435,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -518,11 +522,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="11" selection-start="5005" selection-end="5005" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/enumerators/NSEnumerator+OCTotallyLazy.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="17" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" />
@@ -603,28 +602,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="52" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#137#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Predicates.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="6" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0">
+        <state line="62" column="39" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test-unit/PredicatesTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="25" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.0">
+        <state line="69" column="29" selection-start="2857" selection-end="2857" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#128#153#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
+    <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="268" selection-end="268" vertical-scroll-proportion="-0.5191257">
-          <folding>
-            <element signature="e#137#162#0" expanded="true" />
-          </folding>
+        <state line="24" column="0" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.60820895">
+          <folding />
         </state>
       </provider>
     </entry>

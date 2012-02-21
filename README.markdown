@@ -15,11 +15,11 @@ These exclude any imports and use the OCTotallyLazy base type of Sequence, eager
 
     Lazy
 
-    [sequence(num(1), num(2), nil) cycle]; //outputs lazySequence(num(1), num(2), num(1), num(2)....infinity);
+    [sequence(num(1), num(2), nil) cycle]; //outputs sequence(num(1), num(2), num(1), num(2)....infinity);
     [sequence(@"one", @"two", @"three", nil) tail]; //outputs sequence(@"two", @"three", nil)
     [sequence(num(3), num(2), num(1), nil) take:2]; //outputs sequence(num(3), num(2), nil)
     [sequence(num(3), num(2), num(1), nil) takeWhile:TL_greaterThan(2)]; //outputs sequence(num(3), nil)
-    [sequence(num(1), num(2), nil) cycle]; //outputs lazySequence(num(1), num(2), num(1), num(2)....infinity);
+    [sequence(num(1), num(2), nil) cycle]; //outputs sequence(num(1), num(2), num(1), num(2)....infinity);
 
     Lambda craziness
 
