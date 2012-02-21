@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
-#import "Filters.h"
+#import "Predicates.h"
 
 @interface NSEnumerator (OCTotallyLazy)
 - (NSEnumerator *)drop:(int)toDrop;

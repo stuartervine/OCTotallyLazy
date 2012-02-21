@@ -1,7 +1,7 @@
 #import "Callables.h"
 #import "Coercions.h"
 #import "Enumerable.h"
-#import "Filters.h"
+#import "Predicates.h"
 #import "Foldable.h"
 #import "Sequence.h"
 #import "Mappable.h"

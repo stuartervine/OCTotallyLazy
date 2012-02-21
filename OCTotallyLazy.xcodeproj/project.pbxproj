@@ -42,7 +42,7 @@
 		BC6092D214EC2D8600A59CDD /* SingleValueEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092A314EC2D8600A59CDD /* SingleValueEnumerator.m */; };
 		BC6092D314EC2D8600A59CDD /* TakeWhileEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A414EC2D8600A59CDD /* TakeWhileEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092D414EC2D8600A59CDD /* TakeWhileEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092A514EC2D8600A59CDD /* TakeWhileEnumerator.m */; };
-		BC6092D514EC2D8600A59CDD /* Filters.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A614EC2D8600A59CDD /* Filters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC6092D514EC2D8600A59CDD /* Predicates.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A614EC2D8600A59CDD /* Predicates.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092D614EC2D8600A59CDD /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A714EC2D8600A59CDD /* Foldable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092D714EC2D8600A59CDD /* OCTotallyLazy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */; };
 		BC6092D814EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,7 +60,7 @@
 		BC6092EA14EC2D8600A59CDD /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092BB14EC2D8600A59CDD /* Pair.m */; };
 		BC6092ED14EC2D8600A59CDD /* Some.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6092BE14EC2D8600A59CDD /* Some.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6092EE14EC2D8600A59CDD /* Some.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092BF14EC2D8600A59CDD /* Some.m */; };
-		BC6092FF14EC2DA800A59CDD /* FiltersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F214EC2DA800A59CDD /* FiltersTest.m */; };
+		BC6092FF14EC2DA800A59CDD /* PredicatesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F214EC2DA800A59CDD /* PredicatesTest.m */; };
 		BC60930014EC2DA800A59CDD /* OCTotallyLazyTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */; };
 		BC60930114EC2DA800A59CDD /* SequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F514EC2DA800A59CDD /* SequenceTest.m */; };
 		BC60930214EC2DA800A59CDD /* MemoisedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6092F614EC2DA800A59CDD /* MemoisedEnumeratorTest.m */; };
@@ -120,7 +120,7 @@
 		BC6092A314EC2D8600A59CDD /* SingleValueEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleValueEnumerator.m; sourceTree = "<group>"; };
 		BC6092A414EC2D8600A59CDD /* TakeWhileEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeWhileEnumerator.h; sourceTree = "<group>"; };
 		BC6092A514EC2D8600A59CDD /* TakeWhileEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeWhileEnumerator.m; sourceTree = "<group>"; };
-		BC6092A614EC2D8600A59CDD /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filters.h; path = main/Filters.h; sourceTree = "<group>"; };
+		BC6092A614EC2D8600A59CDD /* Predicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Predicates.h; path = main/Predicates.h; sourceTree = "<group>"; };
 		BC6092A714EC2D8600A59CDD /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Foldable.h; path = main/Foldable.h; sourceTree = "<group>"; };
 		BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "OCTotallyLazy-Info.plist"; path = "main/OCTotallyLazy-Info.plist"; sourceTree = "<group>"; };
 		BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OCTotallyLazy-Prefix.pch"; path = "main/OCTotallyLazy-Prefix.pch"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		BC6092BF14EC2D8600A59CDD /* Some.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Some.m; path = main/Some.m; sourceTree = "<group>"; };
 		BC6092EF14EC2DA800A59CDD /* Callables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Callables.h; path = "test-unit/Callables.h"; sourceTree = "<group>"; };
 		BC6092F014EC2DA800A59CDD /* Callables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Callables.m; path = "test-unit/Callables.m"; sourceTree = "<group>"; };
-		BC6092F214EC2DA800A59CDD /* FiltersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FiltersTest.m; path = "test-unit/FiltersTest.m"; sourceTree = "<group>"; };
+		BC6092F214EC2DA800A59CDD /* PredicatesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PredicatesTest.m; path = "test-unit/PredicatesTest.m"; sourceTree = "<group>"; };
 		BC6092F314EC2DA800A59CDD /* OCTotallyLazyTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCTotallyLazyTestCase.h; path = "test-unit/OCTotallyLazyTestCase.h"; sourceTree = "<group>"; };
 		BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCTotallyLazyTestCase.m; path = "test-unit/OCTotallyLazyTestCase.m"; sourceTree = "<group>"; };
 		BC6092F514EC2DA800A59CDD /* SequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SequenceTest.m; path = "test-unit/SequenceTest.m"; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 				BC76519814E078660055954F /* NSArray+OCTotallyLazy.h */,
 				BC60929014EC2D8600A59CDD /* Enumerable.h */,
 				BC60929114EC2D8600A59CDD /* enumerators */,
-				BC6092A614EC2D8600A59CDD /* Filters.h */,
+				BC6092A614EC2D8600A59CDD /* Predicates.h */,
 				BC6092A714EC2D8600A59CDD /* Foldable.h */,
 				BC6092A814EC2D8600A59CDD /* OCTotallyLazy-Info.plist */,
 				BC6092A914EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch */,
@@ -265,7 +265,7 @@
 		BC60928814EC2CC000A59CDD /* test-unit */ = {
 			isa = PBXGroup;
 			children = (
-				BC6092F214EC2DA800A59CDD /* FiltersTest.m */,
+				BC6092F214EC2DA800A59CDD /* PredicatesTest.m */,
 				BC6092F314EC2DA800A59CDD /* OCTotallyLazyTestCase.h */,
 				BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */,
 				BC6092F514EC2DA800A59CDD /* SequenceTest.m */,
@@ -338,7 +338,7 @@
 				BC6092CF14EC2D8600A59CDD /* RepeatEnumerator.h in Headers */,
 				BC6092D114EC2D8600A59CDD /* SingleValueEnumerator.h in Headers */,
 				BC6092D314EC2D8600A59CDD /* TakeWhileEnumerator.h in Headers */,
-				BC6092D514EC2D8600A59CDD /* Filters.h in Headers */,
+				BC6092D514EC2D8600A59CDD /* Predicates.h in Headers */,
 				BC6092D614EC2D8600A59CDD /* Foldable.h in Headers */,
 				BC6092D814EC2D8600A59CDD /* OCTotallyLazy-Prefix.pch in Headers */,
 				BC6092D914EC2D8600A59CDD /* OCTotallyLazy.h in Headers */,
@@ -503,7 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6092FF14EC2DA800A59CDD /* FiltersTest.m in Sources */,
+				BC6092FF14EC2DA800A59CDD /* PredicatesTest.m in Sources */,
 				BC60930014EC2DA800A59CDD /* OCTotallyLazyTestCase.m in Sources */,
 				BC60930114EC2DA800A59CDD /* SequenceTest.m in Sources */,
 				BC60930214EC2DA800A59CDD /* MemoisedEnumeratorTest.m in Sources */,

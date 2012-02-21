@@ -6,10 +6,10 @@
 #import "OCTotallyLazy.h"
 #import "OCTotallyLazyTestCase.h"
 
-@interface FiltersTest : OCTotallyLazyTestCase
+@interface PredicatesTest : OCTotallyLazyTestCase
 @end
 
-@implementation FiltersTest
+@implementation PredicatesTest
 
 -(void)testIsEqual {
     NSNumber *one = [NSNumber numberWithInt:1];
@@ -37,6 +37,19 @@
     assertThat([aSequence filter:not(in(existing))], hasItems(num(3), nil));
 }
 
+-(void)testEveryNth {
+    NSArray *items = array(num(1), num(2), num(3), num(4), num(5), num(6), nil);
+    assertThat([items filter:TL_everyNth(1)], hasItems(num(1), num(2), num(3), num(4), num(5), num(6), nil));
+    assertThat([items filter:everyNth(2)], hasItems(num(2), num(4), num(6), nil));
+}
+
+-(void)testWhileTrue {
+    PREDICATE whileTrue = TL_whileTrue(TL_greaterThan(num(5)));
+    assertThatBool(whileTrue(num(7)), equalToBool(TRUE));
+    assertThatBool(whileTrue(num(6)), equalToBool(TRUE));
+    assertThatBool(whileTrue(num(5)), equalToBool(FALSE));
+    assertThatBool(whileTrue(num(6)), equalToBool(FALSE));
+}
 -(void)testLambdas {
     Sequence *items = sequence(@"bob", @"fred", nil);
     assertThat([items map:^(id s){return [s uppercaseString];}], hasItems(@"BOB", @"FRED", nil));
