@@ -17,7 +17,10 @@ static PREDICATE TL_countTo(int n) {
 
 }
 static PREDICATE TL_containedIn(NSArray *existing) {
-    return [[^(NSNumber *item) { return [existing containsObject:item];} copy] autorelease];
+    return [[^(id item) { return [existing containsObject:item];} copy] autorelease];
+}
+static PREDICATE TL_containsString(NSString *toMatch) {
+    return [[^(id item) { return [[item description] rangeOfString:toMatch].length > 0;} copy] autorelease];
 }
 static PREDICATE TL_equalTo(id comparable) {
     return [[^(id item) { return (BOOL)[item isEqual:comparable]; } copy] autorelease];
@@ -65,6 +68,7 @@ static PREDICATE TL_whileTrue(PREDICATE predicate) {
 
 #ifdef TL_SHORTHAND
     #define alternate(startState) TL_alternate(startState)
+    #define containsStr(comparable) TL_containsString(comparable)
     #define countTo(comparable) TL_countTo(comparable)
     #define eqTo(comparable) TL_equalTo(comparable)
     #define everyNth TL_everyNth

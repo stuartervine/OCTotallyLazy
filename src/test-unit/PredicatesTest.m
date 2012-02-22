@@ -12,30 +12,36 @@
 @implementation PredicatesTest
 
 -(void)testAlternate {
-    NSArray *aSequence = array(num(1), num(2), num(3), num(4), nil);
-    assertThat([aSequence filter:TL_alternate(YES)], hasItems(num(1), num(3), nil));
-    assertThat([aSequence filter:TL_alternate(NO)], hasItems(num(2), num(4), nil));
-    assertThat([aSequence filter:alternate(YES)], hasItems(num(1), num(3), nil));
+    NSArray *items = array(num(1), num(2), num(3), num(4), nil);
+    assertThat([items filter:TL_alternate(YES)], hasItems(num(1), num(3), nil));
+    assertThat([items filter:TL_alternate(NO)], hasItems(num(2), num(4), nil));
+    assertThat([items filter:alternate(YES)], hasItems(num(1), num(3), nil));
 }
 
 -(void)testContainedIn {
-    NSArray *aSequence = array(num(1), num(2), num(3), nil);
+    NSArray *items = array(num(1), num(2), num(3), nil);
     NSArray *existing = array(num(1), num(2), nil);
-    assertThat([aSequence filter:TL_containedIn(existing)], hasItems(num(1), num(2), nil));
-    assertThat([aSequence filter:not(in(existing))], hasItems(num(3), nil));
+    assertThat([items filter:TL_containedIn(existing)], hasItems(num(1), num(2), nil));
+    assertThat([items filter:not(in(existing))], hasItems(num(3), nil));
+}
+
+-(void)testContainsString {
+    NSArray *items = array(@"one", @"two", @"three", nil);
+    assertThat([items filter:TL_containsString(@"o")], hasItems(@"one", @"two", nil));
+    assertThat([items filter:containsStr(@"o")], hasItems(@"one", @"two", nil));
 }
 
 -(void)testCountTo {
-    NSArray *aSequence = array(num(1), num(2), num(3), nil);
-    assertThat([aSequence filter:TL_countTo(2)], hasItems(num(1), num(2), nil));
-    assertThat([aSequence filter:countTo(1)], hasItems(num(1), nil));
+    NSArray *items = array(num(1), num(2), num(3), nil);
+    assertThat([items filter:TL_countTo(2)], hasItems(num(1), num(2), nil));
+    assertThat([items filter:countTo(1)], hasItems(num(1), nil));
 }
 
 -(void)testEqualTo {
     NSNumber *one = [NSNumber numberWithInt:1];
-    NSArray *aSequence = array(@"bob", one, nil);
-    assertThat([aSequence filter:TL_equalTo(@"bob")], hasItems(@"bob", nil));
-    assertThat([aSequence filter:TL_equalTo(one)], hasItems(one, nil));
+    NSArray *items = array(@"bob", one, nil);
+    assertThat([items filter:TL_equalTo(@"bob")], hasItems(@"bob", nil));
+    assertThat([items filter:TL_equalTo(one)], hasItems(one, nil));
 }
 
 -(void)testEveryNth {
@@ -45,15 +51,15 @@
 }
 
 -(void)testGreaterThan {
-    NSArray *aSequence = array(num(1), num(2), num(3), nil);
-    assertThat([aSequence filter:TL_greaterThan(num(1))], hasItems(num(2), num(3), nil));
-    assertThat([aSequence filter:gtThan(num(2))], hasItems(num(3), nil));
+    NSArray *items = array(num(1), num(2), num(3), nil);
+    assertThat([items filter:TL_greaterThan(num(1))], hasItems(num(2), num(3), nil));
+    assertThat([items filter:gtThan(num(2))], hasItems(num(3), nil));
 }
 
 -(void)testLessThan {
-    NSArray *aSequence = array(num(1), num(2), num(3), nil);
-    assertThat([aSequence filter:TL_lessThan(num(2))], hasItems(num(1), nil));
-    assertThat([aSequence filter:ltThan(num(3))], hasItems(num(1), num(2), nil));
+    NSArray *items = array(num(1), num(2), num(3), nil);
+    assertThat([items filter:TL_lessThan(num(2))], hasItems(num(1), nil));
+    assertThat([items filter:ltThan(num(3))], hasItems(num(1), num(2), nil));
 }
 
 -(void)testWhileTrue {
