@@ -8,7 +8,7 @@ The best place to look for examples is in the test classes for now. Here's a sma
 
 These use the base type of Sequence (lazy), eager methods are available on NSArray, NSSet and NSDictionary. They also use the shorthand syntax.
 
-### Import the library & define the shorthand
+### Import the library
 
     import <OCTotallyLazy/OCTotallyLazy.h>
 
