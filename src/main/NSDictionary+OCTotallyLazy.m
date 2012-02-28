@@ -20,6 +20,10 @@
     }];
 }
 
+- (void)foreach:(void (^)(id, id))funcBlock {
+    [[self allKeys] foreach:^(id key){funcBlock(key, [self objectForKey:key]);}];
+}
+
 - (id)map:(NSArray * (^)(id key, id value))funcBlock {
     return [[[self allKeys] map:^(id key){return funcBlock(key, [self objectForKey:key]);}] asDictionary];
 }

@@ -21,6 +21,13 @@
     assertThat([dict filterValues:TL_equalTo(@"value2")], equalTo([NSDictionary dictionaryWithObject:@"value2" forKey:@"key2"]));
 }
 
+- (void)testForEach {
+    __block NSString *description = @"";
+    NSDictionary *dict = dictionary(sequence(@"key1", @"key2", nil), sequence(@"value1", @"value2", nil));
+    [dict foreach:^(id key, id value) { description = [[description stringByAppendingString:key] stringByAppendingString:value]; }];
+    assertThat(description, equalTo(@"key2value2key1value1"));
+}
+
 -(void)testMap {
     NSDictionary *actual = dictionary(sequence(@"key1", @"key2", nil), sequence(@"value1", @"value2", nil));
     NSDictionary *expected = dictionary(sequence(@"KEY1", @"KEY2", nil), sequence(@"VALUE1", @"VALUE2", nil));
