@@ -153,4 +153,10 @@ static NSNumber *num(int i) {
     assertThat([items asSet], equalTo([array(@"one", @"two", nil) asSet]));
 }
 
+-(void)testAsDictionary {
+    NSDictionary *actual = [array(@"key1", @"value1", @"key2", @"value2", @"key3", nil) asDictionary];
+    assertThat(actual, equalTo([NSDictionary dictionaryWithObjects:array(@"value1", @"value2", nil)
+                                                           forKeys:array(@"key1", @"key2", nil)]));
+}
+
 @end

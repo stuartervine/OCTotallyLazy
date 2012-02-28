@@ -1,6 +1,7 @@
 #import "NSArray+OCTotallyLazy.h"
 #import "Callables.h"
 #import "Sequence.h"
+#import "Predicates.h"
 
 @implementation NSArray (OCTotallyLazy)
 
@@ -142,9 +143,15 @@
 }
 
 - (NSDictionary *)asDictionary {
-    return [self fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, NSArray *keyValues) {
-        [accumulator setObject:[[keyValues tail] head] forKey:[keyValues head]];
-        return accumulator;
+    Pair *keysAndValues = [self partition:TL_alternate(YES)];
+    NSArray *keys = keysAndValues.left;
+    NSArray *values = keysAndValues.right;
+    values = [values take:[keys count]];
+    keys = [keys take:[values count]];
+    NSEnumerator *valueEnumerator = [keysAndValues.right objectEnumerator];
+    return [keys fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, id key) {
+            [accumulator setObject:[valueEnumerator nextObject] forKey:key];
+            return accumulator;
     }];
 }
 @end

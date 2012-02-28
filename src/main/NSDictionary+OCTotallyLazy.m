@@ -1,3 +1,4 @@
+#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "NSDictionary+OCTotallyLazy.h"
 
 @implementation NSDictionary (Functional)
@@ -25,7 +26,7 @@
 }
 
 - (id)map:(NSArray * (^)(id key, id value))funcBlock {
-    return [[[self allKeys] map:^(id key){return funcBlock(key, [self objectForKey:key]);}] asDictionary];
+    return [[[[self allKeys] map:^(id key){return funcBlock(key, [self objectForKey:key]);}] flatten] asDictionary];
 }
 
 - (id)mapValues:(id (^)(id))funcBlock {
