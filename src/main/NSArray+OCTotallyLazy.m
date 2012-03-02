@@ -63,6 +63,10 @@
     return [[[self asSequence] map:funcBlock] asArray];
 }
 
+- (id)mapWithIndex:(id (^)(id, NSInteger))funcBlock {
+    return [[[self asSequence] mapWithIndex:funcBlock] asArray];
+}
+
 - (Pair *)partition:(BOOL (^)(id))filterBlock {
     NSMutableArray *left = [NSMutableArray array];
     NSMutableArray *right = [NSMutableArray array];

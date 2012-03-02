@@ -19,6 +19,7 @@
 - (id)head;
 - (Option *)headOption;
 - (NSArray *)join:(id<Enumerable>)toJoin;
+- (id)mapWithIndex:(id (^)(id, NSInteger))funcBlock;
 - (Pair *)partition:(BOOL (^)(id))toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (NSArray *)reverse;

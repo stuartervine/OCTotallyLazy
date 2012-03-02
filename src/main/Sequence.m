@@ -98,6 +98,10 @@
     return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] map:funcBlock];}]];
 }
 
+- (Sequence *)mapWithIndex:(id (^)(id, NSInteger))funcBlock {
+    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] mapWithIndex:funcBlock];}]];
+}
+
 - (Sequence *)tail {
     return [Sequence with:[EasyEnumerable with:^{
         NSEnumerator *const anEnumerator = [self toEnumerator];

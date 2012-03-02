@@ -35,6 +35,8 @@
 - (NSSet *)asSet;
 - (NSDictionary *)asDictionary;
 
+- (Sequence *)mapWithIndex:(id (^)(id, NSInteger))func;
+
 + (Sequence *)with:(id <Enumerable>)enumerable;
 
 @end

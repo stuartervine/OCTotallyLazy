@@ -89,6 +89,8 @@
 		BC76519814E0786600559564 /* GroupedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559563 /* GroupedEnumerator.m */; };
 		BC76519814E0786600559567 /* GroupedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559566 /* GroupedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559569 /* GroupedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559568 /* GroupedEnumeratorTest.m */; };
+		BC76519814E078660055956B /* MapWithIndexEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055956A /* MapWithIndexEnumerator.m */; };
+		BC76519814E078660055956D /* MapWithIndexEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055956C /* MapWithIndexEnumerator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +176,8 @@
 		BC76519814E0786600559563 /* GroupedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumerator.m; sourceTree = "<group>"; };
 		BC76519814E0786600559566 /* GroupedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupedEnumerator.h; sourceTree = "<group>"; };
 		BC76519814E0786600559568 /* GroupedEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumeratorTest.m; sourceTree = "<group>"; };
+		BC76519814E078660055956A /* MapWithIndexEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWithIndexEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E078660055956C /* MapWithIndexEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWithIndexEnumerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +294,8 @@
 		BC60929114EC2D8600A59CDD /* enumerators */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E078660055956C /* MapWithIndexEnumerator.h */,
+				BC76519814E078660055956A /* MapWithIndexEnumerator.m */,
 				BC76519814E0786600559566 /* GroupedEnumerator.h */,
 				BC76519814E0786600559563 /* GroupedEnumerator.m */,
 				BC76519814E078660055954D /* NSEnumerator+OCTotallyLazy.m */,
@@ -363,6 +369,7 @@
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092ED14EC2D8600A59CDD /* Some.h in Headers */,
 				BC20F82A14F2EA7C00ED9B67 /* Callables.h in Headers */,
+				BC76519814E078660055956D /* MapWithIndexEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +514,7 @@
 				BC76519814E078660055955E /* EasyEnumerable.m in Sources */,
 				BC20F82814F2E98200ED9B67 /* Callables.m in Sources */,
 				BC76519814E0786600559564 /* GroupedEnumerator.m in Sources */,
+				BC76519814E078660055956B /* MapWithIndexEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

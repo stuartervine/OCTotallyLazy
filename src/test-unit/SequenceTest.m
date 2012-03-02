@@ -104,6 +104,12 @@
     assertThat([doubled asArray], hasItems(num(2), num(4), num(6), nil));
 }
 
+-(void)testMapWithIndex {
+    Sequence *lazy = sequence(@"one", @"two", @"three", nil);
+    Sequence *indexes = [lazy mapWithIndex:^(id item, NSInteger index){return num(index);}];
+    assertThat([indexes asArray], hasItems(num(0), num(1), num(2), nil));
+}
+
 - (void)testReduce {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
