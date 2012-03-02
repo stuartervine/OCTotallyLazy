@@ -90,7 +90,7 @@
 		BC76519814E0786600559567 /* GroupedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559566 /* GroupedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559569 /* GroupedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559568 /* GroupedEnumeratorTest.m */; };
 		BC76519814E078660055956B /* MapWithIndexEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055956A /* MapWithIndexEnumerator.m */; };
-		BC76519814E078660055956D /* MapWithIndexEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055956C /* MapWithIndexEnumerator.h */; };
+		BC76519814E078660055956D /* MapWithIndexEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055956C /* MapWithIndexEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -364,12 +364,12 @@
 				BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */,
 				BC76519814E0786600559560 /* EasyEnumerable.h in Headers */,
 				BC6092DD14EC2D8600A59CDD /* None.h in Headers */,
+				BC76519814E078660055956D /* MapWithIndexEnumerator.h in Headers */,
 				BC6092DF14EC2D8600A59CDD /* NoSuchElementException.h in Headers */,
 				BC6092E714EC2D8600A59CDD /* Option.h in Headers */,
 				BC6092E914EC2D8600A59CDD /* Pair.h in Headers */,
 				BC6092ED14EC2D8600A59CDD /* Some.h in Headers */,
 				BC20F82A14F2EA7C00ED9B67 /* Callables.h in Headers */,
-				BC76519814E078660055956D /* MapWithIndexEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
