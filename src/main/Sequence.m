@@ -5,6 +5,7 @@
 #import "RepeatEnumerator.h"
 #import "EasyEnumerable.h"
 #import "Callables.h"
+#import "GroupedEnumerator.h"
 
 @implementation Sequence {
     id <Enumerable> enumerable;
@@ -67,6 +68,10 @@
 
 - (void)foreach:(void (^)(id))funcBlock {
     [[self asArray] foreach:funcBlock];
+}
+
+- (Sequence *)grouped:(int)n {
+    return [Sequence with:[EasyEnumerable with:^{return [GroupedEnumerator with:[self toEnumerator] groupSize:n];}]];
 }
 
 - (id)head {
@@ -156,8 +161,12 @@
     NSString *description = @"Sequence [";
     int count = 3;
     id item;
-    while((item = itemsEnumerator.nextObject) && count-- >0) {
+    while(count > 0 && (item = itemsEnumerator.nextObject)) {
         description = [description stringByAppendingFormat:@"%@, ", item];
+        count--;
+    }
+    if ([itemsEnumerator nextObject] != nil) {
+        description = [description stringByAppendingString:@"..."];
     }
     return [description stringByAppendingString:@"]"];
 }

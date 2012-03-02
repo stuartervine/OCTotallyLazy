@@ -18,6 +18,7 @@
 - (Sequence *)flatten;
 - (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
 - (void)foreach:(void (^)(id))funcBlock;
+- (Sequence *)grouped:(int)n;
 - (id)head;
 - (Option *)headOption;
 - (Sequence *)join:(id<Enumerable>)toJoin;

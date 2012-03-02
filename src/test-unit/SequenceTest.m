@@ -76,6 +76,12 @@
     assertThat(description, equalTo(@"onetwothree"));
 }
 
+-(void)testGrouped {
+    Sequence *items = sequence(num(1), num(2), num(3), num(4), num(5), nil);
+    NSArray *array1 = [[items grouped:4] asArray];
+    assertThat(array1, hasItems(array(num(1), num(2), num(3), num(4), nil), array(num(5), nil), nil));
+}
+
 - (void)testHead {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items head], equalTo(@"one"));

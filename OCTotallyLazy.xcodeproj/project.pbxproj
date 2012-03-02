@@ -86,6 +86,9 @@
 		BC76519814E078660055955E /* EasyEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955D /* EasyEnumerable.m */; };
 		BC76519814E0786600559560 /* EasyEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E078660055955F /* EasyEnumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC76519814E0786600559562 /* Coercions.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559561 /* Coercions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559564 /* GroupedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559563 /* GroupedEnumerator.m */; };
+		BC76519814E0786600559567 /* GroupedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559566 /* GroupedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC76519814E0786600559569 /* GroupedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC76519814E0786600559568 /* GroupedEnumeratorTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +171,9 @@
 		BC76519814E078660055955D /* EasyEnumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEnumerable.m; sourceTree = "<group>"; };
 		BC76519814E078660055955F /* EasyEnumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEnumerable.h; sourceTree = "<group>"; };
 		BC76519814E0786600559561 /* Coercions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coercions.h; path = main/Coercions.h; sourceTree = "<group>"; };
+		BC76519814E0786600559563 /* GroupedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumerator.m; sourceTree = "<group>"; };
+		BC76519814E0786600559566 /* GroupedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupedEnumerator.h; sourceTree = "<group>"; };
+		BC76519814E0786600559568 /* GroupedEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumeratorTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +272,7 @@
 		BC60928814EC2CC000A59CDD /* test-unit */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559568 /* GroupedEnumeratorTest.m */,
 				BC6092F214EC2DA800A59CDD /* PredicatesTest.m */,
 				BC6092F314EC2DA800A59CDD /* OCTotallyLazyTestCase.h */,
 				BC6092F414EC2DA800A59CDD /* OCTotallyLazyTestCase.m */,
@@ -283,6 +290,8 @@
 		BC60929114EC2D8600A59CDD /* enumerators */ = {
 			isa = PBXGroup;
 			children = (
+				BC76519814E0786600559566 /* GroupedEnumerator.h */,
+				BC76519814E0786600559563 /* GroupedEnumerator.m */,
 				BC76519814E078660055954D /* NSEnumerator+OCTotallyLazy.m */,
 				BC76519814E078660055954B /* NSEnumerator+OCTotallyLazy.h */,
 				BC60929214EC2D8600A59CDD /* EmptyEnumerator.h */,
@@ -344,6 +353,7 @@
 				BC6092D914EC2D8600A59CDD /* OCTotallyLazy.h in Headers */,
 				BC76519814E078660055955C /* Flattenable.h in Headers */,
 				BC76519814E0786600559562 /* Coercions.h in Headers */,
+				BC76519814E0786600559567 /* GroupedEnumerator.h in Headers */,
 				BC6092DA14EC2D8600A59CDD /* Sequence.h in Headers */,
 				BC6092DC14EC2D8600A59CDD /* Mappable.h in Headers */,
 				BC76519814E0786600559560 /* EasyEnumerable.h in Headers */,
@@ -496,6 +506,7 @@
 				BC76519814E078660055955A /* NSSet+OCTotallyLazy.m in Sources */,
 				BC76519814E078660055955E /* EasyEnumerable.m in Sources */,
 				BC20F82814F2E98200ED9B67 /* Callables.m in Sources */,
+				BC76519814E0786600559564 /* GroupedEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +523,7 @@
 				BC60930514EC2DA800A59CDD /* NSSetTest.m in Sources */,
 				BC60930614EC2DA800A59CDD /* OptionTest.m in Sources */,
 				BC60930714EC2DA800A59CDD /* RepeatEnumeratorTest.m in Sources */,
+				BC76519814E0786600559569 /* GroupedEnumeratorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,10 @@
     }
 }
 
+- (NSArray *)grouped:(int)n {
+    return [[[self asSequence] grouped:n] asArray];
+}
+
 - (id)head {
     return [[self asSequence] head];
 }
