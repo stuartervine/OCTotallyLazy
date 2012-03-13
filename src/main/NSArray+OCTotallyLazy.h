@@ -15,6 +15,7 @@
 - (NSArray *)flatten;
 - (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
 - (void)foreach:(void (^)(id))funcBlock;
+- (BOOL)isEmpty;
 - (NSArray *)grouped:(int)n;
 - (id)head;
 - (Option *)headOption;

@@ -43,6 +43,10 @@
     }
 }
 
+-(BOOL)isEmpty {
+    return self.count == 0;
+}
+
 - (NSArray *)grouped:(int)n {
     return [[[self asSequence] grouped:n] asArray];
 }
@@ -81,7 +85,7 @@
 }
 
 - (id)reduce:(id (^)(id, id))functorBlock {
-    return [[self tail] fold:[self head] with:functorBlock];
+    return [self isEmpty] ? nil : [[self tail] fold:[self head] with:functorBlock];
 }
 
 - (NSArray *)reverse {

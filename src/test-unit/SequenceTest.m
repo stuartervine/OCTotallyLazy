@@ -1,15 +1,15 @@
 #import <Foundation/Foundation.h>
-#define HC_SHORTHAND
-#import <OCHamcrestIOS/OCHamcrestIOS.h>
 #define TL_SHORTHAND
 #define TL_COERCIONS
 #import "OCTotallyLazy.h"
 #import "OCTotallyLazyTestCase.h"
 
 @interface SequenceTest : OCTotallyLazyTestCase
+
 @end
 
 @implementation SequenceTest
+
 
 -(void)testAdd {
     Sequence *items = sequence(@"one", @"two", nil);
@@ -113,6 +113,8 @@
 - (void)testReduce {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
+
+    assertThat([sequence(nil) reduce:[Callables appendString]], equalTo(nil));
 }
 
 - (void)testTail {
