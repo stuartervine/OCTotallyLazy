@@ -80,7 +80,7 @@ A bit mental (but a bit like scala):
 So I'm a bit fed up with using 'libraries' that say, just include our source code in your project, or attach our xcode project to your project. So to use this:
 
 - Clone the repo.
-- Run <CHECKOUT_DIR>/build.sh test
+- Run <CHECKOUT_DIR>/build.sh test  //optional, but if it fails shout at me!
 - Run <CHECKOUT_DIR>/build.sh release
 - Copy <CHECKOUT_DIR>/artifacts/OCTotallyLazy.framework to your external libraries folder.
 - Import the framework to your project.

@@ -93,7 +93,7 @@
       <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="210" selection-start="268" selection-end="268" vertical-scroll-proportion="0.041841004">
+            <state line="82" column="76" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.748954">
               <folding />
             </state>
           </provider>
@@ -415,7 +415,11 @@
       <created>1331845938328</created>
       <updated>1331845938328</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Attempting to improve the docs.">
+      <created>1331846175057</created>
+      <updated>1331846175057</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -649,7 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="210" selection-start="268" selection-end="268" vertical-scroll-proportion="0.041841004">
+        <state line="82" column="76" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.748954">
           <folding />
         </state>
       </provider>
