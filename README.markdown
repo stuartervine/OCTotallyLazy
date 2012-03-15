@@ -2,28 +2,50 @@
 
 OCTotallyLazy is a framework that adds functional behaviour to Objective C collection objects.
 
-### Examples
+The best place to look for full behaviour is in the test classes for now, checkout https://github.com/stuartervine/OCTotallyLazy/blob/master/src/test-unit/SequenceTest.m
 
-The best place to look for examples is in the test classes for now. Here's a small sample of some of the available functional bits and bobs.
-
-These use the base type of Sequence (lazy), eager methods are available on NSArray, NSSet and NSDictionary. They also use the shorthand syntax.
-
-### Import the library
+### Importing OCTotallyLazy in your code.
 
     import <OCTotallyLazy/OCTotallyLazy.h>
 
-### Eager
+### Some basic examples.
 
-    [sequence(@"one", @"two", @"three", nil) head]; //outputs @"one".
-    [sequence(@"one", @"two", @"three", nil) headOption]; //outputs [Some some:@"one"]
+Mapping (Sequence, NSArray, partially on NSSet, NSDictionary)
 
-### Lazy
+    [sequence(@"one", @"two", @"three", nil) map:^(NSString *item){
+        return [item uppercaseString];
+    }]
+    // returns sequence(@"ONE", @"TWO", @"THREE", nil)
 
-    [sequence(@"one", @"two", nil) cycle]; //outputs sequence(@"one", @"two", @"one", @"two"....infinity);
-    [sequence(@"one", @"two", @"three", nil) tail]; //outputs sequence(@"two", @"three", nil)
-    [sequence(@"three", @"two", @"one", nil) take:2]; //outputs sequence(@"three", @"two", nil)
-    [sequence(num(3), num(2), num(1), nil) takeWhile:TL_greaterThan(2)]; //outputs sequence(num(3), nil)
+    [array(@"one", array(@"two", nil), @"three", nil) flatMap:^(NSString *item){
+        return [item uppercaseString];
+    }];
+    // returns array(@"ONE", @"TWO", @"THREE", nil)
 
+Filtering (Sequence, NSArray, NSSet, NSDictionary)
+
+    [sequence(@"1", @"12", @"123", @"1234", nil) filter:^(NSString *item){
+        return item.length > 2;
+    }]
+    //returns sequence(@"123", @"1234", nil)
+
+Options
+
+    [Option option:@"something"];
+    //Outputs [Some some:@"something"];
+
+    [Option option:nil];
+    //Outputs [None none];
+
+    [[Option option:@"something"] map:^(NSString *item){
+        return [item uppercaseString];
+    }];
+    //Outputs [Some some:@"SOMETHING"];
+
+    [Option option:nil] map:^(NSString *item){
+        return [item uppercaseString];
+    }];
+    //Outputs [None none];
 
 ### Shorthand, for the totally lazy
 
