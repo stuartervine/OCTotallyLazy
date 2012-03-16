@@ -31,7 +31,9 @@
 - (NSString *)toString;
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
-- (NSArray *)zip:(id<Enumerable>)otherSequence;
+- (NSArray *)zip:(NSArray *)otherSequence;
+
+- (NSArray *)zipWithIndex;
 
 - (Sequence *)asSequence;
 - (NSSet *)asSet;

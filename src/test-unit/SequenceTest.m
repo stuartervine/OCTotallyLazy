@@ -149,6 +149,13 @@
 }
 
 -(void)testZipWithIndex {
+    Sequence *items = sequence(@"one", @"two", @"three", nil);
+    Sequence *zippedWithIndex = [items zipWithIndex];
+    assertThat([zippedWithIndex asArray], hasItems(
+            [Pair left:@"one" right:num(0)],
+            [Pair left:@"two" right:num(1)],
+            [Pair left:@"three" right:num(2)],
+            nil));
 
 }
 

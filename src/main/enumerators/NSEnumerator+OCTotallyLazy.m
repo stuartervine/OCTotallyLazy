@@ -5,7 +5,6 @@
 #import "Some.h"
 #import "None.h"
 #import "TakeWhileEnumerator.h"
-#import "MapWithIndexEnumerator.h"
 
 @implementation NSEnumerator (OCTotallyLazy)
 
@@ -36,10 +35,6 @@
 
 - (NSEnumerator *)map:(id (^)(id))func {
     return [MapEnumerator withEnumerator:self andFunction:func];
-}
-
-- (NSEnumerator *)mapWithIndex:(id (^)(id, NSInteger))func {
-    return [MapWithIndexEnumerator withEnumerator:self andFunction:func];
 }
 
 - (NSEnumerator *)take:(int)n {

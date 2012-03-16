@@ -30,6 +30,7 @@
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
 - (Sequence *)zip:(Sequence *)otherSequence;
+- (Sequence *)zipWithIndex;
 
 - (NSArray *)asArray;
 - (NSSet *)asSet;

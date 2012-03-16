@@ -43,7 +43,7 @@
     }
 }
 
--(BOOL)isEmpty {
+- (BOOL)isEmpty {
     return self.count == 0;
 }
 
@@ -130,16 +130,12 @@
     return [[start stringByAppendingString:[self toString:separator]] stringByAppendingString:end];
 }
 
-- (NSArray *)zip:(id <Enumerable>)otherEnumerable {
-    NSEnumerator *enumerator1 = [self toEnumerator];
-    NSEnumerator *enumerator2 = [otherEnumerable toEnumerator];
-    id item1;
-    id item2;
-    NSMutableArray *pairs = [NSMutableArray array];
-    while (((item1 = [enumerator1 nextObject]) != nil) && ((item2 = [enumerator2 nextObject]) != nil)) {
-        [pairs addObject:[Pair left:item1 right:item2]];
-    }
-    return pairs;
+- (NSArray *)zip:(NSArray *)otherArray {
+    return [[[self asSequence] zip:[otherArray asSequence]] asArray];
+}
+
+- (NSArray *)zipWithIndex {
+    return [[[self asSequence] zipWithIndex] asArray];
 }
 
 - (Sequence *)asSequence {
@@ -162,8 +158,8 @@
     keys = [keys take:[values count]];
     NSEnumerator *valueEnumerator = [keysAndValues.right objectEnumerator];
     return [keys fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, id key) {
-            [accumulator setObject:[valueEnumerator nextObject] forKey:key];
-            return accumulator;
+        [accumulator setObject:[valueEnumerator nextObject] forKey:key];
+        return accumulator;
     }];
 }
 @end

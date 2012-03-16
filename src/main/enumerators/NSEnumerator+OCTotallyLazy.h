@@ -8,7 +8,7 @@
 - (NSEnumerator *)filter:(BOOL (^)(id))filterBlock;
 - (NSEnumerator *)flatten;
 - (NSEnumerator *)map:(id (^)(id))func;
-- (NSEnumerator *)mapWithIndex:(id (^)(id, NSInteger))func;
+
 - (NSEnumerator *)take:(int)n;
 - (NSEnumerator *)takeWhile:(BOOL (^)(id))predicate;
 - (Option *)find:(PREDICATE)predicate;

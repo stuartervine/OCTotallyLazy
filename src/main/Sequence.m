@@ -6,6 +6,7 @@
 #import "EasyEnumerable.h"
 #import "Callables.h"
 #import "GroupedEnumerator.h"
+#import "Range.h"
 
 @implementation Sequence {
     id <Enumerable> enumerable;
@@ -99,7 +100,7 @@
 }
 
 - (Sequence *)mapWithIndex:(id (^)(id, NSInteger))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] mapWithIndex:funcBlock];}]];
+    return [[self zipWithIndex] map:^(Pair *itemAndIndex) { return funcBlock(itemAndIndex.left, [itemAndIndex.right intValue]); }];
 }
 
 - (Sequence *)tail {
@@ -132,6 +133,10 @@
 
 - (Sequence *)zip:(Sequence *)otherSequence {
     return [Sequence with:[EasyEnumerable with:^{return [PairEnumerator withLeft:[self toEnumerator] right:[otherSequence toEnumerator]];}]];
+}
+
+- (Sequence *)zipWithIndex {
+    return [self zip:[Range range:[NSNumber numberWithInt:0]]];
 }
 
 - (Sequence *)cycle {

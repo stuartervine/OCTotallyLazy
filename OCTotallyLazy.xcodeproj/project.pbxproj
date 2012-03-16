@@ -74,8 +74,6 @@
 		BC7772EA1513392400F4FF5A /* GroupedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF59 /* GroupedEnumerator.m */; };
 		BC7772EA1513392400F4FF5C /* MapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF5B /* MapEnumerator.h */; };
 		BC7772EA1513392400F4FF5E /* MapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF5D /* MapEnumerator.m */; };
-		BC7772EA1513392400F4FF60 /* MapWithIndexEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF5F /* MapWithIndexEnumerator.h */; };
-		BC7772EA1513392400F4FF62 /* MapWithIndexEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF61 /* MapWithIndexEnumerator.m */; };
 		BC7772EA1513392400F4FF64 /* MemoisedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF63 /* MemoisedEnumerator.h */; };
 		BC7772EA1513392400F4FF66 /* MemoisedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF65 /* MemoisedEnumerator.m */; };
 		BC7772EA1513392400F4FF68 /* NSEnumerator+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF67 /* NSEnumerator+OCTotallyLazy.h */; };
@@ -166,8 +164,6 @@
 		BC7772EA1513392400F4FF59 /* GroupedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumerator.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF5B /* MapEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEnumerator.h; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF5D /* MapEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF5F /* MapWithIndexEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWithIndexEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF61 /* MapWithIndexEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWithIndexEnumerator.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF63 /* MemoisedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoisedEnumerator.h; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF65 /* MemoisedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedEnumerator.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF67 /* NSEnumerator+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+OCTotallyLazy.h"; sourceTree = "<group>"; };
@@ -338,8 +334,6 @@
 				BC7772EA1513392400F4FF67 /* NSEnumerator+OCTotallyLazy.h */,
 				BC7772EA1513392400F4FF65 /* MemoisedEnumerator.m */,
 				BC7772EA1513392400F4FF63 /* MemoisedEnumerator.h */,
-				BC7772EA1513392400F4FF61 /* MapWithIndexEnumerator.m */,
-				BC7772EA1513392400F4FF5F /* MapWithIndexEnumerator.h */,
 				BC7772EA1513392400F4FF5D /* MapEnumerator.m */,
 				BC7772EA1513392400F4FF5B /* MapEnumerator.h */,
 				BC7772EA1513392400F4FF59 /* GroupedEnumerator.m */,
@@ -383,7 +377,6 @@
 				BC7772EA1513392400F4FF54 /* FlattenEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF58 /* GroupedEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF5C /* MapEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF60 /* MapWithIndexEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF64 /* MemoisedEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF68 /* NSEnumerator+OCTotallyLazy.h in Headers */,
 				BC7772EA1513392400F4FF6C /* PairEnumerator.h in Headers */,
@@ -531,7 +524,6 @@
 				BC7772EA1513392400F4FF56 /* FlattenEnumerator.m in Sources */,
 				BC7772EA1513392400F4FF5A /* GroupedEnumerator.m in Sources */,
 				BC7772EA1513392400F4FF5E /* MapEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF62 /* MapWithIndexEnumerator.m in Sources */,
 				BC7772EA1513392400F4FF66 /* MemoisedEnumerator.m in Sources */,
 				BC7772EA1513392400F4FF6A /* NSEnumerator+OCTotallyLazy.m in Sources */,
 				BC7772EA1513392400F4FF6E /* PairEnumerator.m in Sources */,
