@@ -1,6 +1,7 @@
 #import "Option.h"
 #import "None.h"
 #import "Some.h"
+#import "Sequence.h"
 
 @implementation Option
 
@@ -11,6 +12,11 @@
 
 + (id)option:(id)value {
     return (value == nil) ? [None none] : [Some some:value];
+}
+
+- (BOOL)isEmpty {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return FALSE;
 }
 
 - (id)get {
@@ -28,8 +34,12 @@
     return nil;
 }
 
-
 - (id)map:(id (^)(id))funcBlock {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
+- (id)flatMap:(id (^)(id))funcBlock {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
     return nil;
 }
@@ -44,9 +54,8 @@
     return nil;
 }
 
-- (id <Enumerable>)flatten {
-    [NSException raise:@"Unsupported" format:@"Unsupported"];
-    return nil;
+- (Option *)flatten {
+    return [self isEmpty] ? [None none] : [[[self asSequence] flatten] headOption];
 }
 
 @end

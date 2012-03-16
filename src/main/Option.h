@@ -6,9 +6,13 @@
 @class Sequence;
 
 @interface Option : NSObject <Mappable, Foldable, Enumerable, Flattenable>
+-(BOOL)isEmpty;
 -(id)get;
 -(id)getOrElse:(id)other;
 -(id)getOrInvoke:(id (^)())funcBlock;
+
+- (id)flatMap:(id (^)(id))funcBlock;
+
 -(Sequence *)asSequence;
 +(id)option:(id)value;
 @end

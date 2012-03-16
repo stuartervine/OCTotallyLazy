@@ -38,6 +38,16 @@
     assertThat([[None none] getOrInvoke:^{return @"bob";}], equalTo(@"bob"));
 }
 
+-(void)testFlatten {
+    assertThat([[Option option:[Some some:@"one"]] flatten], equalTo([Some some:@"one"]));
+    assertThat([[Option option:[None none]] flatten], equalTo([None none]));
+}
+
+-(void)testFlatMap {
+    assertThat([[Option option:[Some some:@"one"]] flatMap:[Callables toUpperCase]], equalTo([Some some:@"ONE"]));
+    assertThat([[Option option:[None none]] flatMap:[Callables toUpperCase]], equalTo([None none]));
+}
+
 -(void)testCanMap {
     assertThat([[Option option:@"bob"] map:[Callables toUpperCase]], equalTo([Some some:@"BOB"]));
     assertThat([[Option option:nil] map:[Callables toUpperCase]], equalTo([None none]));

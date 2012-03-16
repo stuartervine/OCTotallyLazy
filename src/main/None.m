@@ -9,8 +9,8 @@
    return [[[None alloc] init] autorelease];
 }
 
-- (id <Enumerable>)flatten {
-    return [[self asSequence] flatten];
+- (BOOL)isEmpty {
+    return TRUE;
 }
 
 - (id)get {
@@ -28,6 +28,10 @@
 
 - (BOOL)isEqual:(id)otherObject {
     return [otherObject isKindOfClass:[None class]];
+}
+
+- (id)flatMap:(id (^)(id))funcBlock {
+    return [None none];
 }
 
 - (id)map:(id (^)(id))funcBlock {

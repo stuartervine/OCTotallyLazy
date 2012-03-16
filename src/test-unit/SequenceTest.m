@@ -58,10 +58,10 @@
 
 - (void)testFlatMap {
     Sequence *items = sequence(
-            sequence(@"one", @"two", nil),
+            sequence(@"one", [None none], nil),
             sequence(@"three", @"four", nil),
             nil);
-    assertThat([[items flatMap:[Callables toUpperCase]] asArray], hasItems(@"ONE", @"TWO", @"THREE", @"FOUR", nil));
+    assertThat([[items flatMap:[Callables toUpperCase]] asArray], hasItems(@"ONE", @"THREE", @"FOUR", nil));
 }
 
 - (void)testFold {

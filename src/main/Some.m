@@ -16,15 +16,15 @@
     return [[[Some alloc] initWithValue: value] autorelease];
 }
 
+- (BOOL)isEmpty {
+    return FALSE;
+}
+
 - (BOOL)isEqual:(id)otherObject {
     if (![otherObject isKindOfClass:[Some class]]) {
         return FALSE;
     }
     return [[otherObject get] isEqual:[self get]];
-}
-
-- (id <Enumerable>)flatten {
-    return [[self asSequence] flatten];
 }
 
 - (id)get {
@@ -41,6 +41,10 @@
 
 - (id)map:(id (^)(id))funcBlock {
     return [Some some:funcBlock(value)];
+}
+
+- (id)flatMap:(id (^)(id))funcBlock {
+    return [[self flatten] map:funcBlock];
 }
 
 - (id)fold:(id)seed with:(id (^)(id, id))functorBlock {
