@@ -42,6 +42,9 @@ static PREDICATE TL_greaterThan(NSNumber *comparable) {
 static PREDICATE TL_lessThan(NSNumber *comparable) {
     return [[^(NSNumber *item) { return item.doubleValue < comparable.doubleValue;} copy] autorelease];
 }
+static PREDICATE TL_lessThanOrEqualTo(NSNumber *comparable) {
+    return [[^(NSNumber *item) { return item.doubleValue <= comparable.doubleValue;} copy] autorelease];
+}
 static PREDICATE TL_not(PREDICATE predicate) {
     return [[^(id item) {
         return !predicate(item);

@@ -1,8 +1,6 @@
 #import "OCTotallyLazyTestCase.h"
 
 
-@implementation OCTotallyLazyTestCase {
-
-}
+@implementation OCTotallyLazyTestCase
 
 @end

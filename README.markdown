@@ -49,7 +49,7 @@ Options
 
 ### Shorthand, for the totally lazy
 
-The above examples are still quite noisy. There is shorthand syntax available too. Include the following above the library import.
+The above examples are still quite noisy. There is shorthand syntax available too. Include the following above the framework import.
 
     #define TL_SHORTHAND
     #define TL_LAMBDA

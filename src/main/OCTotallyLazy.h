@@ -1,6 +1,7 @@
 #import "Callables.h"
 #import "Coercions.h"
 #import "Enumerable.h"
+#import "Flattenable.h"
 #import "Predicates.h"
 #import "Foldable.h"
 #import "Sequence.h"
@@ -12,4 +13,5 @@
 #import "NSSet+OCTotallyLazy.h"
 #import "Option.h"
 #import "Pair.h"
+#import "Range.h"
 #import "Some.h"

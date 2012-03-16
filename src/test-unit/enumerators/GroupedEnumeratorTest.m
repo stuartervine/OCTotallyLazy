@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 #import "OCTotallyLazyTestCase.h"
 #define TL_COERCIONS
-#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "GroupedEnumerator.h"
+#import "OCTotallyLazy.h"
 
 @interface GroupedEnumeratorTest : OCTotallyLazyTestCase
 @end

@@ -148,6 +148,10 @@
     assertThat([zip asArray], hasItems([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil));
 }
 
+-(void)testZipWithIndex {
+
+}
+
 -(void)testNonForwardBehaviour {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items drop:2], hasItem(@"three"));
