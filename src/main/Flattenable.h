@@ -1,4 +1,4 @@
 #import "Enumerable.h"
 @protocol Flattenable
-- (id<Enumerable>)flatten;
+- (id)flatten;
 @end

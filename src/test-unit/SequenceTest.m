@@ -159,6 +159,25 @@
 
 }
 
+/*
+    Map<K,List<T>> toMap(final Callable1<? super T, ? extends K> callable);
+
+    <K> Sequence<Group<K, T>> groupBy(final Callable1<? super T, ? extends K> callable);
+
+    Sequence<Sequence<T>> recursive(final Callable1<Sequence<T>, Pair<Sequence<T>, Sequence<T>>> callable);
+
+    Pair<Sequence<T>,Sequence<T>> splitAt(final Number index);
+
+    Pair<Sequence<T>,Sequence<T>> splitWhen(final Predicate<? super T> predicate) ;
+
+    Pair<Sequence<T>,Sequence<T>> splitOn(final T instance);
+
+    Pair<Sequence<T>,Sequence<T>> span(final Predicate<? super T> predicate);
+
+    Pair<Sequence<T>,Sequence<T>> breakOn(final Predicate<? super T> predicate);
+
+ */
+
 -(void)testNonForwardBehaviour {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items drop:2], hasItem(@"three"));
