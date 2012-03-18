@@ -58,7 +58,7 @@ The above examples are still quite noisy. There is shorthand syntax available to
 
 Then you can do fun stuff such as:
 
-    [sequence(num(1), num(2), num(3), nil) find:not(eqTo(num(1))]; //outputs
+    [sequence(num(1), num(2), num(3), nil) find:not(eqTo(num(1))]; //outputs [Some some:num(2)];
 
 ### Lambda craziness
 
