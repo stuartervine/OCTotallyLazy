@@ -26,6 +26,7 @@
 - (Sequence *)tail;
 - (Sequence *)take:(int)n;
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock;
+- (NSDictionary *)toDictionary:(id (^)(id))valueBlock;
 - (NSString *)toString;
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;

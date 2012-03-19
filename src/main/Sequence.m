@@ -119,6 +119,15 @@
     return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] takeWhile:funcBlock];}]];
 }
 
+- (NSDictionary *)toDictionary:(id (^)(id))valueBlock {
+    return [self fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, id item) {
+        if([accumulator valueForKey:item] == nil) {
+            [accumulator setObject:valueBlock(item) forKey:item];
+        }
+        return accumulator;
+    }];
+}
+
 - (NSString *)toString {
     return [self toString:@""];
 }

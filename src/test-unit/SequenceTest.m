@@ -159,6 +159,12 @@
 
 }
 
+-(void)testToDictionary {
+    Sequence *items = sequence(@"one", @"two", @"three", nil);
+    NSDictionary *lengths = [items toDictionary:^(NSString *item){return num(item.length);}];
+    assertThat(lengths, hasEntries(@"one", num(3), @"two", num(3), @"three", num(5), nil));
+}
+
 /*
     Map<K,List<T>> toMap(final Callable1<? super T, ? extends K> callable);
 
