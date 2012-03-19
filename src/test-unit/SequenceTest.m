@@ -160,14 +160,13 @@
 }
 
 -(void)testToDictionary {
-    Sequence *items = sequence(@"one", @"two", @"three", nil);
-    NSDictionary *lengths = [items toDictionary:^(NSString *item){return num(item.length);}];
-    assertThat(lengths, hasEntries(@"one", num(3), @"two", num(3), @"three", num(5), nil));
+    Sequence *items = sequence(@"one", @"one", @"two", @"three", nil);
+    __block int count = 0;
+    NSDictionary *lengths = [items toDictionary:^(NSString *item){return num(count++);}];
+    assertThat(lengths, hasEntries(@"one", num(0), @"two", num(1), @"three", num(2), nil));
 }
 
 /*
-    Map<K,List<T>> toMap(final Callable1<? super T, ? extends K> callable);
-
     <K> Sequence<Group<K, T>> groupBy(final Callable1<? super T, ? extends K> callable);
 
     Sequence<Sequence<T>> recursive(final Callable1<Sequence<T>, Pair<Sequence<T>, Sequence<T>>> callable);
