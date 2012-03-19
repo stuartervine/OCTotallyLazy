@@ -107,6 +107,16 @@ static NSNumber *num(int i) {
     assertThat([items reverse], hasItems(@"three", @"two", @"one", nil));
 }
 
+-(void)testSplitOn {
+    NSArray *items = array(@"one", @"two", @"three", @"four", nil);
+
+    assertThat([items splitOn:TL_equalTo(@"three")].left, hasItems(@"one", @"two", nil));
+    assertThat([items splitOn:TL_equalTo(@"three")].right, hasItems(@"four", nil));
+
+    assertThat([items splitOn:TL_equalTo(@"one")].left, empty());
+    assertThat([items splitOn:TL_equalTo(@"four")].right, empty());
+}
+
 - (void)testTail {
     NSArray *items = [array(@"one", @"two", @"three", nil) asArray];
     assertThat([items tail], hasItems(@"two", @"three", nil));

@@ -1,3 +1,4 @@
+#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "NSArray+OCTotallyLazy.h"
 #import "Callables.h"
 #import "Sequence.h"
@@ -96,6 +97,11 @@
         [collectedArray addObject:object];
     }
     return collectedArray;
+}
+
+- (Pair *)splitOn:(BOOL (^)(id))predicate {
+    Pair *partition = [self partition:TL_whileTrue(TL_not(predicate))];
+    return [Pair left:partition.left right:[partition.right tail]];
 }
 
 - (NSArray *)tail {

@@ -24,6 +24,7 @@
 - (Pair *)partition:(BOOL (^)(id))toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (NSArray *)reverse;
+- (Pair *)splitOn:(BOOL (^)(id))predicate;
 - (NSArray *)tail;
 - (NSArray *)take:(int)n;
 - (NSArray *)takeWhile:(BOOL (^)(id))funcBlock;
@@ -32,7 +33,6 @@
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
 - (NSArray *)zip:(NSArray *)otherSequence;
-
 - (NSArray *)zipWithIndex;
 
 - (Sequence *)asSequence;
