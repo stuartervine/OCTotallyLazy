@@ -73,16 +73,8 @@
 }
 
 - (Pair *)partition:(BOOL (^)(id))filterBlock {
-    NSMutableArray *left = [NSMutableArray array];
-    NSMutableArray *right = [NSMutableArray array];
-    for (id object in self) {
-        if (filterBlock(object)) {
-            [left addObject:object];
-        } else {
-            [right addObject:object];
-        }
-    }
-    return [Pair left:left right:right];
+    Pair *partitioned = [[self asSequence] partition:filterBlock];
+    return [Pair left:[partitioned.left asArray] right:[partitioned.right asArray]];
 }
 
 - (id)reduce:(id (^)(id, id))functorBlock {

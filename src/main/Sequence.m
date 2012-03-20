@@ -41,7 +41,6 @@
 }
 
 - (Sequence *)drop:(int)toDrop {
-
     return [Sequence with:[EasyEnumerable with:^{
         return [[self toEnumerator] drop:toDrop];
     }]];
