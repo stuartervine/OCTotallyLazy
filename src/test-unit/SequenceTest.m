@@ -109,12 +109,36 @@
     Sequence *indexes = [lazy mapWithIndex:^(id item, NSInteger index){return num(index);}];
     assertThat([indexes asArray], hasItems(num(0), num(1), num(2), nil));
 }
+-(void)testPartition {
+    Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
+    Pair *partitioned = [items partition:TL_alternate(TRUE)];
+    assertThat([partitioned.left asArray], onlyContains(@"one", @"three", nil));
+    assertThat([partitioned.left asArray], onlyContains(@"one", @"three", nil)); //Test non-forward only.
+    assertThat([partitioned.right asArray], onlyContains(@"two", @"four", nil));
+}
 
 - (void)testReduce {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([items reduce:[Callables appendString]], equalTo(@"onetwothree"));
 
     assertThat([sequence(nil) reduce:[Callables appendString]], equalTo(nil));
+}
+
+-(void)testSplitAt {
+    Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
+    Pair *split = [items splitAt:2];
+    assertThat([split.left asArray], onlyContains(@"one", @"two", nil));
+    assertThat([split.right asArray], onlyContains(@"four", nil));
+}
+
+-(void)testSplitOn {
+    Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
+
+    assertThat([[items splitOn:TL_equalTo(@"three")].left asArray], onlyContains(@"one", @"two", nil));
+    assertThat([[items splitOn:TL_equalTo(@"three")].right asArray], onlyContains(@"four", nil));
+
+    assertThat([[items splitOn:TL_equalTo(@"one")].left asArray], empty());
+    assertThat([[items splitOn:TL_equalTo(@"four")].right asArray], empty());
 }
 
 - (void)testTail {

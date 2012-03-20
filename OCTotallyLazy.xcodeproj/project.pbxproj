@@ -94,6 +94,12 @@
 		BC7772EA1513392400F4FF86 /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF85 /* Callables.m */; };
 		BC7772EA1513392400F4FF88 /* EnumerateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF87 /* EnumerateEnumerator.m */; };
 		BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF89 /* EnumerateEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7772EA1513392400F4FF8C /* PartitionEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF8B /* PartitionEnumerator.m */; };
+		BC7772EA1513392400F4FF8E /* PartitionEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF8D /* PartitionEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7772EA1513392400F4FF90 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF8F /* Queue.m */; };
+		BC7772EA1513392400F4FF92 /* Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF91 /* Queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF93 /* MemoisedSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7772EA1513392400F4FF96 /* MemoisedSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF95 /* MemoisedSequence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +190,12 @@
 		BC7772EA1513392400F4FF85 /* Callables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Callables.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF87 /* EnumerateEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumerateEnumerator.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF89 /* EnumerateEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumerateEnumerator.h; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FF8B /* PartitionEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartitionEnumerator.m; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FF8D /* PartitionEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartitionEnumerator.h; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FF8F /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FF91 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FF93 /* MemoisedSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoisedSequence.h; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FF95 /* MemoisedSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedSequence.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +255,10 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FF95 /* MemoisedSequence.m */,
+				BC7772EA1513392400F4FF93 /* MemoisedSequence.h */,
+				BC7772EA1513392400F4FF91 /* Queue.h */,
+				BC7772EA1513392400F4FF8F /* Queue.m */,
 				BC7772EA1513392400F4FF7F /* Flattenable.h */,
 				BC7772EA1513392400F4FF7D /* EasyEnumerable.m */,
 				BC7772EA1513392400F4FF7B /* EasyEnumerable.h */,
@@ -320,6 +336,8 @@
 		BC7772EA1513392400F4FF4A /* enumerators */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FF8D /* PartitionEnumerator.h */,
+				BC7772EA1513392400F4FF8B /* PartitionEnumerator.m */,
 				BC7772EA1513392400F4FF89 /* EnumerateEnumerator.h */,
 				BC7772EA1513392400F4FF87 /* EnumerateEnumerator.m */,
 				BC7772EA1513392400F4FF79 /* TakeWhileEnumerator.m */,
@@ -386,6 +404,9 @@
 				BC7772EA1513392400F4FF7C /* EasyEnumerable.h in Headers */,
 				BC7772EA1513392400F4FF80 /* Flattenable.h in Headers */,
 				BC7772EA1513392400F4FF84 /* Callables.h in Headers */,
+				BC7772EA1513392400F4FF8E /* PartitionEnumerator.h in Headers */,
+				BC7772EA1513392400F4FF92 /* Queue.h in Headers */,
+				BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */,
 				BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +554,9 @@
 				BC7772EA1513392400F4FF7E /* EasyEnumerable.m in Sources */,
 				BC7772EA1513392400F4FF86 /* Callables.m in Sources */,
 				BC7772EA1513392400F4FF88 /* EnumerateEnumerator.m in Sources */,
+				BC7772EA1513392400F4FF8C /* PartitionEnumerator.m in Sources */,
+				BC7772EA1513392400F4FF90 /* Queue.m in Sources */,
+				BC7772EA1513392400F4FF96 /* MemoisedSequence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,7 +611,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";

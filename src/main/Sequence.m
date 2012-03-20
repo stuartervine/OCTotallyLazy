@@ -1,33 +1,35 @@
-#import "Sequence.h"
+#define TL_COERCIONS
 #import "NSEnumerator+OCTotallyLazy.h"
 #import "PairEnumerator.h"
 #import "MemoisedEnumerator.h"
+#import "MemoisedSequence.h"
 #import "RepeatEnumerator.h"
 #import "EasyEnumerable.h"
 #import "Callables.h"
 #import "GroupedEnumerator.h"
 #import "Range.h"
+#import "PartitionEnumerator.h"
 
 @implementation Sequence {
     id <Enumerable> enumerable;
-    NSEnumerator *enumerator;
+    NSEnumerator *forwardOnlyEnumerator;
 }
 
 - (Sequence *)initWith:(id <Enumerable>)anEnumerable {
     self = [super init];
     enumerable = [anEnumerable retain];
-    enumerator = [[enumerable toEnumerator] retain];
+    forwardOnlyEnumerator = [[enumerable toEnumerator] retain];
     return self;
 }
 
 - (void)dealloc {
     [enumerable release];
-    [enumerator release];
+    [forwardOnlyEnumerator release];
     [super dealloc];
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id[])buffer count:(NSUInteger)len {
-    return [enumerator countByEnumeratingWithState:state objects:buffer count:len];
+    return [forwardOnlyEnumerator countByEnumeratingWithState:state objects:buffer count:len];
 }
 
 - (Sequence *)add:(id)value {
@@ -35,24 +37,32 @@
 }
 
 - (Sequence *)cons:(id)value {
-    return [sequence(value,nil) join:self];
+    return [sequence(value, nil) join:self];
 }
 
 - (Sequence *)drop:(int)toDrop {
 
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] drop:toDrop];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[self toEnumerator] drop:toDrop];
+    }]];
 }
 
 - (Sequence *)dropWhile:(BOOL (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] dropWhile:funcBlock];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[self toEnumerator] dropWhile:funcBlock];
+    }]];
 }
 
 - (Sequence *)flatMap:(id (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [[[self toEnumerator] flatten] map:funcBlock];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[[self toEnumerator] flatten] map:funcBlock];
+    }]];
 }
 
 - (Sequence *)filter:(BOOL (^)(id))predicate {
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] filter:predicate];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[self toEnumerator] filter:predicate];
+    }]];
 }
 
 - (Option *)find:(BOOL (^)(id))predicate {
@@ -60,7 +70,9 @@
 }
 
 - (Sequence *)flatten {
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] flatten];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[self toEnumerator] flatten];
+    }]];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
@@ -72,7 +84,9 @@
 }
 
 - (Sequence *)grouped:(int)n {
-    return [Sequence with:[EasyEnumerable with:^{return [GroupedEnumerator with:[self toEnumerator] groupSize:n];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [GroupedEnumerator with:[self toEnumerator] groupSize:n];
+    }]];
 }
 
 - (id)head {
@@ -87,20 +101,52 @@
     return option([self toEnumerator].nextObject);
 }
 
-- (Sequence *)join:(id<Enumerable>)toJoin {
+- (Sequence *)join:(id <Enumerable>)toJoin {
     return [sequence(self, toJoin, nil) flatten];
+}
+
+- (Sequence *)map:(id (^)(id))funcBlock {
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[self toEnumerator] map:funcBlock];
+    }]];
+}
+
+- (Sequence *)mapWithIndex:(id (^)(id, NSInteger))funcBlock {
+    return [[self zipWithIndex] map:^(Pair *itemAndIndex) {
+        return funcBlock(itemAndIndex.left, [itemAndIndex.right intValue]);
+    }];
+}
+
+- (Pair *)partition:(BOOL (^)(id))predicate {
+    Queue *matched = [Queue queue];
+    Queue *unmatched = [Queue queue];
+    NSEnumerator *underlyingEnumerator = [self toEnumerator];
+    Sequence *leftSequence = memoiseSeq([EasyEnumerable with:^{
+        return [PartitionEnumerator with:underlyingEnumerator
+                               predicate:predicate
+                                 matched:matched
+                               unmatched:unmatched];
+    }]);
+    Sequence *rightSequence = memoiseSeq([EasyEnumerable with:^{
+        return [PartitionEnumerator with:underlyingEnumerator
+                predicate:TL_not(predicate)
+                matched:unmatched
+                unmatched:matched];
+    }]);
+    return [Pair left:leftSequence right:rightSequence];
 }
 
 - (id)reduce:(id (^)(id, id))functorBlock {
     return [[self asArray] reduce:functorBlock];
 }
 
-- (Sequence *)map:(id (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] map:funcBlock];}]];
+- (Pair *)splitAt:(int)splitIndex {
+    return [self splitOn:TL_not(TL_countTo(splitIndex))];
 }
 
-- (Sequence *)mapWithIndex:(id (^)(id, NSInteger))funcBlock {
-    return [[self zipWithIndex] map:^(Pair *itemAndIndex) { return funcBlock(itemAndIndex.left, [itemAndIndex.right intValue]); }];
+- (Pair *)splitOn:(BOOL (^)(id))predicate {
+    Pair *partitioned = [self partition:TL_whileTrue(TL_not(predicate))];
+    return [Pair left:partitioned.left right:[partitioned.right tail]];
 }
 
 - (Sequence *)tail {
@@ -112,16 +158,20 @@
 }
 
 - (Sequence *)take:(int)n {
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] take:n];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[self toEnumerator] take:n];
+    }]];
 }
 
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock {
-    return [Sequence with:[EasyEnumerable with:^{return [[self toEnumerator] takeWhile:funcBlock];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [[self toEnumerator] takeWhile:funcBlock];
+    }]];
 }
 
 - (NSDictionary *)toDictionary:(id (^)(id))valueBlock {
     return [self fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, id item) {
-        if([accumulator valueForKey:item] == nil) {
+        if ([accumulator valueForKey:item] == nil) {
             [accumulator setObject:valueBlock(item) forKey:item];
         }
         return accumulator;
@@ -141,7 +191,9 @@
 }
 
 - (Sequence *)zip:(Sequence *)otherSequence {
-    return [Sequence with:[EasyEnumerable with:^{return [PairEnumerator withLeft:[self toEnumerator] right:[otherSequence toEnumerator]];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [PairEnumerator withLeft:[self toEnumerator] right:[otherSequence toEnumerator]];
+    }]];
 }
 
 - (Sequence *)zipWithIndex {
@@ -149,7 +201,9 @@
 }
 
 - (Sequence *)cycle {
-    return [Sequence with:[EasyEnumerable with:^{return [RepeatEnumerator with:[MemoisedEnumerator with:[self toEnumerator]]];}]];
+    return [Sequence with:[EasyEnumerable with:^{
+        return [RepeatEnumerator with:[MemoisedEnumerator with:[self toEnumerator]]];
+    }]];
 }
 
 + (Sequence *)with:(id <Enumerable>)enumerable {
@@ -171,15 +225,15 @@
 }
 
 - (NSSet *)asSet {
-    return [NSSet setWithArray: [self asArray]];
+    return [NSSet setWithArray:[self asArray]];
 }
 
--(NSString *)description {
+- (NSString *)description {
     NSEnumerator *itemsEnumerator = [self toEnumerator];
     NSString *description = @"Sequence [";
     int count = 3;
     id item;
-    while(count > 0 && (item = itemsEnumerator.nextObject)) {
+    while (count > 0 && (item = itemsEnumerator.nextObject)) {
         description = [description stringByAppendingFormat:@"%@, ", item];
         count--;
     }

@@ -40,10 +40,10 @@
     return nil;
 }
 
-- (MemoisedEnumerator *)initWith:(NSEnumerator *)anEnumerator {
+- (MemoisedEnumerator *)initWith:(NSEnumerator *)anEnumerator memory:(NSMutableArray *)aMemory {
     self = [super init];
     enumerator = [anEnumerator retain];
-    memory = [[NSMutableArray array] retain];
+    memory = [aMemory retain];
     position = 0;
     return self;
 }
@@ -59,7 +59,15 @@
     return [self nextObject];
 }
 
+- (void)reset {
+
+}
+
 + (MemoisedEnumerator *)with:(NSEnumerator *)enumerator {
-    return [[[MemoisedEnumerator alloc] initWith:enumerator] autorelease];
+    return [[[MemoisedEnumerator alloc] initWith:enumerator memory:[NSMutableArray array]] autorelease];
+}
+
++ (MemoisedEnumerator *)with:(NSEnumerator *)enumerator memory:(NSMutableArray *)memory {
+    return [[[MemoisedEnumerator alloc] initWith:enumerator memory:memory] autorelease];
 }
 @end
