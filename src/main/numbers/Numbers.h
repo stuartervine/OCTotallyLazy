@@ -1,7 +1,4 @@
-#import <Foundation/Foundation.h>
-
-typedef id(^FUNCTION1)(id);
-typedef id(^FUNCTION2)(id, id);
+#import "Types.h"
 
 static FUNCTION2 TL_sum() {
     return [[^(NSNumber *a, NSNumber *b) {

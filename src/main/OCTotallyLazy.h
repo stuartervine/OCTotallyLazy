@@ -17,3 +17,4 @@
 #import "Predicates.h"
 #import "Range.h"
 #import "Some.h"
+#import "Types.h"

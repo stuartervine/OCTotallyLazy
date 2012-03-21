@@ -100,8 +100,9 @@
 		BC7772EA1513392400F4FF92 /* Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF91 /* Queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF93 /* MemoisedSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FF96 /* MemoisedSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF95 /* MemoisedSequence.m */; };
-		BC7772EA1513392400F4FF99 /* Numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF98 /* Numbers.h */; };
+		BC7772EA1513392400F4FF99 /* Numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF98 /* Numbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FF9E /* NumbersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9D /* NumbersTest.m */; };
+		BC7772EA1513392400F4FFA0 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9F /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +201,7 @@
 		BC7772EA1513392400F4FF95 /* MemoisedSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedSequence.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF98 /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF9D /* NumbersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbersTest.m; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FF9F /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FF9F /* Types.h */,
 				BC7772EA1513392400F4FF95 /* MemoisedSequence.m */,
 				BC7772EA1513392400F4FF93 /* MemoisedSequence.h */,
 				BC7772EA1513392400F4FF91 /* Queue.h */,
@@ -441,12 +444,13 @@
 				BC7772EA1513392400F4FF78 /* TakeWhileEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF7C /* EasyEnumerable.h in Headers */,
 				BC7772EA1513392400F4FF80 /* Flattenable.h in Headers */,
+				BC7772EA1513392400F4FF99 /* Numbers.h in Headers */,
+				BC7772EA1513392400F4FFA0 /* Types.h in Headers */,
 				BC7772EA1513392400F4FF84 /* Callables.h in Headers */,
 				BC7772EA1513392400F4FF8E /* PartitionEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF92 /* Queue.h in Headers */,
 				BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */,
 				BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF99 /* Numbers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

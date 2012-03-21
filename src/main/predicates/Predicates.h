@@ -1,6 +1,4 @@
-#import <Foundation/Foundation.h>
-
-typedef BOOL(^PREDICATE)(id);
+#import "Types.h"
 
 static PREDICATE TL_alternate(BOOL startState) {
     __block BOOL state = !startState;
