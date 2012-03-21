@@ -110,11 +110,11 @@ static NSNumber *num(int i) {
 -(void)testSplitOn {
     NSArray *items = array(@"one", @"two", @"three", @"four", nil);
 
-    assertThat([items splitOn:TL_equalTo(@"three")].left, hasItems(@"one", @"two", nil));
-    assertThat([items splitOn:TL_equalTo(@"three")].right, hasItems(@"four", nil));
+    assertThat([items splitWhen:TL_equalTo(@"three")].left, hasItems(@"one", @"two", nil));
+    assertThat([items splitWhen:TL_equalTo(@"three")].right, hasItems(@"four", nil));
 
-    assertThat([items splitOn:TL_equalTo(@"one")].left, empty());
-    assertThat([items splitOn:TL_equalTo(@"four")].right, empty());
+    assertThat([items splitWhen:TL_equalTo(@"one")].left, empty());
+    assertThat([items splitWhen:TL_equalTo(@"four")].right, empty());
 }
 
 - (void)testTail {

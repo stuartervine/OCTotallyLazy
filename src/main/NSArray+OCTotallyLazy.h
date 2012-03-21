@@ -24,7 +24,7 @@
 - (Pair *)partition:(BOOL (^)(id))toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (NSArray *)reverse;
-- (Pair *)splitOn:(BOOL (^)(id))predicate;
+- (Pair *)splitWhen:(BOOL (^)(id))predicate;
 - (NSArray *)tail;
 - (NSArray *)take:(int)n;
 - (NSArray *)takeWhile:(BOOL (^)(id))funcBlock;

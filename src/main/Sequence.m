@@ -140,10 +140,14 @@
 }
 
 - (Pair *)splitAt:(int)splitIndex {
-    return [self splitOn:TL_not(TL_countTo(splitIndex))];
+    return [self splitWhen:TL_not(TL_countTo(splitIndex))];
 }
 
-- (Pair *)splitOn:(BOOL (^)(id))predicate {
+- (Pair *)splitOn:(id)splitItem {
+    return [self splitWhen:TL_equalTo(splitItem)];
+}
+
+- (Pair *)splitWhen:(BOOL (^)(id))predicate {
     Pair *partitioned = [self partition:TL_whileTrue(TL_not(predicate))];
     return [Pair left:partitioned.left right:[partitioned.right tail]];
 }

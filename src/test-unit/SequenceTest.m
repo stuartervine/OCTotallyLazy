@@ -134,11 +134,21 @@
 -(void)testSplitOn {
     Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
 
-    assertThat([[items splitOn:TL_equalTo(@"three")].left asArray], onlyContains(@"one", @"two", nil));
-    assertThat([[items splitOn:TL_equalTo(@"three")].right asArray], onlyContains(@"four", nil));
+    assertThat([[items splitOn:@"three"].left asArray], onlyContains(@"one", @"two", nil));
+    assertThat([[items splitOn:@"three"].right asArray], onlyContains(@"four", nil));
 
-    assertThat([[items splitOn:TL_equalTo(@"one")].left asArray], empty());
-    assertThat([[items splitOn:TL_equalTo(@"four")].right asArray], empty());
+    assertThat([[items splitOn:@"one"].left asArray], empty());
+    assertThat([[items splitOn:@"four"].right asArray], empty());
+}
+
+-(void)testSplitWhen {
+    Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
+
+    assertThat([[items splitWhen:TL_equalTo(@"three")].left asArray], onlyContains(@"one", @"two", nil));
+    assertThat([[items splitWhen:TL_equalTo(@"three")].right asArray], onlyContains(@"four", nil));
+
+    assertThat([[items splitWhen:TL_equalTo(@"one")].left asArray], empty());
+    assertThat([[items splitWhen:TL_equalTo(@"four")].right asArray], empty());
 }
 
 - (void)testTail {
@@ -195,11 +205,7 @@
 
     Sequence<Sequence<T>> recursive(final Callable1<Sequence<T>, Pair<Sequence<T>, Sequence<T>>> callable);
 
-    Pair<Sequence<T>,Sequence<T>> splitAt(final Number index);
-
     Pair<Sequence<T>,Sequence<T>> splitWhen(final Predicate<? super T> predicate) ;
-
-    Pair<Sequence<T>,Sequence<T>> splitOn(final T instance);
 
     Pair<Sequence<T>,Sequence<T>> span(final Predicate<? super T> predicate);
 

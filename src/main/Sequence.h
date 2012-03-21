@@ -22,9 +22,12 @@
 - (id)head;
 - (Option *)headOption;
 - (Sequence *)join:(id<Enumerable>)toJoin;
+- (Sequence *)mapWithIndex:(id (^)(id, NSInteger))func;
 - (Pair *)partition:(BOOL (^)(id))predicate;
 - (id)reduce:(id (^)(id, id))functorBlock;
-- (Pair *)splitOn:(BOOL (^)(id))predicate;
+- (Pair *)splitAt:(int)splitIndex;
+- (Pair *)splitOn:(id)splitItem;
+- (Pair *)splitWhen:(BOOL (^)(id))predicate;
 - (Sequence *)tail;
 - (Sequence *)take:(int)n;
 - (Sequence *)takeWhile:(BOOL (^)(id))funcBlock;
@@ -38,10 +41,6 @@
 - (NSArray *)asArray;
 - (NSSet *)asSet;
 - (NSDictionary *)asDictionary;
-
-- (Sequence *)mapWithIndex:(id (^)(id, NSInteger))func;
-
-- (Pair *)splitAt:(int)splitIndex;
 
 + (Sequence *)with:(id <Enumerable>)enumerable;
 

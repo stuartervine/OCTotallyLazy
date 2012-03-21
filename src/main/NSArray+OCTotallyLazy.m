@@ -1,8 +1,5 @@
 #import <OCTotallyLazy/OCTotallyLazy.h>
 #import "NSArray+OCTotallyLazy.h"
-#import "Callables.h"
-#import "Sequence.h"
-#import "Predicates.h"
 
 @implementation NSArray (OCTotallyLazy)
 
@@ -91,7 +88,15 @@
     return collectedArray;
 }
 
-- (Pair *)splitOn:(BOOL (^)(id))predicate {
+- (Pair *)splitAt:(int)splitIndex {
+    return [self splitWhen:TL_not(TL_countTo(splitIndex))];
+}
+
+- (Pair *)splitOn:(id)splitItem {
+    return [self splitWhen:TL_equalTo(splitItem)];
+}
+
+- (Pair *)splitWhen:(BOOL (^)(id))predicate {
     Pair *partition = [self partition:TL_whileTrue(TL_not(predicate))];
     return [Pair left:partition.left right:[partition.right tail]];
 }
