@@ -23,8 +23,29 @@ static FUNCTION1 TL_multiplyBy(NSNumber *multiplier) {
     } copy] autorelease];
 }
 
+static FUNCTION1 TL_divideBy(NSNumber *divisor) {
+    return [[^(NSNumber *number) {
+        return [NSNumber numberWithDouble:number.doubleValue / divisor.doubleValue];
+    } copy] autorelease];
+}
+
+static FUNCTION1 TL_add(NSNumber *addition) {
+    return [[^(NSNumber *number) {
+        return [NSNumber numberWithDouble:number.doubleValue + addition.doubleValue];
+    } copy] autorelease];
+}
+
+static FUNCTION1 TL_subtract(NSNumber *subtractor) {
+    return [[^(NSNumber *number) {
+        return [NSNumber numberWithDouble:number.doubleValue - subtractor.doubleValue];
+    } copy] autorelease];
+}
+
 #ifdef TL_SHORTHAND
     #define sum() TL_sum()
     #define average() TL_average()
     #define multiplyBy(multiplier) TL_multiplyBy(multiplier)
+    #define divideBy(divisor) TL_divideBy(divisor)
+    #define add(addition) TL_add(addition)
+    #define subtract(subtractor) TL_subtract(subtractor)
 #endif
