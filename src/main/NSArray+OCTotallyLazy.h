@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 #import "Option.h"
 #import "Mappable.h"
-#import "Pair.h"
 #import "Flattenable.h"
 @class Sequence;
+@class Pair;
 
 @interface NSArray (OCTotallyLazy) <Mappable, Foldable, Enumerable, Flattenable>
 

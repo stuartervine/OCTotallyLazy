@@ -1,6 +1,5 @@
 #import "Pair.h"
 
-
 @implementation Pair {
 
 @private
@@ -15,6 +14,10 @@
     _left = [aLeft retain];
     _right = [aRight retain];
     return self;
+}
+
+- (Sequence *)toSequence {
+    return sequence(_left, _right, nil);
 }
 
 + (Pair *)left:(id)aLeft right:(id)aRight {

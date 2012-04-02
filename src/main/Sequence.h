@@ -23,6 +23,7 @@
 - (Option *)headOption;
 - (Sequence *)join:(id<Enumerable>)toJoin;
 - (Sequence *)mapWithIndex:(id (^)(id, NSInteger))func;
+- (Sequence *)merge:(Sequence *)toMerge;
 - (Pair *)partition:(BOOL (^)(id))predicate;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (Pair *)splitAt:(int)splitIndex;

@@ -7,6 +7,7 @@
 #import "EasyEnumerable.h"
 #import "Callables.h"
 #import "GroupedEnumerator.h"
+#import "Pair.h"
 #import "Range.h"
 #import "PartitionEnumerator.h"
 
@@ -114,6 +115,12 @@
     return [[self zipWithIndex] map:^(Pair *itemAndIndex) {
         return funcBlock(itemAndIndex.left, [itemAndIndex.right intValue]);
     }];
+}
+
+- (Sequence *)merge:(Sequence *)toMerge {
+    return [[[self zip:toMerge] map:^(Pair *pair) {
+        return [pair toSequence];
+    }] flatten];
 }
 
 - (Pair *)partition:(BOOL (^)(id))predicate {

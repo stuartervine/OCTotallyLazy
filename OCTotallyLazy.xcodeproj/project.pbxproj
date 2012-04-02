@@ -103,6 +103,7 @@
 		BC7772EA1513392400F4FF99 /* Numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF98 /* Numbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FF9E /* NumbersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9D /* NumbersTest.m */; };
 		BC7772EA1513392400F4FFA0 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9F /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7772EA1513392400F4FFA2 /* PairTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA1 /* PairTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +203,7 @@
 		BC7772EA1513392400F4FF98 /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF9D /* NumbersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbersTest.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF9F /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FFA1 /* PairTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 		BC60928814EC2CC000A59CDD /* test-unit */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FFA1 /* PairTest.m */,
 				BC7772AB1513389B00F4FF4A /* enumerators */,
 				BC7772951513388C00F4FF4A /* NSArrayTest.m */,
 				BC7772961513388C00F4FF4A /* NSDictionaryTest.m */,
@@ -619,6 +622,7 @@
 				BC7772AA1513388C00F4FF4A /* SequenceTest.m in Sources */,
 				BC7772EA1513392400F4FF82 /* GroupedEnumeratorTest.m in Sources */,
 				BC7772EA1513392400F4FF9E /* NumbersTest.m in Sources */,
+				BC7772EA1513392400F4FFA2 /* PairTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

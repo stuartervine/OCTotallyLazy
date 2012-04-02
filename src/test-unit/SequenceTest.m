@@ -109,6 +109,12 @@
     Sequence *indexes = [lazy mapWithIndex:^(id item, NSInteger index){return num(index);}];
     assertThat([indexes asArray], hasItems(num(0), num(1), num(2), nil));
 }
+
+-(void)testMerge {
+    Sequence *result = [sequence(@"1", @"2", nil) merge:sequence(@"3", @"4", @"5", nil)];
+    assertThat([result asArray], onlyContains(@"1", @"3", @"2", @"4", @"5", nil));
+}
+
 -(void)testPartition {
     Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
     Pair *partitioned = [items partition:TL_alternate(TRUE)];
@@ -204,8 +210,6 @@
     <K> Sequence<Group<K, T>> groupBy(final Callable1<? super T, ? extends K> callable);
 
     Sequence<Sequence<T>> recursive(final Callable1<Sequence<T>, Pair<Sequence<T>, Sequence<T>>> callable);
-
-    Pair<Sequence<T>,Sequence<T>> splitWhen(final Predicate<? super T> predicate) ;
 
     Pair<Sequence<T>,Sequence<T>> span(final Predicate<? super T> predicate);
 
