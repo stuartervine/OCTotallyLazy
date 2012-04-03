@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test-unit/PairTest.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sh" afterPath="$PROJECT_DIR$/build.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Pair.h" afterPath="$PROJECT_DIR$/src/main/Pair.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Pair.m" afterPath="$PROJECT_DIR$/src/main/Pair.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.h" afterPath="$PROJECT_DIR$/src/main/Sequence.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.m" afterPath="$PROJECT_DIR$/src/main/Sequence.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/predicates/Predicates.h" afterPath="$PROJECT_DIR$/src/main/predicates/Predicates.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m" afterPath="$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +35,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sequence.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PredicatesTest.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="968" selection-end="968" vertical-scroll-proportion="0.629717">
+              <folding>
+                <element signature="e#128#153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Types.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Types.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="14" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Predicates.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="33" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="12" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.36982968">
+            <state line="120" column="12" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#21#59#0" expanded="true" />
               </folding>
@@ -77,7 +98,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
                 <marker date="1333401796000" expanded="true" signature="82:302" placeholder="..." />
               </folding>
             </state>
@@ -97,39 +117,6 @@
         <entry file="file://$PROJECT_DIR$/src/test-unit/PairTest.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="21" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#88#113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pair.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Pair.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1333401684000" expanded="true" signature="39:81" placeholder="{...}" />
-                <marker date="1333401684000" expanded="false" signature="94:135" placeholder="..." />
-                <marker date="1333401684000" expanded="true" signature="187:290" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceTest.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="52" selection-start="3831" selection-end="3831" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSArray+OCTotallyLazy.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,14 +135,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Coercions.h" />
         <option value="$PROJECT_DIR$/src/main/Callables.h" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/src/test-unit/numbers/NumbersTest.m" />
         <option value="$PROJECT_DIR$/src/main/numbers/Numbers.h" />
         <option value="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/Types.h" />
-        <option value="$PROJECT_DIR$/src/main/predicates/Predicates.h" />
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/NSArray+OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
         <option value="$PROJECT_DIR$/src/main/Sequence.h" />
@@ -164,6 +149,8 @@
         <option value="$PROJECT_DIR$/src/main/Pair.h" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/Sequence.m" />
+        <option value="$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m" />
+        <option value="$PROJECT_DIR$/src/main/predicates/Predicates.h" />
       </list>
     </option>
   </component>
@@ -221,6 +208,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCTotallyLazy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="DirectoryView.Xcode">
         <subPane>
           <PATH>
@@ -341,18 +342,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+              <option name="myItemId" value="OCTotallyLazy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="predicates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -361,27 +370,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="Errors" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="OCUnit.All in SequenceTest">
-    <configuration default="false" name="-[NumbersTest testSum]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[NumbersTest testSum]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NumbersTest" TEST_METHOD="testSum">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="-[NumbersTest testMultiplyBy]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[NumbersTest testMultiplyBy]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NumbersTest" TEST_METHOD="testMultiplyBy">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="OCUnit.All in PredicatesTest">
     <configuration default="false" name="All in NumbersTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="All in NumbersTest" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NumbersTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -395,6 +392,18 @@
       <method />
     </configuration>
     <configuration default="false" name="All in SequenceTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="All in SequenceTest" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[PredicatesTest testAnd]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[PredicatesTest testAnd]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest" TEST_METHOD="testAnd">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in PredicatesTest" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="All in PredicatesTest" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -430,11 +439,11 @@
       <item index="0" class="java.lang.String" itemvalue="Application.OCTotallyLazy" />
       <item index="1" class="java.lang.String" itemvalue="Application.package" />
       <item index="2" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testSplitOn]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[NumbersTest testSum]" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[NumbersTest testMultiplyBy]" />
-      <item index="5" class="java.lang.String" itemvalue="OCUnit.All in NumbersTest" />
-      <item index="6" class="java.lang.String" itemvalue="OCUnit.-[PairTest testConvertsToSequence]" />
-      <item index="7" class="java.lang.String" itemvalue="OCUnit.All in SequenceTest" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.All in NumbersTest" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[PairTest testConvertsToSequence]" />
+      <item index="5" class="java.lang.String" itemvalue="OCUnit.All in SequenceTest" />
+      <item index="6" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testAnd]" />
+      <item index="7" class="java.lang.String" itemvalue="OCUnit.All in PredicatesTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -621,28 +630,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/Some.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="17" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="104" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="244" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -657,67 +647,9 @@
         <state line="22" column="1" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/NSArrayTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="7" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/RangeTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="198" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/PairTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#88#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Pair.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1333401684000" expanded="true" signature="39:81" placeholder="{...}" />
-            <marker date="1333401684000" expanded="false" signature="94:135" placeholder="..." />
-            <marker date="1333401684000" expanded="true" signature="187:290" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Pair.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-            <marker date="1333401796000" expanded="true" signature="82:302" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -729,11 +661,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Pair.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1333401684000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1333401684000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1333401684000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/PairTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="21" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Pair.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1333401796000" expanded="true" signature="82:302" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/RangeTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/NSArrayTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="7" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="12" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.36982968">
+        <state line="120" column="12" selection-start="3194" selection-end="3194" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#21#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="33" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="968" selection-end="968" vertical-scroll-proportion="0.629717">
+          <folding>
+            <element signature="e#128#153#0" expanded="true" />
           </folding>
         </state>
       </provider>

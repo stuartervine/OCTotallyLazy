@@ -7,6 +7,16 @@ static PREDICATE TL_alternate(BOOL startState) {
         return state;
     } copy] autorelease];
 }
+static PREDICATE TL_and(PREDICATE left, PREDICATE right) {
+    return [[^(id item) {
+        return left(item) && right(item);
+    } copy] autorelease];
+}
+static PREDICATE TL_or(PREDICATE left, PREDICATE right) {
+    return [[^(id item) {
+        return left(item) || right(item);
+    } copy] autorelease];
+}
 static PREDICATE TL_countTo(int n) {
     __block int count = n;
     return [[^(id item) {
@@ -69,6 +79,7 @@ static PREDICATE TL_whileTrue(PREDICATE predicate) {
 
 #ifdef TL_SHORTHAND
     #define alternate(startState) TL_alternate(startState)
+    #define and(left, right) TL_and(left, right)
     #define containsStr(comparable) TL_containsString(comparable)
     #define countTo(comparable) TL_countTo(comparable)
     #define eqTo(comparable) TL_equalTo(comparable)
@@ -77,5 +88,6 @@ static PREDICATE TL_whileTrue(PREDICATE predicate) {
     #define in(array) TL_containedIn(array)
     #define ltThan(comparable) TL_lessThan(comparable)
     #define not(predicate) TL_not(predicate)
+    #define or(left, right) TL_or(left, right)
     #define startingWith(comparable) TL_startsWith(comparable)
 #endif

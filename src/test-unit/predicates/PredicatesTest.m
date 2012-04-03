@@ -18,6 +18,16 @@
     assertThat([items filter:alternate(YES)], hasItems(num(1), num(3), nil));
 }
 
+-(void)testAnd {
+    NSArray *items = array(num(1), num(2), num(3), num(4), nil);
+    assertThat([items filter:and(gtThan(num(1)), ltThan(num(4)))], hasItems(num(2), num(3), nil));
+}
+
+-(void)testOr {
+    NSArray *items = array(num(1), num(2), num(3), num(4), nil);
+    assertThat([items filter:or(eqTo(num(1)), eqTo(num(4)))], hasItems(num(1), num(4), nil));
+}
+
 -(void)testContainedIn {
     NSArray *items = array(num(1), num(2), num(3), nil);
     NSArray *existing = array(num(1), num(2), nil);
