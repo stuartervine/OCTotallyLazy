@@ -8,6 +8,43 @@ The best place to look for full behaviour is in the test classes for now, checko
 
     import <OCTotallyLazy/OCTotallyLazy.h>
 
+### What's available?
+
+NSArray
+
+    drop:
+    dropWhile:
+    filter:
+    find:
+    flatMap:
+    flatten
+    fold: with:
+    foreach:
+    isEmpty
+    grouped:
+    head
+    headOption
+    join;
+    map:
+    mapWithIndex:
+    partition:
+    reduce:
+    reverse
+    splitWhen:
+    tail
+    take:
+    takeWhile:
+    takeRight:
+    toString
+    toString:
+    toString: separator: end:
+    zip:
+    zipWithIndex
+
+    asSequence
+    asSet
+    asDictionary
+
 ### Some basic examples.
 
 Mapping (Sequence, NSArray, partially on NSSet, NSDictionary)

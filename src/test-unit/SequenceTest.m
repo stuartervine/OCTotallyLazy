@@ -111,16 +111,19 @@
 }
 
 -(void)testMerge {
-    Sequence *result = [sequence(@"1", @"2", nil) merge:sequence(@"3", @"4", @"5", nil)];
-    assertThat([result asArray], onlyContains(@"1", @"3", @"2", @"4", @"5", nil));
+    Sequence *result1 = [sequence(@"1", @"2", nil) merge:sequence(@"3", @"4", @"5", nil)];
+    assertThat([result1 asArray], hasItems(@"1", @"3", @"2", @"4", @"5", nil));
+
+    Sequence *result2 = [sequence(@"1", @"2", @"3", nil) merge:sequence(@"4", @"5", nil)];
+    assertThat([result2 asArray], hasItems(@"1", @"4", @"2", @"5", @"4", nil));
 }
 
 -(void)testPartition {
     Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
     Pair *partitioned = [items partition:TL_alternate(TRUE)];
-    assertThat([partitioned.left asArray], onlyContains(@"one", @"three", nil));
-    assertThat([partitioned.left asArray], onlyContains(@"one", @"three", nil)); //Test non-forward only.
-    assertThat([partitioned.right asArray], onlyContains(@"two", @"four", nil));
+    assertThat([partitioned.left asArray], hasItems(@"one", @"three", nil));
+    assertThat([partitioned.left asArray], hasItems(@"one", @"three", nil)); //Test non-forward only.
+    assertThat([partitioned.right asArray], hasItems(@"two", @"four", nil));
 }
 
 - (void)testReduce {
@@ -133,15 +136,15 @@
 -(void)testSplitAt {
     Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
     Pair *split = [items splitAt:2];
-    assertThat([split.left asArray], onlyContains(@"one", @"two", nil));
-    assertThat([split.right asArray], onlyContains(@"four", nil));
+    assertThat([split.left asArray], hasItems(@"one", @"two", nil));
+    assertThat([split.right asArray], hasItems(@"four", nil));
 }
 
 -(void)testSplitOn {
     Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
 
-    assertThat([[items splitOn:@"three"].left asArray], onlyContains(@"one", @"two", nil));
-    assertThat([[items splitOn:@"three"].right asArray], onlyContains(@"four", nil));
+    assertThat([[items splitOn:@"three"].left asArray], hasItems(@"one", @"two", nil));
+    assertThat([[items splitOn:@"three"].right asArray], hasItems(@"four", nil));
 
     assertThat([[items splitOn:@"one"].left asArray], empty());
     assertThat([[items splitOn:@"four"].right asArray], empty());
@@ -150,8 +153,8 @@
 -(void)testSplitWhen {
     Sequence *items = sequence(@"one", @"two", @"three", @"four", nil);
 
-    assertThat([[items splitWhen:TL_equalTo(@"three")].left asArray], onlyContains(@"one", @"two", nil));
-    assertThat([[items splitWhen:TL_equalTo(@"three")].right asArray], onlyContains(@"four", nil));
+    assertThat([[items splitWhen:TL_equalTo(@"three")].left asArray], hasItems(@"one", @"two", nil));
+    assertThat([[items splitWhen:TL_equalTo(@"three")].right asArray], hasItems(@"four", nil));
 
     assertThat([[items splitWhen:TL_equalTo(@"one")].left asArray], empty());
     assertThat([[items splitWhen:TL_equalTo(@"four")].right asArray], empty());
