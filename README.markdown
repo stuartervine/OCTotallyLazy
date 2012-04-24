@@ -25,9 +25,10 @@ NSArray
     grouped:
     head
     headOption
-    join;
+    join:
     map:
     mapWithIndex:
+    merge:
     partition:
     reduce:
     reverse
