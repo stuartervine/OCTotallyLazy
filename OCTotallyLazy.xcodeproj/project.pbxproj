@@ -104,6 +104,10 @@
 		BC7772EA1513392400F4FF9E /* NumbersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9D /* NumbersTest.m */; };
 		BC7772EA1513392400F4FFA0 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9F /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FFA2 /* PairTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA1 /* PairTest.m */; };
+		BC7772EA1513392400F4FFA4 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA3 /* Group.m */; };
+		BC7772EA1513392400F4FFA6 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA5 /* Group.h */; };
+		BC7772EA1513392400F4FFA8 /* MergeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */; };
+		BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +208,10 @@
 		BC7772EA1513392400F4FF9D /* NumbersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbersTest.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FF9F /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FFA1 /* PairTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairTest.m; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FFA3 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FFA5 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeEnumerator.m; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeEnumerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +271,8 @@
 		BC60928714EC2CB700A59CDD /* main */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FFA5 /* Group.h */,
+				BC7772EA1513392400F4FFA3 /* Group.m */,
 				BC7772EA1513392400F4FF9F /* Types.h */,
 				BC7772EA1513392400F4FF95 /* MemoisedSequence.m */,
 				BC7772EA1513392400F4FF93 /* MemoisedSequence.h */,
@@ -348,6 +358,8 @@
 		BC7772EA1513392400F4FF4A /* enumerators */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */,
+				BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */,
 				BC7772EA1513392400F4FF8D /* PartitionEnumerator.h */,
 				BC7772EA1513392400F4FF8B /* PartitionEnumerator.m */,
 				BC7772EA1513392400F4FF89 /* EnumerateEnumerator.h */,
@@ -454,6 +466,8 @@
 				BC7772EA1513392400F4FF92 /* Queue.h in Headers */,
 				BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */,
 				BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */,
+				BC7772EA1513392400F4FFA6 /* Group.h in Headers */,
+				BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +617,8 @@
 				BC7772EA1513392400F4FF8C /* PartitionEnumerator.m in Sources */,
 				BC7772EA1513392400F4FF90 /* Queue.m in Sources */,
 				BC7772EA1513392400F4FF96 /* MemoisedSequence.m in Sources */,
+				BC7772EA1513392400F4FFA4 /* Group.m in Sources */,
+				BC7772EA1513392400F4FFA8 /* MergeEnumerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "Types.h"
 #import "Mappable.h"
 #import "Option.h"
 #import "Enumerable.h"
@@ -11,27 +12,30 @@
 - (Sequence *)cons:(id)value;
 - (Sequence *)cycle;
 - (Sequence *)drop:(int)toDrop;
-- (Sequence *)dropWhile:(BOOL (^)(id))funcBlock;
-- (Option *)find:(BOOL (^)(id))predicate;
-- (Sequence *)flatMap:(id (^)(id))funcBlock;
-- (id)filter:(BOOL (^)(id))filterBlock;
+- (Sequence *)dropWhile:(PREDICATE)funcBlock;
+- (Option *)find:(PREDICATE)predicate;
+- (id)first;
+- (Sequence *)flatMap:(FUNCTION1)funcBlock;
+- (id)filter:(PREDICATE)filterBlock;
 - (Sequence *)flatten;
-- (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
+- (id)fold:(id)value with:(FUNCTION2)functorBlock;
 - (void)foreach:(void (^)(id))funcBlock;
 - (Sequence *)grouped:(int)n;
+- (Sequence *)groupBy:(FUNCTION1)groupingBlock;
 - (id)head;
 - (Option *)headOption;
 - (Sequence *)join:(id<Enumerable>)toJoin;
 - (Sequence *)mapWithIndex:(id (^)(id, NSInteger))func;
 - (Sequence *)merge:(Sequence *)toMerge;
-- (Pair *)partition:(BOOL (^)(id))predicate;
+- (Pair *)partition:(PREDICATE)predicate;
 - (id)reduce:(id (^)(id, id))functorBlock;
+- (id)second;
 - (Pair *)splitAt:(int)splitIndex;
 - (Pair *)splitOn:(id)splitItem;
-- (Pair *)splitWhen:(BOOL (^)(id))predicate;
+- (Pair *)splitWhen:(PREDICATE)predicate;
 - (Sequence *)tail;
 - (Sequence *)take:(int)n;
-- (Sequence *)takeWhile:(BOOL (^)(id))funcBlock;
+- (Sequence *)takeWhile:(PREDICATE)funcBlock;
 - (NSDictionary *)toDictionary:(id (^)(id))valueBlock;
 - (NSString *)toString;
 - (NSString *)toString:(NSString *)separator;
@@ -42,6 +46,7 @@
 - (NSArray *)asArray;
 - (NSSet *)asSet;
 - (NSDictionary *)asDictionary;
+
 
 + (Sequence *)with:(id <Enumerable>)enumerable;
 

@@ -1,4 +1,5 @@
 #define TL_COERCIONS
+
 #import "NSEnumerator+OCTotallyLazy.h"
 #import "PairEnumerator.h"
 #import "MemoisedEnumerator.h"
@@ -10,6 +11,8 @@
 #import "Pair.h"
 #import "Range.h"
 #import "PartitionEnumerator.h"
+#import "OCTotallyLazy.h"
+#import "MergeEnumerator.h"
 
 @implementation Sequence {
     id <Enumerable> enumerable;
@@ -29,7 +32,7 @@
     [super dealloc];
 }
 
-- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id[])buffer count:(NSUInteger)len {
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id[])buffer count:(NSUInteger)len {
     return [forwardOnlyEnumerator countByEnumeratingWithState:state objects:buffer count:len];
 }
 
@@ -51,6 +54,10 @@
     return [Sequence with:[EasyEnumerable with:^{
         return [[self toEnumerator] dropWhile:funcBlock];
     }]];
+}
+
+- (id)first {
+    return [self head];
 }
 
 - (Sequence *)flatMap:(id (^)(id))funcBlock {
@@ -89,6 +96,10 @@
     }]];
 }
 
+- (Sequence *)groupBy:(FUNCTION1)groupingBlock {
+    return [[[self asArray] groupBy:groupingBlock] asSequence];
+}
+
 - (id)head {
     id item = [self toEnumerator].nextObject;
     if (item == nil) {
@@ -118,9 +129,9 @@
 }
 
 - (Sequence *)merge:(Sequence *)toMerge {
-    return [[[self zip:toMerge] map:^(Pair *pair) {
-        return [pair toSequence];
-    }] flatten];
+    return [[Sequence with:[EasyEnumerable with:^{
+        return [MergeEnumerator with:[self toEnumerator] toMerge:[toMerge toEnumerator]];
+    }]] flatten];
 }
 
 - (Pair *)partition:(BOOL (^)(id))predicate {
@@ -135,15 +146,19 @@
     }]);
     Sequence *rightSequence = memoiseSeq([EasyEnumerable with:^{
         return [PartitionEnumerator with:underlyingEnumerator
-                predicate:TL_not(predicate)
-                matched:unmatched
-                unmatched:matched];
+                               predicate:TL_not(predicate)
+                                 matched:unmatched
+                               unmatched:matched];
     }]);
     return [Pair left:leftSequence right:rightSequence];
 }
 
 - (id)reduce:(id (^)(id, id))functorBlock {
     return [[self asArray] reduce:functorBlock];
+}
+
+- (id)second {
+    return [[self tail] head];
 }
 
 - (Pair *)splitAt:(int)splitIndex {

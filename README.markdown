@@ -21,6 +21,7 @@ NSArray
     fold: with:
     foreach:
     isEmpty
+    groupBy:
     grouped:
     head
     headOption
@@ -30,6 +31,8 @@ NSArray
     partition:
     reduce:
     reverse
+    splitAt:
+    splitOn:
     splitWhen:
     tail
     take:

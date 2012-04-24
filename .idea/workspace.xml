@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="">
+    <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Attempting to improve the docs.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Group.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Group.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.h" afterPath="$PROJECT_DIR$/src/main/Sequence.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.m" afterPath="$PROJECT_DIR$/src/main/Sequence.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
     </list>
     <ignored path="Funcky.iws" />
@@ -26,10 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="0.8953975">
+            <state line="33" column="11" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,64 +48,68 @@
       <file leaf-file-name="PairEnumerator.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/enumerators/PairEnumerator.m">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pair.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Pair.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="16" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairEnumerator.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/enumerators/PairEnumerator.h">
+          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeEnumerator.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeEnumerator.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="19" selection-start="553" selection-end="553" vertical-scroll-proportion="0.7075472">
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mappable.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Mappable.h">
+      <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Foldable.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Foldable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Enumerable.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Enumerable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="10" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flattenable.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Flattenable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="134" column="0" selection-start="3573" selection-end="3573" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#22#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="NSArray+OCTotallyLazy.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/NSArray+OCTotallyLazy.h">
+        <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="40" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="19" column="13" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +117,10 @@
       <file leaf-file-name="NSArray+OCTotallyLazy.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="47" column="0" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,8 +128,10 @@
       <file leaf-file-name="SequenceTest.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="61" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="123" column="53" selection-start="4275" selection-end="4275" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#76#101#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,22 +149,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
-        <option value="$PROJECT_DIR$/src/test-unit/numbers/NumbersTest.m" />
-        <option value="$PROJECT_DIR$/src/main/numbers/Numbers.h" />
-        <option value="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
-        <option value="$PROJECT_DIR$/src/main/Types.h" />
-        <option value="$PROJECT_DIR$/src/main/Sequence.h" />
-        <option value="$PROJECT_DIR$/src/test-unit/PairTest.m" />
-        <option value="$PROJECT_DIR$/src/main/Pair.m" />
-        <option value="$PROJECT_DIR$/src/main/Pair.h" />
-        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
-        <option value="$PROJECT_DIR$/src/main/Sequence.m" />
         <option value="$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m" />
         <option value="$PROJECT_DIR$/src/main/predicates/Predicates.h" />
-        <option value="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/NSArray+OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/src/main/Group.h" />
+        <option value="$PROJECT_DIR$/src/main/Group.m" />
+        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/src/main/Sequence.h" />
+        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/README.markdown" />
+        <option value="$PROJECT_DIR$/src/main/enumerators/PairEnumerator.m" />
+        <option value="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
+        <option value="$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.h" />
+        <option value="$PROJECT_DIR$/src/main/Sequence.m" />
+        <option value="$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m" />
       </list>
     </option>
   </component>
@@ -154,9 +172,9 @@
     <option name="myCanGoOffline" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
+    <option name="x" value="41" />
     <option name="y" value="22" />
-    <option name="width" value="1244" />
+    <option name="width" value="1399" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -204,6 +222,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCTotallyLazy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="DirectoryView.Xcode">
         <subPane>
           <PATH>
@@ -342,7 +374,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="predicates" />
+              <option name="myItemId" value="numbers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,39 +402,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="Errors" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="OCUnit.All in SequenceTest">
-    <configuration default="false" name="-[PairTest testConvertsToSequence]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[PairTest testConvertsToSequence]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PairTest" TEST_METHOD="testConvertsToSequence">
-      <envs />
-      <RunnerSettings RunnerId="AppRunner" />
-      <ConfigurationWrapper RunnerId="AppRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="-[PredicatesTest testAnd]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[PredicatesTest testAnd]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="PredicatesTest" TEST_METHOD="testAnd">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
@@ -416,6 +428,12 @@
       <method />
     </configuration>
     <configuration default="false" name="-[SequenceTest testMerge]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[SequenceTest testMerge]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testMerge">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[SequenceTest testGroupBy]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[SequenceTest testGroupBy]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testGroupBy">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -457,10 +475,10 @@
       <item index="0" class="java.lang.String" itemvalue="Application.OCTotallyLazy" />
       <item index="1" class="java.lang.String" itemvalue="Application.package" />
       <item index="2" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testSplitOn]" />
-      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[PairTest testConvertsToSequence]" />
-      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testAnd]" />
-      <item index="5" class="java.lang.String" itemvalue="OCUnit.All in PredicatesTest" />
-      <item index="6" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testMerge]" />
+      <item index="3" class="java.lang.String" itemvalue="OCUnit.-[PredicatesTest testAnd]" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.All in PredicatesTest" />
+      <item index="5" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testMerge]" />
+      <item index="6" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testGroupBy]" />
       <item index="7" class="java.lang.String" itemvalue="OCUnit.All in SequenceTest" />
     </list>
   </component>
@@ -513,29 +531,33 @@
       <created>1331846263541</created>
       <updated>1331846263541</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Attempting to improve the docs.">
+      <created>1335079570763</created>
+      <updated>1335079570763</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="22" width="1244" height="878" extended-state="0" />
+    <frame x="41" y="22" width="1399" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2945839" sideWeight="0.99856836" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26289925" sideWeight="0.5957728" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23651145" sideWeight="0.5957728" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6063408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24907613" sideWeight="0.5957728" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40422723" sideWeight="0.9855942" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40422723" sideWeight="0.9855942" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2945839" sideWeight="0.99856836" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.6767169" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -633,132 +655,142 @@
           <line>17</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/test-unit/SequenceTest.m</url>
-          <line>81</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/test-unit/RangeTest.m</url>
           <line>21</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/test-unit/SequenceTest.m</url>
-          <line>123</line>
+          <line>133</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/test-unit/SequenceTest.m</url>
+          <line>80</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test-unit/RangeTest.m">
+    <entry file="file://$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="198" vertical-scroll-proportion="0.0">
+        <state line="27" column="8" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
+    <entry file="file://$PROJECT_DIR$/src/test-unit/NSDictionaryTest.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="41" selection-start="3181" selection-end="3181" vertical-scroll-proportion="0.0">
+        <state line="32" column="18" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.h">
+    <entry file="file://$PROJECT_DIR$/src/main/Group.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="33" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Types.h">
+    <entry file="file://$PROJECT_DIR$/src/main/Group.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+        <state line="19" column="50" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="20" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/NSArrayTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="7" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/enumerators/PairEnumerator.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="61" selection-start="4012" selection-end="4012" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Foldable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Enumerable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Flattenable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Mappable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/NSArray+OCTotallyLazy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+        <state line="30" column="13" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="34" column="13" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="0.8953975">
+        <state line="33" column="11" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="53" selection-start="4275" selection-end="4275" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#76#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Pair.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/PairEnumerator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/PairEnumerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="0" selection-start="3573" selection-end="3573" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#22#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="19" selection-start="553" selection-end="553" vertical-scroll-proportion="0.7075472">
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -45,6 +45,22 @@
     return self.count == 0;
 }
 
+- (NSArray *)groupBy:(FUNCTION1)groupingBlock {
+    NSMutableDictionary *keysAndValues = [NSMutableDictionary dictionary];
+    NSMutableArray *keys = [NSMutableArray array];
+    [self foreach:^(id item) {
+        id key = groupingBlock(item);
+        if (![keys containsObject:key]) {
+            [keys addObject:key];
+            [keysAndValues setObject:[NSMutableArray array] forKey:key];
+        }
+        [[keysAndValues objectForKey:key] addObject:item];
+    }];
+    return [keys map:^(id key) {
+        return [Group group:key enumerable:[keysAndValues objectForKey:key]];
+    }];
+}
+
 - (NSArray *)grouped:(int)n {
     return [[[self asSequence] grouped:n] asArray];
 }
@@ -67,6 +83,10 @@
 
 - (id)mapWithIndex:(id (^)(id, NSInteger))funcBlock {
     return [[[self asSequence] mapWithIndex:funcBlock] asArray];
+}
+
+- (NSArray *)merge:(NSArray *)toMerge {
+    return [[[self asSequence] merge:[toMerge asSequence]] asArray];
 }
 
 - (Pair *)partition:(BOOL (^)(id))filterBlock {

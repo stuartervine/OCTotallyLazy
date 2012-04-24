@@ -76,6 +76,16 @@
     assertThat(description, equalTo(@"onetwothree"));
 }
 
+-(void)testGroupBy {
+    Sequence *groups = [sequence(@"one", @"two", @"three", @"four", @"five", @"six", @"seven", nil) groupBy:^(NSString *item) {
+        return num(item.length);
+    }];
+    assertThat([[groups first] key], equalTo(num(3)));
+    assertThat([groups first], hasItems(@"one", @"two", @"six", nil));
+    assertThat([[groups second] key], equalTo(num(5)));
+    assertThat([groups second], hasItems(@"three", @"seven", nil));
+}
+
 -(void)testGrouped {
     Sequence *items = sequence(num(1), num(2), num(3), num(4), num(5), nil);
     NSArray *array1 = [[items grouped:4] asArray];
