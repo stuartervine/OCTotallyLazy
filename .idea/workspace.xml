@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Attempting to improve the docs.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" afterPath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,24 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PairEnumerator.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/enumerators/PairEnumerator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeEnumerator.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Option.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Option.m">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,7 +48,7 @@
       <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="26" selection-start="3491" selection-end="3491" vertical-scroll-proportion="0.0">
+            <state line="74" column="12" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#22#60#0" expanded="true" />
               </folding>
@@ -77,7 +59,7 @@
       <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="13" selection-start="895" selection-end="936" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -85,10 +67,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NSSet+OCTotallyLazy.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="11" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSSet+OCTotallyLazy.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="-0.0890411">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="17" selection-start="759" selection-end="759" vertical-scroll-proportion="0.37656903">
+            <state line="29" column="17" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,6 +109,27 @@
             <state line="87" column="0" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <marker date="1335256364000" expanded="true" signature="98:5042" placeholder="..." />
+                <marker date="1335256364000" expanded="true" signature="2336:2491" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="2535:2622" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="2645:2927" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="2963:3026" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3060:3114" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3160:3303" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3323:3372" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3399:3451" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3500:3565" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3597:3683" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3716:3755" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3780:3815" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="3862:3925" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="4020:4123" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="4164:4237" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="4265:4323" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="4350:4386" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="4405:4446" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="4469:4489" placeholder="{...}" />
+                <marker date="1335256364000" expanded="true" signature="4522:5041" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -138,8 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test-unit/predicates/PredicatesTest.m" />
-        <option value="$PROJECT_DIR$/src/main/predicates/Predicates.h" />
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/Group.h" />
@@ -154,6 +173,8 @@
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/NSArray+OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/README.markdown" />
+        <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" />
+        <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
       </list>
     </option>
   </component>
@@ -659,20 +680,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/Group.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Group.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="50" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="13" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
@@ -717,15 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="26" selection-start="3491" selection-end="3491" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#22#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="1" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
@@ -751,20 +749,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="895" selection-end="936" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="0" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <marker date="1335256364000" expanded="true" signature="98:5042" placeholder="..." />
+            <marker date="1335256364000" expanded="true" signature="2336:2491" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="2535:2622" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="2645:2927" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="2963:3026" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3060:3114" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3160:3303" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3323:3372" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3399:3451" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3500:3565" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3597:3683" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3716:3755" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3780:3815" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="3862:3925" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="4020:4123" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="4164:4237" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="4265:4323" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="4350:4386" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="4405:4446" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="4469:4489" placeholder="{...}" />
+            <marker date="1335256364000" expanded="true" signature="4522:5041" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -778,7 +788,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="17" selection-start="759" selection-end="759" vertical-scroll-proportion="0.37656903">
+        <state line="29" column="17" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="12" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#22#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="-0.0890411">
           <folding />
         </state>
       </provider>

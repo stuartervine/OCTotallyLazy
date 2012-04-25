@@ -4,11 +4,13 @@
 #import "Sequence.h"
 
 @interface NSSet (Functional) <Mappable, Foldable, Enumerable>
-- (NSSet *)filter:(BOOL (^)(id))filterBlock;
+- (Option *)find:(PREDICATE)filterBlock;
+- (NSSet *)filter:(PREDICATE)filterBlock;
+- (NSSet *)groupBy:(FUNCTION1)groupingBlock;
 - (id)head;
 - (Option *)headOption;
 - (NSSet *)join:(NSSet *)toJoin;
-- (id)reduce:(id (^)(id, id))functorBlock;
+- (id)reduce:(FUNCTION2)functorBlock;
 
 - (Sequence *)asSequence;
 - (NSArray *)asArray;

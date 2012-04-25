@@ -3,12 +3,20 @@
 
 @implementation NSSet (Functional)
 
+- (Option *)find:(PREDICATE)filterBlock {
+    return [[self asSequence] find:filterBlock];
+}
+
 - (NSSet *)filter:(BOOL (^)(id))filterBlock {
     return [[[self asSequence] filter:filterBlock] asSet];
 }
 
 - (id)fold:(id)value with:(id (^)(id, id))functorBlock {
     return [[self asSequence] fold:value with:functorBlock];
+}
+
+- (NSSet *)groupBy:(FUNCTION1)groupingBlock {
+    return [[[self asSequence] groupBy:groupingBlock] asSet];
 }
 
 - (id)head {
