@@ -234,7 +234,7 @@
     return [[self asArray] asDictionary];
 }
 
-- (NSArray *)asArray {
+- (NSMutableArray *)asArray {
     NSEnumerator *itemsEnumerator = [self toEnumerator];
     NSMutableArray *collect = [NSMutableArray array];
     id object;

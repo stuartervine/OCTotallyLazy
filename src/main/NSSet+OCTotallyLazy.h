@@ -13,7 +13,7 @@
 - (id)reduce:(FUNCTION2)functorBlock;
 
 - (Sequence *)asSequence;
-- (NSArray *)asArray;
+- (NSMutableArray *)asArray;
 @end
 
 static NSSet *set() {
