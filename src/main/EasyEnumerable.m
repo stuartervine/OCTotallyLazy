@@ -11,15 +11,11 @@
 }
 
 +(EasyEnumerable *)with:(NSEnumerator *(^)())aConvertToEnumerator {
-    return [[[EasyEnumerable alloc] initWith:aConvertToEnumerator] autorelease];
+    return [[EasyEnumerable alloc] initWith:aConvertToEnumerator];
 }
 
 - (NSEnumerator *)toEnumerator {
     return convertToEnumerator();
 }
 
-- (void)dealloc {
-    [convertToEnumerator release];
-    [super dealloc];
-}
 @end

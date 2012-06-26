@@ -33,11 +33,7 @@
 }
 
 +(Queue *)queue {
-    return [[[Queue alloc]init] autorelease];
+    return [[Queue alloc]init];
 }
 
-- (void)dealloc {
-    [queue release];
-    [super dealloc];
-}
 @end

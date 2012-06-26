@@ -43,7 +43,7 @@
 - (Sequence *)zip:(Sequence *)otherSequence;
 - (Sequence *)zipWithIndex;
 
-- (NSArray *)asArray;
+- (NSMutableArray *)asArray;
 - (NSSet *)asSet;
 - (NSDictionary *)asDictionary;
 

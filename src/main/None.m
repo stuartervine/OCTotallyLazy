@@ -6,7 +6,7 @@
 
 @implementation None
 + (Option *)none {
-   return [[[None alloc] init] autorelease];
+   return [[None alloc] init];
 }
 
 - (BOOL)isEmpty {

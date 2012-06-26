@@ -4,10 +4,10 @@
 @implementation NSDictionary (Functional)
 
 - (NSMutableDictionary * (^)(NSMutableDictionary *, id))addObjectForKey {
-    return [[^(NSMutableDictionary *dict, id key) {
+    return [^(NSMutableDictionary *dict, id key) {
                 [dict setObject:[self objectForKey:key] forKey:key];
                 return dict;
-            } copy] autorelease];
+            } copy];
 }
 
 - (NSDictionary *)filterKeys:(BOOL (^)(id))filterBlock {

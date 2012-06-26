@@ -43,7 +43,7 @@
     return [Sequence with:self];
 }
 
-- (NSArray *)asArray {
+- (NSMutableArray *)asArray {
     return [[self asSequence] asArray];
 }
 

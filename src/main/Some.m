@@ -8,12 +8,12 @@
 
 -(Option *)initWithValue:(id <NSObject>)aValue {
     self = [super init];
-    value = [aValue retain];
+    value = aValue;
     return self;
 }
 
 + (Option *)some:(id)value {
-    return [[[Some alloc] initWithValue: value] autorelease];
+    return [[Some alloc] initWithValue: value];
 }
 
 - (BOOL)isEmpty {
@@ -59,9 +59,5 @@
     return [SingleValueEnumerator singleValue:value];
 }
 
-- (void)dealloc {
-    [value release];
-    [super dealloc];
-}
 
 @end

@@ -2,71 +2,71 @@
 
 static PREDICATE TL_alternate(BOOL startState) {
     __block BOOL state = !startState;
-    return [[^(id item) {
+    return [^(id item) {
         state = !state;
         return state;
-    } copy] autorelease];
+    } copy];
 }
 static PREDICATE TL_and(PREDICATE left, PREDICATE right) {
-    return [[^(id item) {
+    return [^(id item) {
         return left(item) && right(item);
-    } copy] autorelease];
+    } copy];
 }
 static PREDICATE TL_or(PREDICATE left, PREDICATE right) {
-    return [[^(id item) {
+    return [^(id item) {
         return left(item) || right(item);
-    } copy] autorelease];
+    } copy];
 }
 static PREDICATE TL_countTo(int n) {
     __block int count = n;
-    return [[^(id item) {
+    return [^(id item) {
         return (count-- > 0);
-    } copy] autorelease];
+    } copy];
 
 }
 static PREDICATE TL_containedIn(NSArray *existing) {
-    return [[^(id item) { return [existing containsObject:item];} copy] autorelease];
+    return [^(id item) { return [existing containsObject:item];} copy];
 }
 static PREDICATE TL_containsString(NSString *toMatch) {
-    return [[^(id item) { return [[item description] rangeOfString:toMatch].length > 0;} copy] autorelease];
+    return [^(id item) { return [[item description] rangeOfString:toMatch].length > 0;} copy];
 }
 static PREDICATE TL_equalTo(id comparable) {
-    return [[^(id item) { return (BOOL)[item isEqual:comparable]; } copy] autorelease];
+    return [^(id item) { return (BOOL)[item isEqual:comparable]; } copy];
 }
 static PREDICATE TL_everyNth(int n) {
     __block int count = 0;
-    return [[^(id item) {
+    return [^(id item) {
         count++;
         if (count == n) {
             count = 0;
             return TRUE;
         }
         return FALSE;
-    } copy] autorelease];
+    } copy];
 }
 static PREDICATE TL_greaterThan(NSNumber *comparable) {
-    return [[^(NSNumber *item) { return item.doubleValue > comparable.doubleValue;} copy] autorelease];
+    return [^(NSNumber *item) { return item.doubleValue > comparable.doubleValue;} copy];
 }
 static PREDICATE TL_lessThan(NSNumber *comparable) {
-    return [[^(NSNumber *item) { return item.doubleValue < comparable.doubleValue;} copy] autorelease];
+    return [^(NSNumber *item) { return item.doubleValue < comparable.doubleValue;} copy];
 }
 static PREDICATE TL_lessThanOrEqualTo(NSNumber *comparable) {
-    return [[^(NSNumber *item) { return item.doubleValue <= comparable.doubleValue;} copy] autorelease];
+    return [^(NSNumber *item) { return item.doubleValue <= comparable.doubleValue;} copy];
 }
 static PREDICATE TL_not(PREDICATE predicate) {
-    return [[^(id item) {
+    return [^(id item) {
         return !predicate(item);
-    } copy] autorelease];
+    } copy];
 }
 static PREDICATE TL_startsWith(NSString *prefix) {
-    return [[^(NSString *item) { return [item hasPrefix:prefix];} copy] autorelease];
+    return [^(NSString *item) { return [item hasPrefix:prefix];} copy];
 }
 static PREDICATE TL_whileTrue(PREDICATE predicate) {
     __block BOOL boolState = TRUE;
-    return [[^(id item) {
+    return [^(id item) {
         boolState = boolState && predicate(item);
         return boolState;
-    } copy] autorelease];
+    } copy];
 }
 
 #ifdef TL_LAMBDA

@@ -9,8 +9,8 @@
 
 - (MergeEnumerator *)initWith:(NSEnumerator *)leftEnumerator toMerge:(NSEnumerator *)rightEnumerator {
     self = [super init];
-    left = [leftEnumerator retain];
-    right = [rightEnumerator retain];
+    left = leftEnumerator;
+    right = rightEnumerator;
     return self;
 }
 
@@ -23,14 +23,9 @@
     return sequence(leftItem, rightItem, nil);
 }
 
-- (void)dealloc {
-    [left release];
-    [right release];
-    [super dealloc];
-}
 
 + (MergeEnumerator *)with:(NSEnumerator *)leftEnumerator toMerge:(NSEnumerator *)rightEnumerator {
-    return [[[MergeEnumerator alloc] initWith:leftEnumerator toMerge:rightEnumerator] autorelease];
+    return [[MergeEnumerator alloc] initWith:leftEnumerator toMerge:rightEnumerator];
 }
 
 @end

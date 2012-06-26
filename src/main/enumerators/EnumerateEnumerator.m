@@ -21,14 +21,9 @@
 }
 
 
-- (void)dealloc {
-    [callableFunc release];
-    [seed release];
-    [super dealloc];
-}
 
 + (EnumerateEnumerator *)withCallable:(id (^)(NSNumber *))callableFunc seed:(NSNumber *)aSeed {
-    return [[[EnumerateEnumerator alloc] initWithCallable:callableFunc seed:aSeed] autorelease];
+    return [[EnumerateEnumerator alloc] initWithCallable:callableFunc seed:aSeed];
 }
 
 @end

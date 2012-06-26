@@ -5,21 +5,21 @@ typedef NSNumber *(^CALLABLE_TO_NUMBER)(id);
 typedef NSString *(^ACCUMULATOR_TO_STRING)(id, id);
 
 static CALLABLE_TO_STRING TL_upperCase() {
-    return [[^(id <NSObject> item) {
+    return [^(id <NSObject> item) {
         return [item description].uppercaseString;
-    } copy] autorelease];
+    } copy];
 }
 
 static ACCUMULATOR_TO_STRING TL_appendWithSeparator(NSString *separator) {
-    return [[^(id left, id right) {
+    return [^(id left, id right) {
         return [[[left description] stringByAppendingString:separator] stringByAppendingString:[right description]];
-    } copy] autorelease];
+    } copy];
 }
 
 static CALLABLE_TO_NUMBER TL_increment() {
-    return [[^(NSNumber *item) {
+    return [^(NSNumber *item) {
         return [NSNumber numberWithLong:item.longValue + 1];
-    } copy] autorelease];
+    } copy];
 }
 
 @interface Callables : NSObject

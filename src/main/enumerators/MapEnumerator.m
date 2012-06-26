@@ -8,13 +8,13 @@
 
 - (MapEnumerator *)initWithEnumerator:(NSEnumerator *)anEnumerator andFunction:(id (^)(id))aFunc {
     self = [super init];
-    enumerator = [anEnumerator retain];
+    enumerator = anEnumerator;
     func = [aFunc copy];
     return self;
 }
 
 + (NSEnumerator *)withEnumerator:(NSEnumerator *)enumerator andFunction:(id (^)(id))func {
-    return [[[MapEnumerator alloc] initWithEnumerator:enumerator andFunction:func] autorelease];
+    return [[MapEnumerator alloc] initWithEnumerator:enumerator andFunction:func];
 }
 
 - (id)nextObject {
@@ -22,11 +22,6 @@
     return (item == nil) ? nil : func(item);
 }
 
-- (void)dealloc {
-    [enumerator release];
-    [func release];
-    [super dealloc];
-}
 
 
 @end

@@ -4,7 +4,7 @@
 @implementation EmptyEnumerator
 
 + (NSEnumerator *)emptyEnumerator {
-    return [[[EmptyEnumerator alloc] init] autorelease];
+    return [[EmptyEnumerator alloc] init];
 }
 
 - (id)nextObject {

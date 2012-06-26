@@ -9,7 +9,7 @@
 
 - (GroupedEnumerator *)initWithEnumerator:(NSEnumerator *)anEnumerator groupSize:(int)aGroupSize {
     self = [super init];
-    enumerator = [anEnumerator retain];
+    enumerator = anEnumerator;
     groupSize = aGroupSize;
     return self;
 }
@@ -26,13 +26,9 @@
     return (position == 0) ? nil : collect;
 }
 
-- (void)dealloc {
-    [enumerator release];
-    [super dealloc];
-}
 
 + (GroupedEnumerator *)with:(NSEnumerator *)enumerator groupSize:(int)groupSize {
- return [[[GroupedEnumerator alloc] initWithEnumerator:enumerator groupSize:groupSize] autorelease];
+ return [[GroupedEnumerator alloc] initWithEnumerator:enumerator groupSize:groupSize];
 
 }
 @end
