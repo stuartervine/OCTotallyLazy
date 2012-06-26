@@ -11,8 +11,8 @@
 
 - (Pair *)initWithLeft:(id)aLeft right:(id)aRight {
     self = [super init];
-    _left = [aLeft retain];
-    _right = [aRight retain];
+    _left = aLeft;
+    _right = aRight;
     return self;
 }
 
@@ -21,7 +21,7 @@
 }
 
 + (Pair *)left:(id)aLeft right:(id)aRight {
-    return [[[Pair alloc] initWithLeft:aLeft right:aRight] autorelease];
+    return [[Pair alloc] initWithLeft:aLeft right:aRight];
 }
 
 - (BOOL)isEqual:(id)object {
@@ -36,11 +36,6 @@
     return [NSString stringWithFormat:@"[Pair left:(%@) right:(%@)]", [self.left description], [self.right description]];
 }
 
-- (void)dealloc {
-    [_right release];
-    [_left release];
-    [super dealloc];
-}
 
 
 @end

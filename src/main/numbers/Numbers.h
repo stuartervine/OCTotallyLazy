@@ -1,41 +1,41 @@
 #import "Types.h"
 
 static FUNCTION2 TL_sum() {
-    return [[^(NSNumber *a, NSNumber *b) {
+    return [^(NSNumber *a, NSNumber *b) {
         return [NSNumber numberWithDouble:a.doubleValue + b.doubleValue];
-    } copy] autorelease];
+    } copy];
 }
 
 static FUNCTION2 TL_average() {
     __block int count = 1;
-    return [[^(NSNumber *previousAverage, NSNumber *number) {
+    return [^(NSNumber *previousAverage, NSNumber *number) {
         count++;
         return [NSNumber numberWithDouble:previousAverage.doubleValue + ((number.doubleValue - previousAverage.doubleValue)/count)];
-    } copy] autorelease];
+    } copy];
 }
 
 static FUNCTION1 TL_multiplyBy(NSNumber *multiplier) {
-    return [[^(NSNumber *number) {
+    return [^(NSNumber *number) {
         return [NSNumber numberWithDouble:number.doubleValue * multiplier.doubleValue];
-    } copy] autorelease];
+    } copy];
 }
 
 static FUNCTION1 TL_divideBy(NSNumber *divisor) {
-    return [[^(NSNumber *number) {
+    return [^(NSNumber *number) {
         return [NSNumber numberWithDouble:number.doubleValue / divisor.doubleValue];
-    } copy] autorelease];
+    } copy];
 }
 
 static FUNCTION1 TL_add(NSNumber *addition) {
-    return [[^(NSNumber *number) {
+    return [^(NSNumber *number) {
         return [NSNumber numberWithDouble:number.doubleValue + addition.doubleValue];
-    } copy] autorelease];
+    } copy];
 }
 
 static FUNCTION1 TL_subtract(NSNumber *subtractor) {
-    return [[^(NSNumber *number) {
+    return [^(NSNumber *number) {
         return [NSNumber numberWithDouble:number.doubleValue - subtractor.doubleValue];
-    } copy] autorelease];
+    } copy];
 }
 
 #ifdef TL_SHORTHAND

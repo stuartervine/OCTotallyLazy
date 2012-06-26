@@ -11,8 +11,8 @@
 
 - (NSEnumerator *)initWith:(NSEnumerator *)anEnumerator predicate:(PREDICATE)aPredicate {
     self = [super init];
-    enumerator = [anEnumerator retain];
-    predicate = [aPredicate retain];
+    enumerator = anEnumerator;
+    predicate = aPredicate;
     return self;
 
 }
@@ -22,13 +22,8 @@
     return predicate(item) ? item : nil;
 }
 
-- (void)dealloc {
-    [enumerator release];
-    [predicate release];
-    [super dealloc];
-}
 
 + (NSEnumerator *)with:(NSEnumerator *)anEnumerator predicate:(PREDICATE)predicate {
-    return [[[TakeWhileEnumerator alloc] initWith:anEnumerator predicate:predicate] autorelease];
+    return [[TakeWhileEnumerator alloc] initWith:anEnumerator predicate:predicate];
 }
 @end

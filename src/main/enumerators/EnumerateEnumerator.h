@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
 @interface EnumerateEnumerator : NSEnumerator
-@property(nonatomic, retain) NSNumber *seed;
+@property(nonatomic) NSNumber *seed;
 
 - (EnumerateEnumerator *)initWithCallable:(id (^)(NSNumber *))aCallableFunc seed:(NSNumber *)aSeed;
 

@@ -2,7 +2,7 @@
 #import "Sequence.h"
 
 @interface Group : Sequence
-@property(nonatomic, retain) id <NSObject> key;
+@property(nonatomic) id <NSObject> key;
 
 - (Group *)initWithKey:(id)aKey enumerable:(id <Enumerable>)anEnumerable;
 
