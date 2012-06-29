@@ -105,9 +105,9 @@
 		BC7772EA1513392400F4FFA0 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9F /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FFA2 /* PairTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA1 /* PairTest.m */; };
 		BC7772EA1513392400F4FFA4 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA3 /* Group.m */; };
-		BC7772EA1513392400F4FFA6 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA5 /* Group.h */; };
+		BC7772EA1513392400F4FFA6 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA5 /* Group.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FFA8 /* MergeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */; };
-		BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */; };
+		BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -463,11 +463,11 @@
 				BC7772EA1513392400F4FFA0 /* Types.h in Headers */,
 				BC7772EA1513392400F4FF84 /* Callables.h in Headers */,
 				BC7772EA1513392400F4FF8E /* PartitionEnumerator.h in Headers */,
+				BC7772EA1513392400F4FFA6 /* Group.h in Headers */,
+				BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF92 /* Queue.h in Headers */,
 				BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */,
 				BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */,
-				BC7772EA1513392400F4FFA6 /* Group.h in Headers */,
-				BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
