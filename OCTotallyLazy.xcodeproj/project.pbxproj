@@ -108,6 +108,8 @@
 		BC7772EA1513392400F4FFA6 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA5 /* Group.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7772EA1513392400F4FFA8 /* MergeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */; };
 		BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7772EA1513392400F4FFAC /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFAB /* Numbers.m */; };
+		BC7772EA1513392400F4FFAE /* Predicates.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFAD /* Predicates.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +123,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC49C43014E05A8200BE88D2 /* OCTotallyLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCTotallyLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC49C43314E05A8200BE88D2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		BC60930D14EC2E9100A59CDD /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = external/Test/OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		BC60930F14EC2EA200A59CDD /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = external/Test/OCMock/libOCMock.a; sourceTree = "<group>"; };
@@ -212,6 +213,8 @@
 		BC7772EA1513392400F4FFA5 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeEnumerator.m; sourceTree = "<group>"; };
 		BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeEnumerator.h; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FFAB /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
+		BC7772EA1513392400F4FFAD /* Predicates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Predicates.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,7 +255,6 @@
 		BC49C43114E05A8200BE88D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC49C43014E05A8200BE88D2 /* OCTotallyLazy.framework */,
 				BC76515614E0706800559503 /* test-unit.octest */,
 			);
 			name = Products;
@@ -393,6 +395,7 @@
 		BC7772EA1513392400F4FF97 /* numbers */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FFAB /* Numbers.m */,
 				BC7772EA1513392400F4FF98 /* Numbers.h */,
 			);
 			path = numbers;
@@ -409,6 +412,7 @@
 		BC7772EA1513392400F4FF9B /* predicates */ = {
 			isa = PBXGroup;
 			children = (
+				BC7772EA1513392400F4FFAD /* Predicates.m */,
 				BC7772C6151338ED00F4FF4A /* Predicates.h */,
 			);
 			path = predicates;
@@ -489,7 +493,6 @@
 			);
 			name = OCTotallyLazy;
 			productName = Funcky;
-			productReference = BC49C43014E05A8200BE88D2 /* OCTotallyLazy.framework */;
 			productType = "com.apple.product-type.bundle";
 		};
 		BC76515514E0706800559503 /* test-unit */ = {
@@ -619,6 +622,8 @@
 				BC7772EA1513392400F4FF96 /* MemoisedSequence.m in Sources */,
 				BC7772EA1513392400F4FFA4 /* Group.m in Sources */,
 				BC7772EA1513392400F4FFA8 /* MergeEnumerator.m in Sources */,
+				BC7772EA1513392400F4FFAC /* Numbers.m in Sources */,
+				BC7772EA1513392400F4FFAE /* Predicates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
