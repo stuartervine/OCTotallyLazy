@@ -3,8 +3,8 @@
 
 @interface Pair : NSObject
 
-@property(nonatomic, retain, readonly) id left;
-@property(nonatomic, retain, readonly) id right;
+@property(nonatomic, readonly) id left;
+@property(nonatomic, readonly) id right;
 
 - (Pair *)initWithLeft:(id)aKey right:(id)aValue;
 - (Sequence *)toSequence;

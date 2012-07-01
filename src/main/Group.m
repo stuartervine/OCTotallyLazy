@@ -12,12 +12,8 @@
     return self;
 }
 
-- (void)dealloc {
-    [key release];
-    [super dealloc];
-}
 
 +(Group *)group:(id)key enumerable:(id<Enumerable>)enumerable {
-    return [[[Group alloc] initWithKey:key enumerable:enumerable] autorelease];
+    return [[Group alloc] initWithKey:key enumerable:enumerable];
 }
 @end

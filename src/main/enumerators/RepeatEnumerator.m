@@ -7,7 +7,7 @@
 }
 - (RepeatEnumerator *)initWith:(MemoisedEnumerator *)anEnumerator {
     self = [super init];
-    enumerator = [anEnumerator retain];
+    enumerator = anEnumerator;
     return self;
 }
 
@@ -16,12 +16,8 @@
     return (item == nil) ? [enumerator firstObject] : item;
 }
 
-- (void)dealloc {
-    [enumerator release];
-    [super dealloc];
-}
 
 + (RepeatEnumerator *)with:(MemoisedEnumerator *)anEnumerator {
-    return [[[RepeatEnumerator alloc] initWith:anEnumerator] autorelease];
+    return [[RepeatEnumerator alloc] initWith:anEnumerator];
 }
 @end

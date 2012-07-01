@@ -9,15 +9,11 @@
 
 - (FlattenEnumerator *)initWithEnumerator:(NSEnumerator *)anEnumerator {
     self = [super init];
-    enumerator = [anEnumerator retain];
+    enumerator = anEnumerator;
     currentEnumerator = [EmptyEnumerator emptyEnumerator];
     return self;
 }
 
-- (void)dealloc {
-    [enumerator release];
-    [super dealloc];
-}
 
 - (id)nextObject {
     id item;
@@ -33,7 +29,7 @@
 }
 
 + (NSEnumerator *)withEnumerator:(NSEnumerator *)enumerator {
-    return [[[FlattenEnumerator alloc] initWithEnumerator:enumerator] autorelease];
+    return [[FlattenEnumerator alloc] initWithEnumerator:enumerator];
 }
 
 @end

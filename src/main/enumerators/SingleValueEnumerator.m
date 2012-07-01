@@ -7,14 +7,14 @@
 }
 - (SingleValueEnumerator *)initWithValue:(id)aValue {
     self = [super init];
-    value = [aValue retain];
+    value = aValue;
     valueRetrieved = FALSE;
     return self;
 
 }
 
 + (SingleValueEnumerator *)singleValue:(id)value {
-    return [[[SingleValueEnumerator alloc] initWithValue:value] autorelease];
+    return [[SingleValueEnumerator alloc] initWithValue:value];
 }
 
 - (id)nextObject {
@@ -25,9 +25,5 @@
     return value;
 }
 
-- (void)dealloc {
-    [value release];
-    [super dealloc];
-}
 
 @end

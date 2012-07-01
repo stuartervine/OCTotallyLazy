@@ -42,17 +42,12 @@
 
 - (MemoisedEnumerator *)initWith:(NSEnumerator *)anEnumerator memory:(NSMutableArray *)aMemory {
     self = [super init];
-    enumerator = [anEnumerator retain];
-    memory = [aMemory retain];
+    enumerator = anEnumerator;
+    memory = aMemory;
     position = 0;
     return self;
 }
 
-- (void)dealloc {
-    [enumerator release];
-    [memory release];
-    [super dealloc];
-}
 
 - (id)firstObject {
     position = 0;
@@ -64,10 +59,10 @@
 }
 
 + (MemoisedEnumerator *)with:(NSEnumerator *)enumerator {
-    return [[[MemoisedEnumerator alloc] initWith:enumerator memory:[NSMutableArray array]] autorelease];
+    return [[MemoisedEnumerator alloc] initWith:enumerator memory:[NSMutableArray array]];
 }
 
 + (MemoisedEnumerator *)with:(NSEnumerator *)enumerator memory:(NSMutableArray *)memory {
-    return [[[MemoisedEnumerator alloc] initWith:enumerator memory:memory] autorelease];
+    return [[MemoisedEnumerator alloc] initWith:enumerator memory:memory];
 }
 @end

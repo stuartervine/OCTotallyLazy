@@ -26,22 +26,15 @@
 
 - (PartitionEnumerator *)initWith:(NSEnumerator *)anEnumerator predicate:(PREDICATE)aPredicate matched:(Queue *)aMatched unmatched:(Queue *)anUnmatched {
     self = [super init];
-    underlyingEnumerator = [anEnumerator retain];
+    underlyingEnumerator = anEnumerator;
     predicate = [aPredicate copy];
-    matched = [aMatched retain];
-    unmatched = [anUnmatched retain];
+    matched = aMatched;
+    unmatched = anUnmatched;
     return self;
 }
 
-- (void)dealloc {
-    [underlyingEnumerator release];
-    [predicate release];
-    [matched release];
-    [unmatched release];
-    [super dealloc];
-}
 
 + (PartitionEnumerator *)with:(NSEnumerator *)enumerator predicate:(PREDICATE)predicate matched:(Queue *)matched unmatched:(Queue *)unmatched {
-    return [[[PartitionEnumerator alloc] initWith:enumerator predicate:predicate matched:matched unmatched:unmatched] autorelease];
+    return [[PartitionEnumerator alloc] initWith:enumerator predicate:predicate matched:matched unmatched:unmatched];
 }
 @end

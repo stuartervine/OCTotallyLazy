@@ -99,7 +99,7 @@
 }
 
 - (NSArray *)reverse {
-    NSMutableArray *collectedArray = [[[NSMutableArray alloc] init] autorelease];
+    NSMutableArray *collectedArray = [[NSMutableArray alloc] init];
     NSEnumerator *reversed = [self reverseObjectEnumerator];
     id object;
     while ((object = reversed.nextObject)) {

@@ -8,8 +8,8 @@
 }
 - (PairEnumerator *)initWithLeft:(NSEnumerator *)leftEnumerator right:(NSEnumerator *)rightEnumerator {
     self = [super init];
-    left = [leftEnumerator retain];
-    right = [rightEnumerator retain];
+    left = leftEnumerator;
+    right = rightEnumerator;
     return self;
 }
 
@@ -23,14 +23,9 @@
 }
 
 
-- (void)dealloc {
-    [left release];
-    [right release];
-    [super dealloc];
-}
 
 + (PairEnumerator *)withLeft:(NSEnumerator *)leftEnumerator right:(NSEnumerator *)rightEnumerator {
-    return [[[PairEnumerator alloc] initWithLeft:leftEnumerator right:rightEnumerator] autorelease];
+    return [[PairEnumerator alloc] initWithLeft:leftEnumerator right:rightEnumerator];
 }
 
 @end

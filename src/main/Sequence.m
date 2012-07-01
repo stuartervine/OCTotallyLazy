@@ -21,16 +21,11 @@
 
 - (Sequence *)initWith:(id <Enumerable>)anEnumerable {
     self = [super init];
-    enumerable = [anEnumerable retain];
-    forwardOnlyEnumerator = [[enumerable toEnumerator] retain];
+    enumerable = anEnumerable;
+    forwardOnlyEnumerator = [enumerable toEnumerator];
     return self;
 }
 
-- (void)dealloc {
-    [enumerable release];
-    [forwardOnlyEnumerator release];
-    [super dealloc];
-}
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id[])buffer count:(NSUInteger)len {
     return [forwardOnlyEnumerator countByEnumeratingWithState:state objects:buffer count:len];
@@ -232,7 +227,7 @@
 }
 
 + (Sequence *)with:(id <Enumerable>)enumerable {
-    return [[[Sequence alloc] initWith:enumerable] autorelease];
+    return [[Sequence alloc] initWith:enumerable];
 }
 
 - (NSDictionary *)asDictionary {
