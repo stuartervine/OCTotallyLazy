@@ -4,6 +4,9 @@
     <content url="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/OCTotallyLazy-7fa6b0e5/Build/Products/Debug-iphonesimulator/OCTotallyLazy.framework">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/OCTotallyLazy-7fa6b0e5/Build/Products/Debug-iphonesimulator/OCTotallyLazy.framework" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/OCTotallyLazy-7fa6b0e5/Build/Products/Debug-iphonesimulator/test-unit.octest">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/OCTotallyLazy-7fa6b0e5/Build/Products/Debug-iphonesimulator/test-unit.octest" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

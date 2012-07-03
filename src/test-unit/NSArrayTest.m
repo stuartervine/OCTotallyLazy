@@ -137,9 +137,10 @@ static NSNumber *num(int i) {
 }
 
 - (void)testTakeRight {
-    NSArray *items = [array(@"one", @"two", @"three", nil) asArray];
-    assertThat([items takeRight:2], equalTo([array(@"two", @"three", nil) asArray]));
+    NSArray *items = array(@"one", @"two", @"three", nil);
+    assertThat([items takeRight:2], equalTo(array(@"two", @"three", nil)));
     assertThat([items takeRight:0], empty());
+    assertThat([items takeRight:10], equalTo(array(@"one", @"two", @"three", nil)));
 }
 
 -(void)testToString {

@@ -3,38 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ccabc7cc-750d-4272-be20-3ec0a6705237" name="Default" comment="Attempting to improve the docs.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/OCTotallyLazy.iml" afterPath="$PROJECT_DIR$/.idea/OCTotallyLazy.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/OCTotallyLazy.xcodeproj/project.xcworkspace/xcuserdata/stuartervine.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Callables.m" afterPath="$PROJECT_DIR$/src/main/Callables.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/EasyEnumerable.m" afterPath="$PROJECT_DIR$/src/main/EasyEnumerable.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Group.h" afterPath="$PROJECT_DIR$/src/main/Group.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Group.m" afterPath="$PROJECT_DIR$/src/main/Group.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/MemoisedSequence.m" afterPath="$PROJECT_DIR$/src/main/MemoisedSequence.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" afterPath="$PROJECT_DIR$/src/main/NSDictionary+OCTotallyLazy.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/None.m" afterPath="$PROJECT_DIR$/src/main/None.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Pair.h" afterPath="$PROJECT_DIR$/src/main/Pair.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Pair.m" afterPath="$PROJECT_DIR$/src/main/Pair.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Queue.m" afterPath="$PROJECT_DIR$/src/main/Queue.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sequence.m" afterPath="$PROJECT_DIR$/src/main/Sequence.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Some.m" afterPath="$PROJECT_DIR$/src/main/Some.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/EmptyEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/EmptyEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/EnumerateEnumerator.h" afterPath="$PROJECT_DIR$/src/main/enumerators/EnumerateEnumerator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/EnumerateEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/EnumerateEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/FilterEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/FlattenEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/FlattenEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/GroupedEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/GroupedEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/MapEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/MapEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/MemoisedEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/MemoisedEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/PairEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/PairEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/PartitionEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/PartitionEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/RepeatEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/RepeatEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/SingleValueEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/SingleValueEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/enumerators/TakeWhileEnumerator.m" afterPath="$PROJECT_DIR$/src/main/enumerators/TakeWhileEnumerator.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/numbers/Numbers.m" afterPath="$PROJECT_DIR$/src/main/numbers/Numbers.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/predicates/Predicates.m" afterPath="$PROJECT_DIR$/src/main/predicates/Predicates.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/NSArrayTest.m" afterPath="$PROJECT_DIR$/src/test-unit/NSArrayTest.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" afterPath="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
     </list>
     <ignored path="Funcky.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,88 +31,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Option.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Option.m">
+      <file leaf-file-name="Sequence.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="27" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+            <state line="35" column="14" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MergeEnumerator.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m">
+      <file leaf-file-name="NSArray+OCTotallyLazy.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+            <state line="138" column="50" selection-start="3753" selection-end="3753" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Callables.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Callables.m">
+      <file leaf-file-name="PartitionEnumerator.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/enumerators/PartitionEnumerator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1341180556000" expanded="true" signature="48:856" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Numbers.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/numbers/Numbers.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
+            <state line="16" column="12" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Predicates.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.m">
+      <file leaf-file-name="Queue.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Queue.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="4" selection-start="2118" selection-end="2118" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1341180557000" expanded="true" signature="50:2114" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pair.h" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Pair.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="3" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2260274">
+            <state line="8" column="12" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Predicates.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.h">
+      <file leaf-file-name="MemoisedEnumerator.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/enumerators/MemoisedEnumerator.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="29" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1341091586000" expanded="true" signature="1160:1209" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Numbers.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/numbers/Numbers.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
+            <state line="39" column="15" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Callables.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Callables.h">
+      <file leaf-file-name="MemoisedSequence.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/MemoisedSequence.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+            <state line="19" column="16" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemoisedSequence.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/MemoisedSequence.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="17" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceTest.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="16" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sequence.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="189" column="1" selection-start="5322" selection-end="5322" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSArrayTest.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test-unit/NSArrayTest.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="3" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.43867925">
               <folding />
             </state>
           </provider>
@@ -156,10 +134,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Sequence.m" />
-        <option value="$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m" />
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/NSArray+OCTotallyLazy.h" />
-        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h" />
         <option value="$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.m" />
         <option value="$PROJECT_DIR$/README.markdown" />
@@ -172,6 +147,9 @@
         <option value="$PROJECT_DIR$/src/main/predicates/Predicates.h" />
         <option value="$PROJECT_DIR$/src/main/predicates/Predicates.m" />
         <option value="$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Pair.h" />
+        <option value="$PROJECT_DIR$/src/test-unit/SequenceTest.m" />
+        <option value="$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m" />
+        <option value="$PROJECT_DIR$/src/test-unit/NSArrayTest.m" />
       </list>
     </option>
   </component>
@@ -214,7 +192,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="DirectoryView.Xcode" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -226,30 +204,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="DirectoryView.Xcode">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frameworks" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeFrameworksVirtualNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,22 +229,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test-unit" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,27 +247,29 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="predicates" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="DirectoryView.Xcode">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="OCTotallyLazy" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Frameworks" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeFrameworksVirtualNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCTotallyLazy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeDirectoryView$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OCTotallyLazy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -344,8 +286,32 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.OCTotallyLazy">
+  <component name="RunManager" selected="OCUnit.-[NSArrayTest testTakeRight]">
     <configuration default="false" name="-[SequenceTest testGroupBy]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[SequenceTest testGroupBy]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.0_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testGroupBy">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[SequenceTest testSplitWhenNoMatchFound]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[SequenceTest testSplitWhenNoMatchFound]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.1_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testSplitWhenNoMatchFound">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[NSArrayTest testSplitWhenNoMatchFound]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[NSArrayTest testSplitWhenNoMatchFound]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.1_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSArrayTest" TEST_METHOD="testSplitWhenNoMatchFound">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[SequenceTest testTailOnEmptySequence]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[SequenceTest testTailOnEmptySequence]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.1_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="SequenceTest" TEST_METHOD="testTailOnEmptySequence">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="-[NSArrayTest testTakeRight]" type="OCUnitRunConfiguration" factoryName="OCUnit" temporary="true" SCHEME_NAME="-[NSArrayTest testTakeRight]" PROJECT_NAME="OCTotallyLazy" TARGET_NAME="test-unit" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.1_1" DEBUGGER="GDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE" TEST_CLASS="NSArrayTest" TEST_METHOD="testTakeRight">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
@@ -377,11 +343,15 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.OCTotallyLazy" />
       <item index="1" class="java.lang.String" itemvalue="Application.package" />
       <item index="2" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testGroupBy]" />
       <item index="3" class="java.lang.String" itemvalue="OCUnit.test-unit" />
+      <item index="4" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testSplitWhenNoMatchFound]" />
+      <item index="5" class="java.lang.String" itemvalue="OCUnit.-[NSArrayTest testSplitWhenNoMatchFound]" />
+      <item index="6" class="java.lang.String" itemvalue="OCUnit.-[SequenceTest testTailOnEmptySequence]" />
+      <item index="7" class="java.lang.String" itemvalue="OCUnit.-[NSArrayTest testTakeRight]" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -443,22 +413,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="22" width="1392" height="878" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.45069394" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23593864" sideWeight="0.70541614" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6063408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23593864" sideWeight="0.5957728" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6063408" sideWeight="0.6785975" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40422723" sideWeight="0.9855942" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40422723" sideWeight="0.19284149" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40422723" sideWeight="0.8020453" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945839" sideWeight="0.99856836" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24907613" sideWeight="0.5957728" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -571,76 +541,18 @@
           <url>file://$PROJECT_DIR$/src/test-unit/SequenceTest.m</url>
           <line>124</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m</url>
+          <line>92</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main/Sequence.m</url>
+          <line>132</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/NSSet+OCTotallyLazy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="33" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/enumerators/NSEnumerator+OCTotallyLazy.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="12" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Group.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Callables.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/numbers/Numbers.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="29" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1341091586000" expanded="true" signature="1160:1209" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="4" selection-start="2118" selection-end="2118" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1341180557000" expanded="true" signature="50:2114" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/numbers/Numbers.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
@@ -651,17 +563,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/Callables.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1341180556000" expanded="true" signature="48:856" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/enumerators/MergeEnumerator.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="1" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Option.m">
@@ -671,7 +579,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artifacts/OCTotallyLazy.framework/Headers/Pair.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2260274">
+        <state line="12" column="4" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/predicates/Predicates.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MemoisedSequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MemoisedSequence.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="16" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/MemoisedEnumerator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="15" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Queue.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="12" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/enumerators/PartitionEnumerator.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/SequenceTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="14" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sequence.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="1" selection-start="5322" selection-end="5322" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NSArray+OCTotallyLazy.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="50" selection-start="3753" selection-end="3753" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test-unit/NSArrayTest.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="3" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.43867925">
           <folding />
         </state>
       </provider>

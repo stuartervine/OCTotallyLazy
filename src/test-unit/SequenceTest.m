@@ -175,6 +175,10 @@
     assertThat([[items tail] asArray], hasItems(@"two", @"three", nil));
 }
 
+- (void)testTailOnEmptySequence {
+    [sequence(nil) tail];
+}
+
 - (void)testTake {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     assertThat([[items take:2] asArray], hasItems(@"one", @"two", nil));

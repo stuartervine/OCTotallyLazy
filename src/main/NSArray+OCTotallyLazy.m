@@ -122,7 +122,8 @@
 }
 
 - (NSArray *)tail {
-    return [self takeRight:[self count] - 1];
+    return [[[self asSequence] tail] asArray];
+//    return [self takeRight:[self count] - 1];
 }
 
 - (NSArray *)take:(int)n {
@@ -134,7 +135,8 @@
 }
 
 - (NSArray *)takeRight:(int)n {
-    return [self subarrayWithRange:NSMakeRange([self count] - n, (NSUInteger) n)];
+    int toTake = (n > [self count]) ? [self count] : (NSUInteger) n;
+    return [self subarrayWithRange:NSMakeRange([self count] - toTake, (NSUInteger) toTake)];
 }
 
 - (NSEnumerator *)toEnumerator {
