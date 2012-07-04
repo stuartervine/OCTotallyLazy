@@ -768,7 +768,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/Vendor/Test\"",
 					"\"$(SRCROOT)/Products\"",
 					"\"$(SRCROOT)/artifacts\"",
 					"\"$(SRCROOT)/external/Test\"",
@@ -811,7 +810,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/Vendor/Test\"",
 					"\"$(SRCROOT)/Products\"",
 					"\"$(SRCROOT)/artifacts\"",
 					"\"$(SRCROOT)/external/Test\"",
