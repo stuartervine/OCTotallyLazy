@@ -59,5 +59,8 @@
     return [SingleValueEnumerator singleValue:value];
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    return [Some some:value];
+}
 
 @end

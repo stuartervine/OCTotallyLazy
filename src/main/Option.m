@@ -58,4 +58,9 @@
     return [self isEmpty] ? [None none] : [[[self asSequence] flatten] headOption];
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
 @end

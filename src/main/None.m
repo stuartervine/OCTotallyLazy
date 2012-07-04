@@ -42,6 +42,10 @@
     return [Some some:seed];
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    return [None none];
+}
+
 - (NSEnumerator *)toEnumerator {
     return [EmptyEnumerator emptyEnumerator];
 }

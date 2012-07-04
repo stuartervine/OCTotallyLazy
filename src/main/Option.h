@@ -5,7 +5,7 @@
 #import "Flattenable.h"
 @class Sequence;
 
-@interface Option : NSObject <Mappable, Foldable, Enumerable, Flattenable>
+@interface Option : NSObject <NSCopying, Mappable, Foldable, Enumerable, Flattenable>
 -(BOOL)isEmpty;
 -(id)get;
 -(id)getOrElse:(id)other;

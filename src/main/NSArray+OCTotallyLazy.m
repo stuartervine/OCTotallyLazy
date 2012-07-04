@@ -48,17 +48,27 @@
 - (NSArray *)groupBy:(FUNCTION1)groupingBlock {
     NSMutableDictionary *keysAndValues = [NSMutableDictionary dictionary];
     NSMutableArray *keys = [NSMutableArray array];
+    NSMutableArray *nilKeyItems = [NSMutableArray array];
     [self foreach:^(id item) {
         id key = groupingBlock(item);
-        if (![keys containsObject:key]) {
-            [keys addObject:key];
-            [keysAndValues setObject:[NSMutableArray array] forKey:key];
+        if (key) {
+            if (![keys containsObject:key]) {
+                [keys addObject:key];
+                [keysAndValues setObject:[NSMutableArray array] forKey:key];
+            }
+            [[keysAndValues objectForKey:key] addObject:item];
+        } else {
+            [nilKeyItems addObject:item];
         }
-        [[keysAndValues objectForKey:key] addObject:item];
     }];
-    return [keys map:^(id key) {
+    NSArray *keyedGroups = [keys map:^(id key) {
         return [Group group:key enumerable:[keysAndValues objectForKey:key]];
     }];
+    NSArray *unkeyedGroups = [nilKeyItems map:^(id item) {
+        return [Group group:nil enumerable:array(item, nil)];
+    }];
+//    return keyedGroups;
+    return [keyedGroups arrayByAddingObjectsFromArray:unkeyedGroups];
 }
 
 - (NSArray *)grouped:(int)n {
