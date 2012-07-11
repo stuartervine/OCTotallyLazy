@@ -1,9 +1,7 @@
 #import <SenTestingKit/SenTestingKit.h>
-#import "../main/OCTotallyLazy.h"
-#import "Callables.h"
+#import "OCTotallyLazy.h"
 
 #define HC_SHORTHAND
-
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 
 @interface NSDictionaryTest : SenTestCase

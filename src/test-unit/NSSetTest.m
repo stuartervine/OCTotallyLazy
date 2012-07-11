@@ -1,9 +1,8 @@
-#import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
-
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
+#import <SenTestingKit/SenTestingKit.h>
+
 #import "NSSet+OCTotallyLazy.h"
-#import "../main/Sequence.h"
 #import "Callables.h"
 
 @interface NSSetTest : SenTestCase

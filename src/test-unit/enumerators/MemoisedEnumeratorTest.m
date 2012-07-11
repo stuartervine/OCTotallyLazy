@@ -1,5 +1,5 @@
-#import <SenTestingKit/SenTestingKit.h>
 #define TL_COERCIONS
+#import <SenTestingKit/SenTestingKit.h>
 #import "OCTotallyLazy.h"
 #import "OCTotallyLazyTestCase.h"
 #import "MemoisedEnumerator.h"
