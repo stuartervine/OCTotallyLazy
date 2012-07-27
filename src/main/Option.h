@@ -14,6 +14,9 @@
 - (id)flatMap:(id (^)(id))funcBlock;
 
 -(Sequence *)asSequence;
+
+- (void)maybe:(void (^)(id))invokeWhenSomeBlock;
+
 +(id)option:(id)value;
 @end
 

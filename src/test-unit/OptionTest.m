@@ -63,4 +63,17 @@
     assertThat([[Some some:@"bob"] asSequence], hasItems(@"bob", nil));
 }
 
+- (void)testMaybe {
+    __block BOOL someInvokes = NO;
+    __block BOOL noneInvokes = NO;
+    [[None none] maybe:^(id value){
+        noneInvokes = YES;
+    }];
+    [[Some some:@"bob"] maybe:^(id value){
+        someInvokes = YES;
+    }];
+    assertThatBool(noneInvokes, equalToBool(NO));
+    assertThatBool(someInvokes, equalToBool(YES));
+}
+
 @end

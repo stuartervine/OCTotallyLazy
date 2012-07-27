@@ -34,6 +34,10 @@
     return [None none];
 }
 
+- (void)maybe:(void (^)(id))invokeWhenSomeBlock {
+    //Do nothing
+}
+
 - (id)map:(id (^)(id))funcBlock {
     return [None none];
 }
@@ -53,5 +57,7 @@
 - (Sequence *)asSequence {
     return sequence(nil);
 }
+
+
 
 @end

@@ -19,6 +19,16 @@
     return FALSE;
 }
 
+- (id)flatMap:(id (^)(id))funcBlock {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
+- (id)fold:(id)value with:(id (^)(id, id))functorBlock {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
 - (id)get {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
     return nil;
@@ -39,14 +49,8 @@
     return nil;
 }
 
-- (id)flatMap:(id (^)(id))funcBlock {
+- (void)maybe:(void (^)(id))invokeWhenSomeBlock {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
-    return nil;
-}
-
-- (id)fold:(id)value with:(id (^)(id, id))functorBlock {
-    [NSException raise:@"Unsupported" format:@"Unsupported"];
-    return nil;
 }
 
 - (NSEnumerator *)toEnumerator {

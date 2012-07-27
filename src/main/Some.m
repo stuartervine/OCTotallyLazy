@@ -63,4 +63,8 @@
     return [Some some:value];
 }
 
+- (void)maybe:(void (^)(id))invokeWhenSomeBlock {
+    invokeWhenSomeBlock(value);
+}
+
 @end
