@@ -1,19 +1,14 @@
+#define TL_COERCIONS
 #import <SenTestingKit/SenTestingKit.h>
-#import "../main/OCTotallyLazy.h"
-#import "Callables.h"
+#import "OCTotallyLazy.h"
 
 #define HC_SHORTHAND
-
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 
 @interface NSArrayTest : SenTestCase
 @end
 
 @implementation NSArrayTest
-
-static NSNumber *num(int i) {
-    return [NSNumber numberWithInt:i];
-}
 
 -(void)testDrop {
     NSArray *items = array(num(1), num(5), num(7), nil);

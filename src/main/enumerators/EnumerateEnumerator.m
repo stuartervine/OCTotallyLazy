@@ -3,26 +3,24 @@
 
 @implementation EnumerateEnumerator {
     id (^callableFunc)(id);
+    id seed;
 }
-@synthesize seed;
 
-
-- (EnumerateEnumerator *)initWithCallable:(id (^)(NSNumber *))aCallableFunc seed:(NSNumber *)aSeed {
+- (EnumerateEnumerator *)initWithCallable:(id (^)(id))aCallableFunc seed:(id)aSeed {
     self = [super init];
     callableFunc = [aCallableFunc copy];
-    self.seed = aSeed;
+    seed = aSeed;
     return self;
 }
 
 - (id)nextObject {
-    id result = self.seed;
-    self.seed = callableFunc(self.seed);
+    id result = seed;
+    seed = callableFunc(seed);
     return result;
 }
 
 
-
-+ (EnumerateEnumerator *)withCallable:(id (^)(NSNumber *))callableFunc seed:(NSNumber *)aSeed {
++ (EnumerateEnumerator *)withCallable:(id (^)(id))callableFunc seed:(id)aSeed {
     return [[EnumerateEnumerator alloc] initWithCallable:callableFunc seed:aSeed];
 }
 

@@ -1,8 +1,8 @@
 #import <SenTestingKit/SenTestingKit.h>
+#import "OCTotallyLazy.h"
+
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import "../main/OCTotallyLazy.h"
-#import "Callables.h"
 
 @interface OptionTest : SenTestCase
 @end
