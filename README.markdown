@@ -1,6 +1,6 @@
 ## OCTotallyLazy - Functional extensions to Objective-C.
 
-OCTotallyLazy is a framework that adds functional behaviour to Objective C collection objects. It's a partial port of Dan Bodart's TotallyLazy Java library, available here: http://code.google.com/p/totallylazy/
+OCTotallyLazy is a framework that adds functional behaviour to Objective C collection objects, as well as a lazy collection object called Sequence. It's a partial port of Dan Bodart's TotallyLazy Java library, available here: http://code.google.com/p/totallylazy/
 
 The best place to look for full behaviour is in the test classes for now, checkout https://github.com/stuartervine/OCTotallyLazy/blob/master/src/test-unit/SequenceTest.m
 
