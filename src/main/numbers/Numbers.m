@@ -28,6 +28,12 @@
     } copy];
 }
 
++ (FUNCTION2)add {
+    return [^(NSNumber *a, NSNumber *b) {
+        return [NSNumber numberWithDouble:a.doubleValue + b.doubleValue];
+    } copy];
+}
+
 + (FUNCTION1)add:(NSNumber *)addition {
     return [^(NSNumber *number) {
         return [NSNumber numberWithDouble:number.doubleValue + addition.doubleValue];

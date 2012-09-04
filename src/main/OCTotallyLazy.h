@@ -2,6 +2,7 @@
 #import "Coercions.h"
 #import "Enumerable.h"
 #import "Flattenable.h"
+#import "Functions.h"
 #import "Group.h"
 #import "Predicates.h"
 #import "Foldable.h"

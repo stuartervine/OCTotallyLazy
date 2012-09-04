@@ -9,6 +9,8 @@
 
 + (FUNCTION1)divideBy:(NSNumber *)divisor;
 
++ (FUNCTION2)add;
+
 + (FUNCTION1)add:(NSNumber *)addition;
 
 + (FUNCTION1)substract:(NSNumber *)subtractor;
