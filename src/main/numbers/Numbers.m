@@ -1,3 +1,4 @@
+#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "Numbers.h"
 
 @implementation Numbers
@@ -15,11 +16,23 @@
     } copy];
 }
 
++ (FUNCTION2)multiplyBy {
+    return [^(NSNumber *a, NSNumber *b) {
+        return [NSNumber numberWithDouble:a.doubleValue * b.doubleValue];
+    } copy];
+}
+
 + (FUNCTION1)multiplyBy:(NSNumber *)multiplier {
     return [^(NSNumber *number) {
         return [NSNumber numberWithDouble:number.doubleValue * multiplier.doubleValue];
     } copy];
 
+}
+
++ (FUNCTION2)divideBy {
+    return [^(NSNumber *a, NSNumber *b) {
+        return [NSNumber numberWithDouble:a.doubleValue / b.doubleValue];
+    } copy];
 }
 
 + (FUNCTION1)divideBy:(NSNumber *)divisor {
@@ -37,6 +50,12 @@
 + (FUNCTION1)add:(NSNumber *)addition {
     return [^(NSNumber *number) {
         return [NSNumber numberWithDouble:number.doubleValue + addition.doubleValue];
+    } copy];
+}
+
++ (FUNCTION2)subtract {
+    return [^(NSNumber *a, NSNumber *b) {
+        return [NSNumber numberWithDouble:a.doubleValue - b.doubleValue];
     } copy];
 }
 

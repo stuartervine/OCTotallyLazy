@@ -5,13 +5,19 @@
 
 + (FUNCTION2)average;
 
++ (FUNCTION2)multiplyBy;
+
 + (FUNCTION1)multiplyBy:(NSNumber *)number;
+
++ (FUNCTION2)divideBy;
 
 + (FUNCTION1)divideBy:(NSNumber *)divisor;
 
 + (FUNCTION2)add;
 
 + (FUNCTION1)add:(NSNumber *)addition;
+
++ (FUNCTION2)subtract;
 
 + (FUNCTION1)substract:(NSNumber *)subtractor;
 @end

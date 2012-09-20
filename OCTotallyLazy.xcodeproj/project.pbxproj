@@ -23,10 +23,10 @@
 /* Begin PBXBuildFile section */
 		AD5D05A0E1C9D688C70192F0 /* Function2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0D9D52A0B68BFF9FBD57 /* Function2.m */; };
 		AD5D0610C61BC3AA9EB8D138 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03DBC64515F232FB590C /* Functions.m */; };
-		AD5D080F8DF4A4D245988717 /* Function1.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0E4BB0F51BDC6ED6AFFA /* Function1.h */; };
-		AD5D0835F95B2A7DF1278E30 /* Function2.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D065BE2BFCA1E099A409A /* Function2.h */; };
+		AD5D080F8DF4A4D245988717 /* Function1.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0E4BB0F51BDC6ED6AFFA /* Function1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0835F95B2A7DF1278E30 /* Function2.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D065BE2BFCA1E099A409A /* Function2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5D0ADB89F95229E1296B67 /* FunctionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03E3D075B182F7E0F83B /* FunctionsTest.m */; };
-		AD5D0BC6D2593ADD9FDED90B /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0D34F6564F39155B7CF4 /* Functions.h */; };
+		AD5D0BC6D2593ADD9FDED90B /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0D34F6564F39155B7CF4 /* Functions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5D0F0612F2B5AAA4949C4D /* Function1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D038FB113310EC3EEA18A /* Function1.m */; };
 		BC60930E14EC2E9100A59CDD /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60930D14EC2E9100A59CDD /* OCHamcrestIOS.framework */; };
 		BC60931014EC2EA200A59CDD /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60930F14EC2EA200A59CDD /* libOCMock.a */; };
@@ -497,13 +497,13 @@
 				BC7772EA1513392400F4FF84 /* Callables.h in Headers */,
 				BC7772EA1513392400F4FF8E /* PartitionEnumerator.h in Headers */,
 				BC7772EA1513392400F4FFA6 /* Group.h in Headers */,
+				AD5D0BC6D2593ADD9FDED90B /* Functions.h in Headers */,
+				AD5D0835F95B2A7DF1278E30 /* Function2.h in Headers */,
+				AD5D080F8DF4A4D245988717 /* Function1.h in Headers */,
 				BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */,
 				BC7772EA1513392400F4FF92 /* Queue.h in Headers */,
 				BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */,
 				BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */,
-				AD5D0BC6D2593ADD9FDED90B /* Functions.h in Headers */,
-				AD5D0835F95B2A7DF1278E30 /* Function2.h in Headers */,
-				AD5D080F8DF4A4D245988717 /* Function1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

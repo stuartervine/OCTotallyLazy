@@ -7,7 +7,8 @@
 @class Pair;
 
 @interface NSArray (OCTotallyLazy) <Mappable, Foldable, Enumerable, Flattenable>
-
+- (NSArray *)add:(id)value;
+- (NSArray *)cons:(id)value;
 - (NSArray *)drop:(int)toDrop;
 - (NSArray *)dropWhile:(PREDICATE)funcBlock;
 - (NSArray *)filter:(PREDICATE)filterBlock;
@@ -26,6 +27,8 @@
 - (Pair *)partition:(PREDICATE)toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
 - (NSArray *)reverse;
+- (Pair *)splitAt:(int)splitIndex;
+- (Pair *)splitOn:(id)splitItem;
 - (Pair *)splitWhen:(PREDICATE)predicate;
 - (NSArray *)tail;
 - (NSArray *)take:(int)n;

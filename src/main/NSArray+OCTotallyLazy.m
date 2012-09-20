@@ -3,6 +3,14 @@
 
 @implementation NSArray (OCTotallyLazy)
 
+- (NSArray *)add:(id)value {
+    return [self join:sequence(value, nil)];
+}
+
+- (NSArray *)cons:(id)value {
+    return [array(value, nil) join:self];
+}
+
 - (NSArray *)drop:(int)n {
     return [[[self asSequence] drop:n] asArray];
 }
