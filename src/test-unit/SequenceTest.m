@@ -12,7 +12,6 @@
 
 @implementation SequenceTest
 
-
 - (void)testAdd {
     Sequence *items = sequence(@"one", @"two", nil);
     assertThat([[items add:@"three"] asArray], hasItems(@"one", @"two", @"three", nil));
@@ -64,6 +63,12 @@
             sequence(@"three", @"four", nil),
             nil);
     assertThat([[items flatMap:[Callables toUpperCase]] asArray], hasItems(@"ONE", @"THREE", @"FOUR", nil));
+
+    Sequence *numbers = sequence(num(1), num(2), num(3), num(4), nil);
+    Sequence *flattenedNumbers = [numbers flatMap:^(NSNumber *number) {
+        return (number.intValue % 2) == 0 ? [None none] : option(number);
+    }];
+    assertThat([flattenedNumbers asArray], hasItems(num(1), num(3), nil));  
 }
 
 - (void)testFold {
@@ -128,6 +133,14 @@
         return num([item intValue] * 2);
     }];
     assertThat([doubled asArray], hasItems(num(2), num(4), num(6), nil));
+}
+
+- (void)testMapLiftsMappables {
+    Sequence *lazy = sequence(@[num(1)], option(num(2)), [None none], nil);
+    Sequence *doubled = [lazy map:^(NSNumber *item) {
+        return num([item intValue] * 2);
+    }];
+    assertThat([doubled asArray], hasItems(@[num(2)], option(num(4)), [None none], nil));
 }
 
 - (void)testMapWithIndex {

@@ -57,7 +57,7 @@
 
 - (Sequence *)flatMap:(id (^)(id))funcBlock {
     return [Sequence with:[EasyEnumerable with:^{
-        return [[[self toEnumerator] flatten] map:funcBlock];
+        return [[[self toEnumerator] map:funcBlock] flatten];
     }]];
 }
 
