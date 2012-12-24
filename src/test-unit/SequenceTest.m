@@ -68,7 +68,7 @@
     Sequence *flattenedNumbers = [numbers flatMap:^(NSNumber *number) {
         return (number.intValue % 2) == 0 ? [None none] : option(number);
     }];
-    assertThat([flattenedNumbers asArray], hasItems(num(1), num(3), nil));  
+    assertThat([flattenedNumbers asArray], hasItems(num(1), num(3), nil));
 }
 
 - (void)testFold {
