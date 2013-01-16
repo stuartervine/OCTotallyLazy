@@ -10,7 +10,7 @@
 @implementation MemoisedEnumeratorTest
 
 -(void)testRemembersEnumeratedObjects {
-    NSArray *numbers = array(num(10), num(20), num(30), num(40), nil);
+    NSMutableArray *numbers = array(num(10), num(20), num(30), num(40), nil);
     MemoisedEnumerator *memorisedEnumerator = [MemoisedEnumerator with:[numbers toEnumerator]];
 
     assertThatInt([memorisedEnumerator previousIndex], equalToInt(-1));

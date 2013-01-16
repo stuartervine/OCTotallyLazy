@@ -107,7 +107,7 @@
 
 - (void)testGrouped {
     Sequence *items = sequence(num(1), num(2), num(3), num(4), num(5), nil);
-    NSArray *array1 = [[items grouped:4] asArray];
+    NSMutableArray *array1 = [[items grouped:4] asArray];
     assertThat(array1, hasItems(array(num(1), num(2), num(3), num(4), nil), array(num(5), nil), nil));
 }
 
@@ -250,7 +250,7 @@
 - (void)testToDictionary {
     Sequence *items = sequence(@"one", @"one", @"two", @"three", nil);
     __block int count = 0;
-    NSDictionary *lengths = [items toDictionary:^(NSString *item) {
+    NSMutableDictionary *lengths = [items toDictionary:^(NSString *item) {
         return num(count++);
     }];
     assertThat(lengths, hasEntries(@"one", num(0), @"two", num(1), @"three", num(2), nil));

@@ -3,31 +3,31 @@
 
 @implementation NSArray (OCTotallyLazy)
 
-- (NSArray *)add:(id)value {
+- (NSMutableArray *)add:(id)value {
     return [self join:sequence(value, nil)];
 }
 
-- (NSArray *)cons:(id)value {
+- (NSMutableArray *)cons:(id)value {
     return [array(value, nil) join:self];
 }
 
-- (NSArray *)drop:(int)n {
+- (NSMutableArray *)drop:(int)n {
     return [[[self asSequence] drop:n] asArray];
 }
 
-- (NSArray *)dropWhile:(BOOL (^)(id))funcBlock {
+- (NSMutableArray *)dropWhile:(BOOL (^)(id))funcBlock {
     return [[[self asSequence] dropWhile:funcBlock] asArray];
 }
 
-- (NSArray *)filter:(BOOL (^)(id))filterBlock {
+- (NSMutableArray *)filter:(BOOL (^)(id))filterBlock {
     return [[[self asSequence] filter:filterBlock] asArray];
 }
 
-- (NSArray *)flatMap:(id (^)(id))functorBlock {
+- (NSMutableArray *)flatMap:(id (^)(id))functorBlock {
     return [[[self asSequence] flatMap:functorBlock] asArray];
 }
 
-- (NSArray *)flatten {
+- (NSMutableArray *)flatten {
     return [[[self asSequence] flatten] asArray];
 }
 
@@ -53,7 +53,7 @@
     return self.count == 0;
 }
 
-- (NSArray *)groupBy:(FUNCTION1)groupingBlock {
+- (NSMutableArray *)groupBy:(FUNCTION1)groupingBlock {
     NSMutableDictionary *keysAndValues = [NSMutableDictionary dictionary];
     NSMutableArray *keys = [NSMutableArray array];
     NSMutableArray *nilKeyItems = [NSMutableArray array];
@@ -69,17 +69,18 @@
             [nilKeyItems addObject:item];
         }
     }];
-    NSArray *keyedGroups = [keys map:^(id key) {
+    NSMutableArray *keyedGroups = [keys map:^(id key) {
         return [Group group:key enumerable:[keysAndValues objectForKey:key]];
     }];
-    NSArray *unkeyedGroups = [nilKeyItems map:^(id item) {
+    NSMutableArray *unkeyedGroups = [nilKeyItems map:^(id item) {
         return [Group group:nil enumerable:array(item, nil)];
     }];
-//    return keyedGroups;
-    return [keyedGroups arrayByAddingObjectsFromArray:unkeyedGroups];
+    [keyedGroups addObjectsFromArray:unkeyedGroups];
+    return keyedGroups;
+//    return [keyedGroups arrayByAddingObjectsFromArray:unkeyedGroups];
 }
 
-- (NSArray *)grouped:(int)n {
+- (NSMutableArray *)grouped:(int)n {
     return [[[self asSequence] grouped:n] asArray];
 }
 
@@ -91,7 +92,7 @@
     return [[self asSequence] headOption];
 }
 
-- (NSArray *)join:(id <Enumerable>)toJoin {
+- (NSMutableArray *)join:(id <Enumerable>)toJoin {
     return [[[self asSequence] join:toJoin] asArray];
 }
 
@@ -103,7 +104,7 @@
     return [[[self asSequence] mapWithIndex:funcBlock] asArray];
 }
 
-- (NSArray *)merge:(NSArray *)toMerge {
+- (NSMutableArray *)merge:(NSMutableArray *)toMerge {
     return [[[self asSequence] merge:[toMerge asSequence]] asArray];
 }
 
@@ -116,7 +117,7 @@
     return [self isEmpty] ? nil : [[self tail] fold:[self head] with:functorBlock];
 }
 
-- (NSArray *)reverse {
+- (NSMutableArray *)reverse {
     NSMutableArray *collectedArray = [[NSMutableArray alloc] init];
     NSEnumerator *reversed = [self reverseObjectEnumerator];
     id object;
@@ -139,22 +140,22 @@
     return [Pair left:partition.left right:[partition.right tail]];
 }
 
-- (NSArray *)tail {
+- (NSMutableArray *)tail {
     return [[[self asSequence] tail] asArray];
 //    return [self takeRight:[self count] - 1];
 }
 
-- (NSArray *)take:(int)n {
+- (NSMutableArray *)take:(int)n {
     return [[[self asSequence] take:n] asArray];
 }
 
-- (NSArray *)takeWhile:(BOOL (^)(id))funcBlock {
+- (NSMutableArray *)takeWhile:(BOOL (^)(id))funcBlock {
     return [[[self asSequence] takeWhile:funcBlock] asArray];
 }
 
-- (NSArray *)takeRight:(int)n {
+- (NSMutableArray *)takeRight:(int)n {
     int toTake = (n > [self count]) ? [self count] : (NSUInteger) n;
-    return [self subarrayWithRange:NSMakeRange([self count] - toTake, (NSUInteger) toTake)];
+    return [NSMutableArray arrayWithArray:[self subarrayWithRange:NSMakeRange([self count] - toTake, (NSUInteger) toTake)]];
 }
 
 - (NSEnumerator *)toEnumerator {
@@ -173,11 +174,11 @@
     return [[start stringByAppendingString:[self toString:separator]] stringByAppendingString:end];
 }
 
-- (NSArray *)zip:(NSArray *)otherArray {
+- (NSMutableArray *)zip:(NSMutableArray *)otherArray {
     return [[[self asSequence] zip:[otherArray asSequence]] asArray];
 }
 
-- (NSArray *)zipWithIndex {
+- (NSMutableArray *)zipWithIndex {
     return [[[self asSequence] zipWithIndex] asArray];
 }
 
@@ -185,18 +186,21 @@
     return [Sequence with:self];
 }
 
-- (NSSet *)asSet {
+- (NSMutableSet *)asSet {
     return [[self asSequence] asSet];
 }
 
-- (NSArray *)asArray {
-    return self;
+- (NSMutableArray *)asArray {
+    if([self isMemberOfClass:[NSMutableArray class]])
+        return (id)self;
+    else
+        return [NSMutableArray arrayWithArray:self];
 }
 
-- (NSDictionary *)asDictionary {
+- (NSMutableDictionary *)asDictionary {
     Pair *keysAndValues = [self partition:TL_alternate(YES)];
-    NSArray *keys = keysAndValues.left;
-    NSArray *values = keysAndValues.right;
+    NSMutableArray *keys = keysAndValues.left;
+    NSMutableArray *values = keysAndValues.right;
     values = [values take:[keys count]];
     keys = [keys take:[values count]];
     NSEnumerator *valueEnumerator = [keysAndValues.right objectEnumerator];

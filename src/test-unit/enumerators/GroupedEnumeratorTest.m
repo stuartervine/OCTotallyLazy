@@ -10,7 +10,7 @@
 @implementation GroupedEnumeratorTest
 
 -(void)testGroupsItemsIntoSequencesOfNSize {
-    NSArray *items = array(num(1), num(2), num(3) , num(4), num(5), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3) , num(4), num(5), nil);
     NSEnumerator *groups = [GroupedEnumerator with:[items toEnumerator] groupSize:2];
     assertThat([groups nextObject], hasItems(num(1), num(2), nil));
     assertThat([groups nextObject], hasItems(num(3), num(4), nil));

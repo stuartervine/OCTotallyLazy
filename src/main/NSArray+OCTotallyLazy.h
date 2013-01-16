@@ -7,47 +7,47 @@
 @class Pair;
 
 @interface NSArray (OCTotallyLazy) <Mappable, Foldable, Enumerable, Flattenable>
-- (NSArray *)add:(id)value;
-- (NSArray *)cons:(id)value;
-- (NSArray *)drop:(int)toDrop;
-- (NSArray *)dropWhile:(PREDICATE)funcBlock;
-- (NSArray *)filter:(PREDICATE)filterBlock;
+- (NSMutableArray *)add:(id)value;
+- (NSMutableArray *)cons:(id)value;
+- (NSMutableArray *)drop:(int)toDrop;
+- (NSMutableArray *)dropWhile:(PREDICATE)funcBlock;
+- (NSMutableArray *)filter:(PREDICATE)filterBlock;
 - (Option *)find:(PREDICATE)filterBlock;
-- (NSArray *)flatMap:(FUNCTION1)functorBlock;
-- (NSArray *)flatten;
+- (NSMutableArray *)flatMap:(FUNCTION1)functorBlock;
+- (NSMutableArray *)flatten;
 - (id)fold:(id)value with:(id (^)(id accumulator, id item))functorBlock;
 - (void)foreach:(void (^)(id))funcBlock;
 - (BOOL)isEmpty;
-- (NSArray *)groupBy:(FUNCTION1)groupingBlock;
-- (NSArray *)grouped:(int)n;
+- (NSMutableArray *)groupBy:(FUNCTION1)groupingBlock;
+- (NSMutableArray *)grouped:(int)n;
 - (id)head;
 - (Option *)headOption;
-- (NSArray *)join:(id<Enumerable>)toJoin;
+- (NSMutableArray *)join:(id<Enumerable>)toJoin;
 - (id)mapWithIndex:(id (^)(id, NSInteger))funcBlock;
 - (Pair *)partition:(PREDICATE)toJoin;
 - (id)reduce:(id (^)(id, id))functorBlock;
-- (NSArray *)reverse;
+- (NSMutableArray *)reverse;
 - (Pair *)splitAt:(int)splitIndex;
 - (Pair *)splitOn:(id)splitItem;
 - (Pair *)splitWhen:(PREDICATE)predicate;
-- (NSArray *)tail;
-- (NSArray *)take:(int)n;
-- (NSArray *)takeWhile:(PREDICATE)funcBlock;
-- (NSArray *)takeRight:(int)n;
+- (NSMutableArray *)tail;
+- (NSMutableArray *)take:(int)n;
+- (NSMutableArray *)takeWhile:(PREDICATE)funcBlock;
+- (NSMutableArray *)takeRight:(int)n;
 - (NSString *)toString;
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
-- (NSArray *)zip:(NSArray *)otherSequence;
-- (NSArray *)zipWithIndex;
+- (NSMutableArray *)zip:(NSMutableArray *)otherSequence;
+- (NSMutableArray *)zipWithIndex;
 
 - (Sequence *)asSequence;
-- (NSSet *)asSet;
-- (NSArray *)asArray;
-- (NSDictionary *)asDictionary;
+- (NSMutableSet *)asSet;
+- (NSMutableArray *)asArray;
+- (NSMutableDictionary *)asDictionary;
 
 @end
 
-static NSArray *array(id items , ...) {
+static NSMutableArray *array(id items , ...) {
     NSMutableArray *array = [NSMutableArray array];
     va_list args;
     va_start(args, items);

@@ -9,7 +9,7 @@
 
 + (PREDICATE)countTo:(int)n;
 
-+ (PREDICATE)containedIn:(NSArray *)existing;
++ (PREDICATE)containedIn:(NSMutableArray *)existing;
 
 + (PREDICATE)containsString:(NSString *)toMatch;
 
@@ -42,7 +42,7 @@ static PREDICATE TL_or(PREDICATE left, PREDICATE right) {
 static PREDICATE TL_countTo(int n) {
     return [Predicates countTo:n];
 }
-static PREDICATE TL_containedIn(NSArray *existing) {
+static PREDICATE TL_containedIn(NSMutableArray *existing) {
     return [Predicates containedIn:existing];
 }
 static PREDICATE TL_containsString(NSString *toMatch) {

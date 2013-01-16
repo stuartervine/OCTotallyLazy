@@ -189,7 +189,7 @@
     }]];
 }
 
-- (NSDictionary *)toDictionary:(id (^)(id))valueBlock {
+- (NSMutableDictionary *)toDictionary:(id (^)(id))valueBlock {
     return [self fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, id item) {
         if ([accumulator valueForKey:item] == nil) {
             [accumulator setObject:valueBlock(item) forKey:item];
@@ -230,11 +230,11 @@
     return [[Sequence alloc] initWith:enumerable];
 }
 
-- (NSDictionary *)asDictionary {
+- (NSMutableDictionary *)asDictionary {
     return [[self asArray] asDictionary];
 }
 
-- (NSArray *)asArray {
+- (NSMutableArray *)asArray {
     NSEnumerator *itemsEnumerator = [self toEnumerator];
     NSMutableArray *collect = [NSMutableArray array];
     id object;
@@ -244,8 +244,8 @@
     return collect;
 }
 
-- (NSSet *)asSet {
-    return [NSSet setWithArray:[self asArray]];
+- (NSMutableSet *)asSet {
+    return [NSMutableSet setWithArray:[self asArray]];
 }
 
 - (NSString *)description {
