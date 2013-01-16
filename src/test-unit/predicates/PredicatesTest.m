@@ -12,62 +12,62 @@
 @implementation PredicatesTest
 
 -(void)testAlternate {
-    NSArray *items = array(num(1), num(2), num(3), num(4), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), num(4), nil);
     assertThat([items filter:TL_alternate(YES)], hasItems(num(1), num(3), nil));
     assertThat([items filter:TL_alternate(NO)], hasItems(num(2), num(4), nil));
     assertThat([items filter:alternate(YES)], hasItems(num(1), num(3), nil));
 }
 
 -(void)testAnd {
-    NSArray *items = array(num(1), num(2), num(3), num(4), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), num(4), nil);
     assertThat([items filter:and(gtThan(num(1)), ltThan(num(4)))], hasItems(num(2), num(3), nil));
 }
 
 -(void)testOr {
-    NSArray *items = array(num(1), num(2), num(3), num(4), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), num(4), nil);
     assertThat([items filter:or(eqTo(num(1)), eqTo(num(4)))], hasItems(num(1), num(4), nil));
 }
 
 -(void)testContainedIn {
-    NSArray *items = array(num(1), num(2), num(3), nil);
-    NSArray *existing = array(num(1), num(2), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), nil);
+    NSMutableArray *existing = array(num(1), num(2), nil);
     assertThat([items filter:TL_containedIn(existing)], hasItems(num(1), num(2), nil));
     assertThat([items filter:not(in(existing))], hasItems(num(3), nil));
 }
 
 -(void)testContainsString {
-    NSArray *items = array(@"one", @"two", @"three", nil);
+    NSMutableArray *items = array(@"one", @"two", @"three", nil);
     assertThat([items filter:TL_containsString(@"o")], hasItems(@"one", @"two", nil));
     assertThat([items filter:containsStr(@"o")], hasItems(@"one", @"two", nil));
 }
 
 -(void)testCountTo {
-    NSArray *items = array(num(1), num(2), num(3), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), nil);
     assertThat([items filter:TL_countTo(2)], hasItems(num(1), num(2), nil));
     assertThat([items filter:countTo(1)], hasItems(num(1), nil));
 }
 
 -(void)testEqualTo {
     NSNumber *one = [NSNumber numberWithInt:1];
-    NSArray *items = array(@"bob", one, nil);
+    NSMutableArray *items = array(@"bob", one, nil);
     assertThat([items filter:TL_equalTo(@"bob")], hasItems(@"bob", nil));
     assertThat([items filter:TL_equalTo(one)], hasItems(one, nil));
 }
 
 -(void)testEveryNth {
-    NSArray *items = array(num(1), num(2), num(3), num(4), num(5), num(6), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), num(4), num(5), num(6), nil);
     assertThat([items filter:TL_everyNth(1)], hasItems(num(1), num(2), num(3), num(4), num(5), num(6), nil));
     assertThat([items filter:everyNth(2)], hasItems(num(2), num(4), num(6), nil));
 }
 
 -(void)testGreaterThan {
-    NSArray *items = array(num(1), num(2), num(3), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), nil);
     assertThat([items filter:TL_greaterThan(num(1))], hasItems(num(2), num(3), nil));
     assertThat([items filter:gtThan(num(2))], hasItems(num(3), nil));
 }
 
 -(void)testLessThan {
-    NSArray *items = array(num(1), num(2), num(3), nil);
+    NSMutableArray *items = array(num(1), num(2), num(3), nil);
     assertThat([items filter:TL_lessThan(num(2))], hasItems(num(1), nil));
     assertThat([items filter:ltThan(num(3))], hasItems(num(1), num(2), nil));
 }

@@ -7,7 +7,7 @@
     return [[self asSequence] find:filterBlock];
 }
 
-- (NSSet *)filter:(BOOL (^)(id))filterBlock {
+- (NSMutableSet *)filter:(BOOL (^)(id))filterBlock {
     return [[[self asSequence] filter:filterBlock] asSet];
 }
 
@@ -15,7 +15,7 @@
     return [[self asSequence] fold:value with:functorBlock];
 }
 
-- (NSSet *)groupBy:(FUNCTION1)groupingBlock {
+- (NSMutableSet *)groupBy:(FUNCTION1)groupingBlock {
     return [[[self asSequence] groupBy:groupingBlock] asSet];
 }
 
@@ -27,7 +27,7 @@
     return [[self asSequence] headOption];
 }
 
-- (NSSet *)join:(NSSet *)toJoin {
+- (NSMutableSet *)join:(NSMutableSet *)toJoin {
     return [[[self asSequence] join:[toJoin asSequence]] asSet];
 }
 
@@ -43,7 +43,7 @@
     return [Sequence with:self];
 }
 
-- (NSArray *)asArray {
+- (NSMutableArray *)asArray {
     return [[self asSequence] asArray];
 }
 

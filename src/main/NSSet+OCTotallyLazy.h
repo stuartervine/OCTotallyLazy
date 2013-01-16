@@ -5,17 +5,17 @@
 
 @interface NSSet (Functional) <Mappable, Foldable, Enumerable>
 - (Option *)find:(PREDICATE)filterBlock;
-- (NSSet *)filter:(PREDICATE)filterBlock;
-- (NSSet *)groupBy:(FUNCTION1)groupingBlock;
+- (NSMutableSet *)filter:(PREDICATE)filterBlock;
+- (NSMutableSet *)groupBy:(FUNCTION1)groupingBlock;
 - (id)head;
 - (Option *)headOption;
-- (NSSet *)join:(NSSet *)toJoin;
+- (NSMutableSet *)join:(NSMutableSet *)toJoin;
 - (id)reduce:(FUNCTION2)functorBlock;
 
 - (Sequence *)asSequence;
-- (NSArray *)asArray;
+- (NSMutableArray *)asArray;
 @end
 
-static NSSet *set() {
-    return [NSSet set];
+static NSMutableSet *set() {
+    return [NSMutableSet set];
 }

@@ -28,7 +28,7 @@
     } copy];
 }
 
-+ (PREDICATE)containedIn:(NSArray *)existing {
++ (PREDICATE)containedIn:(NSMutableArray *)existing {
     return [^(id item) { return [existing containsObject:item];} copy];
 }
 

@@ -10,11 +10,11 @@
             } copy];
 }
 
-- (NSDictionary *)filterKeys:(BOOL (^)(id))filterBlock {
+- (NSMutableDictionary *)filterKeys:(BOOL (^)(id))filterBlock {
     return [[[self allKeys] filter:filterBlock] fold:[NSMutableDictionary dictionary] with:[self addObjectForKey]];
 }
 
-- (NSDictionary *)filterValues:(BOOL (^)(id))filterBlock {
+- (NSMutableDictionary *)filterValues:(BOOL (^)(id))filterBlock {
     return [[[self allValues] filter:filterBlock] fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *dict, id value) {
         [[self allKeysForObject:value] fold:dict with:[self addObjectForKey]];
         return dict;
@@ -25,7 +25,7 @@
     [[self allKeys] foreach:^(id key){funcBlock(key, [self objectForKey:key]);}];
 }
 
-- (id)map:(NSArray * (^)(id key, id value))funcBlock {
+- (id)map:(NSMutableArray * (^)(id key, id value))funcBlock {
     return [[[[self allKeys] map:^(id key){return funcBlock(key, [self objectForKey:key]);}] flatten] asDictionary];
 }
 

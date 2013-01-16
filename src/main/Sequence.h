@@ -36,16 +36,16 @@
 - (Sequence *)tail;
 - (Sequence *)take:(int)n;
 - (Sequence *)takeWhile:(PREDICATE)funcBlock;
-- (NSDictionary *)toDictionary:(id (^)(id))valueBlock;
+- (NSMutableDictionary *)toDictionary:(id (^)(id))valueBlock;
 - (NSString *)toString;
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
 - (Sequence *)zip:(Sequence *)otherSequence;
 - (Sequence *)zipWithIndex;
 
-- (NSArray *)asArray;
-- (NSSet *)asSet;
-- (NSDictionary *)asDictionary;
+- (NSMutableArray *)asArray;
+- (NSMutableSet *)asSet;
+- (NSMutableDictionary *)asDictionary;
 
 
 + (Sequence *)with:(id <Enumerable>)enumerable;
