@@ -5,6 +5,7 @@
 
 #import "OCTotallyLazy.h"
 #import "OCTotallyLazyTestCase.h"
+#import "KeyWithoutToString.h"
 
 @interface SequenceTest : OCTotallyLazyTestCase
 
@@ -254,6 +255,21 @@
         return num(count++);
     }];
     assertThat(lengths, hasEntries(@"one", num(0), @"two", num(1), @"three", num(2), nil));
+}
+
+- (void)testToDictionaryWithKeysThatAreNotToStringable {
+    KeyWithoutToString *key1 = [[KeyWithoutToString alloc] initWithValue:@"one"];
+    KeyWithoutToString *key2 = [[KeyWithoutToString alloc] initWithValue:@"two"];
+    NSArray *items = @[
+            key1,
+            key1,
+            key2
+            ];
+    __block int count = 0;
+    NSDictionary *lengths = [[items asSequence] toDictionary:^(NSString *item) {
+        return num(count++);
+    }];
+    assertThat(lengths, hasEntries(key1, num(0), key2, num(1), nil));
 }
 
 /*

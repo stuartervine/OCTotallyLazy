@@ -191,7 +191,7 @@
 
 - (NSDictionary *)toDictionary:(id (^)(id))valueBlock {
     return [self fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, id item) {
-        if ([accumulator valueForKey:item] == nil) {
+        if ([accumulator objectForKey:item] == nil) {
             [accumulator setObject:valueBlock(item) forKey:item];
         }
         return accumulator;

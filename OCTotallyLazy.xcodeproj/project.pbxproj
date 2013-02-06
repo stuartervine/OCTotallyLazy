@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		AD5D05A0E1C9D688C70192F0 /* Function2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0D9D52A0B68BFF9FBD57 /* Function2.m */; };
 		AD5D0610C61BC3AA9EB8D138 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03DBC64515F232FB590C /* Functions.m */; };
+		AD5D07A282CE1F9764618922 /* KeyWithoutToString.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03F527356908363F93E4 /* KeyWithoutToString.m */; };
 		AD5D080F8DF4A4D245988717 /* Function1.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0E4BB0F51BDC6ED6AFFA /* Function1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5D0835F95B2A7DF1278E30 /* Function2.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D065BE2BFCA1E099A409A /* Function2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5D0ADB89F95229E1296B67 /* FunctionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03E3D075B182F7E0F83B /* FunctionsTest.m */; };
@@ -133,8 +134,10 @@
 		AD5D038FB113310EC3EEA18A /* Function1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function1.m; sourceTree = "<group>"; };
 		AD5D03DBC64515F232FB590C /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
 		AD5D03E3D075B182F7E0F83B /* FunctionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionsTest.m; sourceTree = "<group>"; };
+		AD5D03F527356908363F93E4 /* KeyWithoutToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyWithoutToString.m; sourceTree = "<group>"; };
 		AD5D065BE2BFCA1E099A409A /* Function2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function2.h; sourceTree = "<group>"; };
 		AD5D0D34F6564F39155B7CF4 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
+		AD5D0D905101890431AE54F3 /* KeyWithoutToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyWithoutToString.h; sourceTree = "<group>"; };
 		AD5D0D9D52A0B68BFF9FBD57 /* Function2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function2.m; sourceTree = "<group>"; };
 		AD5D0E4BB0F51BDC6ED6AFFA /* Function1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function1.h; sourceTree = "<group>"; };
 		BC49C43314E05A8200BE88D2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -363,6 +366,8 @@
 				BC77729F1513388C00F4FF4A /* SequenceTest.m */,
 				BC7772EA1513392400F4FF9A /* numbers */,
 				BC7772EA1513392400F4FF9C /* predicates */,
+				AD5D03F527356908363F93E4 /* KeyWithoutToString.m */,
+				AD5D0D905101890431AE54F3 /* KeyWithoutToString.h */,
 			);
 			path = "test-unit";
 			sourceTree = "<group>";
@@ -680,6 +685,7 @@
 				BC7772EA1513392400F4FF9E /* NumbersTest.m in Sources */,
 				BC7772EA1513392400F4FFA2 /* PairTest.m in Sources */,
 				AD5D0ADB89F95229E1296B67 /* FunctionsTest.m in Sources */,
+				AD5D07A282CE1F9764618922 /* KeyWithoutToString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
