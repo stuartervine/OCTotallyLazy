@@ -58,7 +58,7 @@ Mapping (Sequence, NSArray, partially on NSSet, NSDictionary)
     }]
     // returns sequence(@"ONE", @"TWO", @"THREE", nil)
 
-    [array(@"one", array(@"two", nil), @"three", nil) flatMap:^(NSString *item){
+    [@[@"one", @[@"two"], @"three"] flatMap:^(NSString *item){
         return [item uppercaseString];
     }];
     // returns array(@"ONE", @"TWO", @"THREE", nil)
