@@ -157,6 +157,16 @@
     return [self subarrayWithRange:NSMakeRange([self count] - toTake, (NSUInteger) toTake)];
 }
 
+- (NSArray *)slice:(int)from to:(int)to
+{
+    if(to > [self count])
+        to = [self count];
+    if(to >= from)
+        return [self subarrayWithRange:NSMakeRange(from, to - from)];
+    else
+        return [[self subarrayWithRange:NSMakeRange(to, from - to)] reverse];
+}
+
 - (NSEnumerator *)toEnumerator {
     return [self objectEnumerator];
 }

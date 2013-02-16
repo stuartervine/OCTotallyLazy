@@ -34,6 +34,7 @@
 - (NSArray *)take:(int)n;
 - (NSArray *)takeWhile:(PREDICATE)funcBlock;
 - (NSArray *)takeRight:(int)n;
+- (NSArray *)slice:(int)from to:(int)to;
 - (NSString *)toString;
 - (NSString *)toString:(NSString *)separator;
 - (NSString *)toString:(NSString *)start separator:(NSString *)separator end:(NSString *)end;
