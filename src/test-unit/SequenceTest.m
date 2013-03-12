@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <OCTotallyLazy/OCTotallyLazy.h>
 
 #define TL_SHORTHAND
 #define TL_COERCIONS
@@ -8,7 +9,7 @@
 #import "KeyWithoutToString.h"
 
 @interface SequenceTest : OCTotallyLazyTestCase
-
+@property(nonatomic, strong) NSNumber *checkRetained;
 @end
 
 @implementation SequenceTest
@@ -24,18 +25,18 @@
 }
 
 - (void)testCycle {
-    Sequence *cycle = [sequence(num(1), num(2), num(3), nil) cycle];
-    assertThat([[cycle take:5] asArray], hasItems(num(1), num(2), num(3), num(1), num(2), nil));
+    Sequence *cycle = [sequence(@1, @2, @3, nil) cycle];
+    assertThat([[cycle take:5] asArray], hasItems(@1, @2, @3, @1, @2, nil));
 }
 
 - (void)testDrop {
-    Sequence *items = sequence(num(1), num(5), num(7), nil);
-    assertThat([[items drop:2] asArray], hasItems(num(7), nil));
+    Sequence *items = sequence(@1, @5, @7, nil);
+    assertThat([[items drop:2] asArray], hasItems(@7, nil));
 }
 
 - (void)testDropWhile {
-    Sequence *items = sequence(num(7), num(5), num(4), nil);
-    assertThat([[items dropWhile:TL_greaterThan(num(4))] asArray], hasItems(num(4), nil));
+    Sequence *items = sequence(@7, @5, @4, nil);
+    assertThat([[items dropWhile:TL_greaterThan(@4)] asArray], hasItems(@4, nil));
 }
 
 - (void)testFind {
@@ -65,11 +66,11 @@
             nil);
     assertThat([[items flatMap:[Callables toUpperCase]] asArray], hasItems(@"ONE", @"THREE", @"FOUR", nil));
 
-    Sequence *numbers = sequence(num(1), num(2), num(3), num(4), nil);
+    Sequence *numbers = sequence(@1, @2, @3, @4, nil);
     Sequence *flattenedNumbers = [numbers flatMap:^(NSNumber *number) {
         return (number.intValue % 2) == 0 ? [None none] : option(number);
     }];
-    assertThat([flattenedNumbers asArray], hasItems(num(1), num(3), nil));
+    assertThat([flattenedNumbers asArray], hasItems(@1, @3, nil));
 }
 
 - (void)testFold {
@@ -88,11 +89,11 @@
 
 - (void)testGroupBy {
     Sequence *groups = [sequence(@"one", @"two", @"three", @"four", @"five", @"six", @"seven", nil) groupBy:^(NSString *item) {
-        return num(item.length);
+        return [NSNumber numberWithInt:item.length];
     }];
-    assertThat([[groups first] key], equalTo(num(3)));
+    assertThat([[groups first] key], equalTo(@3));
     assertThat([groups first], hasItems(@"one", @"two", @"six", nil));
-    assertThat([[groups second] key], equalTo(num(5)));
+    assertThat([[groups second] key], equalTo(@5));
     assertThat([groups second], hasItems(@"three", @"seven", nil));
 }
 
@@ -107,9 +108,9 @@
 }
 
 - (void)testGrouped {
-    Sequence *items = sequence(num(1), num(2), num(3), num(4), num(5), nil);
+    Sequence *items = sequence(@1, @2, @3, @4, @5, nil);
     NSArray *array1 = [[items grouped:4] asArray];
-    assertThat(array1, hasItems(array(num(1), num(2), num(3), num(4), nil), array(num(5), nil), nil));
+    assertThat(array1, hasItems(array(@1, @2, @3, @4, nil), array(@5, nil), nil));
 }
 
 - (void)testHead {
@@ -129,27 +130,37 @@
 }
 
 - (void)testMap {
-    Sequence *lazy = sequence(num(1), num(2), num(3), nil);
+    Sequence *lazy = sequence(@1, @2, @3, nil);
     Sequence *doubled = [lazy map:^(NSNumber *item) {
-        return num([item intValue] * 2);
+        return @([item intValue] * 2);
     }];
-    assertThat([doubled asArray], hasItems(num(2), num(4), num(6), nil));
+    assertThat([doubled asArray], hasItems(@2, @4, @6, nil));
 }
 
 - (void)testMapLiftsMappables {
-    Sequence *lazy = sequence(@[num(1)], option(num(2)), [None none], nil);
+    Sequence *lazy = sequence(@[@1], option(@2), [None none], nil);
     Sequence *doubled = [lazy map:^(NSNumber *item) {
-        return num([item intValue] * 2);
+        return @([item intValue] * 2);
     }];
-    assertThat([doubled asArray], hasItems(@[num(2)], option(num(4)), [None none], nil));
+    assertThat([doubled asArray], hasItems(@[@2], option(@4), [None none], nil));
+}
+
+- (void)testMapDoesNotRetainBlocks {
+    self.checkRetained = @0;
+    Sequence *lazy = sequence(@1, @2, @3, nil);
+    [[lazy map:^(NSNumber *item) {
+        self.checkRetained = @(self.checkRetained.intValue + 1);
+        return item;
+    }] asArray];
+    assertThat(self.checkRetained, equalTo(@3));
 }
 
 - (void)testMapWithIndex {
     Sequence *lazy = sequence(@"one", @"two", @"three", nil);
     Sequence *indexes = [lazy mapWithIndex:^(id item, NSInteger index) {
-        return num(index);
+        return @(index);
     }];
-    assertThat([indexes asArray], hasItems(num(0), num(1), num(2), nil));
+    assertThat([indexes asArray], hasItems(@0, @1, @2, nil));
 }
 
 - (void)testMerge {
@@ -217,8 +228,8 @@
 }
 
 - (void)testTakeWhile {
-    Sequence *items = sequence(num(3), num(2), num(1), num(3), nil);
-    assertThat([[items takeWhile:TL_greaterThan(num(1))] asArray], hasItems(num(3), num(2), nil));
+    Sequence *items = sequence(@3, @2, @1, @3, nil);
+    assertThat([[items takeWhile:TL_greaterThan(@1)] asArray], hasItems(@3, @2, nil));
 }
 
 - (void)testToString {
@@ -227,23 +238,23 @@
     assertThat([items toString:@","], equalTo(@"one,two,three"));
     assertThat([items toString:@"(" separator:@"," end:@")"], equalTo(@"(one,two,three)"));
 
-    Sequence *numbers = sequence(num(1), num(2), num(3), nil);
+    Sequence *numbers = sequence(@1, @2, @3, nil);
     assertThat([numbers toString], equalTo(@"123"));
 }
 
 - (void)testZip {
     Sequence *items = sequence(@"one", @"two", nil);
-    Sequence *zip = [items zip:sequence(num(1), num(2), nil)];
-    assertThat([zip asArray], hasItems([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil));
+    Sequence *zip = [items zip:sequence(@1, @2, nil)];
+    assertThat([zip asArray], hasItems([Pair left:@"one" right:@1], [Pair left:@"two" right:@2], nil));
 }
 
 - (void)testZipWithIndex {
     Sequence *items = sequence(@"one", @"two", @"three", nil);
     Sequence *zippedWithIndex = [items zipWithIndex];
     assertThat([zippedWithIndex asArray], hasItems(
-            [Pair left:@"one" right:num(0)],
-            [Pair left:@"two" right:num(1)],
-            [Pair left:@"three" right:num(2)],
+            [Pair left:@"one" right:@0],
+            [Pair left:@"two" right:@1],
+            [Pair left:@"three" right:@2],
             nil));
 
 }
@@ -252,9 +263,9 @@
     Sequence *items = sequence(@"one", @"one", @"two", @"three", nil);
     __block int count = 0;
     NSDictionary *lengths = [items toDictionary:^(NSString *item) {
-        return num(count++);
+        return @(count++);
     }];
-    assertThat(lengths, hasEntries(@"one", num(0), @"two", num(1), @"three", num(2), nil));
+    assertThat(lengths, hasEntries(@"one", @0, @"two", @1, @"three", @2, nil));
 }
 
 - (void)testToDictionaryWithKeysThatAreNotToStringable {
@@ -267,9 +278,9 @@
             ];
     __block int count = 0;
     NSDictionary *lengths = [[items asSequence] toDictionary:^(NSString *item) {
-        return num(count++);
+        return @(count++);
     }];
-    assertThat(lengths, hasEntries(key1, num(0), key2, num(1), nil));
+    assertThat(lengths, hasEntries(key1, @0, key2, @1, nil));
 }
 
 /*
