@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OCTotallyLazy"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Functional extensions to Objective C's collections."
   s.description  = <<-DESC
                     OCTotallyLazy is a framework that adds functional behaviour to 
