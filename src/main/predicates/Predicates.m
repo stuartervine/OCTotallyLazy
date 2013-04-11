@@ -1,6 +1,7 @@
 #import "Predicates.h"
 
 @implementation Predicates
+
 + (PREDICATE)alternate:(BOOL)startState {
     __block BOOL state = !startState;
     return [^(id item) {

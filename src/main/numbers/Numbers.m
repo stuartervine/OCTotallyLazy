@@ -1,7 +1,18 @@
-#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "Numbers.h"
 
 @implementation Numbers
++ (FUNCTION2)min {
+    return [^(NSNumber *a, NSNumber *b) {
+        return a.doubleValue < b.doubleValue ? a : b;
+    } copy];
+}
+
++ (FUNCTION2)max {
+    return [^(NSNumber *a, NSNumber *b) {
+        return a.doubleValue > b.doubleValue ? a : b;
+    } copy];
+}
+
 + (FUNCTION2)sum {
     return [^(NSNumber *a, NSNumber *b) {
         return [NSNumber numberWithDouble:a.doubleValue + b.doubleValue];

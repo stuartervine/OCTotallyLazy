@@ -22,7 +22,7 @@
 
 - (BOOL)isEqual:(id)otherObject {
     if (![otherObject isKindOfClass:[Some class]]) {
-        return FALSE;
+        return [self isEqual:[Some some:otherObject]];
     }
     return [[otherObject get] isEqual:[self get]];
 }

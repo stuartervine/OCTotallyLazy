@@ -15,6 +15,11 @@
     assertThat([Some some:@"bob"], isNot(equalTo([None none])));
 }
 
+- (void)testEqualityLiftsValue {
+    assertThat([Some some:@"bob"], equalTo(@"bob"));
+    assertThat([Some some:@"bob"], isNot(equalTo(nil)));
+}
+
 -(void)testCannotGetValueOfNone {
     @try {
         [[None none] get];

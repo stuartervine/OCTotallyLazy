@@ -12,6 +12,14 @@
 
 @implementation NumbersTest
 
+- (void)testMax {
+    assertThat([sequence(num(1), num(2), num(3), nil) reduce:TL_max()], equalTo(num(3)));
+}
+
+- (void)testMin {
+    assertThat([sequence(num(1), num(2), num(3), nil) reduce:TL_min()], equalTo(num(1)));
+}
+
 - (void)testSum {
     assertThat([sequence(num(1), num(2), num(3), nil) reduce:TL_sum()], equalTo(num(6)));
     assertThat([sequence(num(1), num(2), num(3), nil) reduce:sum()], equalTo(num(6)));
