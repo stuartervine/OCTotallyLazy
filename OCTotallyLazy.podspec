@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.source_files = 'src/main/**/*.{h,m}'
   s.requires_arc = true
+  s.xcconfig     = { 'GCC_WARN_USUSED_FUNCTION' => 'NO' }
 end
