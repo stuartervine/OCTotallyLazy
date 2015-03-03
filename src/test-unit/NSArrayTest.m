@@ -39,16 +39,18 @@
             array(@"one", @"two", nil),
             array(@"three", @"four", nil),
             nil);
-    assertThat([items flatMap:[Callables toUpperCase]], hasItems(@"ONE", @"TWO", @"THREE", @"FOUR", nil));
+    assertThat([items flatMap:[Callables identity]], hasItems(@"one", @"two", @"three", @"four", nil));
 }
 
--(void)testFlatMapSupportsNDepthSequences {
+-(void)testFlatMapFlattensOnlyOneLevel {
     NSArray *items = array(
             @"one",
             array(@"two", @"three", nil),
             array(array(@"four", nil), nil),
             nil);
-    assertThat([items flatMap:[Callables toUpperCase]], hasItems(@"ONE", @"TWO", @"THREE", @"FOUR", nil));
+    NSArray *flatMapped = [items flatMap:[Callables identity]];
+    assertThat(flatMapped, hasItems(@"one", @"two", @"three", nil));
+    assertThat([flatMapped objectAtIndex:3], hasItems(@"four", nil));
 }
 
 -(void)testFlattenResolvesOptions {
