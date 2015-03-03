@@ -5,6 +5,8 @@ typedef NSNumber *(^CALLABLE_TO_NUMBER)(id);
 typedef NSString *(^ACCUMULATOR_TO_STRING)(id, id);
 
 @interface Callables : NSObject
++ (id (^)(id))identity;
+
 + (NSString * (^)(NSString *))toUpperCase;
 
 + (NSString * (^)(NSString *, NSString *))appendString;

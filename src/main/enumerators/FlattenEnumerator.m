@@ -20,7 +20,7 @@
     while((item = [currentEnumerator nextObject]) == nil) {
         id nextItem = [enumerator nextObject];
         if ([nextItem respondsToSelector:@selector(toEnumerator)]) {
-            currentEnumerator = [FlattenEnumerator withEnumerator:[nextItem toEnumerator]];
+            currentEnumerator = [nextItem toEnumerator];
             continue;
         }
         return nextItem;

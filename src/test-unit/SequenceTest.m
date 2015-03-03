@@ -64,7 +64,7 @@
             sequence(@"one", [None none], nil),
             sequence(@"three", @"four", nil),
             nil);
-    assertThat([[items flatMap:[Callables toUpperCase]] asArray], hasItems(@"ONE", @"THREE", @"FOUR", nil));
+    assertThat([[items flatMap:[Callables identity]] asArray], hasItems(@"one", [None none], @"three", @"four", nil));
 
     Sequence *numbers = sequence(@1, @2, @3, @4, nil);
     Sequence *flattenedNumbers = [numbers flatMap:^(NSNumber *number) {
@@ -104,7 +104,17 @@
     }];
     assertThatInt([[groups asArray] count], equalToInt(3));
     assertThat([groups first], hasItems(@"one", nil));
+}
 
+- (void)testGroupByGeneratesMappableGroups {
+    Sequence *groups = [sequence(@"one", @"two", @"three", @"four", @"five", @"six", @"seven", nil) groupBy:^(NSString *item) {
+        return [NSNumber numberWithInt:item.length];
+    }];
+    Sequence *counts = [groups map:^id(Group *g) {
+        return @([[g asArray] count]);
+    }];
+    assertThat(counts, hasItems(@3, @2, @2, nil));
+    assertThatInt([[counts asArray] count], equalToInt(3));
 }
 
 - (void)testGrouped {
@@ -137,14 +147,6 @@
     assertThat([doubled asArray], hasItems(@2, @4, @6, nil));
 }
 
-- (void)testMapLiftsMappables {
-    Sequence *lazy = sequence(@[@1], option(@2), [None none], nil);
-    Sequence *doubled = [lazy map:^(NSNumber *item) {
-        return @([item intValue] * 2);
-    }];
-    assertThat([doubled asArray], hasItems(@[@2], option(@4), [None none], nil));
-}
-
 - (void)testMapDoesNotRetainBlocks {
     self.checkRetained = @0;
     Sequence *lazy = sequence(@1, @2, @3, nil);
@@ -161,6 +163,14 @@
         return @(index);
     }];
     assertThat([indexes asArray], hasItems(@0, @1, @2, nil));
+}
+
+- (void)testMapWithIndexNested {
+    Sequence *lazy = sequence(@"one", @"two", @"three", sequence(@"nestedOne", @"nestedTwo", nil), nil);
+    Sequence *indexes = [lazy mapWithIndex:^(id item, NSInteger index) {
+        return @(index);
+    }];
+    assertThat([indexes asArray], hasItems(@0, @1, @2, @3, nil));
 }
 
 - (void)testMerge {
@@ -315,12 +325,12 @@
     assertThat([items take:1], hasItems(@"one", nil));
     assertThat([items take:1], hasItems(@"one", nil));
 
-    Sequence *flattenable = sequence(sequence(@"one", nil), @"two", nil);
+    Sequence *flattenable = sequence(@"one", @"two", nil);
     assertThat([flattenable flatMap:^(NSString *item) {
-        return [item substringFromIndex:1];
+        return option([item substringFromIndex:1]);
     }], hasItems(@"ne", @"wo", nil));
     assertThat([flattenable flatMap:^(NSString *item) {
-        return [item substringFromIndex:1];
+        return option([item substringFromIndex:1]);
     }], hasItems(@"ne", @"wo", nil));
 }
 
