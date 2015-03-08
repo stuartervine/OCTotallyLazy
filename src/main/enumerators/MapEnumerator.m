@@ -20,7 +20,7 @@
 
 - (id)nextObject {
     id item = [enumerator nextObject];
-    return (item == nil) ? nil : [item conformsToProtocol:@protocol(Mappable)] ? [item map:func] : func(item);
+    return (item == nil) ? nil : func(item);
 }
 
 
