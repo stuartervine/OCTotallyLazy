@@ -14,7 +14,7 @@ function cleanTargets() {
 
 function runTests() {
     #xcodebuild -target package -sdk iphoneos -configuration Release build
-    xcodebuild -verbose -target test-unit -sdk $SDK_PATH -configuration Debug build
+    xcodebuild -verbose -scheme OCTotallyLazy -sdk $SDK_PATH -configuration Debug test
     OUT=$?
     if [ $OUT -ne 0 ]
     then
