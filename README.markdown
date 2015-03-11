@@ -126,5 +126,9 @@ So I'm a bit fed up with using 'libraries' that say, just include our source cod
 - Copy <CHECKOUT_DIR>/artifacts/OCTotallyLazy.framework to your external libraries folder.
 - Import the framework to your project.
 - Jobsa good 'un.
-    
+
+Or if you're using [CocoaPods](http://cocoapods.org/?q=totallylazy), add the following line to your Podfile
+
+    pod 'OCTotallyLazy'
+
     
