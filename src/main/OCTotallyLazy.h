@@ -16,7 +16,6 @@
 #import "Numbers.h"
 #import "Option.h"
 #import "Pair.h"
-#import "Predicates.h"
 #import "Range.h"
 #import "Some.h"
 #import "Types.h"
