@@ -6,904 +6,877 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		BC49C45114E05CC600BE88D2 /* package */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = BC49C45214E05CC600BE88D2 /* Build configuration list for PBXAggregateTarget "package" */;
-			buildPhases = (
-				BC49C45514E05CFB00BE88D2 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = package;
-			productName = PackageFuncky;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		AD5D05A0E1C9D688C70192F0 /* Function2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0D9D52A0B68BFF9FBD57 /* Function2.m */; };
-		AD5D0610C61BC3AA9EB8D138 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03DBC64515F232FB590C /* Functions.m */; };
-		AD5D07A282CE1F9764618922 /* KeyWithoutToString.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03F527356908363F93E4 /* KeyWithoutToString.m */; };
-		AD5D080F8DF4A4D245988717 /* Function1.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0E4BB0F51BDC6ED6AFFA /* Function1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD5D0835F95B2A7DF1278E30 /* Function2.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D065BE2BFCA1E099A409A /* Function2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD5D0ADB89F95229E1296B67 /* FunctionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03E3D075B182F7E0F83B /* FunctionsTest.m */; };
-		AD5D0BC6D2593ADD9FDED90B /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0D34F6564F39155B7CF4 /* Functions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD5D0F0612F2B5AAA4949C4D /* Function1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D038FB113310EC3EEA18A /* Function1.m */; };
-		BC60930E14EC2E9100A59CDD /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60930D14EC2E9100A59CDD /* OCHamcrestIOS.framework */; };
-		BC60931014EC2EA200A59CDD /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60930F14EC2EA200A59CDD /* libOCMock.a */; };
-		BC60931914EC6BCA00A59CDD /* OCTotallyLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60931814EC6BCA00A59CDD /* OCTotallyLazy.framework */; };
-		BC76518514E0715800559503 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518414E0715800559503 /* SenTestingKit.framework */; };
-		BC76518714E0717400559503 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC76518614E0717400559503 /* Foundation.framework */; };
-		BC7772A11513388C00F4FF4A /* MemoisedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772941513388C00F4FF4A /* MemoisedEnumeratorTest.m */; };
-		BC7772A21513388C00F4FF4A /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772951513388C00F4FF4A /* NSArrayTest.m */; };
-		BC7772A31513388C00F4FF4A /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772961513388C00F4FF4A /* NSDictionaryTest.m */; };
-		BC7772A41513388C00F4FF4A /* NSSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772971513388C00F4FF4A /* NSSetTest.m */; };
-		BC7772A51513388C00F4FF4A /* OCTotallyLazyTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772991513388C00F4FF4A /* OCTotallyLazyTestCase.m */; };
-		BC7772A61513388C00F4FF4A /* OptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77729A1513388C00F4FF4A /* OptionTest.m */; };
-		BC7772A71513388C00F4FF4A /* PredicatesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77729B1513388C00F4FF4A /* PredicatesTest.m */; };
-		BC7772A81513388C00F4FF4A /* RangeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77729D1513388C00F4FF4A /* RangeTest.m */; };
-		BC7772A91513388C00F4FF4A /* RepeatEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77729E1513388C00F4FF4A /* RepeatEnumeratorTest.m */; };
-		BC7772AA1513388C00F4FF4A /* SequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77729F1513388C00F4FF4A /* SequenceTest.m */; };
-		BC7772CD151338ED00F4FF4A /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772B3151338ED00F4FF4A /* Foldable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772CE151338ED00F4FF4A /* Mappable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772B4151338ED00F4FF4A /* Mappable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772CF151338ED00F4FF4A /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772B5151338ED00F4FF4A /* None.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772D0151338ED00F4FF4A /* None.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772B6151338ED00F4FF4A /* None.m */; };
-		BC7772D1151338ED00F4FF4A /* NoSuchElementException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772B7151338ED00F4FF4A /* NoSuchElementException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772D2151338ED00F4FF4A /* NoSuchElementException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772B8151338ED00F4FF4A /* NoSuchElementException.m */; };
-		BC7772D3151338ED00F4FF4A /* NSArray+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772B9151338ED00F4FF4A /* NSArray+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772D4151338ED00F4FF4A /* NSArray+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772BA151338ED00F4FF4A /* NSArray+OCTotallyLazy.m */; };
-		BC7772D5151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772BB151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772D6151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772BC151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.m */; };
-		BC7772D7151338ED00F4FF4A /* NSSet+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772BD151338ED00F4FF4A /* NSSet+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772D8151338ED00F4FF4A /* NSSet+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772BE151338ED00F4FF4A /* NSSet+OCTotallyLazy.m */; };
-		BC7772D9151338ED00F4FF4A /* OCTotallyLazy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC7772BF151338ED00F4FF4A /* OCTotallyLazy-Info.plist */; };
-		BC7772DA151338ED00F4FF4A /* OCTotallyLazy-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BC7772C0151338ED00F4FF4A /* OCTotallyLazy-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772DB151338ED00F4FF4A /* OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772C1151338ED00F4FF4A /* OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772DC151338ED00F4FF4A /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772C2151338ED00F4FF4A /* Option.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772DD151338ED00F4FF4A /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772C3151338ED00F4FF4A /* Option.m */; };
-		BC7772DE151338ED00F4FF4A /* Pair.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772C4151338ED00F4FF4A /* Pair.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772DF151338ED00F4FF4A /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772C5151338ED00F4FF4A /* Pair.m */; };
-		BC7772E0151338ED00F4FF4A /* Predicates.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772C6151338ED00F4FF4A /* Predicates.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772E1151338ED00F4FF4A /* Range.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772C7151338ED00F4FF4A /* Range.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772E2151338ED00F4FF4A /* Range.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772C8151338ED00F4FF4A /* Range.m */; };
-		BC7772E3151338ED00F4FF4A /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772C9151338ED00F4FF4A /* Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772E4151338ED00F4FF4A /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772CA151338ED00F4FF4A /* Sequence.m */; };
-		BC7772E5151338ED00F4FF4A /* Some.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772CB151338ED00F4FF4A /* Some.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772E6151338ED00F4FF4A /* Some.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772CC151338ED00F4FF4A /* Some.m */; };
-		BC7772E6151338ED00F4FF4C /* Coercions.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772E6151338ED00F4FF4B /* Coercions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772E6151338ED00F4FF4E /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772E6151338ED00F4FF4D /* Enumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF4C /* EmptyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF4B /* EmptyEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF4E /* EmptyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF4D /* EmptyEnumerator.m */; };
-		BC7772EA1513392400F4FF50 /* FilterEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF4F /* FilterEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF52 /* FilterEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF51 /* FilterEnumerator.m */; };
-		BC7772EA1513392400F4FF54 /* FlattenEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF53 /* FlattenEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF56 /* FlattenEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF55 /* FlattenEnumerator.m */; };
-		BC7772EA1513392400F4FF58 /* GroupedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF57 /* GroupedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF5A /* GroupedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF59 /* GroupedEnumerator.m */; };
-		BC7772EA1513392400F4FF5C /* MapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF5B /* MapEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF5E /* MapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF5D /* MapEnumerator.m */; };
-		BC7772EA1513392400F4FF64 /* MemoisedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF63 /* MemoisedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF66 /* MemoisedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF65 /* MemoisedEnumerator.m */; };
-		BC7772EA1513392400F4FF68 /* NSEnumerator+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF67 /* NSEnumerator+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF6A /* NSEnumerator+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF69 /* NSEnumerator+OCTotallyLazy.m */; };
-		BC7772EA1513392400F4FF6C /* PairEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF6B /* PairEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF6E /* PairEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF6D /* PairEnumerator.m */; };
-		BC7772EA1513392400F4FF70 /* RepeatEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF6F /* RepeatEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF72 /* RepeatEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF71 /* RepeatEnumerator.m */; };
-		BC7772EA1513392400F4FF74 /* SingleValueEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF73 /* SingleValueEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF76 /* SingleValueEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF75 /* SingleValueEnumerator.m */; };
-		BC7772EA1513392400F4FF78 /* TakeWhileEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF77 /* TakeWhileEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF7A /* TakeWhileEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF79 /* TakeWhileEnumerator.m */; };
-		BC7772EA1513392400F4FF7C /* EasyEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF7B /* EasyEnumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF7E /* EasyEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF7D /* EasyEnumerable.m */; };
-		BC7772EA1513392400F4FF80 /* Flattenable.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF7F /* Flattenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF82 /* GroupedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF81 /* GroupedEnumeratorTest.m */; };
-		BC7772EA1513392400F4FF84 /* Callables.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF83 /* Callables.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF86 /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF85 /* Callables.m */; };
-		BC7772EA1513392400F4FF88 /* EnumerateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF87 /* EnumerateEnumerator.m */; };
-		BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF89 /* EnumerateEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF8C /* PartitionEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF8B /* PartitionEnumerator.m */; };
-		BC7772EA1513392400F4FF8E /* PartitionEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF8D /* PartitionEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF90 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF8F /* Queue.m */; };
-		BC7772EA1513392400F4FF92 /* Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF91 /* Queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF93 /* MemoisedSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF96 /* MemoisedSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF95 /* MemoisedSequence.m */; };
-		BC7772EA1513392400F4FF99 /* Numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF98 /* Numbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FF9E /* NumbersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9D /* NumbersTest.m */; };
-		BC7772EA1513392400F4FFA0 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FF9F /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FFA2 /* PairTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA1 /* PairTest.m */; };
-		BC7772EA1513392400F4FFA4 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA3 /* Group.m */; };
-		BC7772EA1513392400F4FFA6 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA5 /* Group.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FFA8 /* MergeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */; };
-		BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC7772EA1513392400F4FFAC /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFAB /* Numbers.m */; };
-		BC7772EA1513392400F4FFAE /* Predicates.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7772EA1513392400F4FFAD /* Predicates.m */; };
+		AD5D0001D23E541BBBA53CE7 /* RepeatEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0BC49C539AE6F814B302 /* RepeatEnumeratorTest.m */; };
+		AD5D000B2EDC63D0EC1B96FB /* TakeWhileEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D08B85598943812A535C8 /* TakeWhileEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0013FFAABE15D6898047 /* MemoisedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0EEF67E2D32833E03E17 /* MemoisedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D003D80EFFEFE091C3246 /* TakeWhileEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D07BD5BE014CD18B3A1A7 /* TakeWhileEnumerator.m */; };
+		AD5D004820EBB0FB502F5633 /* Range.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0D914AE00CBE21BBB815 /* Range.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D00AE1C7770D2AA77BA7F /* FunctionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0119ABF74B1D1DB4568B /* FunctionsTest.m */; };
+		AD5D00BE314A1878497CF70B /* GroupedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D04BDC8B7DE1795D296CF /* GroupedEnumerator.m */; };
+		AD5D01110A7B77524DBD9F38 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0601A0428176E8463FEF /* Queue.m */; };
+		AD5D01585CFE58CF604555FE /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D09AD57DFC65E3F4E6242 /* NSArrayTest.m */; };
+		AD5D01C606B4F1811074FA86 /* MemoisedSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D086F362BA7DC6ACECC0B /* MemoisedSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D01D0A666F9A0191DCC58 /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D002492BA8026C8CF3857 /* Numbers.m */; };
+		AD5D02504D11F62BFC59A249 /* Callables.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D08754463531EBC0FE74D /* Callables.m */; };
+		AD5D0267E8260982FD0DE5CF /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D051CB05597B85ED5ECC4 /* None.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D027454CAB3251F80C7D5 /* NumbersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D06673940C77881522BC4 /* NumbersTest.m */; };
+		AD5D02A432B2C53B6D48F5B6 /* Predicates.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0E1CDF14F11A426B243A /* Predicates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D02EA81F29951FFFA47E4 /* MapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D09715AB8CE8F1699B54A /* MapEnumerator.m */; };
+		AD5D0302AC40361B7155AB13 /* NSSet+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D07F9A9497F61FA62D627 /* NSSet+OCTotallyLazy.m */; };
+		AD5D0395A4252D10324C6B64 /* PairTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0CD97D8897D2DCF3C49E /* PairTest.m */; };
+		AD5D03A3CB61A19D1A7E7778 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0D51A9C8F4DEB7A52FF2 /* Option.m */; };
+		AD5D03FA5522F8CE10C6D47E /* MemoisedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0BAABF7210929DAC9309 /* MemoisedEnumerator.m */; };
+		AD5D041E280AFEE6DDAC9FFD /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D06E13013F77E5160C973 /* Enumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0428B67BAD6E4D57DDC0 /* OCTotallyLazy-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0C342F24C3093C929C50 /* OCTotallyLazy-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D043E4103970AB2DF15D8 /* SingleValueEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D00579EBB2BA237D8EAE7 /* SingleValueEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D046FFFA10CFCF4CEE9FF /* EnumerateEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D00BF6A1D7B5C5A6AFC51 /* EnumerateEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D048667DD723071BD8E50 /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D03842E477C1194F28DC4 /* Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D049A2E6244EED2656814 /* EasyEnumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0C3FB063C934B6CDCCD0 /* EasyEnumerable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D04D2DF7029E90E079F3E /* Function1.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D026702EBEF901C4486C5 /* Function1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D056EF287A852AA77DA13 /* NSSet+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D016741C44342D9C85EFF /* NSSet+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D05849290A2179B2F9D0E /* OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D03B72D7EBB8F6A079B89 /* OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D059BCD3080FC2BF2ED8D /* PartitionEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0755303AF8E32059D184 /* PartitionEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D05EE10A06954983A8D02 /* Queue.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D06AFAC9BAA2465DCE41F /* Queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D061EE6967F0866FFC640 /* NSArray+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D03EC11BA48E5894964B4 /* NSArray+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D062BB00DB2906A259652 /* PredicatesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D07C93D69F597C46CDBE0 /* PredicatesTest.m */; };
+		AD5D06366081DCEAAF4F121D /* OptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0F2B61FF5A1B02D13FEE /* OptionTest.m */; };
+		AD5D06568EE20458CC7534B8 /* Coercions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D017DB1FD4B95419BAE97 /* Coercions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0694159A68ECBBB6EF7D /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D06ADB7CE85353766EFE4 /* Option.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D06947AEE94547C042CED /* FilterEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D09B6816D852EF7D24525 /* FilterEnumerator.m */; };
+		AD5D06B0CD30E702B8A96F6B /* RangeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D030032CA7EEB3C328E6F /* RangeTest.m */; };
+		AD5D06C6BC375A7C5527C200 /* Function1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0B8BE4167A6641584041 /* Function1.m */; };
+		AD5D0725B93B813DD3E6FEE3 /* Predicates.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D072D9FC669DFEA1FC6FF /* Predicates.m */; };
+		AD5D0744237E6BAEA9713C52 /* None.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0431D469EF34992143E0 /* None.m */; };
+		AD5D074970FC3643632EB0C0 /* MergeEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0D45D0128DF0E439BD2F /* MergeEnumerator.m */; };
+		AD5D074EF8854AFA1F815289 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D06484D2464E727C0F2E5 /* Functions.m */; };
+		AD5D076723BBA9DBB8FD036C /* EasyEnumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D003F07F16CFEC064A099 /* EasyEnumerable.m */; };
+		AD5D076F46F6ED36419C1634 /* PairEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0A68E2BED3290661772D /* PairEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D080B6437D9769D10318C /* Numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0C768C53879C79DB83F9 /* Numbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0820F08EF6F784C85FF7 /* OCTotallyLazy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD5D0717B2C932B387E2437E /* OCTotallyLazy-Info.plist */; };
+		AD5D082175FD479A0EC2028D /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0A8C12ED30B358FF8D2E /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D083360A77813060CEBAB /* EnumerateEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D017611F0CF3321411539 /* EnumerateEnumerator.m */; };
+		AD5D0870C494E2BDF3DC05AF /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D08369F402B4C924A86FB /* Pair.m */; };
+		AD5D087A3C3098758FC59B01 /* MergeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0F43FA821591CCF0148A /* MergeEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0896E3E3C4B60D2811B0 /* NSDictionary+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D09732CD8532376A7D221 /* NSDictionary+OCTotallyLazy.m */; };
+		AD5D08B927B7D07A8DAD1953 /* EmptyEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D01911E9A29F37CB07547 /* EmptyEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D09257C137A0C45A7EA8B /* GroupedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0950B366F63871D12981 /* GroupedEnumeratorTest.m */; };
+		AD5D092E8E6BCD090192949D /* MapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D03953F1E42FBEE4DD4B2 /* MapEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D09B402E14D8745963716 /* FlattenEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0AF10385994ECCC13960 /* FlattenEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D09E10FF6D5129CE0514D /* MemoisedSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D027F9D748393026A4021 /* MemoisedSequence.m */; };
+		AD5D09EA837DFE5E3B9740A6 /* FilterEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D077517080FBCC331E77B /* FilterEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0A2FEE2A19B63B4F3EE5 /* FlattenEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0854A85044BA362E492B /* FlattenEnumerator.m */; };
+		AD5D0A5A178F4F2EFA857979 /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D07EED655E3BCC225AED4 /* Sequence.m */; };
+		AD5D0A98364F1BFF1EF731B4 /* Callables.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0C46D4941E773E018857 /* Callables.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0AABAD3463728E259434 /* PartitionEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03C3F6F947D38CF574D2 /* PartitionEnumerator.m */; };
+		AD5D0ABC49EF5EC96344E510 /* SingleValueEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D06C0F98F71294238FDDF /* SingleValueEnumerator.m */; };
+		AD5D0ACD1ADAA21FFE5514A9 /* OCTotallyLazy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD5D0717B2C932B387E2437E /* OCTotallyLazy-Info.plist */; };
+		AD5D0AECBE1C9A572D2F95E1 /* RepeatEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D08139597BC86F4D7E800 /* RepeatEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0B03F2D3EBA8B331DA68 /* KeyWithoutToString.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03F7260CBB1FC2B18F0A /* KeyWithoutToString.m */; };
+		AD5D0B0AC6E8A059F1A3F9FA /* Flattenable.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D083603235E97780FD879 /* Flattenable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0B27608B5B7701FC8934 /* GroupedEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0F42DAAC2D5A2CB84270 /* GroupedEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0B4C7D5A192307A65B4B /* Foldable.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D035A54DB0C61F0718AE6 /* Foldable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0B577A0E039DBBB12EDB /* OCTotallyLazyTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D06A9D8E000F248C6AE33 /* OCTotallyLazyTestCase.m */; };
+		AD5D0BA43408956ABE4E9C87 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D05AB67A9E2047A2D7A80 /* Group.m */; };
+		AD5D0C464DFEA55141032B15 /* Some.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D07E5060B9C2E61150742 /* Some.m */; };
+		AD5D0C5BECA447C9C3EEE6BB /* Some.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D03F52A99FBCDE7C1C943 /* Some.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0C95BF9B8299D360A59D /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0B518702E87F8FB791A8 /* NSDictionaryTest.m */; };
+		AD5D0CA164CD6F77110CEF95 /* NSDictionary+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D06A86C83CBD6765345F8 /* NSDictionary+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0CD5371D83C609EB1154 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0468A2D3109B5D2A4963 /* Group.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0CD92ABEDDE00FB7702B /* Function2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D04C54973CCC6D86ABCB2 /* Function2.m */; };
+		AD5D0CFCD1C593805E48500C /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D0FE6709D9106996691A7 /* Functions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0DA14D7E5DB7E9F38C8D /* MemoisedEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0587B1B9937E27B14E2B /* MemoisedEnumeratorTest.m */; };
+		AD5D0DA1BD938259BCCCBA0D /* Function2.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D01EF0FF6481CE63AD7AE /* Function2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0DEE181297F8753581B7 /* Range.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D00D60F37EBBEC8E57FD3 /* Range.m */; };
+		AD5D0E3DFB8533A9962461D1 /* NSEnumerator+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0CDFAE2FB102431EE2B1 /* NSEnumerator+OCTotallyLazy.m */; };
+		AD5D0E601D95F0160A5A7F4A /* NSArray+OCTotallyLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0D056243B15774A84C4F /* NSArray+OCTotallyLazy.m */; };
+		AD5D0E872CDA2EBEB5FD39BE /* NSSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D08A17D908053F8A3696E /* NSSetTest.m */; };
+		AD5D0EA105234C6B1BF17713 /* NSEnumerator+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D05D735E226E115BDF670 /* NSEnumerator+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0EC8D8E99F6B5A183B54 /* NoSuchElementException.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D014BBEE164A58DFB8547 /* NoSuchElementException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0EF7EDA3885DD6070B39 /* Pair.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D002B948B912D31C6BDC6 /* Pair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5D0F15946930BEF09D4F37 /* NoSuchElementException.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D03A3E038567415C11D36 /* NoSuchElementException.m */; };
+		AD5D0FA40E3030B277DCC6CF /* SequenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D09D597E1C147D5C97676 /* SequenceTest.m */; };
+		AD5D0FBDF149FC0206885C5A /* PairEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D06E6C7A7A8F24EE6B9CE /* PairEnumerator.m */; };
+		AD5D0FD9DDFF8A51A316006B /* EmptyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0C8983AD87D6A3F11A67 /* EmptyEnumerator.m */; };
+		AD5D0FFBD2E633CCC38D612F /* RepeatEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0CB9F47513215B9F8652 /* RepeatEnumerator.m */; };
+		AD5D0FFC2DB2E76301045FD6 /* Mappable.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D08CB19E536BD86C40A4E /* Mappable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA1EF5C1BF63E6C002D0A7C /* OCTotallyLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA1EF511BF63E6C002D0A7C /* OCTotallyLazy.framework */; };
+		BCA1EF611BF63E6C002D0A7C /* OCTotallyLazyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1EF601BF63E6C002D0A7C /* OCTotallyLazyTests.m */; };
+		BCEBE1071C087FFA001F4F9C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBE1061C087FFA001F4F9C /* OCMock.framework */; };
+		BCEBE10B1C089679001F4F9C /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBE10A1C089679001F4F9C /* OCHamcrestIOS.framework */; };
+		BCEBE10E1C089B43001F4F9C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCEBE10D1C089B43001F4F9C /* OCMock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BC60928014EBC00F00A59CDD /* PBXContainerItemProxy */ = {
+		BCA1EF5D1BF63E6C002D0A7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BC49C42514E05A5800BE88D2 /* Project object */;
+			containerPortal = BCA1EF481BF63E6C002D0A7C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BC49C45114E05CC600BE88D2;
-			remoteInfo = PackageFuncky;
+			remoteGlobalIDString = BCA1EF501BF63E6C002D0A7C;
+			remoteInfo = OCTotallyLazy;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BCEBE10C1C089A6D001F4F9C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BCEBE10E1C089B43001F4F9C /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		AD5D038FB113310EC3EEA18A /* Function1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function1.m; sourceTree = "<group>"; };
-		AD5D03DBC64515F232FB590C /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
-		AD5D03E3D075B182F7E0F83B /* FunctionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionsTest.m; sourceTree = "<group>"; };
-		AD5D03F527356908363F93E4 /* KeyWithoutToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyWithoutToString.m; sourceTree = "<group>"; };
-		AD5D065BE2BFCA1E099A409A /* Function2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function2.h; sourceTree = "<group>"; };
-		AD5D0D34F6564F39155B7CF4 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
-		AD5D0D905101890431AE54F3 /* KeyWithoutToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyWithoutToString.h; sourceTree = "<group>"; };
-		AD5D0D9D52A0B68BFF9FBD57 /* Function2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function2.m; sourceTree = "<group>"; };
-		AD5D0E4BB0F51BDC6ED6AFFA /* Function1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function1.h; sourceTree = "<group>"; };
-		BC49C43314E05A8200BE88D2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		BC60930D14EC2E9100A59CDD /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = external/Test/OCHamcrestIOS.framework; sourceTree = "<group>"; };
-		BC60930F14EC2EA200A59CDD /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = external/Test/OCMock/libOCMock.a; sourceTree = "<group>"; };
-		BC60931814EC6BCA00A59CDD /* OCTotallyLazy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCTotallyLazy.framework; path = artifacts/OCTotallyLazy.framework; sourceTree = "<group>"; };
-		BC76515614E0706800559503 /* test-unit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-unit.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC76518414E0715800559503 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BC76518614E0717400559503 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BC7772941513388C00F4FF4A /* MemoisedEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedEnumeratorTest.m; sourceTree = "<group>"; };
-		BC7772951513388C00F4FF4A /* NSArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
-		BC7772961513388C00F4FF4A /* NSDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTest.m; sourceTree = "<group>"; };
-		BC7772971513388C00F4FF4A /* NSSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTest.m; sourceTree = "<group>"; };
-		BC7772981513388C00F4FF4A /* OCTotallyLazyTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTotallyLazyTestCase.h; sourceTree = "<group>"; };
-		BC7772991513388C00F4FF4A /* OCTotallyLazyTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTotallyLazyTestCase.m; sourceTree = "<group>"; };
-		BC77729A1513388C00F4FF4A /* OptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTest.m; sourceTree = "<group>"; };
-		BC77729B1513388C00F4FF4A /* PredicatesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicatesTest.m; sourceTree = "<group>"; };
-		BC77729D1513388C00F4FF4A /* RangeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeTest.m; sourceTree = "<group>"; };
-		BC77729E1513388C00F4FF4A /* RepeatEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatEnumeratorTest.m; sourceTree = "<group>"; };
-		BC77729F1513388C00F4FF4A /* SequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceTest.m; sourceTree = "<group>"; };
-		BC7772B3151338ED00F4FF4A /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foldable.h; sourceTree = "<group>"; };
-		BC7772B4151338ED00F4FF4A /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
-		BC7772B5151338ED00F4FF4A /* None.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = None.h; sourceTree = "<group>"; };
-		BC7772B6151338ED00F4FF4A /* None.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = None.m; sourceTree = "<group>"; };
-		BC7772B7151338ED00F4FF4A /* NoSuchElementException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoSuchElementException.h; sourceTree = "<group>"; };
-		BC7772B8151338ED00F4FF4A /* NoSuchElementException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoSuchElementException.m; sourceTree = "<group>"; };
-		BC7772B9151338ED00F4FF4A /* NSArray+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OCTotallyLazy.h"; sourceTree = "<group>"; };
-		BC7772BA151338ED00F4FF4A /* NSArray+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OCTotallyLazy.m"; sourceTree = "<group>"; };
-		BC7772BB151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OCTotallyLazy.h"; sourceTree = "<group>"; };
-		BC7772BC151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OCTotallyLazy.m"; sourceTree = "<group>"; };
-		BC7772BD151338ED00F4FF4A /* NSSet+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+OCTotallyLazy.h"; sourceTree = "<group>"; };
-		BC7772BE151338ED00F4FF4A /* NSSet+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+OCTotallyLazy.m"; sourceTree = "<group>"; };
-		BC7772BF151338ED00F4FF4A /* OCTotallyLazy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OCTotallyLazy-Info.plist"; sourceTree = "<group>"; };
-		BC7772C0151338ED00F4FF4A /* OCTotallyLazy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCTotallyLazy-Prefix.pch"; sourceTree = "<group>"; };
-		BC7772C1151338ED00F4FF4A /* OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTotallyLazy.h; sourceTree = "<group>"; };
-		BC7772C2151338ED00F4FF4A /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
-		BC7772C3151338ED00F4FF4A /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
-		BC7772C4151338ED00F4FF4A /* Pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pair.h; sourceTree = "<group>"; };
-		BC7772C5151338ED00F4FF4A /* Pair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pair.m; sourceTree = "<group>"; };
-		BC7772C6151338ED00F4FF4A /* Predicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Predicates.h; sourceTree = "<group>"; };
-		BC7772C7151338ED00F4FF4A /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
-		BC7772C8151338ED00F4FF4A /* Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Range.m; sourceTree = "<group>"; };
-		BC7772C9151338ED00F4FF4A /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
-		BC7772CA151338ED00F4FF4A /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
-		BC7772CB151338ED00F4FF4A /* Some.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Some.h; sourceTree = "<group>"; };
-		BC7772CC151338ED00F4FF4A /* Some.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Some.m; sourceTree = "<group>"; };
-		BC7772E6151338ED00F4FF4B /* Coercions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coercions.h; sourceTree = "<group>"; };
-		BC7772E6151338ED00F4FF4D /* Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerable.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF4B /* EmptyEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF4D /* EmptyEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF4F /* FilterEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF51 /* FilterEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF53 /* FlattenEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlattenEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF55 /* FlattenEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlattenEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF57 /* GroupedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupedEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF59 /* GroupedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF5B /* MapEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF5D /* MapEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF63 /* MemoisedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoisedEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF65 /* MemoisedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF67 /* NSEnumerator+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+OCTotallyLazy.h"; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF69 /* NSEnumerator+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+OCTotallyLazy.m"; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF6B /* PairEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF6D /* PairEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF6F /* RepeatEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF71 /* RepeatEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF73 /* SingleValueEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleValueEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF75 /* SingleValueEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleValueEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF77 /* TakeWhileEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeWhileEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF79 /* TakeWhileEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeWhileEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF7B /* EasyEnumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEnumerable.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF7D /* EasyEnumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEnumerable.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF7F /* Flattenable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flattenable.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF81 /* GroupedEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumeratorTest.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF83 /* Callables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Callables.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF85 /* Callables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Callables.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF87 /* EnumerateEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumerateEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF89 /* EnumerateEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumerateEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF8B /* PartitionEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartitionEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF8D /* PartitionEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartitionEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF8F /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF91 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF93 /* MemoisedSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoisedSequence.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF95 /* MemoisedSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedSequence.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF98 /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF9D /* NumbersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbersTest.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FF9F /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FFA1 /* PairTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairTest.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FFA3 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FFA5 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeEnumerator.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeEnumerator.h; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FFAB /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
-		BC7772EA1513392400F4FFAD /* Predicates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Predicates.m; sourceTree = "<group>"; };
+		AD5D002492BA8026C8CF3857 /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
+		AD5D002B948B912D31C6BDC6 /* Pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pair.h; sourceTree = "<group>"; };
+		AD5D003F07F16CFEC064A099 /* EasyEnumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEnumerable.m; sourceTree = "<group>"; };
+		AD5D00579EBB2BA237D8EAE7 /* SingleValueEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleValueEnumerator.h; sourceTree = "<group>"; };
+		AD5D00BF6A1D7B5C5A6AFC51 /* EnumerateEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumerateEnumerator.h; sourceTree = "<group>"; };
+		AD5D00D60F37EBBEC8E57FD3 /* Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Range.m; sourceTree = "<group>"; };
+		AD5D0119ABF74B1D1DB4568B /* FunctionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionsTest.m; sourceTree = "<group>"; };
+		AD5D014BBEE164A58DFB8547 /* NoSuchElementException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoSuchElementException.h; sourceTree = "<group>"; };
+		AD5D016741C44342D9C85EFF /* NSSet+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		AD5D017611F0CF3321411539 /* EnumerateEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumerateEnumerator.m; sourceTree = "<group>"; };
+		AD5D017DB1FD4B95419BAE97 /* Coercions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coercions.h; sourceTree = "<group>"; };
+		AD5D01911E9A29F37CB07547 /* EmptyEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyEnumerator.h; sourceTree = "<group>"; };
+		AD5D01EF0FF6481CE63AD7AE /* Function2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function2.h; sourceTree = "<group>"; };
+		AD5D026702EBEF901C4486C5 /* Function1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function1.h; sourceTree = "<group>"; };
+		AD5D027F9D748393026A4021 /* MemoisedSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedSequence.m; sourceTree = "<group>"; };
+		AD5D030032CA7EEB3C328E6F /* RangeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeTest.m; sourceTree = "<group>"; };
+		AD5D035A54DB0C61F0718AE6 /* Foldable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foldable.h; sourceTree = "<group>"; };
+		AD5D03842E477C1194F28DC4 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
+		AD5D03953F1E42FBEE4DD4B2 /* MapEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapEnumerator.h; sourceTree = "<group>"; };
+		AD5D03A3E038567415C11D36 /* NoSuchElementException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoSuchElementException.m; sourceTree = "<group>"; };
+		AD5D03B72D7EBB8F6A079B89 /* OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTotallyLazy.h; sourceTree = "<group>"; };
+		AD5D03C3F6F947D38CF574D2 /* PartitionEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartitionEnumerator.m; sourceTree = "<group>"; };
+		AD5D03EC11BA48E5894964B4 /* NSArray+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		AD5D03F52A99FBCDE7C1C943 /* Some.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Some.h; sourceTree = "<group>"; };
+		AD5D03F7260CBB1FC2B18F0A /* KeyWithoutToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyWithoutToString.m; sourceTree = "<group>"; };
+		AD5D0431D469EF34992143E0 /* None.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = None.m; sourceTree = "<group>"; };
+		AD5D0468A2D3109B5D2A4963 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		AD5D04BDC8B7DE1795D296CF /* GroupedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumerator.m; sourceTree = "<group>"; };
+		AD5D04C54973CCC6D86ABCB2 /* Function2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function2.m; sourceTree = "<group>"; };
+		AD5D051CB05597B85ED5ECC4 /* None.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = None.h; sourceTree = "<group>"; };
+		AD5D0587B1B9937E27B14E2B /* MemoisedEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedEnumeratorTest.m; sourceTree = "<group>"; };
+		AD5D05AB67A9E2047A2D7A80 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		AD5D05B16DDF3F5165594E39 /* KeyWithoutToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyWithoutToString.h; sourceTree = "<group>"; };
+		AD5D05D735E226E115BDF670 /* NSEnumerator+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		AD5D0601A0428176E8463FEF /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		AD5D06484D2464E727C0F2E5 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
+		AD5D06673940C77881522BC4 /* NumbersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbersTest.m; sourceTree = "<group>"; };
+		AD5D06A86C83CBD6765345F8 /* NSDictionary+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OCTotallyLazy.h"; sourceTree = "<group>"; };
+		AD5D06A9D8E000F248C6AE33 /* OCTotallyLazyTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTotallyLazyTestCase.m; sourceTree = "<group>"; };
+		AD5D06ADB7CE85353766EFE4 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		AD5D06AFAC9BAA2465DCE41F /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		AD5D06C0F98F71294238FDDF /* SingleValueEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleValueEnumerator.m; sourceTree = "<group>"; };
+		AD5D06E13013F77E5160C973 /* Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerable.h; sourceTree = "<group>"; };
+		AD5D06E6C7A7A8F24EE6B9CE /* PairEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairEnumerator.m; sourceTree = "<group>"; };
+		AD5D0717B2C932B387E2437E /* OCTotallyLazy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "OCTotallyLazy-Info.plist"; sourceTree = "<group>"; };
+		AD5D072D9FC669DFEA1FC6FF /* Predicates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Predicates.m; sourceTree = "<group>"; };
+		AD5D0755303AF8E32059D184 /* PartitionEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartitionEnumerator.h; sourceTree = "<group>"; };
+		AD5D077517080FBCC331E77B /* FilterEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterEnumerator.h; sourceTree = "<group>"; };
+		AD5D07BD5BE014CD18B3A1A7 /* TakeWhileEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeWhileEnumerator.m; sourceTree = "<group>"; };
+		AD5D07C93D69F597C46CDBE0 /* PredicatesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicatesTest.m; sourceTree = "<group>"; };
+		AD5D07E5060B9C2E61150742 /* Some.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Some.m; sourceTree = "<group>"; };
+		AD5D07EED655E3BCC225AED4 /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
+		AD5D07F9A9497F61FA62D627 /* NSSet+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		AD5D08139597BC86F4D7E800 /* RepeatEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatEnumerator.h; sourceTree = "<group>"; };
+		AD5D083603235E97780FD879 /* Flattenable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flattenable.h; sourceTree = "<group>"; };
+		AD5D08369F402B4C924A86FB /* Pair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pair.m; sourceTree = "<group>"; };
+		AD5D0854A85044BA362E492B /* FlattenEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlattenEnumerator.m; sourceTree = "<group>"; };
+		AD5D086F362BA7DC6ACECC0B /* MemoisedSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoisedSequence.h; sourceTree = "<group>"; };
+		AD5D08754463531EBC0FE74D /* Callables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Callables.m; sourceTree = "<group>"; };
+		AD5D08A17D908053F8A3696E /* NSSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTest.m; sourceTree = "<group>"; };
+		AD5D08B85598943812A535C8 /* TakeWhileEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeWhileEnumerator.h; sourceTree = "<group>"; };
+		AD5D08CB19E536BD86C40A4E /* Mappable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappable.h; sourceTree = "<group>"; };
+		AD5D0950B366F63871D12981 /* GroupedEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedEnumeratorTest.m; sourceTree = "<group>"; };
+		AD5D09715AB8CE8F1699B54A /* MapEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapEnumerator.m; sourceTree = "<group>"; };
+		AD5D09732CD8532376A7D221 /* NSDictionary+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		AD5D09AD57DFC65E3F4E6242 /* NSArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
+		AD5D09B6816D852EF7D24525 /* FilterEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterEnumerator.m; sourceTree = "<group>"; };
+		AD5D09D597E1C147D5C97676 /* SequenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceTest.m; sourceTree = "<group>"; };
+		AD5D0A68E2BED3290661772D /* PairEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairEnumerator.h; sourceTree = "<group>"; };
+		AD5D0A8C12ED30B358FF8D2E /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		AD5D0AF10385994ECCC13960 /* FlattenEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlattenEnumerator.h; sourceTree = "<group>"; };
+		AD5D0B518702E87F8FB791A8 /* NSDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTest.m; sourceTree = "<group>"; };
+		AD5D0B8BE4167A6641584041 /* Function1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function1.m; sourceTree = "<group>"; };
+		AD5D0BAABF7210929DAC9309 /* MemoisedEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoisedEnumerator.m; sourceTree = "<group>"; };
+		AD5D0BC49C539AE6F814B302 /* RepeatEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatEnumeratorTest.m; sourceTree = "<group>"; };
+		AD5D0C342F24C3093C929C50 /* OCTotallyLazy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCTotallyLazy-Prefix.pch"; sourceTree = "<group>"; };
+		AD5D0C3FB063C934B6CDCCD0 /* EasyEnumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEnumerable.h; sourceTree = "<group>"; };
+		AD5D0C46D4941E773E018857 /* Callables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Callables.h; sourceTree = "<group>"; };
+		AD5D0C768C53879C79DB83F9 /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
+		AD5D0C8983AD87D6A3F11A67 /* EmptyEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyEnumerator.m; sourceTree = "<group>"; };
+		AD5D0CB9F47513215B9F8652 /* RepeatEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatEnumerator.m; sourceTree = "<group>"; };
+		AD5D0CD97D8897D2DCF3C49E /* PairTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairTest.m; sourceTree = "<group>"; };
+		AD5D0CDFAE2FB102431EE2B1 /* NSEnumerator+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		AD5D0D056243B15774A84C4F /* NSArray+OCTotallyLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OCTotallyLazy.m"; sourceTree = "<group>"; };
+		AD5D0D45D0128DF0E439BD2F /* MergeEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeEnumerator.m; sourceTree = "<group>"; };
+		AD5D0D51A9C8F4DEB7A52FF2 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		AD5D0D914AE00CBE21BBB815 /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
+		AD5D0E1CDF14F11A426B243A /* Predicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Predicates.h; sourceTree = "<group>"; };
+		AD5D0EEF67E2D32833E03E17 /* MemoisedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoisedEnumerator.h; sourceTree = "<group>"; };
+		AD5D0F2B61FF5A1B02D13FEE /* OptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTest.m; sourceTree = "<group>"; };
+		AD5D0F42DAAC2D5A2CB84270 /* GroupedEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupedEnumerator.h; sourceTree = "<group>"; };
+		AD5D0F43FA821591CCF0148A /* MergeEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeEnumerator.h; sourceTree = "<group>"; };
+		AD5D0FDB6714E42BEDAAF0C6 /* OCTotallyLazyTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTotallyLazyTestCase.h; sourceTree = "<group>"; };
+		AD5D0FE6709D9106996691A7 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
+		BCA1EF511BF63E6C002D0A7C /* OCTotallyLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCTotallyLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA1EF561BF63E6C002D0A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA1EF5B1BF63E6C002D0A7C /* OCTotallyLazyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCTotallyLazyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA1EF601BF63E6C002D0A7C /* OCTotallyLazyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTotallyLazyTests.m; sourceTree = "<group>"; };
+		BCA1EF621BF63E6C002D0A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEBE1061C087FFA001F4F9C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
+		BCEBE1081C088089001F4F9C /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Carthage/Build/Mac/OCHamcrest.framework; sourceTree = "<group>"; };
+		BCEBE10A1C089679001F4F9C /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = PrecompiledFrameworks/OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		BCEBE10D1C089B43001F4F9C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BC49C42D14E05A8200BE88D2 /* Frameworks */ = {
+		BCA1EF4D1BF63E6C002D0A7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC76515214E0706800559503 /* Frameworks */ = {
+		BCA1EF581BF63E6C002D0A7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC60931914EC6BCA00A59CDD /* OCTotallyLazy.framework in Frameworks */,
-				BC60931014EC2EA200A59CDD /* libOCMock.a in Frameworks */,
-				BC60930E14EC2E9100A59CDD /* OCHamcrestIOS.framework in Frameworks */,
-				BC76518714E0717400559503 /* Foundation.framework in Frameworks */,
-				BC76518514E0715800559503 /* SenTestingKit.framework in Frameworks */,
+				BCEBE10B1C089679001F4F9C /* OCHamcrestIOS.framework in Frameworks */,
+				BCA1EF5C1BF63E6C002D0A7C /* OCTotallyLazy.framework in Frameworks */,
+				BCEBE1071C087FFA001F4F9C /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD5D0A59549958812C0BDC44 /* functions */ = {
+		AD5D001783B080B38C0BE2B2 /* predicates */ = {
 			isa = PBXGroup;
 			children = (
-				AD5D03DBC64515F232FB590C /* Functions.m */,
-				AD5D0D34F6564F39155B7CF4 /* Functions.h */,
-				AD5D0E4BB0F51BDC6ED6AFFA /* Function1.h */,
-				AD5D038FB113310EC3EEA18A /* Function1.m */,
-				AD5D065BE2BFCA1E099A409A /* Function2.h */,
-				AD5D0D9D52A0B68BFF9FBD57 /* Function2.m */,
+				AD5D0E1CDF14F11A426B243A /* Predicates.h */,
+				AD5D072D9FC669DFEA1FC6FF /* Predicates.m */,
 			);
-			path = functions;
+			path = predicates;
 			sourceTree = "<group>";
 		};
-		BC49C42314E05A5800BE88D2 = {
+		AD5D00DA0C7E64F6DF509DC9 /* enumerators */ = {
 			isa = PBXGroup;
 			children = (
-				BC60931814EC6BCA00A59CDD /* OCTotallyLazy.framework */,
-				BC60930F14EC2EA200A59CDD /* libOCMock.a */,
-				BC60930D14EC2E9100A59CDD /* OCHamcrestIOS.framework */,
-				BC49C43214E05A8200BE88D2 /* Frameworks */,
-				BC49C43114E05A8200BE88D2 /* Products */,
-				BC76519814E078660055954A /* src */,
+				AD5D0BC49C539AE6F814B302 /* RepeatEnumeratorTest.m */,
+				AD5D0950B366F63871D12981 /* GroupedEnumeratorTest.m */,
+				AD5D0587B1B9937E27B14E2B /* MemoisedEnumeratorTest.m */,
 			);
+			path = enumerators;
 			sourceTree = "<group>";
 		};
-		BC49C43114E05A8200BE88D2 /* Products */ = {
+		AD5D04874689398692C6A7E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC76515614E0706800559503 /* test-unit.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC49C43214E05A8200BE88D2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BC76518614E0717400559503 /* Foundation.framework */,
-				BC76518414E0715800559503 /* SenTestingKit.framework */,
-				BC49C43314E05A8200BE88D2 /* CoreFoundation.framework */,
+				BCEBE10A1C089679001F4F9C /* OCHamcrestIOS.framework */,
+				BCEBE1081C088089001F4F9C /* OCHamcrest.framework */,
+				BCEBE1061C087FFA001F4F9C /* OCMock.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC60928714EC2CB700A59CDD /* main */ = {
+		AD5D093B26B7ABFD33A6308E /* enumerators */ = {
 			isa = PBXGroup;
 			children = (
-				BC7772EA1513392400F4FFA5 /* Group.h */,
-				BC7772EA1513392400F4FFA3 /* Group.m */,
-				BC7772EA1513392400F4FF9F /* Types.h */,
-				BC7772EA1513392400F4FF95 /* MemoisedSequence.m */,
-				BC7772EA1513392400F4FF93 /* MemoisedSequence.h */,
-				BC7772EA1513392400F4FF91 /* Queue.h */,
-				BC7772EA1513392400F4FF8F /* Queue.m */,
-				BC7772EA1513392400F4FF7F /* Flattenable.h */,
-				BC7772EA1513392400F4FF7D /* EasyEnumerable.m */,
-				BC7772EA1513392400F4FF7B /* EasyEnumerable.h */,
-				BC7772EA1513392400F4FF85 /* Callables.m */,
-				BC7772EA1513392400F4FF83 /* Callables.h */,
-				BC7772EA1513392400F4FF4A /* enumerators */,
-				BC7772E6151338ED00F4FF4D /* Enumerable.h */,
-				BC7772E6151338ED00F4FF4B /* Coercions.h */,
-				BC7772B3151338ED00F4FF4A /* Foldable.h */,
-				BC7772B4151338ED00F4FF4A /* Mappable.h */,
-				BC7772B5151338ED00F4FF4A /* None.h */,
-				BC7772B6151338ED00F4FF4A /* None.m */,
-				BC7772B7151338ED00F4FF4A /* NoSuchElementException.h */,
-				BC7772B8151338ED00F4FF4A /* NoSuchElementException.m */,
-				BC7772B9151338ED00F4FF4A /* NSArray+OCTotallyLazy.h */,
-				BC7772BA151338ED00F4FF4A /* NSArray+OCTotallyLazy.m */,
-				BC7772BB151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.h */,
-				BC7772BC151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.m */,
-				BC7772BD151338ED00F4FF4A /* NSSet+OCTotallyLazy.h */,
-				BC7772BE151338ED00F4FF4A /* NSSet+OCTotallyLazy.m */,
-				BC7772BF151338ED00F4FF4A /* OCTotallyLazy-Info.plist */,
-				BC7772C0151338ED00F4FF4A /* OCTotallyLazy-Prefix.pch */,
-				BC7772C1151338ED00F4FF4A /* OCTotallyLazy.h */,
-				BC7772C2151338ED00F4FF4A /* Option.h */,
-				BC7772C3151338ED00F4FF4A /* Option.m */,
-				BC7772C4151338ED00F4FF4A /* Pair.h */,
-				BC7772C5151338ED00F4FF4A /* Pair.m */,
-				BC7772C7151338ED00F4FF4A /* Range.h */,
-				BC7772C8151338ED00F4FF4A /* Range.m */,
-				BC7772C9151338ED00F4FF4A /* Sequence.h */,
-				BC7772CA151338ED00F4FF4A /* Sequence.m */,
-				BC7772CB151338ED00F4FF4A /* Some.h */,
-				BC7772CC151338ED00F4FF4A /* Some.m */,
-				BC7772EA1513392400F4FF97 /* numbers */,
-				BC7772EA1513392400F4FF9B /* predicates */,
-				AD5D0A59549958812C0BDC44 /* functions */,
-			);
-			path = main;
-			sourceTree = "<group>";
-		};
-		BC60928814EC2CC000A59CDD /* test-unit */ = {
-			isa = PBXGroup;
-			children = (
-				AD5D03E3D075B182F7E0F83B /* FunctionsTest.m */,
-				BC7772EA1513392400F4FFA1 /* PairTest.m */,
-				BC7772AB1513389B00F4FF4A /* enumerators */,
-				BC7772951513388C00F4FF4A /* NSArrayTest.m */,
-				BC7772961513388C00F4FF4A /* NSDictionaryTest.m */,
-				BC7772971513388C00F4FF4A /* NSSetTest.m */,
-				BC7772981513388C00F4FF4A /* OCTotallyLazyTestCase.h */,
-				BC7772991513388C00F4FF4A /* OCTotallyLazyTestCase.m */,
-				BC77729A1513388C00F4FF4A /* OptionTest.m */,
-				BC77729D1513388C00F4FF4A /* RangeTest.m */,
-				BC77729F1513388C00F4FF4A /* SequenceTest.m */,
-				BC7772EA1513392400F4FF9A /* numbers */,
-				BC7772EA1513392400F4FF9C /* predicates */,
-				AD5D03F527356908363F93E4 /* KeyWithoutToString.m */,
-				AD5D0D905101890431AE54F3 /* KeyWithoutToString.h */,
-			);
-			path = "test-unit";
-			sourceTree = "<group>";
-		};
-		BC76519814E078660055954A /* src */ = {
-			isa = PBXGroup;
-			children = (
-				BC60928714EC2CB700A59CDD /* main */,
-				BC60928814EC2CC000A59CDD /* test-unit */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		BC7772AB1513389B00F4FF4A /* enumerators */ = {
-			isa = PBXGroup;
-			children = (
-				BC7772EA1513392400F4FF81 /* GroupedEnumeratorTest.m */,
-				BC77729E1513388C00F4FF4A /* RepeatEnumeratorTest.m */,
-				BC7772941513388C00F4FF4A /* MemoisedEnumeratorTest.m */,
+				AD5D03953F1E42FBEE4DD4B2 /* MapEnumerator.h */,
+				AD5D09715AB8CE8F1699B54A /* MapEnumerator.m */,
+				AD5D0A68E2BED3290661772D /* PairEnumerator.h */,
+				AD5D06E6C7A7A8F24EE6B9CE /* PairEnumerator.m */,
+				AD5D01911E9A29F37CB07547 /* EmptyEnumerator.h */,
+				AD5D0C8983AD87D6A3F11A67 /* EmptyEnumerator.m */,
+				AD5D0F43FA821591CCF0148A /* MergeEnumerator.h */,
+				AD5D0D45D0128DF0E439BD2F /* MergeEnumerator.m */,
+				AD5D077517080FBCC331E77B /* FilterEnumerator.h */,
+				AD5D09B6816D852EF7D24525 /* FilterEnumerator.m */,
+				AD5D08139597BC86F4D7E800 /* RepeatEnumerator.h */,
+				AD5D0CB9F47513215B9F8652 /* RepeatEnumerator.m */,
+				AD5D0AF10385994ECCC13960 /* FlattenEnumerator.h */,
+				AD5D0854A85044BA362E492B /* FlattenEnumerator.m */,
+				AD5D0F42DAAC2D5A2CB84270 /* GroupedEnumerator.h */,
+				AD5D04BDC8B7DE1795D296CF /* GroupedEnumerator.m */,
+				AD5D0EEF67E2D32833E03E17 /* MemoisedEnumerator.h */,
+				AD5D0BAABF7210929DAC9309 /* MemoisedEnumerator.m */,
+				AD5D00BF6A1D7B5C5A6AFC51 /* EnumerateEnumerator.h */,
+				AD5D017611F0CF3321411539 /* EnumerateEnumerator.m */,
+				AD5D0755303AF8E32059D184 /* PartitionEnumerator.h */,
+				AD5D03C3F6F947D38CF574D2 /* PartitionEnumerator.m */,
+				AD5D08B85598943812A535C8 /* TakeWhileEnumerator.h */,
+				AD5D07BD5BE014CD18B3A1A7 /* TakeWhileEnumerator.m */,
+				AD5D00579EBB2BA237D8EAE7 /* SingleValueEnumerator.h */,
+				AD5D06C0F98F71294238FDDF /* SingleValueEnumerator.m */,
+				AD5D05D735E226E115BDF670 /* NSEnumerator+OCTotallyLazy.h */,
+				AD5D0CDFAE2FB102431EE2B1 /* NSEnumerator+OCTotallyLazy.m */,
 			);
 			path = enumerators;
 			sourceTree = "<group>";
 		};
-		BC7772EA1513392400F4FF4A /* enumerators */ = {
+		AD5D0BA159A37E301F06CFE7 /* functions */ = {
 			isa = PBXGroup;
 			children = (
-				BC7772EA1513392400F4FFA9 /* MergeEnumerator.h */,
-				BC7772EA1513392400F4FFA7 /* MergeEnumerator.m */,
-				BC7772EA1513392400F4FF8D /* PartitionEnumerator.h */,
-				BC7772EA1513392400F4FF8B /* PartitionEnumerator.m */,
-				BC7772EA1513392400F4FF89 /* EnumerateEnumerator.h */,
-				BC7772EA1513392400F4FF87 /* EnumerateEnumerator.m */,
-				BC7772EA1513392400F4FF79 /* TakeWhileEnumerator.m */,
-				BC7772EA1513392400F4FF77 /* TakeWhileEnumerator.h */,
-				BC7772EA1513392400F4FF75 /* SingleValueEnumerator.m */,
-				BC7772EA1513392400F4FF73 /* SingleValueEnumerator.h */,
-				BC7772EA1513392400F4FF71 /* RepeatEnumerator.m */,
-				BC7772EA1513392400F4FF6F /* RepeatEnumerator.h */,
-				BC7772EA1513392400F4FF6D /* PairEnumerator.m */,
-				BC7772EA1513392400F4FF6B /* PairEnumerator.h */,
-				BC7772EA1513392400F4FF69 /* NSEnumerator+OCTotallyLazy.m */,
-				BC7772EA1513392400F4FF67 /* NSEnumerator+OCTotallyLazy.h */,
-				BC7772EA1513392400F4FF65 /* MemoisedEnumerator.m */,
-				BC7772EA1513392400F4FF63 /* MemoisedEnumerator.h */,
-				BC7772EA1513392400F4FF5D /* MapEnumerator.m */,
-				BC7772EA1513392400F4FF5B /* MapEnumerator.h */,
-				BC7772EA1513392400F4FF59 /* GroupedEnumerator.m */,
-				BC7772EA1513392400F4FF57 /* GroupedEnumerator.h */,
-				BC7772EA1513392400F4FF55 /* FlattenEnumerator.m */,
-				BC7772EA1513392400F4FF53 /* FlattenEnumerator.h */,
-				BC7772EA1513392400F4FF51 /* FilterEnumerator.m */,
-				BC7772EA1513392400F4FF4F /* FilterEnumerator.h */,
-				BC7772EA1513392400F4FF4D /* EmptyEnumerator.m */,
-				BC7772EA1513392400F4FF4B /* EmptyEnumerator.h */,
+				AD5D026702EBEF901C4486C5 /* Function1.h */,
+				AD5D0B8BE4167A6641584041 /* Function1.m */,
+				AD5D01EF0FF6481CE63AD7AE /* Function2.h */,
+				AD5D04C54973CCC6D86ABCB2 /* Function2.m */,
+				AD5D0FE6709D9106996691A7 /* Functions.h */,
+				AD5D06484D2464E727C0F2E5 /* Functions.m */,
 			);
-			path = enumerators;
+			path = functions;
 			sourceTree = "<group>";
 		};
-		BC7772EA1513392400F4FF97 /* numbers */ = {
+		AD5D0C6101DC6C78BD60BE1D /* predicates */ = {
 			isa = PBXGroup;
 			children = (
-				BC7772EA1513392400F4FFAB /* Numbers.m */,
-				BC7772EA1513392400F4FF98 /* Numbers.h */,
-			);
-			path = numbers;
-			sourceTree = "<group>";
-		};
-		BC7772EA1513392400F4FF9A /* numbers */ = {
-			isa = PBXGroup;
-			children = (
-				BC7772EA1513392400F4FF9D /* NumbersTest.m */,
-			);
-			path = numbers;
-			sourceTree = "<group>";
-		};
-		BC7772EA1513392400F4FF9B /* predicates */ = {
-			isa = PBXGroup;
-			children = (
-				BC7772EA1513392400F4FFAD /* Predicates.m */,
-				BC7772C6151338ED00F4FF4A /* Predicates.h */,
+				AD5D07C93D69F597C46CDBE0 /* PredicatesTest.m */,
 			);
 			path = predicates;
 			sourceTree = "<group>";
 		};
-		BC7772EA1513392400F4FF9C /* predicates */ = {
+		AD5D0CA63D6141EBE57C588A /* numbers */ = {
 			isa = PBXGroup;
 			children = (
-				BC77729B1513388C00F4FF4A /* PredicatesTest.m */,
+				AD5D06673940C77881522BC4 /* NumbersTest.m */,
 			);
-			path = predicates;
+			path = numbers;
+			sourceTree = "<group>";
+		};
+		AD5D0FA23CF35C3369249992 /* numbers */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D0C768C53879C79DB83F9 /* Numbers.h */,
+				AD5D002492BA8026C8CF3857 /* Numbers.m */,
+			);
+			path = numbers;
+			sourceTree = "<group>";
+		};
+		BCA1EF471BF63E6C002D0A7C = {
+			isa = PBXGroup;
+			children = (
+				BCEBE10D1C089B43001F4F9C /* OCMock.framework */,
+				BCA1EF531BF63E6C002D0A7C /* OCTotallyLazy */,
+				BCA1EF5F1BF63E6C002D0A7C /* OCTotallyLazyTests */,
+				BCA1EF521BF63E6C002D0A7C /* Products */,
+				AD5D04874689398692C6A7E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA1EF521BF63E6C002D0A7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA1EF511BF63E6C002D0A7C /* OCTotallyLazy.framework */,
+				BCA1EF5B1BF63E6C002D0A7C /* OCTotallyLazyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA1EF531BF63E6C002D0A7C /* OCTotallyLazy */ = {
+			isa = PBXGroup;
+			children = (
+				BCA1EF561BF63E6C002D0A7C /* Info.plist */,
+				AD5D0C46D4941E773E018857 /* Callables.h */,
+				AD5D08754463531EBC0FE74D /* Callables.m */,
+				AD5D017DB1FD4B95419BAE97 /* Coercions.h */,
+				AD5D0C3FB063C934B6CDCCD0 /* EasyEnumerable.h */,
+				AD5D003F07F16CFEC064A099 /* EasyEnumerable.m */,
+				AD5D06E13013F77E5160C973 /* Enumerable.h */,
+				AD5D083603235E97780FD879 /* Flattenable.h */,
+				AD5D035A54DB0C61F0718AE6 /* Foldable.h */,
+				AD5D0468A2D3109B5D2A4963 /* Group.h */,
+				AD5D05AB67A9E2047A2D7A80 /* Group.m */,
+				AD5D08CB19E536BD86C40A4E /* Mappable.h */,
+				AD5D086F362BA7DC6ACECC0B /* MemoisedSequence.h */,
+				AD5D027F9D748393026A4021 /* MemoisedSequence.m */,
+				AD5D051CB05597B85ED5ECC4 /* None.h */,
+				AD5D0431D469EF34992143E0 /* None.m */,
+				AD5D014BBEE164A58DFB8547 /* NoSuchElementException.h */,
+				AD5D03A3E038567415C11D36 /* NoSuchElementException.m */,
+				AD5D03EC11BA48E5894964B4 /* NSArray+OCTotallyLazy.h */,
+				AD5D0D056243B15774A84C4F /* NSArray+OCTotallyLazy.m */,
+				AD5D06A86C83CBD6765345F8 /* NSDictionary+OCTotallyLazy.h */,
+				AD5D09732CD8532376A7D221 /* NSDictionary+OCTotallyLazy.m */,
+				AD5D016741C44342D9C85EFF /* NSSet+OCTotallyLazy.h */,
+				AD5D07F9A9497F61FA62D627 /* NSSet+OCTotallyLazy.m */,
+				AD5D0717B2C932B387E2437E /* OCTotallyLazy-Info.plist */,
+				AD5D0C342F24C3093C929C50 /* OCTotallyLazy-Prefix.pch */,
+				AD5D03B72D7EBB8F6A079B89 /* OCTotallyLazy.h */,
+				AD5D06ADB7CE85353766EFE4 /* Option.h */,
+				AD5D0D51A9C8F4DEB7A52FF2 /* Option.m */,
+				AD5D002B948B912D31C6BDC6 /* Pair.h */,
+				AD5D08369F402B4C924A86FB /* Pair.m */,
+				AD5D06AFAC9BAA2465DCE41F /* Queue.h */,
+				AD5D0601A0428176E8463FEF /* Queue.m */,
+				AD5D0D914AE00CBE21BBB815 /* Range.h */,
+				AD5D00D60F37EBBEC8E57FD3 /* Range.m */,
+				AD5D03842E477C1194F28DC4 /* Sequence.h */,
+				AD5D07EED655E3BCC225AED4 /* Sequence.m */,
+				AD5D03F52A99FBCDE7C1C943 /* Some.h */,
+				AD5D07E5060B9C2E61150742 /* Some.m */,
+				AD5D0A8C12ED30B358FF8D2E /* Types.h */,
+				AD5D093B26B7ABFD33A6308E /* enumerators */,
+				AD5D0BA159A37E301F06CFE7 /* functions */,
+				AD5D0FA23CF35C3369249992 /* numbers */,
+				AD5D001783B080B38C0BE2B2 /* predicates */,
+			);
+			path = OCTotallyLazy;
+			sourceTree = "<group>";
+		};
+		BCA1EF5F1BF63E6C002D0A7C /* OCTotallyLazyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA1EF601BF63E6C002D0A7C /* OCTotallyLazyTests.m */,
+				BCA1EF621BF63E6C002D0A7C /* Info.plist */,
+				AD5D0119ABF74B1D1DB4568B /* FunctionsTest.m */,
+				AD5D0FDB6714E42BEDAAF0C6 /* OCTotallyLazyTestCase.h */,
+				AD5D06A9D8E000F248C6AE33 /* OCTotallyLazyTestCase.m */,
+				AD5D05B16DDF3F5165594E39 /* KeyWithoutToString.h */,
+				AD5D03F7260CBB1FC2B18F0A /* KeyWithoutToString.m */,
+				AD5D09AD57DFC65E3F4E6242 /* NSArrayTest.m */,
+				AD5D0B518702E87F8FB791A8 /* NSDictionaryTest.m */,
+				AD5D08A17D908053F8A3696E /* NSSetTest.m */,
+				AD5D0F2B61FF5A1B02D13FEE /* OptionTest.m */,
+				AD5D0CD97D8897D2DCF3C49E /* PairTest.m */,
+				AD5D030032CA7EEB3C328E6F /* RangeTest.m */,
+				AD5D09D597E1C147D5C97676 /* SequenceTest.m */,
+				AD5D00DA0C7E64F6DF509DC9 /* enumerators */,
+				AD5D0CA63D6141EBE57C588A /* numbers */,
+				AD5D0C6101DC6C78BD60BE1D /* predicates */,
+			);
+			path = OCTotallyLazyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BC49C44814E05BBD00BE88D2 /* Headers */ = {
+		BCA1EF4E1BF63E6C002D0A7C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7772CD151338ED00F4FF4A /* Foldable.h in Headers */,
-				BC7772CE151338ED00F4FF4A /* Mappable.h in Headers */,
-				BC7772CF151338ED00F4FF4A /* None.h in Headers */,
-				BC7772D1151338ED00F4FF4A /* NoSuchElementException.h in Headers */,
-				BC7772D3151338ED00F4FF4A /* NSArray+OCTotallyLazy.h in Headers */,
-				BC7772D5151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.h in Headers */,
-				BC7772D7151338ED00F4FF4A /* NSSet+OCTotallyLazy.h in Headers */,
-				BC7772DA151338ED00F4FF4A /* OCTotallyLazy-Prefix.pch in Headers */,
-				BC7772DB151338ED00F4FF4A /* OCTotallyLazy.h in Headers */,
-				BC7772DC151338ED00F4FF4A /* Option.h in Headers */,
-				BC7772DE151338ED00F4FF4A /* Pair.h in Headers */,
-				BC7772E0151338ED00F4FF4A /* Predicates.h in Headers */,
-				BC7772E1151338ED00F4FF4A /* Range.h in Headers */,
-				BC7772E3151338ED00F4FF4A /* Sequence.h in Headers */,
-				BC7772E5151338ED00F4FF4A /* Some.h in Headers */,
-				BC7772E6151338ED00F4FF4C /* Coercions.h in Headers */,
-				BC7772E6151338ED00F4FF4E /* Enumerable.h in Headers */,
-				BC7772EA1513392400F4FF4C /* EmptyEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF50 /* FilterEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF54 /* FlattenEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF58 /* GroupedEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF5C /* MapEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF64 /* MemoisedEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF68 /* NSEnumerator+OCTotallyLazy.h in Headers */,
-				BC7772EA1513392400F4FF6C /* PairEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF70 /* RepeatEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF74 /* SingleValueEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF78 /* TakeWhileEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF7C /* EasyEnumerable.h in Headers */,
-				BC7772EA1513392400F4FF80 /* Flattenable.h in Headers */,
-				BC7772EA1513392400F4FF99 /* Numbers.h in Headers */,
-				BC7772EA1513392400F4FFA0 /* Types.h in Headers */,
-				BC7772EA1513392400F4FF84 /* Callables.h in Headers */,
-				BC7772EA1513392400F4FF8E /* PartitionEnumerator.h in Headers */,
-				BC7772EA1513392400F4FFA6 /* Group.h in Headers */,
-				AD5D0BC6D2593ADD9FDED90B /* Functions.h in Headers */,
-				AD5D0835F95B2A7DF1278E30 /* Function2.h in Headers */,
-				AD5D080F8DF4A4D245988717 /* Function1.h in Headers */,
-				BC7772EA1513392400F4FFAA /* MergeEnumerator.h in Headers */,
-				BC7772EA1513392400F4FF92 /* Queue.h in Headers */,
-				BC7772EA1513392400F4FF94 /* MemoisedSequence.h in Headers */,
-				BC7772EA1513392400F4FF8A /* EnumerateEnumerator.h in Headers */,
+				AD5D0A98364F1BFF1EF731B4 /* Callables.h in Headers */,
+				AD5D06568EE20458CC7534B8 /* Coercions.h in Headers */,
+				AD5D049A2E6244EED2656814 /* EasyEnumerable.h in Headers */,
+				AD5D041E280AFEE6DDAC9FFD /* Enumerable.h in Headers */,
+				AD5D0B0AC6E8A059F1A3F9FA /* Flattenable.h in Headers */,
+				AD5D0B4C7D5A192307A65B4B /* Foldable.h in Headers */,
+				AD5D0CD5371D83C609EB1154 /* Group.h in Headers */,
+				AD5D0FFC2DB2E76301045FD6 /* Mappable.h in Headers */,
+				AD5D01C606B4F1811074FA86 /* MemoisedSequence.h in Headers */,
+				AD5D0267E8260982FD0DE5CF /* None.h in Headers */,
+				AD5D0EC8D8E99F6B5A183B54 /* NoSuchElementException.h in Headers */,
+				AD5D061EE6967F0866FFC640 /* NSArray+OCTotallyLazy.h in Headers */,
+				AD5D0CA164CD6F77110CEF95 /* NSDictionary+OCTotallyLazy.h in Headers */,
+				AD5D056EF287A852AA77DA13 /* NSSet+OCTotallyLazy.h in Headers */,
+				AD5D0428B67BAD6E4D57DDC0 /* OCTotallyLazy-Prefix.pch in Headers */,
+				AD5D05849290A2179B2F9D0E /* OCTotallyLazy.h in Headers */,
+				AD5D0694159A68ECBBB6EF7D /* Option.h in Headers */,
+				AD5D0EF7EDA3885DD6070B39 /* Pair.h in Headers */,
+				AD5D05EE10A06954983A8D02 /* Queue.h in Headers */,
+				AD5D004820EBB0FB502F5633 /* Range.h in Headers */,
+				AD5D048667DD723071BD8E50 /* Sequence.h in Headers */,
+				AD5D0C5BECA447C9C3EEE6BB /* Some.h in Headers */,
+				AD5D082175FD479A0EC2028D /* Types.h in Headers */,
+				AD5D092E8E6BCD090192949D /* MapEnumerator.h in Headers */,
+				AD5D076F46F6ED36419C1634 /* PairEnumerator.h in Headers */,
+				AD5D08B927B7D07A8DAD1953 /* EmptyEnumerator.h in Headers */,
+				AD5D087A3C3098758FC59B01 /* MergeEnumerator.h in Headers */,
+				AD5D09EA837DFE5E3B9740A6 /* FilterEnumerator.h in Headers */,
+				AD5D0AECBE1C9A572D2F95E1 /* RepeatEnumerator.h in Headers */,
+				AD5D09B402E14D8745963716 /* FlattenEnumerator.h in Headers */,
+				AD5D0B27608B5B7701FC8934 /* GroupedEnumerator.h in Headers */,
+				AD5D0013FFAABE15D6898047 /* MemoisedEnumerator.h in Headers */,
+				AD5D046FFFA10CFCF4CEE9FF /* EnumerateEnumerator.h in Headers */,
+				AD5D059BCD3080FC2BF2ED8D /* PartitionEnumerator.h in Headers */,
+				AD5D000B2EDC63D0EC1B96FB /* TakeWhileEnumerator.h in Headers */,
+				AD5D043E4103970AB2DF15D8 /* SingleValueEnumerator.h in Headers */,
+				AD5D0EA105234C6B1BF17713 /* NSEnumerator+OCTotallyLazy.h in Headers */,
+				AD5D04D2DF7029E90E079F3E /* Function1.h in Headers */,
+				AD5D0DA1BD938259BCCCBA0D /* Function2.h in Headers */,
+				AD5D0CFCD1C593805E48500C /* Functions.h in Headers */,
+				AD5D080B6437D9769D10318C /* Numbers.h in Headers */,
+				AD5D02A432B2C53B6D48F5B6 /* Predicates.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BC49C42F14E05A8200BE88D2 /* OCTotallyLazy */ = {
+		BCA1EF501BF63E6C002D0A7C /* OCTotallyLazy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC49C43C14E05A8200BE88D2 /* Build configuration list for PBXNativeTarget "OCTotallyLazy" */;
+			buildConfigurationList = BCA1EF651BF63E6C002D0A7C /* Build configuration list for PBXNativeTarget "OCTotallyLazy" */;
 			buildPhases = (
-				BC49C42C14E05A8200BE88D2 /* Sources */,
-				BC49C42D14E05A8200BE88D2 /* Frameworks */,
-				BC49C42E14E05A8200BE88D2 /* Resources */,
-				BC49C44814E05BBD00BE88D2 /* Headers */,
+				BCA1EF4C1BF63E6C002D0A7C /* Sources */,
+				BCA1EF4D1BF63E6C002D0A7C /* Frameworks */,
+				BCA1EF4E1BF63E6C002D0A7C /* Headers */,
+				BCA1EF4F1BF63E6C002D0A7C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = OCTotallyLazy;
-			productName = Funcky;
-			productType = "com.apple.product-type.bundle";
+			productName = OCTotallyLazy;
+			productReference = BCA1EF511BF63E6C002D0A7C /* OCTotallyLazy.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		BC76515514E0706800559503 /* test-unit */ = {
+		BCA1EF5A1BF63E6C002D0A7C /* OCTotallyLazyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC76516714E0706800559503 /* Build configuration list for PBXNativeTarget "test-unit" */;
+			buildConfigurationList = BCA1EF681BF63E6C002D0A7C /* Build configuration list for PBXNativeTarget "OCTotallyLazyTests" */;
 			buildPhases = (
-				BC76515114E0706800559503 /* Sources */,
-				BC76515214E0706800559503 /* Frameworks */,
-				BC76515314E0706800559503 /* Resources */,
+				BCA1EF571BF63E6C002D0A7C /* Sources */,
+				BCA1EF581BF63E6C002D0A7C /* Frameworks */,
+				BCA1EF591BF63E6C002D0A7C /* Resources */,
+				BCEBE10C1C089A6D001F4F9C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BC60928114EBC00F00A59CDD /* PBXTargetDependency */,
+				BCA1EF5E1BF63E6C002D0A7C /* PBXTargetDependency */,
 			);
-			name = "test-unit";
-			productName = FunckyTests;
-			productReference = BC76515614E0706800559503 /* test-unit.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			name = OCTotallyLazyTests;
+			productName = OCTotallyLazyTests;
+			productReference = BCA1EF5B1BF63E6C002D0A7C /* OCTotallyLazyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BC49C42514E05A5800BE88D2 /* Project object */ = {
+		BCA1EF481BF63E6C002D0A7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Stuart Ervine";
+				TargetAttributes = {
+					BCA1EF501BF63E6C002D0A7C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					BCA1EF5A1BF63E6C002D0A7C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
 			};
-			buildConfigurationList = BC49C42814E05A5800BE88D2 /* Build configuration list for PBXProject "OCTotallyLazy" */;
+			buildConfigurationList = BCA1EF4B1BF63E6C002D0A7C /* Build configuration list for PBXProject "OCTotallyLazy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = BC49C42314E05A5800BE88D2;
-			productRefGroup = BC49C43114E05A8200BE88D2 /* Products */;
+			mainGroup = BCA1EF471BF63E6C002D0A7C;
+			productRefGroup = BCA1EF521BF63E6C002D0A7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC49C42F14E05A8200BE88D2 /* OCTotallyLazy */,
-				BC49C45114E05CC600BE88D2 /* package */,
-				BC76515514E0706800559503 /* test-unit */,
+				BCA1EF501BF63E6C002D0A7C /* OCTotallyLazy */,
+				BCA1EF5A1BF63E6C002D0A7C /* OCTotallyLazyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BC49C42E14E05A8200BE88D2 /* Resources */ = {
+		BCA1EF4F1BF63E6C002D0A7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7772D9151338ED00F4FF4A /* OCTotallyLazy-Info.plist in Resources */,
+				AD5D0ACD1ADAA21FFE5514A9 /* OCTotallyLazy-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC76515314E0706800559503 /* Resources */ = {
+		BCA1EF591BF63E6C002D0A7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5D0820F08EF6F784C85FF7 /* OCTotallyLazy-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		BC49C45514E05CFB00BE88D2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=OCTotallyLazy\nFMK_VERSION=0.1\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nrm -rf ${SRCROOT}/artifacts\nmkdir -p ${SRCROOT}/artifacts\ncp -LR $INSTALL_DIR ${SRCROOT}/artifacts/${FMK_NAME}.framework \nrm -rf $INSTALL_DIR ${SRCROOT}/artifacts/${FMK_NAME}.framework/Versions";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		BC49C42C14E05A8200BE88D2 /* Sources */ = {
+		BCA1EF4C1BF63E6C002D0A7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7772D0151338ED00F4FF4A /* None.m in Sources */,
-				BC7772D2151338ED00F4FF4A /* NoSuchElementException.m in Sources */,
-				BC7772D4151338ED00F4FF4A /* NSArray+OCTotallyLazy.m in Sources */,
-				BC7772D6151338ED00F4FF4A /* NSDictionary+OCTotallyLazy.m in Sources */,
-				BC7772D8151338ED00F4FF4A /* NSSet+OCTotallyLazy.m in Sources */,
-				BC7772DD151338ED00F4FF4A /* Option.m in Sources */,
-				BC7772DF151338ED00F4FF4A /* Pair.m in Sources */,
-				BC7772E2151338ED00F4FF4A /* Range.m in Sources */,
-				BC7772E4151338ED00F4FF4A /* Sequence.m in Sources */,
-				BC7772E6151338ED00F4FF4A /* Some.m in Sources */,
-				BC7772EA1513392400F4FF4E /* EmptyEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF52 /* FilterEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF56 /* FlattenEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF5A /* GroupedEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF5E /* MapEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF66 /* MemoisedEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF6A /* NSEnumerator+OCTotallyLazy.m in Sources */,
-				BC7772EA1513392400F4FF6E /* PairEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF72 /* RepeatEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF76 /* SingleValueEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF7A /* TakeWhileEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF7E /* EasyEnumerable.m in Sources */,
-				BC7772EA1513392400F4FF86 /* Callables.m in Sources */,
-				BC7772EA1513392400F4FF88 /* EnumerateEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF8C /* PartitionEnumerator.m in Sources */,
-				BC7772EA1513392400F4FF90 /* Queue.m in Sources */,
-				BC7772EA1513392400F4FF96 /* MemoisedSequence.m in Sources */,
-				BC7772EA1513392400F4FFA4 /* Group.m in Sources */,
-				BC7772EA1513392400F4FFA8 /* MergeEnumerator.m in Sources */,
-				BC7772EA1513392400F4FFAC /* Numbers.m in Sources */,
-				BC7772EA1513392400F4FFAE /* Predicates.m in Sources */,
-				AD5D0610C61BC3AA9EB8D138 /* Functions.m in Sources */,
-				AD5D05A0E1C9D688C70192F0 /* Function2.m in Sources */,
-				AD5D0F0612F2B5AAA4949C4D /* Function1.m in Sources */,
+				AD5D02504D11F62BFC59A249 /* Callables.m in Sources */,
+				AD5D076723BBA9DBB8FD036C /* EasyEnumerable.m in Sources */,
+				AD5D0BA43408956ABE4E9C87 /* Group.m in Sources */,
+				AD5D09E10FF6D5129CE0514D /* MemoisedSequence.m in Sources */,
+				AD5D0744237E6BAEA9713C52 /* None.m in Sources */,
+				AD5D0F15946930BEF09D4F37 /* NoSuchElementException.m in Sources */,
+				AD5D0E601D95F0160A5A7F4A /* NSArray+OCTotallyLazy.m in Sources */,
+				AD5D0896E3E3C4B60D2811B0 /* NSDictionary+OCTotallyLazy.m in Sources */,
+				AD5D0302AC40361B7155AB13 /* NSSet+OCTotallyLazy.m in Sources */,
+				AD5D03A3CB61A19D1A7E7778 /* Option.m in Sources */,
+				AD5D0870C494E2BDF3DC05AF /* Pair.m in Sources */,
+				AD5D01110A7B77524DBD9F38 /* Queue.m in Sources */,
+				AD5D0DEE181297F8753581B7 /* Range.m in Sources */,
+				AD5D0A5A178F4F2EFA857979 /* Sequence.m in Sources */,
+				AD5D0C464DFEA55141032B15 /* Some.m in Sources */,
+				AD5D02EA81F29951FFFA47E4 /* MapEnumerator.m in Sources */,
+				AD5D0FBDF149FC0206885C5A /* PairEnumerator.m in Sources */,
+				AD5D0FD9DDFF8A51A316006B /* EmptyEnumerator.m in Sources */,
+				AD5D074970FC3643632EB0C0 /* MergeEnumerator.m in Sources */,
+				AD5D06947AEE94547C042CED /* FilterEnumerator.m in Sources */,
+				AD5D0FFBD2E633CCC38D612F /* RepeatEnumerator.m in Sources */,
+				AD5D0A2FEE2A19B63B4F3EE5 /* FlattenEnumerator.m in Sources */,
+				AD5D00BE314A1878497CF70B /* GroupedEnumerator.m in Sources */,
+				AD5D03FA5522F8CE10C6D47E /* MemoisedEnumerator.m in Sources */,
+				AD5D083360A77813060CEBAB /* EnumerateEnumerator.m in Sources */,
+				AD5D0AABAD3463728E259434 /* PartitionEnumerator.m in Sources */,
+				AD5D003D80EFFEFE091C3246 /* TakeWhileEnumerator.m in Sources */,
+				AD5D0ABC49EF5EC96344E510 /* SingleValueEnumerator.m in Sources */,
+				AD5D0E3DFB8533A9962461D1 /* NSEnumerator+OCTotallyLazy.m in Sources */,
+				AD5D06C6BC375A7C5527C200 /* Function1.m in Sources */,
+				AD5D0CD92ABEDDE00FB7702B /* Function2.m in Sources */,
+				AD5D074EF8854AFA1F815289 /* Functions.m in Sources */,
+				AD5D01D0A666F9A0191DCC58 /* Numbers.m in Sources */,
+				AD5D0725B93B813DD3E6FEE3 /* Predicates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC76515114E0706800559503 /* Sources */ = {
+		BCA1EF571BF63E6C002D0A7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7772A11513388C00F4FF4A /* MemoisedEnumeratorTest.m in Sources */,
-				BC7772A21513388C00F4FF4A /* NSArrayTest.m in Sources */,
-				BC7772A31513388C00F4FF4A /* NSDictionaryTest.m in Sources */,
-				BC7772A41513388C00F4FF4A /* NSSetTest.m in Sources */,
-				BC7772A51513388C00F4FF4A /* OCTotallyLazyTestCase.m in Sources */,
-				BC7772A61513388C00F4FF4A /* OptionTest.m in Sources */,
-				BC7772A71513388C00F4FF4A /* PredicatesTest.m in Sources */,
-				BC7772A81513388C00F4FF4A /* RangeTest.m in Sources */,
-				BC7772A91513388C00F4FF4A /* RepeatEnumeratorTest.m in Sources */,
-				BC7772AA1513388C00F4FF4A /* SequenceTest.m in Sources */,
-				BC7772EA1513392400F4FF82 /* GroupedEnumeratorTest.m in Sources */,
-				BC7772EA1513392400F4FF9E /* NumbersTest.m in Sources */,
-				BC7772EA1513392400F4FFA2 /* PairTest.m in Sources */,
-				AD5D0ADB89F95229E1296B67 /* FunctionsTest.m in Sources */,
-				AD5D07A282CE1F9764618922 /* KeyWithoutToString.m in Sources */,
+				BCA1EF611BF63E6C002D0A7C /* OCTotallyLazyTests.m in Sources */,
+				AD5D00AE1C7770D2AA77BA7F /* FunctionsTest.m in Sources */,
+				AD5D0B577A0E039DBBB12EDB /* OCTotallyLazyTestCase.m in Sources */,
+				AD5D0B03F2D3EBA8B331DA68 /* KeyWithoutToString.m in Sources */,
+				AD5D01585CFE58CF604555FE /* NSArrayTest.m in Sources */,
+				AD5D0C95BF9B8299D360A59D /* NSDictionaryTest.m in Sources */,
+				AD5D0E872CDA2EBEB5FD39BE /* NSSetTest.m in Sources */,
+				AD5D06366081DCEAAF4F121D /* OptionTest.m in Sources */,
+				AD5D0395A4252D10324C6B64 /* PairTest.m in Sources */,
+				AD5D06B0CD30E702B8A96F6B /* RangeTest.m in Sources */,
+				AD5D0FA40E3030B277DCC6CF /* SequenceTest.m in Sources */,
+				AD5D0001D23E541BBBA53CE7 /* RepeatEnumeratorTest.m in Sources */,
+				AD5D09257C137A0C45A7EA8B /* GroupedEnumeratorTest.m in Sources */,
+				AD5D0DA14D7E5DB7E9F38C8D /* MemoisedEnumeratorTest.m in Sources */,
+				AD5D027454CAB3251F80C7D5 /* NumbersTest.m in Sources */,
+				AD5D062BB00DB2906A259652 /* PredicatesTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC60928114EBC00F00A59CDD /* PBXTargetDependency */ = {
+		BCA1EF5E1BF63E6C002D0A7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC49C45114E05CC600BE88D2 /* package */;
-			targetProxy = BC60928014EBC00F00A59CDD /* PBXContainerItemProxy */;
+			target = BCA1EF501BF63E6C002D0A7C /* OCTotallyLazy */;
+			targetProxy = BCA1EF5D1BF63E6C002D0A7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		BC49C42A14E05A5800BE88D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		BC49C42B14E05A5800BE88D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		BC49C43D14E05A8200BE88D2 /* Debug */ = {
+		BCA1EF631BF63E6C002D0A7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				MACH_O_TYPE = mh_object;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Debug;
-		};
-		BC49C43E14E05A8200BE88D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				MACH_O_TYPE = mh_object;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
-		BC49C45314E05CC600BE88D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		BC49C45414E05CC600BE88D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		BC76516814E0706800559503 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/Products\"",
-					"\"$(SRCROOT)/artifacts\"",
-					"\"$(SRCROOT)/external/Test\"",
-				);
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Vendor/Test/OCMock\"",
-					"\"$(SRCROOT)/external/Test/OCMock\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BC76516914E0706800559503 /* Release */ = {
+		BCA1EF641BF63E6C002D0A7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/Products\"",
-					"\"$(SRCROOT)/artifacts\"",
-					"\"$(SRCROOT)/external/Test\"",
-				);
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Vendor/Test/OCMock\"",
-					"\"$(SRCROOT)/external/Test/OCMock\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TEST_AFTER_BUILD = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = octest;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCA1EF661BF63E6C002D0A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"${PROJECT_DIR}/external/Test\"/**";
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				INFOPLIST_FILE = OCTotallyLazy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCA1EF671BF63E6C002D0A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"${PROJECT_DIR}/external/Test\"/**";
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				INFOPLIST_FILE = OCTotallyLazy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCA1EF691BF63E6C002D0A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/PrecompiledFrameworks",
+				);
+				INFOPLIST_FILE = OCTotallyLazyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCA1EF6A1BF63E6C002D0A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/PrecompiledFrameworks",
+				);
+				INFOPLIST_FILE = OCTotallyLazyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC49C42814E05A5800BE88D2 /* Build configuration list for PBXProject "OCTotallyLazy" */ = {
+		BCA1EF4B1BF63E6C002D0A7C /* Build configuration list for PBXProject "OCTotallyLazy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC49C42A14E05A5800BE88D2 /* Debug */,
-				BC49C42B14E05A5800BE88D2 /* Release */,
+				BCA1EF631BF63E6C002D0A7C /* Debug */,
+				BCA1EF641BF63E6C002D0A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC49C43C14E05A8200BE88D2 /* Build configuration list for PBXNativeTarget "OCTotallyLazy" */ = {
+		BCA1EF651BF63E6C002D0A7C /* Build configuration list for PBXNativeTarget "OCTotallyLazy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC49C43D14E05A8200BE88D2 /* Debug */,
-				BC49C43E14E05A8200BE88D2 /* Release */,
+				BCA1EF661BF63E6C002D0A7C /* Debug */,
+				BCA1EF671BF63E6C002D0A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC49C45214E05CC600BE88D2 /* Build configuration list for PBXAggregateTarget "package" */ = {
+		BCA1EF681BF63E6C002D0A7C /* Build configuration list for PBXNativeTarget "OCTotallyLazyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC49C45314E05CC600BE88D2 /* Debug */,
-				BC49C45414E05CC600BE88D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC76516714E0706800559503 /* Build configuration list for PBXNativeTarget "test-unit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC76516814E0706800559503 /* Debug */,
-				BC76516914E0706800559503 /* Release */,
+				BCA1EF691BF63E6C002D0A7C /* Debug */,
+				BCA1EF6A1BF63E6C002D0A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BC49C42514E05A5800BE88D2 /* Project object */;
+	rootObject = BCA1EF481BF63E6C002D0A7C /* Project object */;
 }

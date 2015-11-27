@@ -9,12 +9,12 @@ function cleanTargets() {
     rm -rf ~/Library/Application Support/iPhone Simulator
     rm -rf build
     xcodebuild -target OCTotallyLazy -sdk iphoneos -configuration Release clean;
-    xcodebuild -target test-unit -sdk $SDK_PATH -configuration Debug clean;
+    xcodebuild -target OCTotallyLazyTests -sdk $SDK_PATH -configuration Debug clean;
 }
 
 function runTests() {
-    #xcodebuild -target package -sdk iphoneos -configuration Release build
-    xcodebuild -verbose -scheme OCTotallyLazy -sdk $SDK_PATH -configuration Debug test
+    #xcodebuild -target OCTotallyLazy -sdk iphoneos -configuration Release build
+    xcodebuild -verbose -scheme AllTests -sdk $SDK_PATH -configuration Debug test
     OUT=$?
     if [ $OUT -ne 0 ]
     then
@@ -24,7 +24,7 @@ function runTests() {
 }
 
 function buildRelease() {
-    xcodebuild -target package -sdk iphoneos -configuration Debug build
+    xcodebuild -target OCTotallyLazy -sdk iphoneos -configuration Release build
     OUT=$?
     if [ $OUT -ne 0 ]
     then
