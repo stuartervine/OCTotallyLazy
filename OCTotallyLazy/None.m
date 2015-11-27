@@ -14,6 +14,11 @@
 }
 
 - (id)get {
+    return nil;
+}
+
+
+- (id)getSafely {
     [NoSuchElementException raise:@"Cannot get value of None" format:@"Cannot get value of None"];
     return nil;
 }

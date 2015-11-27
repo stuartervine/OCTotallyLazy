@@ -8,6 +8,7 @@
 @interface Option : NSObject <NSCopying, Mappable, Foldable, Enumerable, Flattenable>
 -(BOOL)isEmpty;
 -(id)get;
+- (id)getSafely;
 -(id)getOrElse:(id)other;
 -(id)getOrInvoke:(id (^)())funcBlock;
 

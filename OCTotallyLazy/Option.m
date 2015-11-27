@@ -34,6 +34,11 @@
     return nil;
 }
 
+- (id)getSafely {
+    [NSException raise:@"Unsupported" format:@"Unsupported"];
+    return nil;
+}
+
 - (id)getOrElse:(id)other {
     [NSException raise:@"Unsupported" format:@"Unsupported"];
     return nil;

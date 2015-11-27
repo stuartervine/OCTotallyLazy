@@ -31,6 +31,11 @@
     return value;
 }
 
+- (id)getSafely {
+    return value;
+}
+
+
 - (id)getOrElse:(id)other {
     return value;
 }
