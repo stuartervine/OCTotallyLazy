@@ -178,7 +178,7 @@
     assertThat([result1 asArray], contains(@"1", @"3", @"2", @"4", @"5", nil));
 
     Sequence *result2 = [sequence(@"1", @"2", @"3", nil) merge:sequence(@"4", @"5", nil)];
-    assertThat([result2 asArray], contains(@"1", @"4", @"2", @"5", @"4", nil));
+    assertThat([result2 asArray], contains(@"1", @"4", @"2", @"5", @"3", nil));
 }
 
 - (void)testPartition {

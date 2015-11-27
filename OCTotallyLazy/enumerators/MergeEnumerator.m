@@ -20,7 +20,7 @@
     if([leftItem isEmpty] && [rightItem isEmpty]) {
         return nil;
     }
-    return sequence(leftItem, rightItem, nil);
+    return [sequence(leftItem, rightItem, nil) flatten];
 }
 
 

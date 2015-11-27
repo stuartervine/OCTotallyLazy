@@ -20,7 +20,7 @@
     __block NSString *description = @"";
     NSDictionary *dict = dictionary(sequence(@"key1", @"key2", nil), sequence(@"value1", @"value2", nil));
     [dict foreach:^(id key, id value) { description = [[description stringByAppendingString:key] stringByAppendingString:value]; }];
-    assertThat(description, equalTo(@"key1value1key2value2"));
+    assertThat(description, equalTo(@"key2value2key1value1"));
 }
 
 -(void)testMap {
