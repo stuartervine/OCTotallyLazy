@@ -107,16 +107,6 @@
 		BCEBE10E1C089B43001F4F9C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCEBE10D1C089B43001F4F9C /* OCMock.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BCA1EF5D1BF63E6C002D0A7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BCA1EF481BF63E6C002D0A7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BCA1EF501BF63E6C002D0A7C;
-			remoteInfo = OCTotallyLazy;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		BCEBE10C1C089A6D001F4F9C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -539,7 +529,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BCA1EF5E1BF63E6C002D0A7C /* PBXTargetDependency */,
 			);
 			name = OCTotallyLazyTests;
 			productName = OCTotallyLazyTests;
@@ -666,14 +655,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BCA1EF5E1BF63E6C002D0A7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BCA1EF501BF63E6C002D0A7C /* OCTotallyLazy */;
-			targetProxy = BCA1EF5D1BF63E6C002D0A7C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BCA1EF631BF63E6C002D0A7C /* Debug */ = {
@@ -822,6 +803,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -843,6 +825,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
