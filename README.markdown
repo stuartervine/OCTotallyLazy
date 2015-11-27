@@ -123,7 +123,7 @@ So I'm a bit fed up with using 'libraries' that say, just include our source cod
 - Clone the repo.
 - Run <CHECKOUT_DIR>/build.sh test  //optional, but if it fails shout at me!
 - Run <CHECKOUT_DIR>/build.sh release
-- Copy <CHECKOUT_DIR>/artifacts/OCTotallyLazy.framework to your external libraries folder.
+- Copy <CHECKOUT_DIR>/build/Release-iphoneos/OCTotallyLazy.framework to your external libraries folder.
 - Import the framework to your project.
 - Jobsa good 'un.
 

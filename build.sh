@@ -24,7 +24,7 @@ function runTests() {
 }
 
 function buildRelease() {
-    xctool -target OCTotallyLazy -sdk iphoneos -configuration Release build
+    xctool -scheme OCTotallyLazy -sdk iphoneos -configuration Release build
     OUT=$?
     if [ $OUT -ne 0 ]
     then
