@@ -32,3 +32,8 @@
 #import <OCTotallyLazy/MemoisedSequence.h>
 #import <OCTotallyLazy/MergeEnumerator.h>
 #import <OCTotallyLazy/NSEnumerator+OCTotallyLazy.h>
+#import <OCTotallyLazy/PairEnumerator.h>
+#import <OCTotallyLazy/PartitionEnumerator.h>
+#import <OCTotallyLazy/Queue.h>
+#import <OCTotallyLazy/SingleValueEnumerator.h>
+#import <OCTotallyLazy/TakeWhileEnumerator.h>
