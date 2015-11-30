@@ -131,6 +131,8 @@ Or if you're using [CocoaPods](http://cocoapods.org/?q=totallylazy), add the fol
 
     pod 'OCTotallyLazy'
 
-OCTotallyLazy is also Carthage compatible now.
+OCTotallyLazy is also Carthage compatible now, just add the following to your Cartfile:
+
+    github "stuartervine/OCTotallyLazy" >= 2.0.0
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)    
