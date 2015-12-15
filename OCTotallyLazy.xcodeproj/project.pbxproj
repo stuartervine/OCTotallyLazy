@@ -41,7 +41,6 @@
 		AD5D061EE6967F0866FFC640 /* NSArray+OCTotallyLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D03EC11BA48E5894964B4 /* NSArray+OCTotallyLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5D062BB00DB2906A259652 /* PredicatesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D07C93D69F597C46CDBE0 /* PredicatesTest.m */; };
 		AD5D06366081DCEAAF4F121D /* OptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D0F2B61FF5A1B02D13FEE /* OptionTest.m */; };
-		AD5D06568EE20458CC7534B8 /* Coercions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D017DB1FD4B95419BAE97 /* Coercions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5D0694159A68ECBBB6EF7D /* Option.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5D06ADB7CE85353766EFE4 /* Option.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5D06947AEE94547C042CED /* FilterEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D09B6816D852EF7D24525 /* FilterEnumerator.m */; };
 		AD5D06B0CD30E702B8A96F6B /* RangeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D030032CA7EEB3C328E6F /* RangeTest.m */; };
@@ -104,18 +103,29 @@
 		BCA1EF611BF63E6C002D0A7C /* OCTotallyLazyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1EF601BF63E6C002D0A7C /* OCTotallyLazyTests.m */; };
 		BCEBE1071C087FFA001F4F9C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBE1061C087FFA001F4F9C /* OCMock.framework */; };
 		BCEBE10B1C089679001F4F9C /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEBE10A1C089679001F4F9C /* OCHamcrestIOS.framework */; };
-		BCEBE10E1C089B43001F4F9C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCEBE10D1C089B43001F4F9C /* OCMock.framework */; };
+		BCFE6DF81C164680009C5ED7 /* OCMock.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = BCEBE10D1C089B43001F4F9C /* OCMock.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BCC381B91C1B10F10074071C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA1EF481BF63E6C002D0A7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA1EF501BF63E6C002D0A7C;
+			remoteInfo = OCTotallyLazy;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		BCEBE10C1C089A6D001F4F9C /* CopyFiles */ = {
+		BCEBE10C1C089A6D001F4F9C /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				BCEBE10E1C089B43001F4F9C /* OCMock.framework in CopyFiles */,
+				BCFE6DF81C164680009C5ED7 /* OCMock.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -131,7 +141,6 @@
 		AD5D014BBEE164A58DFB8547 /* NoSuchElementException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoSuchElementException.h; sourceTree = "<group>"; };
 		AD5D016741C44342D9C85EFF /* NSSet+OCTotallyLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+OCTotallyLazy.h"; sourceTree = "<group>"; };
 		AD5D017611F0CF3321411539 /* EnumerateEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumerateEnumerator.m; sourceTree = "<group>"; };
-		AD5D017DB1FD4B95419BAE97 /* Coercions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coercions.h; sourceTree = "<group>"; };
 		AD5D01911E9A29F37CB07547 /* EmptyEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyEnumerator.h; sourceTree = "<group>"; };
 		AD5D01EF0FF6481CE63AD7AE /* Function2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function2.h; sourceTree = "<group>"; };
 		AD5D026702EBEF901C4486C5 /* Function1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function1.h; sourceTree = "<group>"; };
@@ -375,7 +384,6 @@
 				BCA1EF561BF63E6C002D0A7C /* Info.plist */,
 				AD5D0C46D4941E773E018857 /* Callables.h */,
 				AD5D08754463531EBC0FE74D /* Callables.m */,
-				AD5D017DB1FD4B95419BAE97 /* Coercions.h */,
 				AD5D0C3FB063C934B6CDCCD0 /* EasyEnumerable.h */,
 				AD5D003F07F16CFEC064A099 /* EasyEnumerable.m */,
 				AD5D06E13013F77E5160C973 /* Enumerable.h */,
@@ -452,7 +460,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5D0A98364F1BFF1EF731B4 /* Callables.h in Headers */,
-				AD5D06568EE20458CC7534B8 /* Coercions.h in Headers */,
 				AD5D049A2E6244EED2656814 /* EasyEnumerable.h in Headers */,
 				AD5D041E280AFEE6DDAC9FFD /* Enumerable.h in Headers */,
 				AD5D0B0AC6E8A059F1A3F9FA /* Flattenable.h in Headers */,
@@ -524,11 +531,12 @@
 				BCA1EF571BF63E6C002D0A7C /* Sources */,
 				BCA1EF581BF63E6C002D0A7C /* Frameworks */,
 				BCA1EF591BF63E6C002D0A7C /* Resources */,
-				BCEBE10C1C089A6D001F4F9C /* CopyFiles */,
+				BCEBE10C1C089A6D001F4F9C /* Copy Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCC381BA1C1B10F10074071C /* PBXTargetDependency */,
 			);
 			name = OCTotallyLazyTests;
 			productName = OCTotallyLazyTests;
@@ -655,6 +663,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC381BA1C1B10F10074071C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA1EF501BF63E6C002D0A7C /* OCTotallyLazy */;
+			targetProxy = BCC381B91C1B10F10074071C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BCA1EF631BF63E6C002D0A7C /* Debug */ = {
@@ -796,6 +812,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/PrecompiledFrameworks",
 				);
+				HEADER_SEARCH_PATHS = "\"$(CONFIGURATION_TEMP_DIR)/$(PROJECT_NAME).build/DerivedSources\"/**";
 				INFOPLIST_FILE = OCTotallyLazyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -803,7 +820,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -818,6 +835,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/PrecompiledFrameworks",
 				);
+				HEADER_SEARCH_PATHS = "\"$(CONFIGURATION_TEMP_DIR)/$(PROJECT_NAME).build/DerivedSources\"/**";
 				INFOPLIST_FILE = OCTotallyLazyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -825,7 +843,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = octl.OCTotallyLazyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Release;
 		};

@@ -83,3 +83,46 @@
     } copy];
 }
 @end
+
+extern PREDICATE TL_alternate(BOOL startState) {
+    return [Predicates alternate:startState];
+}
+extern PREDICATE TL_and(PREDICATE left, PREDICATE right) {
+    return [Predicates andLeft:left withRight:right];
+}
+extern PREDICATE TL_or(PREDICATE left, PREDICATE right) {
+    return [Predicates orLeft:left withRight:right];
+}
+extern PREDICATE TL_countTo(int n) {
+    return [Predicates countTo:n];
+}
+extern PREDICATE TL_containedIn(NSArray *existing) {
+    return [Predicates containedIn:existing];
+}
+extern PREDICATE TL_containsString(NSString *toMatch) {
+    return [Predicates containsString:toMatch];
+}
+extern PREDICATE TL_equalTo(id comparable) {
+    return [Predicates equalTo:comparable];
+}
+extern PREDICATE TL_everyNth(int n) {
+    return [Predicates everyNth:n];
+}
+extern PREDICATE TL_greaterThan(NSNumber *comparable) {
+    return [Predicates greaterThan:comparable];
+}
+extern PREDICATE TL_lessThan(NSNumber *comparable) {
+    return [Predicates lessThan:comparable];
+}
+extern PREDICATE TL_lessThanOrEqualTo(NSNumber *comparable) {
+    return [Predicates lessThanOrEqualTo:comparable];
+}
+extern PREDICATE TL_not(PREDICATE predicate) {
+    return [Predicates not:predicate];
+}
+extern PREDICATE TL_startsWith(NSString *prefix) {
+    return [Predicates startsWith:prefix];
+}
+extern PREDICATE TL_whileTrue(PREDICATE predicate) {
+    return [Predicates whileTrue:predicate];
+}

@@ -1,3 +1,6 @@
+#define TL_SHORTHAND
+#define TL_COERCIONS
+
 #import "OCTotallyLazyTestCase.h"
 
 @interface RangeTest : OCTotallyLazyTestCase
@@ -6,22 +9,22 @@
 @implementation RangeTest
 
 -(void)testRangeOfNumbersWithStart {
-    NSEnumerator *range = [[Range range:num(5)] toEnumerator];
-    assertThat([range nextObject], equalTo(num(5)));
-    assertThat([range nextObject], equalTo(num(6)));
-    assertThat([range nextObject], equalTo(num(7)));
+    NSEnumerator *range = [[Range range:@(5)] toEnumerator];
+    assertThat([range nextObject], equalTo(@(5)));
+    assertThat([range nextObject], equalTo(@(6)));
+    assertThat([range nextObject], equalTo(@(7)));
 }
 
 -(void)testRangeOfNumbersWithStartAndEnd {
-    Sequence *range = [Range range:num(5) end:num(9)];
-    assertThat([range asArray], equalTo(array(num(5), num(6), num(7), num(8), num(9), nil)));
+    Sequence *range = [Range range:@(5) end:@(9)];
+    assertThat([range asArray], equalTo(array(@(5), @(6), @(7), @(8), @(9), nil)));
 }
 
 -(void)testShorthand {
-    NSEnumerator *range = [range(num(10)) toEnumerator];
-    assertThat([range nextObject], equalTo(num(10)));
-    assertThat([range nextObject], equalTo(num(11)));
-    assertThat([range nextObject], equalTo(num(12)));
+    NSEnumerator *aRange = [[Range range:(@(10))] toEnumerator];
+    assertThat([aRange nextObject], equalTo(@(10)));
+    assertThat([aRange nextObject], equalTo(@(11)));
+    assertThat([aRange nextObject], equalTo(@(12)));
 }
 
 

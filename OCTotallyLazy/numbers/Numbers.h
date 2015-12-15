@@ -57,14 +57,3 @@ static FUNCTION1 TL_add(NSNumber *addition) {
 static FUNCTION1 TL_subtract(NSNumber *subtractor) {
     return [Numbers substract:subtractor];
 }
-
-#ifndef TL_SHORTHAND
-    #define min() TL_min()
-    #define max() TL_max()
-    #define sum() TL_sum()
-    #define average() TL_average()
-    #define multiplyBy(multiplier) TL_multiplyBy(multiplier)
-    #define divideBy(divisor) TL_divideBy(divisor)
-    #define add(addition) TL_add(addition)
-    #define subtract(subtractor) TL_subtract(subtractor)
-#endif

@@ -1,5 +1,4 @@
 #import <OCTotallyLazy/Callables.h>
-#import <OCTotallyLazy/Coercions.h>
 #import <OCTotallyLazy/Enumerable.h>
 #import <OCTotallyLazy/Flattenable.h>
 #import <OCTotallyLazy/Functions.h>

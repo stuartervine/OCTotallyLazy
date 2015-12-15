@@ -60,7 +60,7 @@
 
 + (FUNCTION1)add:(NSNumber *)addition {
     return [^(NSNumber *number) {
-        return [NSNumber numberWithDouble:number.doubleValue + addition.doubleValue];
+        return @(number.doubleValue + addition.doubleValue);
     } copy];
 }
 

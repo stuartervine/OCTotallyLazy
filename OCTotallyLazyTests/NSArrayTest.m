@@ -1,3 +1,4 @@
+#define TL_COERCIONS
 #import "OCTotallyLazyTestCase.h"
 
 @interface NSArrayTest : OCTotallyLazyTestCase
@@ -6,16 +7,16 @@
 @implementation NSArrayTest
 
 -(void)testDrop {
-    NSArray *items = array(num(1), num(5), num(7), nil);
-    assertThat([items drop:2], hasItems(num(7), nil));
-    assertThat([items drop:1], hasItems(num(5), num(7), nil));
+    NSArray *items = array(@(1), @(5), @(7), nil);
+    assertThat([items drop:2], hasItems(@(7), nil));
+    assertThat([items drop:1], hasItems(@(5), @(7), nil));
     assertThat([array(nil) drop:1], isEmpty());
 }
 
 -(void)testDropWhile {
-    NSArray *items = array(num(7), num(5), num(4), nil);
-    assertThat([items dropWhile:TL_greaterThan(num(4))], hasItems(num(4), nil));
-    assertThat([items dropWhile:TL_greaterThan(num(5))], hasItems(num(5), num(4), nil));
+    NSArray *items = array(@(7), @(5), @(4), nil);
+    assertThat([items dropWhile:TL_greaterThan(@(4))], hasItems(@(4), nil));
+    assertThat([items dropWhile:TL_greaterThan(@(5))], hasItems(@(5), @(4), nil));
 }
 
 - (void)testFilter {
@@ -141,14 +142,14 @@
     assertThat([items toString:@","], equalTo(@"one,two,three"));
     assertThat([items toString:@"(" separator:@"," end:@")"], equalTo(@"(one,two,three)"));
     
-    NSArray *numbers = array(num(1), num(2), num(3), nil);
+    NSArray *numbers = array(@(1), @(2), @(3), nil);
     assertThat([numbers toString], equalTo(@"123"));
 }
 
 -(void)testZip {
     NSArray *items = array(@"one", @"two", nil);
-    NSArray *zip = [items zip:array(num(1), num(2), nil)];
-    assertThat(zip, hasItems([Pair left:@"one" right:num(1)], [Pair left:@"two" right:num(2)], nil));
+    NSArray *zip = [items zip:array(@(1), @(2), nil)];
+    assertThat(zip, hasItems([Pair left:@"one" right:@(1)], [Pair left:@"two" right:@(2)], nil));
 }
 
 -(void)testAsSet {

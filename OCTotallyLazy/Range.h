@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "Sequence.h"
-#ifndef TL_SHORTHAND
+#ifdef TL_SHORTHAND
     #define range(num) [Range range:num]
 #endif
 
