@@ -157,7 +157,7 @@
 }
 
 - (NSArray *)takeRight:(int)n {
-    int toTake = (n > [self count]) ? [self count] : (NSUInteger) n;
+    NSUInteger toTake = (n > [self count]) ? [self count] : (NSUInteger) n;
     return [self subarrayWithRange:NSMakeRange([self count] - toTake, (NSUInteger) toTake)];
 }
 
@@ -201,8 +201,8 @@
     Pair *keysAndValues = [self partition:TL_alternate(YES)];
     NSArray *keys = keysAndValues.left;
     NSArray *values = keysAndValues.right;
-    values = [values take:[keys count]];
-    keys = [keys take:[values count]];
+    values = [values take:(int)[keys count]];
+    keys = [keys take:(int)[values count]];
     NSEnumerator *valueEnumerator = [keysAndValues.right objectEnumerator];
     return [keys fold:[NSMutableDictionary dictionary] with:^(NSMutableDictionary *accumulator, id key) {
         [accumulator setObject:[valueEnumerator nextObject] forKey:key];
