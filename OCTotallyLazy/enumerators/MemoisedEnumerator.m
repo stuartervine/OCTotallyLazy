@@ -8,11 +8,11 @@
 }
 
 - (int)previousIndex {
-    return position - 1;
+    return (int)position - 1;
 }
 
 - (int)nextIndex {
-    return position;
+    return (int)position;
 }
 
 - (id)previousObject {
